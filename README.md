@@ -1,2 +1,1 @@
-# gnome_quest
- 
+# Gnome Quest
