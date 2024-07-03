@@ -1,2 +1,12 @@
+Button
+VBoxContainer
+HBoxContainer
+TextureRect
+Label
+Control
+MarginContainer
+CanvasLayer
+HSplitContainer
+CenterContainer
 Node2D
 Node
