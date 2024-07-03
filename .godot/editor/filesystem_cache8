@@ -1,9 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1719967382
+::res://::1720020721
 icon.svg::CompressedTexture2D::7871145411425364212::1719965863::1719965881::1::::<><>::
 README.md::TextFile::-1::1719953717::0::1::::<><>::
-::res://assets/::1719967382
-pixel_alphanum.png::CompressedTexture2D::8810291496473240371::1719967099::1719967382::1::::<><>::
+::res://assets/::1720019395
 ::res://assets/player_sprites/::1719965521
 ::res://assets/player_sprites/gr_gnome_sprite/::1719965521
 sprite_00.png::CompressedTexture2D::9004844524680286490::1719965521::1719965521::1::::<><>::
@@ -47,7 +46,7 @@ sprite_16.png::CompressedTexture2D::2006948265416724197::1719965521::1719965521:
 sprite_17.png::CompressedTexture2D::4798001646180923021::1719965521::1719965521::1::::<><>::
 sprite_18.png::CompressedTexture2D::4137320106117925181::1719965521::1719965521::1::::<><>::
 sprite_19.png::CompressedTexture2D::516993007441346402::1719965521::1719965521::1::::<><>::
-::res://assets/tilesets_maps/::1719965521
+::res://assets/tilesets_maps/::1720019908
 ::res://assets/tilesets_maps/autmn_forest/::1719965521
 !readme!.txt::TextFile::-1::1719965521::0::1::::<><>::
 background_0.png::CompressedTexture2D::5021581193214531657::1719965521::1719965521::1::::<><>::
@@ -55,6 +54,18 @@ background_1.png::CompressedTexture2D::9122780756474161062::1719965521::17199655
 background_2.png::CompressedTexture2D::4573644126756644042::1719965521::1719965521::1::::<><>::
 example.png::CompressedTexture2D::6403731103142653326::1719965521::1719965521::1::::<><>::
 tileset.png::CompressedTexture2D::206399874829453325::1719965521::1719965521::1::::<><>::
+::res://assets/tilesets_maps/mountains_background/::1720019945
+far-clouds.png::CompressedTexture2D::2513788512872535870::1720019924::1720019908::1::::<><>::
+far-mountains.png::CompressedTexture2D::1948261553675989500::1720019924::1720019908::1::::<><>::
+mountains.png::CompressedTexture2D::1432418543516877117::1720019924::1720019908::1::::<><>::
+near-clouds.png::CompressedTexture2D::895231288387236007::1720019924::1720019908::1::::<><>::
+parallax-mountain-bg.png::CompressedTexture2D::9100151642956522626::1720019945::1720019945::1::::<><>::
+parallax-mountain-foreground-trees.png::CompressedTexture2D::251826680585948993::1720019945::1720019945::1::::<><>::
+parallax-mountain-montain-far.png::CompressedTexture2D::5867759716261717963::1720019945::1720019945::1::::<><>::
+parallax-mountain-mountains.png::CompressedTexture2D::4123228030877110012::1720019945::1720019945::1::::<><>::
+parallax-mountain-trees.png::CompressedTexture2D::8427566447855115508::1720019945::1720019945::1::::<><>::
+sky.png::CompressedTexture2D::3911558529304898349::1720019924::1720019908::1::::<><>::
+trees.png::CompressedTexture2D::8150224321608670263::1720019924::1720019908::1::::<><>::
 ::res://assets/tilesets_maps/rainforest_areas/::1719965521
 ::res://assets/tilesets_maps/rainforest_areas/Fantasy Swamp Forest/::1719965521
 LICENSE.md::TextFile::-1::1719965521::0::1::::<><>::
@@ -123,7 +134,12 @@ Patreon.txt::TextFile::-1::1719965521::0::1::::<><>::
 ::res://assets/tilesets_maps/underground_areas/::1719965521
 cavesofgallet.png::CompressedTexture2D::6807396402087844688::1719965521::1719965521::1::::<><>::
 cavesofgallet_tiles.png::CompressedTexture2D::7717801937391551447::1719965521::1719965521::1::::<><>::
+::res://assets/ui/::1720019395
+start.png::CompressedTexture2D::8066402935985633533::1720019392::1720019395::1::::<><>::
+title.png::CompressedTexture2D::6040029129772275506::1720019392::1720019395::1::::<><>::
 ::res://entities/::1719965796
-::res://scenes/::1719965863
-::res://scenes/main/::1719967382
-main.tscn::PackedScene::3876857004100717685::1719967349::0::1::::<><>::
+::res://fonts/::1720020732
+DwarfFortressVan.ttf::FontFile::6113403599575707540::1720020732::1720020732::1::::<><>::
+::res://scenes/::1720018964
+::res://scenes/main/::1720020416
+main.tscn::PackedScene::3876857004100717685::1720020416::0::1::::<><>::uid://b73sqxfve2m7c::::res://assets/tilesets_maps/skys_background/Clouds/Clouds 4/1.png<>uid://bo4kjgd4iwxpu::::res://assets/tilesets_maps/skys_background/Clouds/Clouds 2/3.png<>uid://by0k70r4safg3::::res://assets/tilesets_maps/mountains_background/parallax-mountain-mountains.png
