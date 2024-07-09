@@ -1,0 +1,67 @@
+[gd_scene load_steps=5 format=3 uid="uid://rkj4abwdrj6k"]
+
+[ext_resource type="Script" path="res://scenes/options/options.gd" id="1_0qvl1"]
+[ext_resource type="FontFile" uid="uid://ctdm4m52m4edw" path="res://fonts/DwarfFortressVan.ttf" id="1_aycvh"]
+[ext_resource type="Texture2D" uid="uid://deoggjjtxgmfw" path="res://assets/tilesets_maps/skys_background/Clouds/Clouds 7/1.png" id="1_m2f2r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_re8ta"]
+
+[node name="OptionsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0qvl1")
+
+[node name="Background_Sky" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_m2f2r")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 40
+
+[node name="Title" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("1_aycvh")
+theme_override_font_sizes/font_size = 48
+text = "Options "
+horizontal_alignment = 1
+
+[node name="Exit" type="Button" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(120, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("1_aycvh")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_re8ta")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_re8ta")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_re8ta")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_re8ta")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_re8ta")
+text = "Exit"
