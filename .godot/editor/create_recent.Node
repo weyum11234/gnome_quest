@@ -1,3 +1,6 @@
+CollisionShape2D
+Camera2D
+Control
 AnimatedSprite2D
 CharacterBody2D
 TileMap
@@ -10,6 +13,3 @@ HBoxContainer
 VBoxContainer
 MarginContainer
 Button
-Control
-CanvasLayer
-HSplitContainer
