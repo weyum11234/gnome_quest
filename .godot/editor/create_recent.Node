@@ -1,5 +1,20 @@
 CollisionShape2D
+<<<<<<< HEAD
 AnimatedSprite2D
 CharacterBody2D
+=======
+Camera2D
+Control
+AnimatedSprite2D
+CharacterBody2D
+TileMap
+>>>>>>> origin/main
 Node2D
 Node
+TextureRect
+TextureProgressBar
+Label
+HBoxContainer
+VBoxContainer
+MarginContainer
+Button
