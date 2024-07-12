@@ -15,7 +15,14 @@ var jump_timer = 0.0
 var coyote_timer = 0.0
 
 
+# Helper variable for handling animation
+var animation = "idle"
+
+
 func _physics_process(delta):
+	# Set default animation every delta
+	animation = "idle"
+	
 	# Add the gravity.
 	if not is_on_floor() and not is_jumping:
 		velocity.y += gravity * gravity_multiplier * delta
@@ -23,6 +30,15 @@ func _physics_process(delta):
 	else:
 		coyote_timer = 0
 
+	# Get the input direction and handle the movement/deceleration.
+	var direction = Input.get_axis("left", "right")
+	if direction:
+		velocity.x = direction * speed
+		animation = "walk"
+		$AnimatedSprite2D.flip_h = velocity.x < 0
+	else:
+		velocity.x = move_toward(velocity.x, 0, speed)
+		
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and (is_on_floor() or coyote_timer < coyote_time):
 		velocity.y = jump_velocity
@@ -32,15 +48,11 @@ func _physics_process(delta):
 		
 	if is_jumping and Input.is_action_pressed("jump") and jump_timer < jump_time:
 		jump_timer += delta
+		animation = "jump"
 	else:
 		is_jumping = false
 		jump_timer = 0
-
-	# Get the input direction and handle the movement/deceleration.
-	var direction = Input.get_axis("left", "right")
-	if direction:
-		velocity.x = direction * speed
-	else:
-		velocity.x = move_toward(velocity.x, 0, speed)
-
+	
+	print(animation)
+	$AnimatedSprite2D.play(animation)
 	move_and_slide()
