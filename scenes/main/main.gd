@@ -5,8 +5,6 @@ extends Control
 @onready var new_game = $MarginContainer/HBoxContainer/VBoxContainer/NewGame
 @onready var options = $MarginContainer/HBoxContainer/VBoxContainer/Options
 @onready var exit = $MarginContainer/HBoxContainer/VBoxContainer/Exit
-@onready var options_scene = $OptionsMenu
-@onready var margin_container = $MarginContainer
 
 
 # Called when the node enters the scene tree for the first time.
@@ -16,7 +14,6 @@ func _ready():
 	new_game.button_down.connect(on_ng_down)
 	options.button_down.connect(on_options_down)
 	exit.button_down.connect(on_exit_down)
-	options_scene.exit_options.connect(on_exit_options_scene)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -29,19 +26,13 @@ func on_cont_down() -> void:
 	
 	
 func on_ng_down() -> void:
-	pass
+	get_tree().change_scene_to_file("res://scenes/level_01/level_01.tscn")
 	
 	
 func on_options_down() -> void:
-	margin_container.visible = false
-	options_scene.set_process(true)
-	options_scene.visible = true
-	
+	get_tree().change_scene_to_file("res://scenes/options/options.tscn")
+
 	
 func on_exit_down() -> void:
 	get_tree().quit()
-	
-	
-func on_exit_options_scene() -> void:
-	margin_container.visible = true
-	options_scene.visible = false
+

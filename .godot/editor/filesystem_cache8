@@ -1,10 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1720555656
+::res://::1720723688
 icon.svg::CompressedTexture2D::7871145411425364212::1719965863::1719965881::1::::<><>::
 README.md::TextFile::-1::1719953717::0::1::::<><>::
 ::res://assets/::1720019395
 ::res://assets/player_sprites/::1719965521
-::res://assets/player_sprites/gr_gnome_sprite/::1719965521
+::res://assets/player_sprites/gr_gnome_sprite/::1720725624
 sprite_00.png::CompressedTexture2D::9004844524680286490::1719965521::1719965521::1::::<><>::
 sprite_01.png::CompressedTexture2D::6289484914219788884::1719965521::1719965521::1::::<><>::
 sprite_02.png::CompressedTexture2D::1256413729581033057::1719965521::1719965521::1::::<><>::
@@ -16,8 +16,11 @@ sprite_07.png::CompressedTexture2D::3253156501204667428::1719965521::1719965521:
 sprite_08.png::CompressedTexture2D::3009476258348707495::1719965521::1719965521::1::::<><>::
 sprite_09.png::CompressedTexture2D::6468872912965699053::1719965521::1719965521::1::::<><>::
 sprite_10.png::CompressedTexture2D::4907570272264044385::1719965521::1719965521::1::::<><>::
+sprite_10_long_legs.png::CompressedTexture2D::2898558779265191431::1720725503::1720725628::1::::<><>::
 sprite_11.png::CompressedTexture2D::2176674207825332272::1719965521::1719965521::1::::<><>::
+sprite_11_long_legs.png::CompressedTexture2D::7908879316395553572::1720725533::1720725628::1::::<><>::
 sprite_12.png::CompressedTexture2D::4950476422097401613::1719965521::1719965521::1::::<><>::
+sprite_12_long_legs.png::CompressedTexture2D::6278261875696873883::1720725581::1720725628::1::::<><>::
 sprite_13.png::CompressedTexture2D::8291527523044281028::1719965521::1719965521::1::::<><>::
 sprite_14.png::CompressedTexture2D::6480380343095318130::1719965521::1719965521::1::::<><>::
 sprite_15.png::CompressedTexture2D::565594245422675245::1719965521::1719965521::1::::<><>::
@@ -136,15 +139,17 @@ cavesofgallet.png::CompressedTexture2D::6807396402087844688::1719965521::1719965
 cavesofgallet_tiles.png::CompressedTexture2D::7717801937391551447::1719965521::1719965521::1::::<><>::
 cavesofgallet_tiles_scaled_2x_pngcrushed.png::CompressedTexture2D::4812861473671700353::1720556442::1720556442::1::::<><>::
 ::res://assets/ui/::1720028357
-::res://entities/::1719965796
+::res://entities/::1720725364
+player.gd::GDScript::-1::1720724169::0::1::::<>CharacterBody2D<>::
+player_1.tscn::PackedScene::7228420403995031334::1720725364::0::1::::<><>::uid://d1kaqdugwxjew::::res://assets/player_sprites/gr_gnome_sprite/sprite_00.png<>res://entities/player.gd<>uid://biw4splj2sfgi::::res://assets/player_sprites/gr_gnome_sprite/sprite_05.png<>uid://cvuw5rwr5oiu3::::res://assets/player_sprites/gr_gnome_sprite/sprite_01.png<>uid://r5u7k35a8p74::::res://assets/player_sprites/gr_gnome_sprite/sprite_02.png<>uid://ct13sigpb2fx7::::res://assets/player_sprites/gr_gnome_sprite/sprite_06.png
 ::res://fonts/::1720020732
 DwarfFortressVan.ttf::FontFile::6113403599575707540::1720020732::1720020732::1::::<><>::
 ::res://scenes/::1720552622
-::res://scenes/level_01/::1720555983
-level_01.tscn::PackedScene::8075128252384075593::1720555983::0::1::::<><>::
-::res://scenes/main/::1720191333
-main.gd::GDScript::-1::1720191333::0::1::::<>Control<>::
-main.tscn::PackedScene::3876857004100717685::1720191254::0::1::::<><>::uid://deoggjjtxgmfw::::res://assets/tilesets_maps/skys_background/Clouds/Clouds 7/1.png<>res://scenes/main/main.gd<>uid://bo4kjgd4iwxpu::::res://assets/tilesets_maps/skys_background/Clouds/Clouds 2/3.png<>uid://by0k70r4safg3::::res://assets/tilesets_maps/mountains_background/parallax-mountain-mountains.png<>uid://ctdm4m52m4edw::::res://fonts/DwarfFortressVan.ttf<>uid://dscm12cagh0hk::::res://assets/tilesets_maps/mountains_background/parallax-mountain-trees.png<>uid://rkj4abwdrj6k::::res://scenes/options/options.tscn
-::res://scenes/options/::1720042906
-options.gd::GDScript::-1::1720042219::0::1::::<>Control<>::
-options.tscn::PackedScene::1214452362894360836::1720042906::0::1::::<><>::res://scenes/options/options.gd<>uid://ctdm4m52m4edw::::res://fonts/DwarfFortressVan.ttf<>uid://deoggjjtxgmfw::::res://assets/tilesets_maps/skys_background/Clouds/Clouds 7/1.png
+::res://scenes/level_01/::1720725314
+level_01.tscn::PackedScene::8075128252384075593::1720725314::0::1::::<><>::uid://da8ra7ljeknhu::::res://entities/player_1.tscn<>uid://catnei36uf3jx::::res://assets/tilesets_maps/underground_areas/cavesofgallet_tiles_scaled_2x_pngcrushed.png
+::res://scenes/main/::1720716371
+main.gd::GDScript::-1::1720571018::0::1::::<>Control<>::
+main.tscn::PackedScene::3876857004100717685::1720716371::0::1::::<><>::uid://deoggjjtxgmfw::::res://assets/tilesets_maps/skys_background/Clouds/Clouds 7/1.png<>res://scenes/main/main.gd<>uid://bo4kjgd4iwxpu::::res://assets/tilesets_maps/skys_background/Clouds/Clouds 2/3.png<>uid://by0k70r4safg3::::res://assets/tilesets_maps/mountains_background/parallax-mountain-mountains.png<>uid://ctdm4m52m4edw::::res://fonts/DwarfFortressVan.ttf<>uid://dscm12cagh0hk::::res://assets/tilesets_maps/mountains_background/parallax-mountain-trees.png
+::res://scenes/options/::1720627279
+options.gd::GDScript::-1::1720570885::0::1::::<>Control<>::
+options.tscn::PackedScene::1214452362894360836::1720627279::0::1::::<><>::res://scenes/options/options.gd<>uid://ctdm4m52m4edw::::res://fonts/DwarfFortressVan.ttf<>uid://deoggjjtxgmfw::::res://assets/tilesets_maps/skys_background/Clouds/Clouds 7/1.png

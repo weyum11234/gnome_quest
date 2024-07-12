@@ -1,6 +1,3 @@
-res://scenes/level_01/level_01.tscn
-res://scenes/main/main.tscn
-res://scenes/options/options.tscn
-res://scenes/main/main.gd
-res://scenes/options/options.gd
 res://entities/player_1.tscn
+res://entities/player.gd
+res://scenes/level_01/level_01.tscn
