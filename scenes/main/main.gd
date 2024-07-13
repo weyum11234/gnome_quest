@@ -20,6 +20,7 @@ func _ready():
 	options.button_down.connect(on_options_down)
 	exit.button_down.connect(on_exit_down)
 	ms.spawn_function = spawn_level
+	peer.lobby_created.connect(_on_lobby_created)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -49,3 +50,25 @@ func on_options_down() -> void:
 func on_exit_down() -> void:
 	get_tree().quit()
 
+func join_lobby(id):
+	peer.connect_lobby(id)
+	multiplayer.multiplayer_peer = peer
+	lobby_id = id
+	menu.hide()
+
+func _on_lobby_created(connect, id):
+	if connect:
+		lobby_id = id
+		Steam.setLobbyData(lobby_id, "name", str(Steam.getPersonaName()+"'s Lobby"))
+		Steam.setLobbyJoinable(lobby_id, true)
+		print(lobby_id)
+		
+func open_lobby_list():
+	Steam.addRequestLobbyListDistanceFilter(Steam.LOBBY_DISTANCE_FILTER_DEFAULT)
+	Steam.requestLobbyList()
+	
+func on_lobby_match_list(lobbies):
+	for lobby in lobbies:
+		var lobby_name = Steam.getLobbyData(lobby, "name")
+		var mem_count = Steam.getNumLobbyMembers(lobby)
+		
