@@ -1,0 +1,75 @@
+[gd_scene load_steps=12 format=3 uid="uid://ckbqu148mihgh"]
+
+[ext_resource type="Script" path="res://entities/players/player_2.gd" id="1_gapkf"]
+[ext_resource type="Texture2D" uid="uid://d1kaqdugwxjew" path="res://assets/player_sprites/gr_gnome_sprite/sprite_00.png" id="2_w8d5h"]
+[ext_resource type="Texture2D" uid="uid://cvuw5rwr5oiu3" path="res://assets/player_sprites/gr_gnome_sprite/sprite_01.png" id="3_pkru0"]
+[ext_resource type="Texture2D" uid="uid://r5u7k35a8p74" path="res://assets/player_sprites/gr_gnome_sprite/sprite_02.png" id="4_gyfel"]
+[ext_resource type="Texture2D" uid="uid://ct13sigpb2fx7" path="res://assets/player_sprites/gr_gnome_sprite/sprite_06.png" id="5_g16pf"]
+[ext_resource type="Texture2D" uid="uid://biw4splj2sfgi" path="res://assets/player_sprites/gr_gnome_sprite/sprite_05.png" id="6_2tgba"]
+[ext_resource type="Texture2D" uid="uid://bhkc3sua0pgdb" path="res://assets/player_sprites/gr_gnome_sprite/sprite_10_long_legs.png" id="7_703ud"]
+[ext_resource type="Texture2D" uid="uid://dkxec7neqww0k" path="res://assets/player_sprites/gr_gnome_sprite/sprite_11_long_legs.png" id="8_4117n"]
+[ext_resource type="Texture2D" uid="uid://cvpib5sh47nfn" path="res://assets/player_sprites/gr_gnome_sprite/sprite_12_long_legs.png" id="9_5b68v"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_laluf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_w8d5h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_pkru0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gyfel")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_g16pf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_2tgba")
+}],
+"loop": false,
+"name": &"jump",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_703ud")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_4117n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_5b68v")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 7.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kah1f"]
+radius = 6.0
+height = 16.0
+
+[node name="Player2" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("1_gapkf")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_laluf")
+animation = &"walk"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2.5, 2.5)
+drag_vertical_enabled = true
+drag_top_margin = 0.5
+drag_bottom_margin = 0.5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_kah1f")

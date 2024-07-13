@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://da8ra7ljeknhu"]
 
 [ext_resource type="Texture2D" uid="uid://d1kaqdugwxjew" path="res://assets/player_sprites/gr_gnome_sprite/sprite_00.png" id="1_8vofn"]
-[ext_resource type="Script" path="res://entities/player.gd" id="1_umyfe"]
+[ext_resource type="Script" path="res://entities/players/player_1.gd" id="1_umyfe"]
 [ext_resource type="Texture2D" uid="uid://biw4splj2sfgi" path="res://assets/player_sprites/gr_gnome_sprite/sprite_05.png" id="2_lp33e"]
 [ext_resource type="Texture2D" uid="uid://cvuw5rwr5oiu3" path="res://assets/player_sprites/gr_gnome_sprite/sprite_01.png" id="2_wv31k"]
 [ext_resource type="Texture2D" uid="uid://r5u7k35a8p74" path="res://assets/player_sprites/gr_gnome_sprite/sprite_02.png" id="3_b1e87"]
@@ -52,20 +52,18 @@ animations = [{
 "speed": 7.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_gpqg2"]
-size = Vector2(12, 16)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_aj2c1"]
+radius = 6.0
+height = 16.0
 
 [node name="Player1" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 3
 script = ExtResource("1_umyfe")
-speed = 100.0
-jump_velocity = -80.0
-jump_time = 0.2
-gravity_multiplier = 1.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_laluf")
 animation = &"walk"
-frame_progress = 0.399904
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2.5, 2.5)
@@ -74,4 +72,4 @@ drag_top_margin = 0.5
 drag_bottom_margin = 0.5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_gpqg2")
+shape = SubResource("CapsuleShape2D_aj2c1")
