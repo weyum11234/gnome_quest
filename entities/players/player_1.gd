@@ -6,6 +6,7 @@ extends CharacterBody2D
 @export var jump_time = 0.25
 @export var coyote_time = 0.075
 @export var gravity_multiplier = 1.0
+@onready var cam = $Camera2D
 
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -18,9 +19,12 @@ var coyote_timer = 0.0
 # Helper variable for handling animation
 var animation = "idle"
 
+func _ready():
+	cam.enabled = is_multiplayer_authority()
 
 func _physics_process(delta):
-	# Set default animation every delta
+	if !is_multiplayer_authority():
+		return
 	animation = "idle"
 	
 	# Add the gravity.

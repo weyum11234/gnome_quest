@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://da8ra7ljeknhu"]
+[gd_scene load_steps=28 format=3 uid="uid://da8ra7ljeknhu"]
 
 [ext_resource type="Script" path="res://entities/players/player_1.gd" id="1_o0wvp"]
 [ext_resource type="Texture2D" uid="uid://b1qhsrblbn7vs" path="res://assets/player_sprites/Chik-Boy-Blue/ChikBoy_idle.png" id="2_i2ltl"]
@@ -172,6 +172,11 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tpwrs"]
 size = Vector2(20, 26)
 
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_v4ui5"]
+properties/0/path = NodePath(".:position")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+
 [node name="Player1" type="CharacterBody2D"]
 collision_layer = 2
 collision_mask = 3
@@ -190,3 +195,6 @@ drag_bottom_margin = 0.5
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 3)
 shape = SubResource("RectangleShape2D_tpwrs")
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_v4ui5")

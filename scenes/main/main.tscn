@@ -22,62 +22,78 @@ shader = ExtResource("7_7q5xw")
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nfj70"]
 
-[node name="MainMenu" type="Control"]
+[node name="Main" type="Node"]
+script = ExtResource("1_b4wwl")
+
+[node name="Menu" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = -533.0
+offset_bottom = -281.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_b4wwl")
 
-[node name="Background_Sky" type="TextureRect" parent="."]
+[node name="Background_Sky" type="TextureRect" parent="Menu"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 533.0
+offset_bottom = 281.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_6ab4o")
 
-[node name="Background_Clouds" type="TextureRect" parent="."]
+[node name="Background_Clouds" type="TextureRect" parent="Menu"]
 texture_repeat = 2
 material = SubResource("ShaderMaterial_7isph")
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 533.0
+offset_bottom = 281.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("4_sbxvl")
 
-[node name="Background_Mountains" type="TextureRect" parent="."]
+[node name="Background_Mountains" type="TextureRect" parent="Menu"]
 texture_repeat = 2
 material = SubResource("ShaderMaterial_flc0g")
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 533.0
+offset_bottom = 281.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("6_sophy")
 
-[node name="Background_Trees" type="TextureRect" parent="."]
+[node name="Background_Trees" type="TextureRect" parent="Menu"]
 texture_repeat = 2
 material = SubResource("ShaderMaterial_h0ohf")
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 533.0
+offset_bottom = 281.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("8_16myw")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="MarginContainer" type="MarginContainer" parent="Menu"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 155.0
+offset_top = 7.0
+offset_right = 407.0
+offset_bottom = 258.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/margin_left = 12
@@ -85,16 +101,16 @@ theme_override_constants/margin_top = 12
 theme_override_constants/margin_right = 12
 theme_override_constants/margin_bottom = 12
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Menu/MarginContainer"]
 layout_mode = 2
 alignment = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu/MarginContainer/HBoxContainer"]
 layout_mode = 2
 theme_override_constants/separation = 15
 alignment = 1
 
-[node name="Title" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="Title" type="Label" parent="Menu/MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("9_wqes4")
@@ -102,10 +118,10 @@ theme_override_font_sizes/font_size = 64
 text = "Gnome Quest"
 horizontal_alignment = 1
 
-[node name="Control" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="Control" type="Control" parent="Menu/MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Continue" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="Continue" type="Button" parent="Menu/MarginContainer/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(120, 32)
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -120,7 +136,7 @@ theme_override_styles/disabled = SubResource("StyleBoxEmpty_nfj70")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_nfj70")
 text = "Continue"
 
-[node name="NewGame" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="NewGame" type="Button" parent="Menu/MarginContainer/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(120, 32)
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -135,7 +151,7 @@ theme_override_styles/disabled = SubResource("StyleBoxEmpty_nfj70")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_nfj70")
 text = "New Game"
 
-[node name="Options" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="Options" type="Button" parent="Menu/MarginContainer/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(120, 32)
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -150,7 +166,7 @@ theme_override_styles/disabled = SubResource("StyleBoxEmpty_nfj70")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_nfj70")
 text = "OPTIOnS"
 
-[node name="Exit" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="Exit" type="Button" parent="Menu/MarginContainer/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(120, 32)
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -164,3 +180,6 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_nfj70")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_nfj70")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_nfj70")
 text = "EXIT"
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
+spawn_path = NodePath("..")
