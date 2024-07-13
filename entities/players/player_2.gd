@@ -1,11 +1,11 @@
 extends CharacterBody2D
 
 
-@export var speed = 300.0
-@export var jump_velocity = -400.0
+@export var speed = 80.0
+@export var jump_velocity = -75.0
 @export var jump_time = 0.25
 @export var coyote_time = 0.075
-@export var gravity_multiplier = 3.0
+@export var gravity_multiplier = 1.0
 
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -31,7 +31,7 @@ func _physics_process(delta):
 		coyote_timer = 0
 
 	# Get the input direction and handle the movement/deceleration.
-	var direction = Input.get_axis("left", "right")
+	var direction = Input.get_axis("left2", "right2")
 	if direction:
 		velocity.x = direction * speed
 		animation = "walk"
@@ -40,19 +40,18 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, speed)
 		
 	# Handle jump.
-	if Input.is_action_just_pressed("jump") and (is_on_floor() or coyote_timer < coyote_time):
+	if Input.is_action_just_pressed("jump2") and (is_on_floor() or coyote_timer < coyote_time):
 		velocity.y = jump_velocity
 		is_jumping = true
-	elif Input.is_action_pressed("jump") and is_jumping:
+	elif Input.is_action_pressed("jump2") and is_jumping:
 		velocity.y = jump_velocity
 		
-	if is_jumping and Input.is_action_pressed("jump") and jump_timer < jump_time:
+	if is_jumping and Input.is_action_pressed("jump2") and jump_timer < jump_time:
 		jump_timer += delta
 		animation = "jump"
 	else:
 		is_jumping = false
 		jump_timer = 0
 	
-	print(animation)
 	$AnimatedSprite2D.play(animation)
 	move_and_slide()

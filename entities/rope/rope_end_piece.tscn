@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1ctd8tgwhajo"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8iu5c"]
+radius = 0.5
+
+[node name="RopeEndPiece" type="RigidBody2D"]
+collision_layer = 2
+mass = 0.01
+freeze = true
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_8iu5c")
+
+[node name="Joint" type="PinJoint2D" parent="Collision"]
+scale = Vector2(0.3, 0.3)
+bias = 0.1
+softness = 0.05
