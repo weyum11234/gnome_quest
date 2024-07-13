@@ -1,8 +1,8 @@
-CollisionShape2D
 Camera2D
-Control
 AnimatedSprite2D
+CollisionShape2D
 CharacterBody2D
+Control
 TileMap
 Node2D
 Node
@@ -10,6 +10,3 @@ TextureRect
 TextureProgressBar
 Label
 HBoxContainer
-VBoxContainer
-MarginContainer
-Button
