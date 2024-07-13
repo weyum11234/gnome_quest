@@ -1,11 +1,11 @@
 extends CharacterBody2D
 
 
-@export var speed = 300.0
-@export var jump_velocity = -400.0
+@export var speed = 80.0
+@export var jump_velocity = -75.0
 @export var jump_time = 0.25
 @export var coyote_time = 0.075
-@export var gravity_multiplier = 3.0
+@export var gravity_multiplier = 1.0
 
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -53,6 +53,5 @@ func _physics_process(delta):
 		is_jumping = false
 		jump_timer = 0
 	
-	print(animation)
 	$AnimatedSprite2D.play(animation)
 	move_and_slide()

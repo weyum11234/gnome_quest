@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dnbwgg880owl2"]
+[gd_scene load_steps=7 format=3 uid="uid://dnbwgg880owl2"]
 
-[ext_resource type="PackedScene" uid="uid://da8ra7ljeknhu" path="res://entities/player_1.tscn" id="1_4qsre"]
+[ext_resource type="PackedScene" uid="uid://da8ra7ljeknhu" path="res://entities/players/player_1.tscn" id="1_4qsre"]
 [ext_resource type="Texture2D" uid="uid://catnei36uf3jx" path="res://assets/tilesets_maps/underground_areas/cavesofgallet_tiles_scaled_2x_pngcrushed.png" id="1_hf6iv"]
-[ext_resource type="PackedScene" uid="uid://cljhy5p5lkd5m" path="res://entities/player_2.tscn" id="3_fbq08"]
+[ext_resource type="Script" path="res://scenes/level_01/level_01.gd" id="1_voxlq"]
+[ext_resource type="PackedScene" uid="uid://cljhy5p5lkd5m" path="res://entities/players/player_2.tscn" id="3_fbq08"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s0qnu"]
 texture = ExtResource("1_hf6iv")
@@ -329,6 +330,7 @@ sources/3 = SubResource("TileSetAtlasSource_s0qnu")
 
 [node name="Level_01" type="Node2D"]
 scale = Vector2(0.5, 0.5)
+script = ExtResource("1_voxlq")
 
 [node name="Map" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_snfll")
