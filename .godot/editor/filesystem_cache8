@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1720820438
+::res://::1720828255
 icon.svg::CompressedTexture2D::7871145411425364212::1719964453::1720813017::1::::<><>::
 README.md::TextFile::-1::1719964453::0::1::::<><>::
 ::res://assets/::1719964950
@@ -193,21 +193,27 @@ Patreon.txt::TextFile::-1::1669073128::0::1::::<><>::
 cavesofgallet.png::CompressedTexture2D::6807396402087844688::1520111331::1719965137::1::::<><>::
 cavesofgallet_tiles.png::CompressedTexture2D::7717801937391551447::1520111337::1719965137::1::::<><>::
 cavesofgallet_tiles_scaled_2x_pngcrushed.png::CompressedTexture2D::4812861473671700353::1720813017::1720813017::1::::<><>::
-::res://entities/::1720820387
+::res://entities/::1720827761
 player2.gd::GDScript::-1::1720816770::0::1::::<>CharacterBody2D<>::
 player.gd::GDScript::-1::1720813017::0::1::::<>CharacterBody2D<>::
-player_1.tscn::PackedScene::7228420403995031334::1720820387::0::1::::<><>::res://entities/player.gd<>uid://b1qhsrblbn7vs::::res://assets/player_sprites/Chik-Boy-Blue/ChikBoy_idle.png<>uid://bdx38h8u6gon::::res://assets/player_sprites/Chik-Boy-Blue/ChikBoy_run.png
+player_1.tscn::PackedScene::7228420403995031334::1720827761::0::1::::<><>::res://entities/player.gd<>uid://b1qhsrblbn7vs::::res://assets/player_sprites/Chik-Boy-Blue/ChikBoy_idle.png<>uid://bdx38h8u6gon::::res://assets/player_sprites/Chik-Boy-Blue/ChikBoy_run.png
 player_2.tscn::PackedScene::5563967525444909588::1720817574::0::1::::<><>::res://entities/player2.gd<>uid://bjj3ggu26ft8d::::res://assets/player_sprites/Chick-Boy-Red/ChikBoy_idle.png<>uid://dr8yhgfgc5v72::::res://assets/player_sprites/Chick-Boy-Red/ChikBoy_run.png
-::res://fonts/::1720813017
+::res://fonts/::1720828255
+DungeonFont.ttf::FontFile::4294024493737744913::1720827257::1720827855::1::::<><>::
 DwarfFortressVan.ttf::FontFile::6113403599575707540::1720813017::1720813017::1::::<><>::
+::res://fonts/SRAFreePixelFontPack/::1720828214
+PixelHigh.ttf::FontFile::207400130455846587::1645053806::1720828257::1::::<><>::
+PixelMiddle.ttf::FontFile::2202422892242836585::1645055234::1720828257::1::::<><>::
+PixelSmall.ttf::FontFile::7748037501648454359::1645055178::1720828257::1::::<><>::
 ::res://scenes/::1720813017
-::res://scenes/level_01/::1720820387
-level_01.tscn::PackedScene::8075128252384075593::1720820387::0::1::::<><>::uid://da8ra7ljeknhu::::res://entities/player_1.tscn<>uid://catnei36uf3jx::::res://assets/tilesets_maps/underground_areas/cavesofgallet_tiles_scaled_2x_pngcrushed.png<>uid://cljhy5p5lkd5m::::res://entities/player_2.tscn
-::res://scenes/main/::1720820387
-main.gd::GDScript::-1::1720820354::0::1::::<>Control<>::
-main.tscn::PackedScene::3876857004100717685::1720820387::0::1::::<><>::res://scenes/main/main.gd<>uid://calmxaeagvmy5::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/1.png<>uid://bmc4650jnfjb4::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/2.png<>uid://ctdm4m52m4edw::::res://fonts/DwarfFortressVan.ttf<>uid://bq21k8phmstli::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/3.png<>uid://t007yb7qf2px::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/4.png<>res://scenes/main/menu_camera.gd
-menu_cam.gd::GDScript::-1::1720820198::0::1::::<>Control<>::
-menu_camera.gd::GDScript::-1::1720820315::0::1::::<>Camera2D<>::
+::res://scenes/level_01/::1720827761
+level_01.tscn::PackedScene::8075128252384075593::1720827761::0::1::::<><>::uid://da8ra7ljeknhu::::res://entities/player_1.tscn<>uid://catnei36uf3jx::::res://assets/tilesets_maps/underground_areas/cavesofgallet_tiles_scaled_2x_pngcrushed.png<>uid://cljhy5p5lkd5m::::res://entities/player_2.tscn
+::res://scenes/main/::1720827761
+main.gd::GDScript::-1::1720824718::0::1::::<>Control<>::
+main.tscn::PackedScene::3876857004100717685::1720827761::0::1::::<><>::res://scenes/main/main.gd<>uid://calmxaeagvmy5::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/1.png<>res://scenes/main/scroll_menu.gdshader<>uid://ctdm4m52m4edw::::res://fonts/DwarfFortressVan.ttf<>uid://bmc4650jnfjb4::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/2.png<>res://scenes/main/scroll_menu2.gdshader<>uid://bq21k8phmstli::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/3.png<>res://scenes/main/scroll_menu3.gdshader<>uid://t007yb7qf2px::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/4.png
+scroll_menu3.gdshader::Shader::-1::1720827761::0::1::::<><>::
+scroll_menu2.gdshader::Shader::-1::1720827761::0::1::::<><>::
+scroll_menu.gdshader::Shader::-1::1720827761::0::1::::<><>::
 ::res://scenes/options/::1720813017
 options.gd::GDScript::-1::1720813017::0::1::::<>Control<>::
 options.tscn::PackedScene::1214452362894360836::1720813017::0::1::::<><>::res://scenes/options/options.gd<>uid://ctdm4m52m4edw::::res://fonts/DwarfFortressVan.ttf<>uid://deoggjjtxgmfw::::res://assets/tilesets_maps/skys_background/Clouds/Clouds 7/1.png
