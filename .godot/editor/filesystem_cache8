@@ -1,165 +1,219 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1720817112
-icon.svg::CompressedTexture2D::7871145411425364212::1719965863::1719965881::1::::<><>::
-README.md::TextFile::-1::1719953717::0::1::::<><>::
-rope.gd::GDScript::-1::1720817173::0::1::::<>Node<>::
-::res://assets/::1720019395
-::res://assets/player_sprites/::1719965521
-::res://assets/player_sprites/gr_gnome_sprite/::1720725628
-sprite_00.png::CompressedTexture2D::9004844524680286490::1719965521::1719965521::1::::<><>::
-sprite_01.png::CompressedTexture2D::6289484914219788884::1719965521::1719965521::1::::<><>::
-sprite_02.png::CompressedTexture2D::1256413729581033057::1719965521::1719965521::1::::<><>::
-sprite_03.png::CompressedTexture2D::8271428054446686592::1719965521::1719965521::1::::<><>::
-sprite_04.png::CompressedTexture2D::5622776915098578317::1719965521::1719965521::1::::<><>::
-sprite_05.png::CompressedTexture2D::2995141485756004872::1719965521::1719965521::1::::<><>::
-sprite_06.png::CompressedTexture2D::6161835868341683850::1719965521::1719965521::1::::<><>::
-sprite_07.png::CompressedTexture2D::3253156501204667428::1719965521::1719965521::1::::<><>::
-sprite_08.png::CompressedTexture2D::3009476258348707495::1719965521::1719965521::1::::<><>::
-sprite_09.png::CompressedTexture2D::6468872912965699053::1719965521::1719965521::1::::<><>::
-sprite_10.png::CompressedTexture2D::4907570272264044385::1719965521::1719965521::1::::<><>::
-sprite_10_long_legs.png::CompressedTexture2D::2898558779265191431::1720725503::1720725628::1::::<><>::
-sprite_11.png::CompressedTexture2D::2176674207825332272::1719965521::1719965521::1::::<><>::
-sprite_11_long_legs.png::CompressedTexture2D::7908879316395553572::1720725533::1720725628::1::::<><>::
-sprite_12.png::CompressedTexture2D::4950476422097401613::1719965521::1719965521::1::::<><>::
-sprite_12_long_legs.png::CompressedTexture2D::6278261875696873883::1720725581::1720725628::1::::<><>::
-sprite_13.png::CompressedTexture2D::8291527523044281028::1719965521::1719965521::1::::<><>::
-sprite_14.png::CompressedTexture2D::6480380343095318130::1719965521::1719965521::1::::<><>::
-sprite_15.png::CompressedTexture2D::565594245422675245::1719965521::1719965521::1::::<><>::
-sprite_16.png::CompressedTexture2D::1869878451574290744::1719965521::1719965521::1::::<><>::
-sprite_17.png::CompressedTexture2D::8355262373168098680::1719965521::1719965521::1::::<><>::
-sprite_18.png::CompressedTexture2D::5329615617452399488::1719965521::1719965521::1::::<><>::
-sprite_19.png::CompressedTexture2D::2846632140033386695::1719965521::1719965521::1::::<><>::
-::res://assets/player_sprites/rd_gnome_sprite/::1719965521
-sprite_00.png::CompressedTexture2D::8198956514892477262::1719965521::1719965521::1::::<><>::
-sprite_01.png::CompressedTexture2D::5959203685355601767::1719965521::1719965521::1::::<><>::
-sprite_02.png::CompressedTexture2D::5307141208146856298::1719965521::1719965521::1::::<><>::
-sprite_03.png::CompressedTexture2D::7928063336030468708::1719965521::1719965521::1::::<><>::
-sprite_04.png::CompressedTexture2D::6862958398362537009::1719965521::1719965521::1::::<><>::
-sprite_05.png::CompressedTexture2D::1442456482498767110::1719965521::1719965521::1::::<><>::
-sprite_06.png::CompressedTexture2D::3758452079167065672::1719965521::1719965521::1::::<><>::
-sprite_07.png::CompressedTexture2D::7858929357275654114::1719965521::1719965521::1::::<><>::
-sprite_08.png::CompressedTexture2D::3805512508084105446::1719965521::1719965521::1::::<><>::
-sprite_09.png::CompressedTexture2D::3609282083807224906::1719965521::1719965521::1::::<><>::
-sprite_10.png::CompressedTexture2D::6259145371120058312::1719965521::1719965521::1::::<><>::
-sprite_11.png::CompressedTexture2D::2904146777236362878::1719965521::1719965521::1::::<><>::
-sprite_12.png::CompressedTexture2D::1448645128010624043::1719965521::1719965521::1::::<><>::
-sprite_13.png::CompressedTexture2D::357114115260977164::1719965521::1719965521::1::::<><>::
-sprite_14.png::CompressedTexture2D::1646655228358299063::1719965521::1719965521::1::::<><>::
-sprite_15.png::CompressedTexture2D::2035397409398012303::1719965521::1719965521::1::::<><>::
-sprite_16.png::CompressedTexture2D::2006948265416724197::1719965521::1719965521::1::::<><>::
-sprite_17.png::CompressedTexture2D::4798001646180923021::1719965521::1719965521::1::::<><>::
-sprite_18.png::CompressedTexture2D::4137320106117925181::1719965521::1719965521::1::::<><>::
-sprite_19.png::CompressedTexture2D::516993007441346402::1719965521::1719965521::1::::<><>::
-::res://assets/tilesets_maps/::1720019908
-::res://assets/tilesets_maps/autmn_forest/::1720028245
-!readme!.txt::TextFile::-1::1720028245::0::1::::<><>::
-background_0.png::CompressedTexture2D::5021581193214531657::1719965521::1719965521::1::::<><>::
-background_1.png::CompressedTexture2D::9122780756474161062::1719965521::1719965521::1::::<><>::
-background_2.png::CompressedTexture2D::4573644126756644042::1719965521::1719965521::1::::<><>::
-example.png::CompressedTexture2D::6403731103142653326::1719965521::1719965521::1::::<><>::
-tileset.png::CompressedTexture2D::206399874829453325::1719965521::1719965521::1::::<><>::
-::res://assets/tilesets_maps/mountains_background/::1720019945
-far-clouds.png::CompressedTexture2D::2513788512872535870::1720019924::1720019908::1::::<><>::
-far-mountains.png::CompressedTexture2D::1948261553675989500::1720019924::1720019908::1::::<><>::
-mountains.png::CompressedTexture2D::1432418543516877117::1720019924::1720019908::1::::<><>::
-near-clouds.png::CompressedTexture2D::895231288387236007::1720019924::1720019908::1::::<><>::
-parallax-mountain-bg.png::CompressedTexture2D::9100151642956522626::1720019945::1720019945::1::::<><>::
-parallax-mountain-foreground-trees.png::CompressedTexture2D::251826680585948993::1720019945::1720019945::1::::<><>::
-parallax-mountain-montain-far.png::CompressedTexture2D::5867759716261717963::1720019945::1720019945::1::::<><>::
-parallax-mountain-mountains.png::CompressedTexture2D::4123228030877110012::1720019945::1720019945::1::::<><>::
-parallax-mountain-trees.png::CompressedTexture2D::8427566447855115508::1720019945::1720019945::1::::<><>::
-sky.png::CompressedTexture2D::3911558529304898349::1720019924::1720019908::1::::<><>::
-trees.png::CompressedTexture2D::8150224321608670263::1720019924::1720019908::1::::<><>::
-::res://assets/tilesets_maps/rainforest_areas/::1719965521
-::res://assets/tilesets_maps/rainforest_areas/Fantasy Swamp Forest/::1719965521
-LICENSE.md::TextFile::-1::1719965521::0::1::::<><>::
-README.md::TextFile::-1::1719965521::0::1::::<><>::
-::res://assets/tilesets_maps/rainforest_areas/Fantasy Swamp Forest/Free/::1719965521
-Free.png::CompressedTexture2D::1071797929448417385::1719965521::1719965521::1::::<><>::
-Mockup.png::CompressedTexture2D::8372535994732666118::1719965521::1719965521::1::::<><>::
-Terrain-and-Props-OLD.png::CompressedTexture2D::7145346670967344088::1719965521::1719965521::1::::<><>::
-Terrain_and_Props.png::CompressedTexture2D::2052018776335786393::1719965521::1719965521::1::::<><>::
-::res://assets/tilesets_maps/rainforest_areas/Fantasy Swamp Forest/Free/BG_1/::1719965521
-BG_1.png::CompressedTexture2D::4340755693700579120::1719965521::1719965521::1::::<><>::
-::res://assets/tilesets_maps/rainforest_areas/Fantasy Swamp Forest/Free/BG_2/::1719965521
-BG_2.png::CompressedTexture2D::3833411943910233346::1719965521::1719965521::1::::<><>::
-::res://assets/tilesets_maps/rainforest_areas/Fantasy Swamp Forest/Free/BG_3/::1719965521
-BG_3.png::CompressedTexture2D::4211497731223132820::1719965521::1719965521::1::::<><>::
-BG_3_alt.png::CompressedTexture2D::4666219019503311364::1719965521::1719965521::1::::<><>::
-::res://assets/tilesets_maps/skys_background/::1719965521
-License.txt::TextFile::-1::1719965521::0::1::::<><>::
-Patreon.txt::TextFile::-1::1719965521::0::1::::<><>::
-::res://assets/tilesets_maps/skys_background/Clouds/::1719965521
-::res://assets/tilesets_maps/skys_background/Clouds/Clouds 1/::1719965521
-1.png::CompressedTexture2D::7476272371214719150::1719965521::1719965521::1::::<><>::
-2.png::CompressedTexture2D::3370767139893648010::1719965521::1719965521::1::::<><>::
-3.png::CompressedTexture2D::9021966520608451000::1719965521::1719965521::1::::<><>::
-4.png::CompressedTexture2D::5849653082688377950::1719965521::1719965521::1::::<><>::
-::res://assets/tilesets_maps/skys_background/Clouds/Clouds 2/::1719965521
-1.png::CompressedTexture2D::6480600963011555361::1719965521::1719965521::1::::<><>::
-2.png::CompressedTexture2D::9028917910007409129::1719965521::1719965521::1::::<><>::
-3.png::CompressedTexture2D::3429555012669820542::1719965521::1719965521::1::::<><>::
-4.png::CompressedTexture2D::5990932941398982344::1719965521::1719965521::1::::<><>::
-::res://assets/tilesets_maps/skys_background/Clouds/Clouds 3/::1719965521
-1.png::CompressedTexture2D::6582308039450124862::1719965521::1719965521::1::::<><>::
-2.png::CompressedTexture2D::523650035794312845::1719965521::1719965521::1::::<><>::
-3.png::CompressedTexture2D::4022116322564245725::1719965521::1719965521::1::::<><>::
-4.png::CompressedTexture2D::5102044839213840741::1719965521::1719965521::1::::<><>::
-::res://assets/tilesets_maps/skys_background/Clouds/Clouds 4/::1719965521
-1.png::CompressedTexture2D::4691388952517726570::1719965521::1719965521::1::::<><>::
-2.png::CompressedTexture2D::2447793657040233604::1719965521::1719965521::1::::<><>::
-3.png::CompressedTexture2D::7843970284873959978::1719965521::1719965521::1::::<><>::
-4.png::CompressedTexture2D::812425810437332439::1719965521::1719965521::1::::<><>::
-::res://assets/tilesets_maps/skys_background/Clouds/Clouds 5/::1719965521
-1.png::CompressedTexture2D::1249243986846518916::1719965521::1719965521::1::::<><>::
-2.png::CompressedTexture2D::2794324878137923980::1719965521::1719965521::1::::<><>::
-3.png::CompressedTexture2D::5135375701352989427::1719965521::1719965521::1::::<><>::
-4.png::CompressedTexture2D::8485579455254155817::1719965521::1719965521::1::::<><>::
-5.png::CompressedTexture2D::2447384280691855363::1719965521::1719965521::1::::<><>::
-::res://assets/tilesets_maps/skys_background/Clouds/Clouds 6/::1719965521
-1.png::CompressedTexture2D::6257902187327094045::1719965521::1719965521::1::::<><>::
-2.png::CompressedTexture2D::5557602221522527397::1719965521::1719965521::1::::<><>::
-3.png::CompressedTexture2D::6843484041290167383::1719965521::1719965521::1::::<><>::
-4.png::CompressedTexture2D::4649230265773329726::1719965521::1719965521::1::::<><>::
-5.png::CompressedTexture2D::1567656746799144951::1719965521::1719965521::1::::<><>::
-6.png::CompressedTexture2D::6385565160851492067::1719965521::1719965521::1::::<><>::
-::res://assets/tilesets_maps/skys_background/Clouds/Clouds 7/::1719965521
-1.png::CompressedTexture2D::7469294218415947440::1719965521::1719965521::1::::<><>::
-2.png::CompressedTexture2D::7490449145601033204::1719965521::1719965521::1::::<><>::
-3.png::CompressedTexture2D::1733616484599064271::1719965521::1719965521::1::::<><>::
-4.png::CompressedTexture2D::5442359669675530857::1719965521::1719965521::1::::<><>::
-::res://assets/tilesets_maps/skys_background/Clouds/Clouds 8/::1719965521
-1.png::CompressedTexture2D::3973630266306132014::1719965521::1719965521::1::::<><>::
-2.png::CompressedTexture2D::3854506619764671322::1719965521::1719965521::1::::<><>::
-3.png::CompressedTexture2D::4622365267763829260::1719965521::1719965521::1::::<><>::
-4.png::CompressedTexture2D::477745136020288018::1719965521::1719965521::1::::<><>::
-5.png::CompressedTexture2D::3084651214898702694::1719965521::1719965521::1::::<><>::
-6.png::CompressedTexture2D::8983684650077026739::1719965521::1719965521::1::::<><>::
-::res://assets/tilesets_maps/underground_areas/::1720556442
-cavesofgallet.png::CompressedTexture2D::6807396402087844688::1719965521::1719965521::1::::<><>::
-cavesofgallet_tiles.png::CompressedTexture2D::7717801937391551447::1719965521::1719965521::1::::<><>::
-cavesofgallet_tiles_scaled_2x_pngcrushed.png::CompressedTexture2D::4812861473671700353::1720556442::1720556442::1::::<><>::
-::res://assets/ui/::1720028357
-::res://entities/::1720800273
-::res://entities/players/::1720817013
-player_1.gd::GDScript::-1::1720817013::0::1::::<>CharacterBody2D<>::
-player_1.tscn::PackedScene::7228420403995031334::1720813727::0::1::::<><>::uid://d1kaqdugwxjew::::res://assets/player_sprites/gr_gnome_sprite/sprite_00.png<>res://entities/players/player_1.gd<>uid://biw4splj2sfgi::::res://assets/player_sprites/gr_gnome_sprite/sprite_05.png<>uid://cvuw5rwr5oiu3::::res://assets/player_sprites/gr_gnome_sprite/sprite_01.png<>uid://r5u7k35a8p74::::res://assets/player_sprites/gr_gnome_sprite/sprite_02.png<>uid://ct13sigpb2fx7::::res://assets/player_sprites/gr_gnome_sprite/sprite_06.png<>uid://bhkc3sua0pgdb::::res://assets/player_sprites/gr_gnome_sprite/sprite_10_long_legs.png<>uid://dkxec7neqww0k::::res://assets/player_sprites/gr_gnome_sprite/sprite_11_long_legs.png<>uid://cvpib5sh47nfn::::res://assets/player_sprites/gr_gnome_sprite/sprite_12_long_legs.png
-player_2.gd::GDScript::-1::1720798916::0::1::::<>CharacterBody2D<>::
-player_2.tscn::PackedScene::5477802781205106639::1720811942::0::1::::<><>::res://entities/players/player_2.gd<>uid://d1kaqdugwxjew::::res://assets/player_sprites/gr_gnome_sprite/sprite_00.png<>uid://cvuw5rwr5oiu3::::res://assets/player_sprites/gr_gnome_sprite/sprite_01.png<>uid://r5u7k35a8p74::::res://assets/player_sprites/gr_gnome_sprite/sprite_02.png<>uid://ct13sigpb2fx7::::res://assets/player_sprites/gr_gnome_sprite/sprite_06.png<>uid://biw4splj2sfgi::::res://assets/player_sprites/gr_gnome_sprite/sprite_05.png<>uid://bhkc3sua0pgdb::::res://assets/player_sprites/gr_gnome_sprite/sprite_10_long_legs.png<>uid://dkxec7neqww0k::::res://assets/player_sprites/gr_gnome_sprite/sprite_11_long_legs.png<>uid://cvpib5sh47nfn::::res://assets/player_sprites/gr_gnome_sprite/sprite_12_long_legs.png
-::res://entities/rope/::1720817119
-rope.tscn::PackedScene::8136568330937028436::1720817173::0::1::::<><>::uid://c1ctd8tgwhajo::::res://entities/rope/rope_end_piece.tscn
-rope_end_piece.tscn::PackedScene::6603040800651567192::1720817119::0::1::::<><>::uid://dke3u54rbjmtg::::res://icon.svg
-rope_piece.gd::GDScript::-1::1720816045::0::1::::RopePiece<>RigidBody2D<>::
-rope_piece.tscn::PackedScene::4690846560222843802::1720817119::0::1::::<><>::res://entities/rope/rope_piece.gd<>uid://dke3u54rbjmtg::::res://icon.svg
-::res://fonts/::1720020732
-DwarfFortressVan.ttf::FontFile::6113403599575707540::1720020732::1720020732::1::::<><>::
-::res://scenes/::1720552622
-::res://scenes/level_01/::1720817119
-level_01.gd::GDScript::-1::1720816307::0::1::::<>Node2D<>::
-level_01.tscn::PackedScene::8075128252384075593::1720817119::0::1::::<><>::uid://da8ra7ljeknhu::::res://entities/players/player_1.tscn<>res://scenes/level_01/level_01.gd<>uid://catnei36uf3jx::::res://assets/tilesets_maps/underground_areas/cavesofgallet_tiles_scaled_2x_pngcrushed.png<>uid://ckbqu148mihgh::::res://entities/players/player_2.tscn
-::res://scenes/main/::1720716371
-main.gd::GDScript::-1::1720571018::0::1::::<>Control<>::
-main.tscn::PackedScene::3876857004100717685::1720716371::0::1::::<><>::uid://deoggjjtxgmfw::::res://assets/tilesets_maps/skys_background/Clouds/Clouds 7/1.png<>res://scenes/main/main.gd<>uid://bo4kjgd4iwxpu::::res://assets/tilesets_maps/skys_background/Clouds/Clouds 2/3.png<>uid://by0k70r4safg3::::res://assets/tilesets_maps/mountains_background/parallax-mountain-mountains.png<>uid://ctdm4m52m4edw::::res://fonts/DwarfFortressVan.ttf<>uid://dscm12cagh0hk::::res://assets/tilesets_maps/mountains_background/parallax-mountain-trees.png
-::res://scenes/options/::1720627279
-options.gd::GDScript::-1::1720570885::0::1::::<>Control<>::
-options.tscn::PackedScene::1214452362894360836::1720627279::0::1::::<><>::res://scenes/options/options.gd<>uid://ctdm4m52m4edw::::res://fonts/DwarfFortressVan.ttf<>uid://deoggjjtxgmfw::::res://assets/tilesets_maps/skys_background/Clouds/Clouds 7/1.png
+::res://::1720828255
+icon.svg::CompressedTexture2D::7871145411425364212::1719964453::1720813017::1::::<><>::
+README.md::TextFile::-1::1719964453::0::1::::<><>::
+::res://assets/::1719964950
+::res://assets/player_sprites/::1720815982
+::res://assets/player_sprites/Chick-Boy-Red/::1720815904
+ChikBoy_idle.png::CompressedTexture2D::3038410814087412521::1622402468::1720815904::1::::<><>::
+ChikBoy_run.png::CompressedTexture2D::8422066890334168383::1622402554::1720815904::1::::<><>::
+::res://assets/player_sprites/Chik-Boy-Blue/::1720815982
+ChikBoy_idle.png::CompressedTexture2D::4244818720529984372::1720815209::1720815982::1::::<><>::
+ChikBoy_run.png::CompressedTexture2D::77830215574684697::1720815364::1720815982::1::::<><>::
+::res://assets/player_sprites/gr_gnome_sprite/::1720813017
+sprite_00.png::CompressedTexture2D::9004844524680286490::1719958846::1719964866::1::::<><>::
+sprite_01.png::CompressedTexture2D::6289484914219788884::1719958846::1719964623::1::::<><>::
+sprite_02.png::CompressedTexture2D::1256413729581033057::1719958846::1719964623::1::::<><>::
+sprite_03.png::CompressedTexture2D::8271428054446686592::1719958846::1719964623::1::::<><>::
+sprite_04.png::CompressedTexture2D::5622776915098578317::1719958846::1719964623::1::::<><>::
+sprite_05.png::CompressedTexture2D::2995141485756004872::1719958846::1719964623::1::::<><>::
+sprite_06.png::CompressedTexture2D::6161835868341683850::1719958846::1719964623::1::::<><>::
+sprite_07.png::CompressedTexture2D::3253156501204667428::1719958846::1719964623::1::::<><>::
+sprite_08.png::CompressedTexture2D::3009476258348707495::1719958846::1719964623::1::::<><>::
+sprite_09.png::CompressedTexture2D::6468872912965699053::1719958846::1719964623::1::::<><>::
+sprite_10.png::CompressedTexture2D::4907570272264044385::1719958846::1719964623::1::::<><>::
+sprite_10_long_legs.png::CompressedTexture2D::2898558779265191431::1720813017::1720813017::1::::<><>::
+sprite_11.png::CompressedTexture2D::2176674207825332272::1719958846::1719964623::1::::<><>::
+sprite_11_long_legs.png::CompressedTexture2D::7908879316395553572::1720813017::1720813017::1::::<><>::
+sprite_12.png::CompressedTexture2D::4950476422097401613::1719958846::1719964623::1::::<><>::
+sprite_12_long_legs.png::CompressedTexture2D::6278261875696873883::1720813017::1720813017::1::::<><>::
+sprite_13.png::CompressedTexture2D::8291527523044281028::1719958846::1719964623::1::::<><>::
+sprite_14.png::CompressedTexture2D::6480380343095318130::1719958846::1719964623::1::::<><>::
+sprite_15.png::CompressedTexture2D::565594245422675245::1719958846::1719964623::1::::<><>::
+sprite_16.png::CompressedTexture2D::1869878451574290744::1719958846::1719964623::1::::<><>::
+sprite_17.png::CompressedTexture2D::8355262373168098680::1719958846::1719964623::1::::<><>::
+sprite_18.png::CompressedTexture2D::5329615617452399488::1719958846::1719964623::1::::<><>::
+sprite_19.png::CompressedTexture2D::2846632140033386695::1719958846::1719964623::1::::<><>::
+::res://assets/player_sprites/rd_gnome_sprite/::1719964623
+sprite_00.png::CompressedTexture2D::8198956514892477262::1719959192::1719964623::1::::<><>::
+sprite_01.png::CompressedTexture2D::5959203685355601767::1719959192::1719964623::1::::<><>::
+sprite_02.png::CompressedTexture2D::5307141208146856298::1719959192::1719964623::1::::<><>::
+sprite_03.png::CompressedTexture2D::7928063336030468708::1719959192::1719964623::1::::<><>::
+sprite_04.png::CompressedTexture2D::6862958398362537009::1719959192::1719964623::1::::<><>::
+sprite_05.png::CompressedTexture2D::1442456482498767110::1719959192::1719964623::1::::<><>::
+sprite_06.png::CompressedTexture2D::3758452079167065672::1719959192::1719964623::1::::<><>::
+sprite_07.png::CompressedTexture2D::7858929357275654114::1719959192::1719964623::1::::<><>::
+sprite_08.png::CompressedTexture2D::3805512508084105446::1719959192::1719964623::1::::<><>::
+sprite_09.png::CompressedTexture2D::3609282083807224906::1719959192::1719964623::1::::<><>::
+sprite_10.png::CompressedTexture2D::6259145371120058312::1719959192::1719964623::1::::<><>::
+sprite_11.png::CompressedTexture2D::2904146777236362878::1719959192::1719964623::1::::<><>::
+sprite_12.png::CompressedTexture2D::1448645128010624043::1719959192::1719964623::1::::<><>::
+sprite_13.png::CompressedTexture2D::357114115260977164::1719959192::1719964623::1::::<><>::
+sprite_14.png::CompressedTexture2D::1646655228358299063::1719959192::1719964623::1::::<><>::
+sprite_15.png::CompressedTexture2D::2035397409398012303::1719959192::1719964623::1::::<><>::
+sprite_16.png::CompressedTexture2D::2006948265416724197::1719959192::1719964623::1::::<><>::
+sprite_17.png::CompressedTexture2D::4798001646180923021::1719959192::1719964623::1::::<><>::
+sprite_18.png::CompressedTexture2D::4137320106117925181::1719959192::1719964623::1::::<><>::
+sprite_19.png::CompressedTexture2D::516993007441346402::1719959192::1719964623::1::::<><>::
+::res://assets/tilesets_maps/::1720817541
+::res://assets/tilesets_maps/autmn_forest/::1720813017
+!readme!.txt::TextFile::-1::1720813017::0::1::::<><>::
+background_0.png::CompressedTexture2D::5021581193214531657::1586675318::1719965137::1::::<><>::
+background_1.png::CompressedTexture2D::9122780756474161062::1586675338::1719965137::1::::<><>::
+background_2.png::CompressedTexture2D::4573644126756644042::1586675364::1719965137::1::::<><>::
+example.png::CompressedTexture2D::6403731103142653326::1586675682::1719965137::1::::<><>::
+tileset.png::CompressedTexture2D::206399874829453325::1586675266::1719965137::1::::<><>::
+::res://assets/tilesets_maps/mountains_background/::1720813017
+far-clouds.png::CompressedTexture2D::2513788512872535870::1720813017::1720813017::1::::<><>::
+far-mountains.png::CompressedTexture2D::1948261553675989500::1720813017::1720813017::1::::<><>::
+mountains.png::CompressedTexture2D::1432418543516877117::1720813017::1720813017::1::::<><>::
+near-clouds.png::CompressedTexture2D::895231288387236007::1720813017::1720813017::1::::<><>::
+parallax-mountain-bg.png::CompressedTexture2D::9100151642956522626::1720813017::1720813017::1::::<><>::
+parallax-mountain-foreground-trees.png::CompressedTexture2D::251826680585948993::1720813017::1720813017::1::::<><>::
+parallax-mountain-montain-far.png::CompressedTexture2D::5867759716261717963::1720813017::1720813017::1::::<><>::
+parallax-mountain-mountains.png::CompressedTexture2D::4123228030877110012::1720813017::1720813017::1::::<><>::
+parallax-mountain-trees.png::CompressedTexture2D::8427566447855115508::1720813017::1720813017::1::::<><>::
+sky.png::CompressedTexture2D::3911558529304898349::1720813017::1720813017::1::::<><>::
+trees.png::CompressedTexture2D::8150224321608670263::1720813017::1720813017::1::::<><>::
+::res://assets/tilesets_maps/rainforest_areas/::1719965020
+::res://assets/tilesets_maps/rainforest_areas/Fantasy Swamp Forest/::1711476779
+LICENSE.md::TextFile::-1::1711476780::0::1::::<><>::
+README.md::TextFile::-1::1711476780::0::1::::<><>::
+::res://assets/tilesets_maps/rainforest_areas/Fantasy Swamp Forest/Free/::1719965137
+Free.png::CompressedTexture2D::1071797929448417385::1711476779::1719965137::1::::<><>::
+Mockup.png::CompressedTexture2D::8372535994732666118::1711476779::1719965137::1::::<><>::
+Terrain-and-Props-OLD.png::CompressedTexture2D::7145346670967344088::1711476780::1719965137::1::::<><>::
+Terrain_and_Props.png::CompressedTexture2D::2052018776335786393::1711476780::1719965137::1::::<><>::
+::res://assets/tilesets_maps/rainforest_areas/Fantasy Swamp Forest/Free/BG_1/::1719965137
+BG_1.png::CompressedTexture2D::4340755693700579120::1711476779::1719965137::1::::<><>::
+::res://assets/tilesets_maps/rainforest_areas/Fantasy Swamp Forest/Free/BG_2/::1719965137
+BG_2.png::CompressedTexture2D::3833411943910233346::1711476779::1719965137::1::::<><>::
+::res://assets/tilesets_maps/rainforest_areas/Fantasy Swamp Forest/Free/BG_3/::1719965137
+BG_3.png::CompressedTexture2D::4211497731223132820::1711476779::1719965137::1::::<><>::
+BG_3_alt.png::CompressedTexture2D::4666219019503311364::1711476779::1719965137::1::::<><>::
+::res://assets/tilesets_maps/sky-backgrounds/::1720816975
+License.txt::TextFile::-1::1492262936::0::1::::<><>::
+Patreon.txt::TextFile::-1::1669073128::0::1::::<><>::
+::res://assets/tilesets_maps/sky-backgrounds/Clouds/::1667258868
+::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 1/::1720817544
+1.png::CompressedTexture2D::5356428871101455544::1665807620::1720817544::1::::<><>::
+2.png::CompressedTexture2D::7503496846401667306::1665807634::1720817544::1::::<><>::
+3.png::CompressedTexture2D::8018885617861949244::1665807652::1720817544::1::::<><>::
+4.png::CompressedTexture2D::4826285140974469535::1665807664::1720817544::1::::<><>::
+::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 2/::1720817544
+1.png::CompressedTexture2D::9056419421849752645::1665807748::1720817544::1::::<><>::
+2.png::CompressedTexture2D::8049956413835396724::1665807760::1720817544::1::::<><>::
+3.png::CompressedTexture2D::656627363107473202::1665807772::1720817544::1::::<><>::
+4.png::CompressedTexture2D::9067769152755948335::1665808106::1720817544::1::::<><>::
+::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 3/::1720817544
+1.png::CompressedTexture2D::1716058889340561196::1665808190::1720817544::1::::<><>::
+2.png::CompressedTexture2D::6701389160843430754::1665808222::1720817544::1::::<><>::
+3.png::CompressedTexture2D::1660683395545953387::1665808234::1720817544::1::::<><>::
+4.png::CompressedTexture2D::7119792637723969922::1665808248::1720817544::1::::<><>::
+::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/::1720817544
+1.png::CompressedTexture2D::4796319206041945606::1665808314::1720817544::1::::<><>::
+2.png::CompressedTexture2D::3234633330006001339::1665808324::1720817544::1::::<><>::
+3.png::CompressedTexture2D::3566778637789644986::1665808332::1720817544::1::::<><>::
+4.png::CompressedTexture2D::1386773806778979049::1665808342::1720817544::1::::<><>::
+::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 5/::1720817544
+1.png::CompressedTexture2D::8036172407213731713::1665808440::1720817544::1::::<><>::
+2.png::CompressedTexture2D::6925736215138102822::1665808456::1720817544::1::::<><>::
+3.png::CompressedTexture2D::1593446451893896341::1665808464::1720817544::1::::<><>::
+4.png::CompressedTexture2D::8056831600803234027::1665808472::1720817544::1::::<><>::
+5.png::CompressedTexture2D::457757975021169984::1665808486::1720817544::1::::<><>::
+::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 6/::1720817544
+1.png::CompressedTexture2D::8439374670000421976::1665810442::1720817544::1::::<><>::
+2.png::CompressedTexture2D::7860580191832513272::1665810452::1720817544::1::::<><>::
+3.png::CompressedTexture2D::3019654588266301249::1665810460::1720817544::1::::<><>::
+4.png::CompressedTexture2D::3652225425649323837::1665810472::1720817544::1::::<><>::
+5.png::CompressedTexture2D::8666691066008292852::1665810484::1720817544::1::::<><>::
+6.png::CompressedTexture2D::1381571729192881306::1665810498::1720817544::1::::<><>::
+::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 7/::1720817544
+1.png::CompressedTexture2D::2541206895577155126::1665810744::1720817544::1::::<><>::
+2.png::CompressedTexture2D::4652796146923401335::1665810756::1720817544::1::::<><>::
+3.png::CompressedTexture2D::6498557180973405410::1665810766::1720817544::1::::<><>::
+4.png::CompressedTexture2D::8649424073505706210::1665810776::1720817544::1::::<><>::
+::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 8/::1720817544
+1.png::CompressedTexture2D::7346660710426273871::1665810842::1720817544::1::::<><>::
+2.png::CompressedTexture2D::4332614507604173540::1665810866::1720817544::1::::<><>::
+3.png::CompressedTexture2D::8036964334009222778::1665810878::1720817544::1::::<><>::
+4.png::CompressedTexture2D::1743633182916244293::1665810886::1720817544::1::::<><>::
+5.png::CompressedTexture2D::5082876965887199691::1665810894::1720817544::1::::<><>::
+6.png::CompressedTexture2D::4104307013445726599::1665810904::1720817544::1::::<><>::
+::res://assets/tilesets_maps/skys_background/::1719965040
+License.txt::TextFile::-1::1492262936::0::1::::<><>::
+Patreon.txt::TextFile::-1::1669073128::0::1::::<><>::
+::res://assets/tilesets_maps/skys_background/Clouds/::1667258868
+::res://assets/tilesets_maps/skys_background/Clouds/Clouds 1/::1719965137
+1.png::CompressedTexture2D::7476272371214719150::1665807620::1719965137::1::::<><>::
+2.png::CompressedTexture2D::3370767139893648010::1665807634::1719965137::1::::<><>::
+3.png::CompressedTexture2D::9021966520608451000::1665807652::1719965137::1::::<><>::
+4.png::CompressedTexture2D::5849653082688377950::1665807664::1719965137::1::::<><>::
+::res://assets/tilesets_maps/skys_background/Clouds/Clouds 2/::1719965137
+1.png::CompressedTexture2D::6480600963011555361::1665807748::1719965137::1::::<><>::
+2.png::CompressedTexture2D::9028917910007409129::1665807760::1719965137::1::::<><>::
+3.png::CompressedTexture2D::3429555012669820542::1665807772::1719965137::1::::<><>::
+4.png::CompressedTexture2D::5990932941398982344::1665808106::1719965137::1::::<><>::
+::res://assets/tilesets_maps/skys_background/Clouds/Clouds 3/::1719965137
+1.png::CompressedTexture2D::6582308039450124862::1665808190::1719965137::1::::<><>::
+2.png::CompressedTexture2D::523650035794312845::1665808222::1719965137::1::::<><>::
+3.png::CompressedTexture2D::4022116322564245725::1665808234::1719965137::1::::<><>::
+4.png::CompressedTexture2D::5102044839213840741::1665808248::1719965137::1::::<><>::
+::res://assets/tilesets_maps/skys_background/Clouds/Clouds 4/::1719965137
+1.png::CompressedTexture2D::4691388952517726570::1665808314::1719965137::1::::<><>::
+2.png::CompressedTexture2D::2447793657040233604::1665808324::1719965137::1::::<><>::
+3.png::CompressedTexture2D::7843970284873959978::1665808332::1719965137::1::::<><>::
+4.png::CompressedTexture2D::812425810437332439::1665808342::1719965137::1::::<><>::
+::res://assets/tilesets_maps/skys_background/Clouds/Clouds 5/::1719965137
+1.png::CompressedTexture2D::1249243986846518916::1665808440::1719965137::1::::<><>::
+2.png::CompressedTexture2D::2794324878137923980::1665808456::1719965137::1::::<><>::
+3.png::CompressedTexture2D::5135375701352989427::1665808464::1719965137::1::::<><>::
+4.png::CompressedTexture2D::8485579455254155817::1665808472::1719965137::1::::<><>::
+5.png::CompressedTexture2D::2447384280691855363::1665808486::1719965137::1::::<><>::
+::res://assets/tilesets_maps/skys_background/Clouds/Clouds 6/::1719965137
+1.png::CompressedTexture2D::6257902187327094045::1665810442::1719965137::1::::<><>::
+2.png::CompressedTexture2D::5557602221522527397::1665810452::1719965137::1::::<><>::
+3.png::CompressedTexture2D::6843484041290167383::1665810460::1719965137::1::::<><>::
+4.png::CompressedTexture2D::4649230265773329726::1665810472::1719965137::1::::<><>::
+5.png::CompressedTexture2D::1567656746799144951::1665810484::1719965137::1::::<><>::
+6.png::CompressedTexture2D::6385565160851492067::1665810498::1719965137::1::::<><>::
+::res://assets/tilesets_maps/skys_background/Clouds/Clouds 7/::1719965137
+1.png::CompressedTexture2D::7469294218415947440::1665810744::1719965137::1::::<><>::
+2.png::CompressedTexture2D::7490449145601033204::1665810756::1719965137::1::::<><>::
+3.png::CompressedTexture2D::1733616484599064271::1665810766::1719965137::1::::<><>::
+4.png::CompressedTexture2D::5442359669675530857::1665810776::1719965137::1::::<><>::
+::res://assets/tilesets_maps/skys_background/Clouds/Clouds 8/::1719965137
+1.png::CompressedTexture2D::3973630266306132014::1665810842::1719965137::1::::<><>::
+2.png::CompressedTexture2D::3854506619764671322::1665810866::1719965137::1::::<><>::
+3.png::CompressedTexture2D::4622365267763829260::1665810878::1719965137::1::::<><>::
+4.png::CompressedTexture2D::477745136020288018::1665810886::1719965137::1::::<><>::
+5.png::CompressedTexture2D::3084651214898702694::1665810894::1719965137::1::::<><>::
+6.png::CompressedTexture2D::8983684650077026739::1665810904::1719965137::1::::<><>::
+::res://assets/tilesets_maps/underground_areas/::1720813017
+cavesofgallet.png::CompressedTexture2D::6807396402087844688::1520111331::1719965137::1::::<><>::
+cavesofgallet_tiles.png::CompressedTexture2D::7717801937391551447::1520111337::1719965137::1::::<><>::
+cavesofgallet_tiles_scaled_2x_pngcrushed.png::CompressedTexture2D::4812861473671700353::1720813017::1720813017::1::::<><>::
+::res://entities/::1720827761
+player2.gd::GDScript::-1::1720816770::0::1::::<>CharacterBody2D<>::
+player.gd::GDScript::-1::1720813017::0::1::::<>CharacterBody2D<>::
+player_1.tscn::PackedScene::7228420403995031334::1720827761::0::1::::<><>::res://entities/player.gd<>uid://b1qhsrblbn7vs::::res://assets/player_sprites/Chik-Boy-Blue/ChikBoy_idle.png<>uid://bdx38h8u6gon::::res://assets/player_sprites/Chik-Boy-Blue/ChikBoy_run.png
+player_2.tscn::PackedScene::5563967525444909588::1720817574::0::1::::<><>::res://entities/player2.gd<>uid://bjj3ggu26ft8d::::res://assets/player_sprites/Chick-Boy-Red/ChikBoy_idle.png<>uid://dr8yhgfgc5v72::::res://assets/player_sprites/Chick-Boy-Red/ChikBoy_run.png
+::res://fonts/::1720828255
+DungeonFont.ttf::FontFile::4294024493737744913::1720827257::1720827855::1::::<><>::
+DwarfFortressVan.ttf::FontFile::6113403599575707540::1720813017::1720813017::1::::<><>::
+::res://fonts/SRAFreePixelFontPack/::1720828214
+PixelHigh.ttf::FontFile::207400130455846587::1645053806::1720828257::1::::<><>::
+PixelMiddle.ttf::FontFile::2202422892242836585::1645055234::1720828257::1::::<><>::
+PixelSmall.ttf::FontFile::7748037501648454359::1645055178::1720828257::1::::<><>::
+::res://scenes/::1720813017
+::res://scenes/level_01/::1720827761
+level_01.tscn::PackedScene::8075128252384075593::1720827761::0::1::::<><>::uid://da8ra7ljeknhu::::res://entities/player_1.tscn<>uid://catnei36uf3jx::::res://assets/tilesets_maps/underground_areas/cavesofgallet_tiles_scaled_2x_pngcrushed.png<>uid://cljhy5p5lkd5m::::res://entities/player_2.tscn
+::res://scenes/main/::1720827761
+main.gd::GDScript::-1::1720824718::0::1::::<>Control<>::
+main.tscn::PackedScene::3876857004100717685::1720827761::0::1::::<><>::res://scenes/main/main.gd<>uid://calmxaeagvmy5::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/1.png<>res://scenes/main/scroll_menu.gdshader<>uid://ctdm4m52m4edw::::res://fonts/DwarfFortressVan.ttf<>uid://bmc4650jnfjb4::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/2.png<>res://scenes/main/scroll_menu2.gdshader<>uid://bq21k8phmstli::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/3.png<>res://scenes/main/scroll_menu3.gdshader<>uid://t007yb7qf2px::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/4.png
+scroll_menu3.gdshader::Shader::-1::1720827761::0::1::::<><>::
+scroll_menu2.gdshader::Shader::-1::1720827761::0::1::::<><>::
+scroll_menu.gdshader::Shader::-1::1720827761::0::1::::<><>::
+::res://scenes/options/::1720813017
+options.gd::GDScript::-1::1720813017::0::1::::<>Control<>::
+options.tscn::PackedScene::1214452362894360836::1720813017::0::1::::<><>::res://scenes/options/options.gd<>uid://ctdm4m52m4edw::::res://fonts/DwarfFortressVan.ttf<>uid://deoggjjtxgmfw::::res://assets/tilesets_maps/skys_background/Clouds/Clouds 7/1.png

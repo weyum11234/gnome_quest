@@ -1,11 +1,24 @@
-[gd_scene load_steps=8 format=3 uid="uid://bvh8jek3h2yy4"]
+[gd_scene load_steps=15 format=3 uid="uid://bvh8jek3h2yy4"]
 
-[ext_resource type="Texture2D" uid="uid://deoggjjtxgmfw" path="res://assets/tilesets_maps/skys_background/Clouds/Clouds 7/1.png" id="1_71imf"]
 [ext_resource type="Script" path="res://scenes/main/main.gd" id="1_b4wwl"]
-[ext_resource type="Texture2D" uid="uid://bo4kjgd4iwxpu" path="res://assets/tilesets_maps/skys_background/Clouds/Clouds 2/3.png" id="2_23v5f"]
-[ext_resource type="Texture2D" uid="uid://by0k70r4safg3" path="res://assets/tilesets_maps/mountains_background/parallax-mountain-mountains.png" id="3_75e5g"]
-[ext_resource type="FontFile" uid="uid://ctdm4m52m4edw" path="res://fonts/DwarfFortressVan.ttf" id="4_bktyb"]
-[ext_resource type="Texture2D" uid="uid://dscm12cagh0hk" path="res://assets/tilesets_maps/mountains_background/parallax-mountain-trees.png" id="5_52uc0"]
+[ext_resource type="Texture2D" uid="uid://calmxaeagvmy5" path="res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/1.png" id="2_6ab4o"]
+[ext_resource type="Shader" path="res://scenes/main/scroll_menu.gdshader" id="3_cle6g"]
+[ext_resource type="Texture2D" uid="uid://bmc4650jnfjb4" path="res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/2.png" id="4_sbxvl"]
+[ext_resource type="Shader" path="res://scenes/main/scroll_menu2.gdshader" id="5_ha5wa"]
+[ext_resource type="Texture2D" uid="uid://bq21k8phmstli" path="res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/3.png" id="6_sophy"]
+[ext_resource type="Shader" path="res://scenes/main/scroll_menu3.gdshader" id="7_7q5xw"]
+[ext_resource type="Texture2D" uid="uid://t007yb7qf2px" path="res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/4.png" id="8_16myw"]
+[ext_resource type="FontFile" uid="uid://c7p35onh65yl" path="res://fonts/SRAFreePixelFontPack/PixelHigh.ttf" id="9_wqes4"]
+[ext_resource type="FontFile" uid="uid://6m4t3ilvplpx" path="res://fonts/SRAFreePixelFontPack/PixelMiddle.ttf" id="10_jjkox"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7isph"]
+shader = ExtResource("3_cle6g")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_flc0g"]
+shader = ExtResource("5_ha5wa")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_h0ohf"]
+shader = ExtResource("7_7q5xw")
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nfj70"]
 
@@ -25,34 +38,40 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_71imf")
+texture = ExtResource("2_6ab4o")
 
 [node name="Background_Clouds" type="TextureRect" parent="."]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_7isph")
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_23v5f")
+texture = ExtResource("4_sbxvl")
 
 [node name="Background_Mountains" type="TextureRect" parent="."]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_flc0g")
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_75e5g")
+texture = ExtResource("6_sophy")
 
 [node name="Background_Trees" type="TextureRect" parent="."]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_h0ohf")
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("5_52uc0")
+texture = ExtResource("8_16myw")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -77,13 +96,11 @@ alignment = 1
 
 [node name="Title" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 20
-theme_override_fonts/font = ExtResource("4_bktyb")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("9_wqes4")
 theme_override_font_sizes/font_size = 64
 text = "Gnome Quest"
 horizontal_alignment = 1
-uppercase = true
 
 [node name="Control" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -91,11 +108,11 @@ layout_mode = 2
 [node name="Continue" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(120, 32)
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 15
-theme_override_fonts/font = ExtResource("4_bktyb")
-theme_override_font_sizes/font_size = 32
+theme_override_fonts/font = ExtResource("10_jjkox")
+theme_override_font_sizes/font_size = 38
 theme_override_styles/normal = SubResource("StyleBoxEmpty_nfj70")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_nfj70")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_nfj70")
@@ -106,11 +123,11 @@ text = "Continue"
 [node name="NewGame" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(120, 32)
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 15
-theme_override_fonts/font = ExtResource("4_bktyb")
-theme_override_font_sizes/font_size = 32
+theme_override_fonts/font = ExtResource("10_jjkox")
+theme_override_font_sizes/font_size = 38
 theme_override_styles/normal = SubResource("StyleBoxEmpty_nfj70")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_nfj70")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_nfj70")
@@ -121,30 +138,29 @@ text = "New Game"
 [node name="Options" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(120, 32)
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 15
-theme_override_fonts/font = ExtResource("4_bktyb")
-theme_override_font_sizes/font_size = 32
+theme_override_fonts/font = ExtResource("10_jjkox")
+theme_override_font_sizes/font_size = 38
 theme_override_styles/normal = SubResource("StyleBoxEmpty_nfj70")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_nfj70")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_nfj70")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_nfj70")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_nfj70")
-text = "Options (WIP)
-"
+text = "OPTIOnS"
 
 [node name="Exit" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(120, 32)
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 15
-theme_override_fonts/font = ExtResource("4_bktyb")
-theme_override_font_sizes/font_size = 32
+theme_override_fonts/font = ExtResource("10_jjkox")
+theme_override_font_sizes/font_size = 38
 theme_override_styles/normal = SubResource("StyleBoxEmpty_nfj70")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_nfj70")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_nfj70")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_nfj70")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_nfj70")
-text = "Exit"
+text = "EXIT"
