@@ -1,8 +1,9 @@
-[gd_scene load_steps=27 format=3 uid="uid://da8ra7ljeknhu"]
+[gd_scene load_steps=28 format=3 uid="uid://da8ra7ljeknhu"]
 
 [ext_resource type="Script" path="res://entities/players/player_1.gd" id="1_o0wvp"]
 [ext_resource type="Texture2D" uid="uid://b1qhsrblbn7vs" path="res://assets/player_sprites/Chik-Boy-Blue/ChikBoy_idle.png" id="2_i2ltl"]
 [ext_resource type="Texture2D" uid="uid://bdx38h8u6gon" path="res://assets/player_sprites/Chik-Boy-Blue/ChikBoy_run.png" id="3_nwy0a"]
+[ext_resource type="PackedScene" uid="uid://dn6odd664trls" path="res://entities/rope/rope.tscn" id="4_ywpt0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_72a0i"]
 atlas = ExtResource("2_i2ltl")
@@ -190,3 +191,5 @@ drag_bottom_margin = 0.5
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 3)
 shape = SubResource("RectangleShape2D_tpwrs")
+
+[node name="Rope" parent="." instance=ExtResource("4_ywpt0")]

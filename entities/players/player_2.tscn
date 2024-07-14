@@ -1,8 +1,9 @@
-[gd_scene load_steps=27 format=3 uid="uid://cljhy5p5lkd5m"]
+[gd_scene load_steps=28 format=3 uid="uid://cljhy5p5lkd5m"]
 
 [ext_resource type="Script" path="res://entities/players/player_2.gd" id="1_eg7ag"]
 [ext_resource type="Texture2D" uid="uid://bjj3ggu26ft8d" path="res://assets/player_sprites/Chick-Boy-Red/ChikBoy_idle.png" id="2_u337j"]
 [ext_resource type="Texture2D" uid="uid://dr8yhgfgc5v72" path="res://assets/player_sprites/Chick-Boy-Red/ChikBoy_run.png" id="3_vhemw"]
+[ext_resource type="PackedScene" uid="uid://dn6odd664trls" path="res://entities/rope/rope.tscn" id="4_mtorq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_snvih"]
 atlas = ExtResource("2_u337j")
@@ -185,3 +186,5 @@ frame_progress = 0.444138
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 3)
 shape = SubResource("RectangleShape2D_o2ke3")
+
+[node name="Rope" parent="." instance=ExtResource("4_mtorq")]
