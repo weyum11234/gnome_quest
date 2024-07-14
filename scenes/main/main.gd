@@ -38,11 +38,12 @@ func on_cont_down() -> void:
 	
 func on_ng_down() -> void:
 	peer.create_lobby(SteamMultiplayerPeer.LOBBY_TYPE_PUBLIC)
+	Steam.activateGameOverlay("Friends")
 	multiplayer.multiplayer_peer = peer
 	ms.spawn("res://scenes/level_01/level_01.tscn")
 	menu.hide()
 	
-	
+
 func on_options_down() -> void:
 	get_tree().change_scene_to_file("res://scenes/options/options.tscn")
 
@@ -71,4 +72,3 @@ func on_lobby_match_list(lobbies):
 	for lobby in lobbies:
 		var lobby_name = Steam.getLobbyData(lobby, "name")
 		var mem_count = Steam.getNumLobbyMembers(lobby)
-		

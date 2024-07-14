@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1720912051
+::res://::1720990754
 icon.svg::CompressedTexture2D::7871145411425364212::1719964453::1720813017::1::::<><>::
 README.md::TextFile::-1::1719964453::0::1::::<><>::
 ::res://assets/::1719964950
@@ -198,9 +198,9 @@ cavesofgallet.png::CompressedTexture2D::6807396402087844688::1520111331::1719965
 cavesofgallet_tiles.png::CompressedTexture2D::7717801937391551447::1520111337::1719965137::1::::<><>::
 cavesofgallet_tiles_scaled_2x_pngcrushed.png::CompressedTexture2D::4812861473671700353::1720813017::1720813017::1::::<><>::
 ::res://entities/::1720838719
-::res://entities/players/::1720909431
-player_1.gd::GDScript::-1::1720907613::0::1::::<>CharacterBody2D<>::
-player_1.tscn::PackedScene::7228420403995031334::1720909431::0::1::::<><>::res://entities/players/player_1.gd<>uid://b1qhsrblbn7vs::::res://assets/player_sprites/Chik-Boy-Blue/ChikBoy_idle.png<>uid://bdx38h8u6gon::::res://assets/player_sprites/Chik-Boy-Blue/ChikBoy_run.png
+::res://entities/players/::1720912089
+player_1.gd::GDScript::-1::1720912089::0::1::::<>CharacterBody2D<>::
+player_1.tscn::PackedScene::7228420403995031334::1720912089::0::1::::<><>::res://entities/players/player_1.gd<>uid://b1qhsrblbn7vs::::res://assets/player_sprites/Chik-Boy-Blue/ChikBoy_idle.png<>uid://bdx38h8u6gon::::res://assets/player_sprites/Chik-Boy-Blue/ChikBoy_run.png
 player_2.gd::GDScript::-1::1720838719::0::1::::<>CharacterBody2D<>::
 player_2.tscn::PackedScene::5563967525444909588::1720906198::0::1::::<><>::res://entities/players/player_2.gd<>uid://bjj3ggu26ft8d::::res://assets/player_sprites/Chick-Boy-Red/ChikBoy_idle.png<>uid://dr8yhgfgc5v72::::res://assets/player_sprites/Chick-Boy-Red/ChikBoy_run.png
 ::res://entities/rope/::1720906198
@@ -217,16 +217,16 @@ PixelHigh.ttf::FontFile::207400130455846587::1645053806::1720828257::1::::<><>::
 PixelMiddle.ttf::FontFile::2202422892242836585::1645055234::1720828257::1::::<><>::
 PixelSmall.ttf::FontFile::7748037501648454359::1645055178::1720828257::1::::<><>::
 ::res://scenes/::1720904535
-::res://scenes/level_01/::1720909431
+::res://scenes/level_01/::1720912089
 level_01.gd::GDScript::-1::1720838719::0::1::::<>Node2D<>::
-level_01.tscn::PackedScene::8075128252384075593::1720909431::0::1::::<><>::uid://da8ra7ljeknhu::::res://entities/players/player_1.tscn<>uid://catnei36uf3jx::::res://assets/tilesets_maps/underground_areas/cavesofgallet_tiles_scaled_2x_pngcrushed.png<>res://scenes/level_01/level_01.gd<>uid://cljhy5p5lkd5m::::res://entities/players/player_2.tscn<>res://scenes/level_01/mult_spawner.gd
+level_01.tscn::PackedScene::8075128252384075593::1720912089::0::1::::<><>::uid://da8ra7ljeknhu::::res://entities/players/player_1.tscn<>uid://catnei36uf3jx::::res://assets/tilesets_maps/underground_areas/cavesofgallet_tiles_scaled_2x_pngcrushed.png<>res://scenes/level_01/level_01.gd<>uid://cljhy5p5lkd5m::::res://entities/players/player_2.tscn<>res://scenes/level_01/mult_spawner.gd
 mult_spawner.gd::GDScript::-1::1720907442::0::1::::<>MultiplayerSpawner<>::
-::res://scenes/main/::1720909431
-main.gd::GDScript::-1::1720908114::0::1::::<>Node<>::
-main.tscn::PackedScene::3876857004100717685::1720909431::0::1::::<><>::res://scenes/main/main.gd<>uid://calmxaeagvmy5::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/1.png<>res://scenes/main/scroll_menu.gdshader<>uid://bmc4650jnfjb4::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/2.png<>res://scenes/main/scroll_menu2.gdshader<>uid://bq21k8phmstli::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/3.png<>res://scenes/main/scroll_menu3.gdshader<>uid://t007yb7qf2px::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/4.png<>uid://c7p35onh65yl::::res://fonts/SRAFreePixelFontPack/PixelHigh.ttf<>uid://6m4t3ilvplpx::::res://fonts/SRAFreePixelFontPack/PixelMiddle.ttf
-scroll_menu2.gdshader::Shader::-1::1720909431::0::1::::<><>::
-scroll_menu3.gdshader::Shader::-1::1720909431::0::1::::<><>::
-scroll_menu.gdshader::Shader::-1::1720909431::0::1::::<><>::
+::res://scenes/main/::1720920726
+main.gd::GDScript::-1::1720912744::0::1::::<>Node<>::
+main.tscn::PackedScene::3876857004100717685::1720912089::0::1::::<><>::res://scenes/main/main.gd<>uid://calmxaeagvmy5::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/1.png<>res://scenes/main/scroll_menu.gdshader<>uid://bmc4650jnfjb4::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/2.png<>res://scenes/main/scroll_menu2.gdshader<>uid://bq21k8phmstli::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/3.png<>res://scenes/main/scroll_menu3.gdshader<>uid://t007yb7qf2px::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/4.png<>uid://c7p35onh65yl::::res://fonts/SRAFreePixelFontPack/PixelHigh.ttf<>uid://6m4t3ilvplpx::::res://fonts/SRAFreePixelFontPack/PixelMiddle.ttf
+scroll_menu2.gdshader::Shader::-1::1720920726::0::1::::<><>::
+scroll_menu3.gdshader::Shader::-1::1720920726::0::1::::<><>::
+scroll_menu.gdshader::Shader::-1::1720920726::0::1::::<><>::
 ::res://scenes/options/::1720813017
 options.gd::GDScript::-1::1720813017::0::1::::<>Control<>::
 options.tscn::PackedScene::1214452362894360836::1720813017::0::1::::<><>::res://scenes/options/options.gd<>uid://ctdm4m52m4edw::::res://fonts/DwarfFortressVan.ttf<>uid://deoggjjtxgmfw::::res://assets/tilesets_maps/skys_background/Clouds/Clouds 7/1.png
