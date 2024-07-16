@@ -1,6 +1,137 @@
-[gd_scene load_steps=3 format=3 uid="uid://da8ra7ljeknhu"]
+[gd_scene load_steps=21 format=3 uid="uid://da8ra7ljeknhu"]
 
 [ext_resource type="Script" path="res://entities/players/player_1.gd" id="1_o0wvp"]
+[ext_resource type="Texture2D" uid="uid://6vaao2p4o2j8" path="res://assets/tilesets_maps/industrial.v2.png" id="2_oap0c"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nthc3"]
+atlas = ExtResource("2_oap0c")
+region = Rect2(0, 256, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d1mk8"]
+atlas = ExtResource("2_oap0c")
+region = Rect2(16, 256, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8nnso"]
+atlas = ExtResource("2_oap0c")
+region = Rect2(32, 256, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gji8h"]
+atlas = ExtResource("2_oap0c")
+region = Rect2(48, 256, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e3tv3"]
+atlas = ExtResource("2_oap0c")
+region = Rect2(64, 256, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nxmp6"]
+atlas = ExtResource("2_oap0c")
+region = Rect2(80, 256, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x05vm"]
+atlas = ExtResource("2_oap0c")
+region = Rect2(96, 256, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rdlud"]
+atlas = ExtResource("2_oap0c")
+region = Rect2(112, 256, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1j3fc"]
+atlas = ExtResource("2_oap0c")
+region = Rect2(0, 272, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jf0tf"]
+atlas = ExtResource("2_oap0c")
+region = Rect2(16, 272, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0nyiy"]
+atlas = ExtResource("2_oap0c")
+region = Rect2(32, 272, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ddy3c"]
+atlas = ExtResource("2_oap0c")
+region = Rect2(48, 272, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4tsgx"]
+atlas = ExtResource("2_oap0c")
+region = Rect2(64, 272, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8auuv"]
+atlas = ExtResource("2_oap0c")
+region = Rect2(80, 272, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5um8v"]
+atlas = ExtResource("2_oap0c")
+region = Rect2(96, 272, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n10al"]
+atlas = ExtResource("2_oap0c")
+region = Rect2(112, 272, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_75tuk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nthc3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1mk8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8nnso")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gji8h")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e3tv3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nxmp6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x05vm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rdlud")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1j3fc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jf0tf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0nyiy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ddy3c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4tsgx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8auuv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5um8v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n10al")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 10.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tpwrs"]
 size = Vector2(20, 26)
@@ -11,7 +142,9 @@ collision_mask = 3
 script = ExtResource("1_o0wvp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-animation = &"walk"
+sprite_frames = SubResource("SpriteFrames_75tuk")
+animation = &"idle"
+frame_progress = 0.506327
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2.5, 2.5)
