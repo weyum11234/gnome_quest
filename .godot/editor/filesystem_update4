@@ -1,4 +1,6 @@
-res://entities/players/player_1.tscn
+res://mnplyground/maps/map_01.tscn
+res://mnplyground/players/player.tscn
+res://scenes/main/main.tscn
 res://entities/players/player_1.gd
 res://scenes/main/scroll_menu.gdshader
 res://scenes/main/scroll_menu2.gdshader

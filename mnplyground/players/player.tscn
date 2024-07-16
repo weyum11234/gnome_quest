@@ -1,7 +1,7 @@
 [gd_scene load_steps=28 format=3 uid="uid://hgjiss5li3i8"]
 
-[ext_resource type="Script" path="res://players/player1.gd" id="1_txua1"]
-[ext_resource type="Texture2D" uid="uid://crdp450argq8i" path="res://assets/tilemaps/industrial.v2.png" id="2_tvhd6"]
+[ext_resource type="Script" path="res://mnplyground/players/player1.gd" id="1_txua1"]
+[ext_resource type="Texture2D" uid="uid://6vaao2p4o2j8" path="res://assets/tilesets_maps/industrial.v2.png" id="2_tvhd6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ple6j"]
 atlas = ExtResource("2_tvhd6")
