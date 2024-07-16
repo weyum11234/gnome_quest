@@ -159,6 +159,10 @@ drag_bottom_margin = 0.5
 shape = SubResource("RectangleShape2D_tpwrs")
 
 [node name="HazardDetector" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HazardDetector"]
 shape = SubResource("RectangleShape2D_4sw0k")
+
+[connection signal="body_entered" from="HazardDetector" to="." method="_on_hazard_detector_body_entered"]

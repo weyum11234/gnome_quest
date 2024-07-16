@@ -55,3 +55,7 @@ func _physics_process(delta):
 	
 	$AnimatedSprite2D.play(animation)
 	move_and_slide()
+
+
+func _on_hazard_detector_body_entered(body):
+	pass

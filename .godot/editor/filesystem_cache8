@@ -1,95 +1,103 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1721159343
-icon.svg::CompressedTexture2D::7871145411425364212::1719965863::1719965881::1::::<><>::
-README.md::TextFile::-1::1721157449::0::1::::<><>::
-::res://assets/::1720019395
-::res://assets/player_sprites/::1721154586
-::res://assets/tilesets_maps/::1721159342
-::res://assets/tilesets_maps/adve/::1721159074
-map_preview.png::CompressedTexture2D::639342821426861159::1721159074::1721159074::1::::<><>::
-tiles.png::CompressedTexture2D::6380871889023591055::1721159074::1721159074::1::::<><>::
-tiles_preview.png::CompressedTexture2D::3966643166231674621::1721159074::1721159074::1::::<><>::
-::res://assets/tilesets_maps/industrial.v2/::1721159342
-industrial.v2.png::CompressedTexture2D::2219206863371747359::1721159069::1721159343::1::::<><>::
-::res://assets/tilesets_maps/sky-backgrounds/::1720835702
-License.txt::TextFile::-1::1720835702::0::1::::<><>::
-Patreon.txt::TextFile::-1::1720835702::0::1::::<><>::
-::res://assets/tilesets_maps/sky-backgrounds/Clouds/::1720835702
-::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 1/::1720835702
-1.png::CompressedTexture2D::5356428871101455544::1720835702::1720835702::1::::<><>::
-2.png::CompressedTexture2D::7503496846401667306::1720835702::1720835702::1::::<><>::
-3.png::CompressedTexture2D::8018885617861949244::1720835702::1720835702::1::::<><>::
-4.png::CompressedTexture2D::4826285140974469535::1720835702::1720835702::1::::<><>::
-::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 2/::1720835702
-1.png::CompressedTexture2D::9056419421849752645::1720835702::1720835702::1::::<><>::
-2.png::CompressedTexture2D::8049956413835396724::1720835702::1720835702::1::::<><>::
-3.png::CompressedTexture2D::656627363107473202::1720835702::1720835702::1::::<><>::
-4.png::CompressedTexture2D::9067769152755948335::1720835702::1720835702::1::::<><>::
-::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 3/::1720835702
-1.png::CompressedTexture2D::1716058889340561196::1720835702::1720835702::1::::<><>::
-2.png::CompressedTexture2D::6701389160843430754::1720835702::1720835702::1::::<><>::
-3.png::CompressedTexture2D::1660683395545953387::1720835702::1720835702::1::::<><>::
-4.png::CompressedTexture2D::7119792637723969922::1720835702::1720835702::1::::<><>::
-::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/::1720835702
-1.png::CompressedTexture2D::4796319206041945606::1720835702::1720835702::1::::<><>::
-2.png::CompressedTexture2D::3234633330006001339::1720835702::1720835702::1::::<><>::
-3.png::CompressedTexture2D::3566778637789644986::1720835702::1720835702::1::::<><>::
-4.png::CompressedTexture2D::1386773806778979049::1720835702::1720835702::1::::<><>::
-::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 5/::1720835702
-1.png::CompressedTexture2D::8036172407213731713::1720835702::1720835702::1::::<><>::
-2.png::CompressedTexture2D::6925736215138102822::1720835702::1720835702::1::::<><>::
-3.png::CompressedTexture2D::1593446451893896341::1720835702::1720835702::1::::<><>::
-4.png::CompressedTexture2D::8056831600803234027::1720835702::1720835702::1::::<><>::
-5.png::CompressedTexture2D::457757975021169984::1720835702::1720835702::1::::<><>::
-::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 6/::1720835702
-1.png::CompressedTexture2D::8439374670000421976::1720835702::1720835702::1::::<><>::
-2.png::CompressedTexture2D::7860580191832513272::1720835702::1720835702::1::::<><>::
-3.png::CompressedTexture2D::3019654588266301249::1720835702::1720835702::1::::<><>::
-4.png::CompressedTexture2D::3652225425649323837::1720835702::1720835702::1::::<><>::
-5.png::CompressedTexture2D::8666691066008292852::1720835702::1720835702::1::::<><>::
-6.png::CompressedTexture2D::1381571729192881306::1720835702::1720835702::1::::<><>::
-::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 7/::1720835702
-1.png::CompressedTexture2D::2541206895577155126::1720835702::1720835702::1::::<><>::
-2.png::CompressedTexture2D::4652796146923401335::1720835702::1720835702::1::::<><>::
-3.png::CompressedTexture2D::6498557180973405410::1720835702::1720835702::1::::<><>::
-4.png::CompressedTexture2D::8649424073505706210::1720835702::1720835702::1::::<><>::
-::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 8/::1720835702
-1.png::CompressedTexture2D::7346660710426273871::1720835702::1720835702::1::::<><>::
-2.png::CompressedTexture2D::4332614507604173540::1720835702::1720835702::1::::<><>::
-3.png::CompressedTexture2D::8036964334009222778::1720835702::1720835702::1::::<><>::
-4.png::CompressedTexture2D::1743633182916244293::1720835702::1720835702::1::::<><>::
-5.png::CompressedTexture2D::5082876965887199691::1720835702::1720835702::1::::<><>::
-6.png::CompressedTexture2D::4104307013445726599::1720835702::1720835702::1::::<><>::
-::res://assets/tilesets_maps/underground_areas/::1720556442
-cavesofgallet.png::CompressedTexture2D::6807396402087844688::1719965521::1719965521::1::::<><>::
-cavesofgallet_tiles.png::CompressedTexture2D::7717801937391551447::1719965521::1719965521::1::::<><>::
-cavesofgallet_tiles_scaled_2x_pngcrushed.png::CompressedTexture2D::4812861473671700353::1720556442::1720556442::1::::<><>::
-::res://assets/ui/::1720028357
-::res://entities/::1721154779
-::res://entities/players/::1721159342
-player_1.gd::GDScript::-1::1721154139::0::1::::<>CharacterBody2D<>::
-player_1.tscn::PackedScene::7228420403995031334::1721159342::0::1::::<><>::res://entities/players/player_1.gd<>uid://6vaao2p4o2j8::::res://assets/tilesets_maps/industrial.v2/industrial.v2.png
-::res://fonts/::1720835702
-DungeonFont.ttf::FontFile::4294024493737744913::1720835702::1720835702::1::::<><>::
-DwarfFortressVan.ttf::FontFile::6113403599575707540::1720020732::1720020732::1::::<><>::
-::res://fonts/SRAFreePixelFontPack/::1720835702
-PixelHigh.ttf::FontFile::207400130455846587::1720835702::1720835702::1::::<><>::
-PixelMiddle.ttf::FontFile::2202422892242836585::1720835702::1720835702::1::::<><>::
-PixelSmall.ttf::FontFile::7748037501648454359::1720835702::1720835702::1::::<><>::
-::res://mnplyground/::1721159069
-::res://mnplyground/maps/::1721159342
-map_01.tscn::PackedScene::8332515158061295312::1721159342::0::1::::<><>::uid://cw57a7c5h3v6n::::res://assets/tilesets_maps/adve/tiles.png<>uid://jdx5at6i4b72::::res://assets/tilesets_maps/adve/map_preview.png<>uid://hgjiss5li3i8::::res://mnplyground/players/player.tscn<>uid://6vaao2p4o2j8::::res://assets/tilesets_maps/industrial.v2/industrial.v2.png
-::res://mnplyground/players/::1721159342
-player1.gd::GDScript::-1::1721159069::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::504269885881614289::1721159342::0::1::::<><>::res://mnplyground/players/player1.gd<>uid://6vaao2p4o2j8::::res://assets/tilesets_maps/industrial.v2/industrial.v2.png
-::res://scenes/::1720552622
-::res://scenes/level_01/::1721154793
-::res://scenes/main/::1721159342
-main.gd::GDScript::-1::1721072178::0::1::::<>Control<>::
-main.tscn::PackedScene::3876857004100717685::1721159261::0::1::::<><>::res://scenes/main/main.gd<>uid://calmxaeagvmy5::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/1.png<>res://scenes/main/scroll_menu.gdshader<>uid://bmc4650jnfjb4::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/2.png<>res://scenes/main/scroll_menu2.gdshader<>uid://bq21k8phmstli::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/3.png<>res://scenes/main/scroll_menu3.gdshader<>uid://t007yb7qf2px::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/4.png<>uid://c7p35onh65yl::::res://fonts/SRAFreePixelFontPack/PixelHigh.ttf<>uid://6m4t3ilvplpx::::res://fonts/SRAFreePixelFontPack/PixelMiddle.ttf
-scroll_menu2.gdshader::Shader::-1::1721159342::0::1::::<><>::
-scroll_menu3.gdshader::Shader::-1::1721159342::0::1::::<><>::
-scroll_menu.gdshader::Shader::-1::1721159342::0::1::::<><>::
-::res://scenes/options/::1721159261
-options.gd::GDScript::-1::1720570885::0::1::::<>Control<>::
-options.tscn::PackedScene::1214452362894360836::1721159261::0::1::::<><>::res://scenes/options/options.gd<>uid://ctdm4m52m4edw::::res://fonts/DwarfFortressVan.ttf<>uid://dm113sjyfbifj::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 5/4.png
+::res://::1721161181
+icon.svg::CompressedTexture2D::7871145411425364212::1719964453::1720994986::1::::<><>::
+README.md::TextFile::-1::1719964453::0::1::::<><>::
+::res://addons/::1720995531
+::res://addons/Rope2D/::1721002564
+::res://addons/ropesim/::1721002564
+::res://addons/ropesim/bin/::1721002564
+::res://addons/ropesim/bin/libropesim.macos.template_debug.framework/::1721002564
+::res://addons/ropesim/bin/libropesim.macos.template_release.framework/::1721002564
+::res://assets/::1721158029
+::res://assets/tilesets_maps/::1721161142
+::res://assets/tilesets_maps/adve/::1721158880
+map_preview.png::CompressedTexture2D::639342821426861159::1605006282::1721158880::1::::<><>::
+tiles.png::CompressedTexture2D::6380871889023591055::1605006005::1721158880::1::::<><>::
+tiles_preview.png::CompressedTexture2D::3966643166231674621::1605006254::1721158880::1::::<><>::
+::res://assets/tilesets_maps/industrial.v2/::1721161142
+industrial.v2.png::CompressedTexture2D::2219206863371747359::1721161142::1721161142::1::::<><>::
+::res://assets/tilesets_maps/sky-backgrounds/::1720994986
+License.txt::TextFile::-1::1720994986::0::1::::<><>::
+Patreon.txt::TextFile::-1::1720994986::0::1::::<><>::
+::res://assets/tilesets_maps/sky-backgrounds/Clouds/::1720994986
+::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 1/::1720994986
+1.png::CompressedTexture2D::5356428871101455544::1720994986::1720994986::1::::<><>::
+2.png::CompressedTexture2D::7503496846401667306::1720994986::1720994986::1::::<><>::
+3.png::CompressedTexture2D::8018885617861949244::1720994986::1720994986::1::::<><>::
+4.png::CompressedTexture2D::4826285140974469535::1720994986::1720994986::1::::<><>::
+::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 2/::1720994986
+1.png::CompressedTexture2D::9056419421849752645::1720994986::1720994986::1::::<><>::
+2.png::CompressedTexture2D::8049956413835396724::1720994986::1720994986::1::::<><>::
+3.png::CompressedTexture2D::656627363107473202::1720994986::1720994986::1::::<><>::
+4.png::CompressedTexture2D::9067769152755948335::1720994986::1720994986::1::::<><>::
+::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 3/::1720994986
+1.png::CompressedTexture2D::1716058889340561196::1720994986::1720994986::1::::<><>::
+2.png::CompressedTexture2D::6701389160843430754::1720994986::1720994986::1::::<><>::
+3.png::CompressedTexture2D::1660683395545953387::1720994986::1720994986::1::::<><>::
+4.png::CompressedTexture2D::7119792637723969922::1720994986::1720994986::1::::<><>::
+::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/::1720994986
+1.png::CompressedTexture2D::4796319206041945606::1720994986::1720994986::1::::<><>::
+2.png::CompressedTexture2D::3234633330006001339::1720994986::1720994986::1::::<><>::
+3.png::CompressedTexture2D::3566778637789644986::1720994986::1720994986::1::::<><>::
+4.png::CompressedTexture2D::1386773806778979049::1720994986::1720994986::1::::<><>::
+::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 5/::1720994986
+1.png::CompressedTexture2D::8036172407213731713::1720994986::1720994986::1::::<><>::
+2.png::CompressedTexture2D::6925736215138102822::1720994986::1720994986::1::::<><>::
+3.png::CompressedTexture2D::1593446451893896341::1720994986::1720994986::1::::<><>::
+4.png::CompressedTexture2D::8056831600803234027::1720994986::1720994986::1::::<><>::
+5.png::CompressedTexture2D::457757975021169984::1720994986::1720994986::1::::<><>::
+::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 6/::1720994986
+1.png::CompressedTexture2D::8439374670000421976::1720994986::1720994986::1::::<><>::
+2.png::CompressedTexture2D::7860580191832513272::1720994986::1720994986::1::::<><>::
+3.png::CompressedTexture2D::3019654588266301249::1720994986::1720994986::1::::<><>::
+4.png::CompressedTexture2D::3652225425649323837::1720994986::1720994986::1::::<><>::
+5.png::CompressedTexture2D::8666691066008292852::1720994986::1720994986::1::::<><>::
+6.png::CompressedTexture2D::1381571729192881306::1720994986::1720994986::1::::<><>::
+::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 7/::1720994986
+1.png::CompressedTexture2D::2541206895577155126::1720994986::1720994986::1::::<><>::
+2.png::CompressedTexture2D::4652796146923401335::1720994986::1720994986::1::::<><>::
+3.png::CompressedTexture2D::6498557180973405410::1720994986::1720994986::1::::<><>::
+4.png::CompressedTexture2D::8649424073505706210::1720994986::1720994986::1::::<><>::
+::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 8/::1720994986
+1.png::CompressedTexture2D::7346660710426273871::1720994986::1720994986::1::::<><>::
+2.png::CompressedTexture2D::4332614507604173540::1720994986::1720994986::1::::<><>::
+3.png::CompressedTexture2D::8036964334009222778::1720994986::1720994986::1::::<><>::
+4.png::CompressedTexture2D::1743633182916244293::1720994986::1720994986::1::::<><>::
+5.png::CompressedTexture2D::5082876965887199691::1720994986::1720994986::1::::<><>::
+6.png::CompressedTexture2D::4104307013445726599::1720994986::1720994986::1::::<><>::
+::res://assets/tilesets_maps/underground_areas/::1720994986
+cavesofgallet.png::CompressedTexture2D::6807396402087844688::1520111331::1719965137::1::::<><>::
+cavesofgallet_tiles.png::CompressedTexture2D::7717801937391551447::1520111337::1719965137::1::::<><>::
+cavesofgallet_tiles_scaled_2x_pngcrushed.png::CompressedTexture2D::4812861473671700353::1720994986::1720994986::1::::<><>::
+::res://entities/::1721158029
+::res://entities/players/::1721161142
+player_1.gd::GDScript::-1::1721158990::0::1::::<>CharacterBody2D<>::
+player_1.tscn::PackedScene::7228420403995031334::1721161142::0::1::::<><>::res://entities/players/player_1.gd<>uid://6vaao2p4o2j8::::res://assets/tilesets_maps/industrial.v2/industrial.v2.png
+::res://fonts/::1720994986
+DungeonFont.ttf::FontFile::4294024493737744913::1720994986::1720994986::1::::<><>::
+DwarfFortressVan.ttf::FontFile::6113403599575707540::1720994986::1720994986::1::::<><>::
+::res://fonts/SRAFreePixelFontPack/::1720994986
+PixelHigh.ttf::FontFile::207400130455846587::1720994986::1720994986::1::::<><>::
+PixelMiddle.ttf::FontFile::2202422892242836585::1720994986::1720994986::1::::<><>::
+PixelSmall.ttf::FontFile::7748037501648454359::1720994986::1720994986::1::::<><>::
+::res://Images/::1721002564
+::res://mnplyground/::1721158260
+::res://mnplyground/maps/::1721161142
+map_01.tscn::PackedScene::8332515158061295312::1721161142::0::1::::<><>::uid://cw57a7c5h3v6n::::res://assets/tilesets_maps/adve/tiles.png<>uid://jdx5at6i4b72::::res://assets/tilesets_maps/adve/map_preview.png<>uid://hgjiss5li3i8::::res://mnplyground/players/player.tscn<>uid://6vaao2p4o2j8::::res://assets/tilesets_maps/industrial.v2/industrial.v2.png
+::res://mnplyground/players/::1721161142
+player1.gd::GDScript::-1::1721094928::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::504269885881614289::1721161142::0::1::::<><>::res://mnplyground/players/player1.gd<>uid://6vaao2p4o2j8::::res://assets/tilesets_maps/industrial.v2/industrial.v2.png
+::res://scenes/::1721161142
+::res://scenes/level_01/::1721161142
+level_01.tscn::PackedScene::8218368947275210179::1721161142::0::1::::<><>::
+::res://scenes/main/::1721161116
+main.gd::GDScript::-1::1720994986::0::1::::<>Control<>::
+main.tscn::PackedScene::3876857004100717685::1721158992::0::1::::<><>::res://scenes/main/main.gd<>uid://calmxaeagvmy5::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/1.png<>res://scenes/main/scroll_menu.gdshader<>uid://bmc4650jnfjb4::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/2.png<>res://scenes/main/scroll_menu2.gdshader<>uid://bq21k8phmstli::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/3.png<>res://scenes/main/scroll_menu3.gdshader<>uid://t007yb7qf2px::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/4.png<>uid://c7p35onh65yl::::res://fonts/SRAFreePixelFontPack/PixelHigh.ttf<>uid://6m4t3ilvplpx::::res://fonts/SRAFreePixelFontPack/PixelMiddle.ttf
+scroll_menu2.gdshader::Shader::-1::1721161116::0::1::::<><>::
+scroll_menu3.gdshader::Shader::-1::1721161116::0::1::::<><>::
+scroll_menu.gdshader::Shader::-1::1721161116::0::1::::<><>::
+::res://scenes/options/::1721158029
+options.gd::GDScript::-1::1720994986::0::1::::<>Control<>::
+options.tscn::PackedScene::1214452362894360836::1721158029::0::1::::<><>::res://scenes/options/options.gd<>uid://ctdm4m52m4edw::::res://fonts/DwarfFortressVan.ttf<>uid://dm113sjyfbifj::::res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 5/4.png
+::res://scenes/Steam/::1720905631
+::res://scenes/tree/::1720905631
