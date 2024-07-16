@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cw57a7c5h3v6n" path="res://assets/tilesets_maps/adve/tiles.png" id="1_mualv"]
 [ext_resource type="Texture2D" uid="uid://jdx5at6i4b72" path="res://assets/tilesets_maps/adve/map_preview.png" id="2_mx2vu"]
 [ext_resource type="PackedScene" uid="uid://hgjiss5li3i8" path="res://mnplyground/players/player.tscn" id="3_0m540"]
-[ext_resource type="Texture2D" uid="uid://6vaao2p4o2j8" path="res://assets/tilesets_maps/industrial.v2.png" id="3_rdsac"]
+[ext_resource type="Texture2D" uid="uid://6vaao2p4o2j8" path="res://assets/tilesets_maps/industrial.v2/industrial.v2.png" id="3_rdsac"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o7v2b"]
 texture = ExtResource("1_mualv")
