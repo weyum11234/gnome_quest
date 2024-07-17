@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://cke0kpsxvgsrk"]
 
 [ext_resource type="Script" path="res://scenes/level_01/anim_spike.gd" id="1_yrsxw"]
-[ext_resource type="Texture2D" uid="uid://d3wqko68g3jf8" path="res://assets/tilesets_maps/2d_metroid_asset_1_2/metroid_asset_1_2/Sprites/Interactables/spikes_spritesheet.png" id="2_k0l14"]
+[ext_resource type="Texture2D" uid="uid://d3wqko68g3jf8" path="res://assets/tilesets_maps/dungeons/2d_metroid_asset_1_2/metroid_asset_1_2/Sprites/Interactables/spikes_spritesheet.png" id="2_k0l14"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e34y3"]
 atlas = ExtResource("2_k0l14")

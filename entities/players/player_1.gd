@@ -59,10 +59,8 @@ func _physics_process(delta):
 
 
 func _on_hazard_detector_body_entered(body):
-	pass
-	#queue_free()
+	queue_free()
 
 
 func _on_hazard_detector_area_entered(area):
-	pass
-	#queue_free()
+	queue_free()

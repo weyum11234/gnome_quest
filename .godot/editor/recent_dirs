@@ -1,5 +1,7 @@
-res://assets/tilesets_maps/2d_metroid_asset_1_2/metroid_asset_1_2/Sprites/Interactables
+res://assets/tilesets_maps/traps_foozle/Foozle_2DTR0001_Pixel_Trap_Pack/Ceiling Trap/PNGs
 res://obstacles
+res://assets/tilesets_maps/dungeons/trapmoor_dungeon/Sprites
+res://decorations
 res://scenes/level_01
 res://fonts
 res://scenes/main
