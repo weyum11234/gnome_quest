@@ -140,8 +140,6 @@ size = Vector2(14, 16)
 size = Vector2(14, 16)
 
 [node name="Player1" type="CharacterBody2D"]
-collision_layer = 2
-collision_mask = 3
 script = ExtResource("1_o0wvp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -150,7 +148,7 @@ animation = &"idle"
 frame_progress = 0.157274
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2.5, 2.5)
+zoom = Vector2(1.5, 1.5)
 drag_vertical_enabled = true
 drag_top_margin = 0.5
 drag_bottom_margin = 0.5
@@ -165,4 +163,5 @@ collision_mask = 4
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HazardDetector"]
 shape = SubResource("RectangleShape2D_4sw0k")
 
+[connection signal="area_entered" from="HazardDetector" to="." method="_on_hazard_detector_area_entered"]
 [connection signal="body_entered" from="HazardDetector" to="." method="_on_hazard_detector_body_entered"]

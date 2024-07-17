@@ -2,8 +2,8 @@
 extends CharacterBody2D
 
 
-@export var speed = 80.0
-@export var jump_velocity = -75.0
+@export var speed = 150.0
+@export var jump_velocity = -200.0
 @export var jump_time = 0.25
 @export var coyote_time = 0.075
 @export var gravity_multiplier = 1.0
@@ -60,3 +60,9 @@ func _physics_process(delta):
 
 func _on_hazard_detector_body_entered(body):
 	pass
+	#queue_free()
+
+
+func _on_hazard_detector_area_entered(area):
+	pass
+	#queue_free()

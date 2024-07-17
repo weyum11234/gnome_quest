@@ -1,0 +1,77 @@
+[gd_scene load_steps=12 format=3 uid="uid://cke0kpsxvgsrk"]
+
+[ext_resource type="Script" path="res://scenes/level_01/anim_spike.gd" id="1_yrsxw"]
+[ext_resource type="Texture2D" uid="uid://d3wqko68g3jf8" path="res://assets/tilesets_maps/2d_metroid_asset_1_2/metroid_asset_1_2/Sprites/Interactables/spikes_spritesheet.png" id="2_k0l14"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e34y3"]
+atlas = ExtResource("2_k0l14")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sqjrs"]
+atlas = ExtResource("2_k0l14")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fb0jo"]
+atlas = ExtResource("2_k0l14")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uejpj"]
+atlas = ExtResource("2_k0l14")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rt0jf"]
+atlas = ExtResource("2_k0l14")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a8tgm"]
+atlas = ExtResource("2_k0l14")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_32vnf"]
+atlas = ExtResource("2_k0l14")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6f502"]
+animations = [{
+"frames": [{
+"duration": 7.0,
+"texture": SubResource("AtlasTexture_e34y3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sqjrs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fb0jo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uejpj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rt0jf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a8tgm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_32vnf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c52oq"]
+size = Vector2(20, 10)
+
+[node name="anim_spike" type="Area2D"]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("1_yrsxw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_6f502")
+frame_progress = 0.639552
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 5)
+shape = SubResource("RectangleShape2D_c52oq")
