@@ -1,12 +1,11 @@
 extends CharacterBody2D
 
-
+# Physics constants
 @export var speed = 80.0
 @export var jump_velocity = -75.0
 @export var jump_time = 0.25
-@export var coyote_time = 0.075
+@export var coyote_time = 0.05
 @export var gravity_multiplier = 1.0
-
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -14,10 +13,14 @@ var is_jumping = false
 var jump_timer = 0.0
 var coyote_timer = 0.0
 
+# State variables
+@onready var animation = "idle"
 
-# Helper variable for handling animation
-var animation = "idle"
-
+func _ready():
+	pass
+	
+func _process(delta):
+	pass
 
 func _physics_process(delta):
 	# Set default animation every delta
@@ -52,10 +55,15 @@ func _physics_process(delta):
 	else:
 		is_jumping = false
 		jump_timer = 0
-	
+
 	$AnimatedSprite2D.play(animation)
 	move_and_slide()
 
+# Handle item interactions.
+func _input(event):
+	if event is InputEventMouseButton:
+		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed and $Hand.get_child_count():
+			$Hand.get_children()[0].use(self)
 
-func _on_hazard_detector_body_entered(body):
-	pass
+func _on_hazard_detector_area_entered(area):
+	pass # Replace with function body.

@@ -1,3 +1,17 @@
-[gd_scene format=3 uid="uid://dpdbloh77ho5x"]
+[gd_scene load_steps=3 format=3 uid="uid://dpdbloh77ho5x"]
+
+[ext_resource type="Script" path="res://scenes/level_01/level_01.gd" id="1_ws3gr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6id8k"]
+size = Vector2(514, 16)
 
 [node name="Level01" type="Node2D"]
+scale = Vector2(0.7, 0.7)
+script = ExtResource("1_ws3gr")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(72, 312)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(247, 0)
+shape = SubResource("RectangleShape2D_6id8k")
