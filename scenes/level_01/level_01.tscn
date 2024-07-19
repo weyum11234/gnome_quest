@@ -3051,9 +3051,6 @@ sources/17 = SubResource("TileSetAtlasSource_eupdk")
 
 [node name="Level01" type="Node2D"]
 
-[node name="Player1" parent="." instance=ExtResource("1_vee1p")]
-position = Vector2(-64, 56)
-
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_0cm8n")
 format = 2
@@ -3290,3 +3287,6 @@ position = Vector2(1742, 1024)
 movement_distance = 150.0
 movement_speed = 100.0
 direction = false
+
+[node name="Player1" parent="." instance=ExtResource("1_vee1p")]
+position = Vector2(-64, 56)
