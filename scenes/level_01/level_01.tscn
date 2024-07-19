@@ -15,3 +15,11 @@ position = Vector2(72, 312)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(247, 0)
 shape = SubResource("RectangleShape2D_6id8k")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(72, 312)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(488, -243.429)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_6id8k")

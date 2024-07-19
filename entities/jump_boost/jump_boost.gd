@@ -23,3 +23,6 @@ func use(player : Object):
 	if boost_timer == 0:
 		self.player = player
 		jump_velo = player.jump_velocity
+		
+func alt_use(player : Object):
+	pass

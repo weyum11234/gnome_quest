@@ -15,6 +15,8 @@ var coyote_timer = 0.0
 
 # State variables
 @onready var animation = "idle"
+var facing
+var spawn_position = Vector2(100, 200)
 
 func _ready():
 	pass
@@ -37,8 +39,21 @@ func _physics_process(delta):
 	var direction = Input.get_axis("left", "right")
 	if direction:
 		velocity.x = direction * speed
+		facing = direction
 		animation = "walk"
 		$AnimatedSprite2D.flip_h = velocity.x < 0
+		
+		# Flip hand position.
+		if $AnimatedSprite2D.flip_h and $Hand.get_child_count():
+			$Hand.position = Vector2(-6, 1)
+			if $Hand.get_children()[0] is CharacterBody2D:
+				$Hand.get_children()[0].get_node("RayCast2D").target_position = Vector2(-8.5, 0)
+				$Hand.get_children()[0].get_node("Sprite2D").flip_h = true
+		elif $Hand.get_child_count():
+			$Hand.position = Vector2(6, 1)
+			if $Hand.get_children()[0] is CharacterBody2D:
+				$Hand.get_children()[0].get_node("RayCast2D").target_position = Vector2(8.5, 0)
+				$Hand.get_children()[0].get_node("Sprite2D").flip_h = false
 	else:
 		velocity.x = move_toward(velocity.x, 0, speed)
 		
@@ -62,8 +77,12 @@ func _physics_process(delta):
 # Handle item interactions.
 func _input(event):
 	if event is InputEventMouseButton:
-		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed and $Hand.get_child_count():
+		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed and $Hand.get_child_count(): # Main use
 			$Hand.get_children()[0].use(self)
+		elif event.button_index == MOUSE_BUTTON_RIGHT and event.pressed and $Hand.get_child_count(): # Alternative use
+			$Hand.get_children()[0].alt_use(self)
 
 func _on_hazard_detector_area_entered(area):
-	pass # Replace with function body.
+	if area.is_in_group("hazard"):
+		global_position = spawn_position
+		print_debug("player killed")
