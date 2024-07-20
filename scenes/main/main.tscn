@@ -1,13 +1,13 @@
 [gd_scene load_steps=15 format=3 uid="uid://bvh8jek3h2yy4"]
 
 [ext_resource type="Script" path="res://scenes/main/main.gd" id="1_b4wwl"]
-[ext_resource type="Texture2D" uid="uid://calmxaeagvmy5" path="res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/1.png" id="2_6ab4o"]
+[ext_resource type="Texture2D" uid="uid://calmxaeagvmy5" path="res://assets/tilesets_maps/outside/sky-backgrounds/Clouds/Clouds 4/1.png" id="2_6ab4o"]
 [ext_resource type="Shader" path="res://scenes/main/scroll_menu.gdshader" id="3_cle6g"]
-[ext_resource type="Texture2D" uid="uid://bmc4650jnfjb4" path="res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/2.png" id="4_sbxvl"]
+[ext_resource type="Texture2D" uid="uid://bmc4650jnfjb4" path="res://assets/tilesets_maps/outside/sky-backgrounds/Clouds/Clouds 4/2.png" id="4_sbxvl"]
 [ext_resource type="Shader" path="res://scenes/main/scroll_menu2.gdshader" id="5_ha5wa"]
-[ext_resource type="Texture2D" uid="uid://bq21k8phmstli" path="res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/3.png" id="6_sophy"]
+[ext_resource type="Texture2D" uid="uid://bq21k8phmstli" path="res://assets/tilesets_maps/outside/sky-backgrounds/Clouds/Clouds 4/3.png" id="6_sophy"]
 [ext_resource type="Shader" path="res://scenes/main/scroll_menu3.gdshader" id="7_7q5xw"]
-[ext_resource type="Texture2D" uid="uid://t007yb7qf2px" path="res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 4/4.png" id="8_16myw"]
+[ext_resource type="Texture2D" uid="uid://t007yb7qf2px" path="res://assets/tilesets_maps/outside/sky-backgrounds/Clouds/Clouds 4/4.png" id="8_16myw"]
 [ext_resource type="FontFile" uid="uid://c7p35onh65yl" path="res://fonts/SRAFreePixelFontPack/PixelHigh.ttf" id="9_wqes4"]
 [ext_resource type="FontFile" uid="uid://6m4t3ilvplpx" path="res://fonts/SRAFreePixelFontPack/PixelMiddle.ttf" id="10_jjkox"]
 

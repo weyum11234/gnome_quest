@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scenes/options/options.gd" id="1_0qvl1"]
 [ext_resource type="FontFile" uid="uid://ctdm4m52m4edw" path="res://fonts/DwarfFortressVan.ttf" id="1_aycvh"]
-[ext_resource type="Texture2D" uid="uid://dm113sjyfbifj" path="res://assets/tilesets_maps/sky-backgrounds/Clouds/Clouds 5/4.png" id="2_re5xk"]
+[ext_resource type="Texture2D" uid="uid://dm113sjyfbifj" path="res://assets/tilesets_maps/outside/sky-backgrounds/Clouds/Clouds 5/4.png" id="2_re5xk"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_re8ta"]
 
