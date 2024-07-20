@@ -140,8 +140,7 @@ size = Vector2(14, 16)
 size = Vector2(14, 16)
 
 [node name="Player1" type="CharacterBody2D" groups=["player"]]
-collision_layer = 2
-collision_mask = 11
+collision_mask = 3
 script = ExtResource("1_o0wvp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -153,7 +152,6 @@ frame_progress = 0.157274
 position = Vector2(6, 1)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2.5, 2.5)
 drag_vertical_enabled = true
 drag_top_margin = 0.5
 drag_bottom_margin = 0.5

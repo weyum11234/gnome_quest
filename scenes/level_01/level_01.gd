@@ -30,13 +30,13 @@ func spawn_entities():
 		boxes.append(item_box_scene.instantiate())
 		boxes[i].connect("give_item", on_give_item)
 		add_child(boxes[i])
-		boxes[i].global_position = Vector2(100 + 30 * (i + 1), 200)
+		boxes[i].global_position = Vector2(100 + 30 * (i + 1), 40)
 
 # Give player a random item.
 func on_give_item():
 	# Only gives item if hands are empty
 	if not player.get_node("Hand").get_child_count():
-		var i = rng.randi_range(0, 3)
+		var i = rng.randi_range(3, 3)
 		match i:
 			0:
 				player.get_node("Hand").add_child(speed_boost_scene.instantiate())

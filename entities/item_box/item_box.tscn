@@ -44,8 +44,7 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iaejt"]
 
 [node name="ItemBox" type="Area2D" groups=["item_box"]]
-collision_layer = 8
-collision_mask = 2
+collision_layer = 4
 script = ExtResource("1_5gtv8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
