@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1721511949
+::res://::1721509896
 icon.svg::CompressedTexture2D::7871145411425364212::1719964453::1720994986::1::::<><>::
 README.md::TextFile::-1::1719964453::0::1::::<><>::
 ::res://addons/::1720995531
@@ -8,9 +8,38 @@ README.md::TextFile::-1::1719964453::0::1::::<><>::
 ::res://addons/ropesim/bin/::1721002564
 ::res://addons/ropesim/bin/libropesim.macos.template_debug.framework/::1721002564
 ::res://addons/ropesim/bin/libropesim.macos.template_release.framework/::1721002564
-::res://assets/::1721511736
-::res://assets/tilesets_maps/::1721511736
-Space Cave Tileset.png::CompressedTexture2D::1822689316054452271::1721511736::1721511736::1::::<><>::
+::res://assets/::1721509881
+::res://assets/item_sprites/::1721509881
+bullet_sprite.png::CompressedTexture2D::6234861310913857341::1721509881::1721509881::1::::<><>::
+gravity_controller.png::CompressedTexture2D::4110338235063967066::1721509881::1721509881::1::::<><>::
+jump_boost.png::CompressedTexture2D::3775347958539123133::1721509881::1721509881::1::::<><>::
+speed_boost.png::CompressedTexture2D::4577536156773971857::1721509881::1721509881::1::::<><>::
+::res://assets/item_sprites/Item Traps/::1721509881
+AppearingBox.png::CompressedTexture2D::6491271732336227478::1721509881::1721509881::1::::<><>::
+Apple.png::CompressedTexture2D::7070259193627960360::1721509881::1721509881::1::::<><>::
+Block1.png::CompressedTexture2D::6550799536424836981::1721509881::1721509881::1::::<><>::
+Box.png::CompressedTexture2D::5079452530329302375::1721509881::1721509881::1::::<><>::
+CheckPoint.png::CompressedTexture2D::8062427455010088767::1721509881::1721509881::1::::<><>::
+Coin.png::CompressedTexture2D::6038286860746840256::1721509881::1721509881::1::::<><>::
+Door.png::CompressedTexture2D::8134009941684434836::1721509881::1721509881::1::::<><>::
+FallingRock.png::CompressedTexture2D::2473038157818893802::1721509881::1721509881::1::::<><>::
+Heart.png::CompressedTexture2D::6638875663445705841::1721509881::1721509881::1::::<><>::
+Jumper.png::CompressedTexture2D::6297345020403587412::1721509881::1721509881::1::::<><>::
+Key.png::CompressedTexture2D::2027052087257990959::1721509881::1721509881::1::::<><>::
+Life.png::CompressedTexture2D::3395852684117143533::1721509881::1721509881::1::::<><>::
+miniSuriken.png::CompressedTexture2D::4488147178181011885::1721509881::1721509881::1::::<><>::
+PushBox.png::CompressedTexture2D::6243484804751059263::1721509881::1721509881::1::::<><>::
+RandomBox.png::CompressedTexture2D::8284887540673958659::1721509881::1721509881::1::::<><>::
+Rock.png::CompressedTexture2D::7159586034399700677::1721509881::1721509881::1::::<><>::
+RockDestroy.png::CompressedTexture2D::2545034679419115408::1721509881::1721509881::1::::<><>::
+Spear.png::CompressedTexture2D::7267859866057867550::1721509881::1721509881::1::::<><>::
+Spike2.png::CompressedTexture2D::2378405609553678215::1721509881::1721509881::1::::<><>::
+Spike.png::CompressedTexture2D::2392467151707512051::1721509881::1721509881::1::::<><>::
+Suriken.png::CompressedTexture2D::3580217355123599902::1721509881::1721509881::1::::<><>::
+Treasure1.png::CompressedTexture2D::1204820493295446406::1721509881::1721509881::1::::<><>::
+Treasure2.png::CompressedTexture2D::6745389319658527416::1721509881::1721509881::1::::<><>::
+Treasure3.png::CompressedTexture2D::5661984624322913766::1721509881::1721509881::1::::<><>::
+::res://assets/tilesets_maps/::1721509881
 ::res://assets/tilesets_maps/caves/::1721509881
 ::res://assets/tilesets_maps/caves/adve/::1721509881
 map_preview.png::CompressedTexture2D::639342821426861159::1721509881::1721509881::1::::<><>::
@@ -162,15 +191,6 @@ water1.png::CompressedTexture2D::4572038498920398642::1721509881::1721509881::1:
 water2.png::CompressedTexture2D::3240715072987766422::1721509881::1721509881::1::::<><>::
 water3.png::CompressedTexture2D::1345806280859473952::1721509881::1721509881::1::::<><>::
 water4.png::CompressedTexture2D::3727598266304892687::1721509881::1721509881::1::::<><>::
-::res://assets/tilesets_maps/Tileset/::1721511736
-tileset.png::CompressedTexture2D::3941692346295456881::1721511736::1721511736::1::::<><>::
-vegetation.png::CompressedTexture2D::1480510956190785626::1721511736::1721511736::1::::<><>::
-::res://assets/tilesets_maps/Tileset/slime/::1721511736
-slime_f1.png::CompressedTexture2D::6182415867966778352::1721511736::1721511736::1::::<><>::
-slime_f2.png::CompressedTexture2D::2593331492937845201::1721511736::1721511736::1::::<><>::
-slime_f3.png::CompressedTexture2D::4408227807995956703::1721511736::1721511736::1::::<><>::
-slime_f4.png::CompressedTexture2D::3255477138343728852::1721511736::1721511736::1::::<><>::
-slime_f5.png::CompressedTexture2D::884707173987977572::1721511736::1721511736::1::::<><>::
 ::res://assets/tilesets_maps/traps_foozle/::1721509881
 ::res://assets/tilesets_maps/traps_foozle/Foozle_2DTR0001_Pixel_Trap_Pack/::1721509881
 Readme.txt::TextFile::-1::1721509881::0::1::::<><>::
@@ -299,17 +319,32 @@ Toxic Trap - Level 3 - Transition.png::CompressedTexture2D::119691584087616611::
 ::res://assets/tilesets_maps/traps_foozle/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/::1721509881
 ::res://assets/tilesets_maps/traps_foozle/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/Colour background/::1721509881
 ::res://assets/tilesets_maps/traps_foozle/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/No Background/::1721509881
-::res://decorations/::1721510998
+::res://decorations/::1721509881
 anim_light.gd::GDScript::-1::1721509881::0::1::::<>Area2D<>::
 light.tscn::PackedScene::7328617743897835940::1721509881::0::1::::<><>::res://decorations/anim_light.gd<>uid://d28rgcw8v6h4j::::res://assets/tilesets_maps/dungeons/trapmoor_dungeon/Sprites/WallLight32x32Spritesheet.png<>uid://bitiijo455i0w::::res://assets/tilesets_maps/dungeons/trapmoor_dungeon/Sprites/lamp.png
 moving_tile.gd::GDScript::-1::1721509881::0::1::::<>CharacterBody2D<>::
 moving_tile.tscn::PackedScene::7925154896638598944::1721509881::0::1::::<><>::res://decorations/moving_tile.gd<>uid://bpewy6uxlmb0b::::res://assets/tilesets_maps/dungeons/1-Bit-Ruins-Omniclause/Ruins-Tilesheet-Omniclause(outlines).png
 vert_tile.gd::GDScript::-1::1721509881::0::1::::<>CharacterBody2D<>::
-vert_tile.tscn::PackedScene::49024775448862507::1721510998::0::1::::<><>::res://decorations/vert_tile.gd<>uid://bpewy6uxlmb0b::::res://assets/tilesets_maps/dungeons/1-Bit-Ruins-Omniclause/Ruins-Tilesheet-Omniclause(outlines).png
-::res://entities/::1721511736
-::res://entities/players/::1721511736
-player_1.gd::GDScript::-1::1721511736::0::1::::<>CharacterBody2D<>::
-player_1.tscn::PackedScene::7228420403995031334::1721511736::0::1::::<><>::res://entities/players/player_1.gd<>uid://6vaao2p4o2j8::::res://assets/tilesets_maps/caves/industrial.v2/industrial.v2.png
+vert_tile.tscn::PackedScene::49024775448862507::1721509881::0::1::::<><>::res://decorations/vert_tile.gd<>uid://bpewy6uxlmb0b::::res://assets/tilesets_maps/dungeons/1-Bit-Ruins-Omniclause/Ruins-Tilesheet-Omniclause(outlines).png
+::res://entities/::1721509881
+::res://entities/bullet/::1721509881
+bullet.gd::GDScript::-1::1721509881::0::1::::<>CharacterBody2D<>::
+bullet.tscn::PackedScene::7738219044460652107::1721509881::0::1::::<><>::res://entities/bullet/bullet.gd<>uid://cu3hiwvi06ue4::::res://assets/item_sprites/bullet_sprite.png
+::res://entities/gravity_controller/::1721509881
+gravity_controller.gd::GDScript::-1::1721509881::0::1::::<>Node2D<>::
+gravity_controller.tscn::PackedScene::7604387226069643617::1721509881::0::1::::<><>::res://entities/gravity_controller/gravity_controller.gd<>uid://bytcw10xfpkva::::res://assets/item_sprites/gravity_controller.png
+::res://entities/item_box/::1721509881
+item_box.gd::GDScript::-1::1721509881::0::1::::<>Node2D<>::
+item_box.tscn::PackedScene::7357080423092271332::1721509881::0::1::::<><>::res://entities/item_box/item_box.gd<>uid://cemr3ui6bpu6r::::res://assets/item_sprites/Item Traps/Box.png
+::res://entities/jump_boost/::1721509881
+jump_boost.gd::GDScript::-1::1721509881::0::1::::<>Node2D<>::
+jump_boost.tscn::PackedScene::2387757218501977923::1721509881::0::1::::<><>::res://entities/jump_boost/jump_boost.gd<>uid://bt12oui5hqewr::::res://assets/item_sprites/jump_boost.png
+::res://entities/players/::1721509881
+player_1.gd::GDScript::-1::1721509881::0::1::::<>CharacterBody2D<>::
+player_1.tscn::PackedScene::7228420403995031334::1721509881::0::1::::<><>::res://entities/players/player_1.gd<>uid://6vaao2p4o2j8::::res://assets/tilesets_maps/industrial.v2/industrial.v2.png
+::res://entities/speed_boost/::1721509881
+speed_boost.gd::GDScript::-1::1721509881::0::1::::<>Node2D<>::
+speed_boost.tscn::PackedScene::8362254452656600550::1721509881::0::1::::<><>::res://entities/speed_boost/speed_boost.gd<>uid://b6hnl7t3kmnev::::res://assets/item_sprites/speed_boost.png
 ::res://fonts/::1720994986
 DungeonFont.ttf::FontFile::4294024493737744913::1720994986::1720994986::1::::<><>::
 DwarfFortressVan.ttf::FontFile::6113403599575707540::1720994986::1720994986::1::::<><>::
@@ -330,15 +365,16 @@ flame_vert.tscn::PackedScene::6085050232391041226::1721509881::0::1::::<><>::res
 spinning_flames.gd::GDScript::-1::1721509881::0::1::::<>CharacterBody2D<>::
 spinning_flames.tscn::PackedScene::1073999289964872861::1721509881::0::1::::<><>::res://obstacles/spinning_flames.gd<>uid://b4kw2fjhi05pn::::res://assets/tilesets_maps/Effect and Bullet 16x16/Green Effect and Bullet 16x16.png
 ::res://scenes/::1721161142
-::res://scenes/level_01/::1721511736
+::res://scenes/level_01/::1721509881
 anim_spike.gd::GDScript::-1::1721509881::0::1::::<>Area2D<>::
-level_01.tscn::PackedScene::8218368947275210179::1721511736::0::1::::<><>::uid://cp4ftapxns3pv::::res://assets/tilesets_maps/dungeons/Dungeon Tile Set/Dungeon Tile Set.png<>uid://da8ra7ljeknhu::::res://entities/players/player_1.tscn<>uid://bm0dc55mq3lx5::::res://assets/tilesets_maps/dungeons/trapmoor_dungeon/TrapmoorTileset_v03.png<>uid://bpewy6uxlmb0b::::res://assets/tilesets_maps/dungeons/1-Bit-Ruins-Omniclause/Ruins-Tilesheet-Omniclause(outlines).png<>uid://bx2qtkv3wpte6::::res://assets/tilesets_maps/dungeons/1-Bit-Ruins-Omniclause/Animated-Tiles/Waterfall/Waterfall-Bottom.png<>uid://cke0kpsxvgsrk::::res://obstacles/anim_spike.tscn<>uid://b8m77405vir08::::res://obstacles/collapse_floor.tscn<>uid://1d35eianwr46::::res://assets/tilesets_maps/dungeons/1-Bit-Ruins-Omniclause/Animated-Tiles/Waterfall/Waterfall-Middle.png<>uid://cwexr8ma4hivd::::res://assets/tilesets_maps/dungeons/1-Bit-Ruins-Omniclause/Animated-Tiles/Waterfall/Waterfall-Top.png<>uid://dcobi7vj8m8nw::::res://decorations/light.tscn<>uid://0dhdlfmr83ni::::res://assets/tilesets_maps/dungeons/1-Bit-Ruins-Omniclause/Animated-Tiles/Animated-Water-Tiles-Sheet(10-frames).png<>uid://jtgh82rsjxeh::::res://assets/tilesets_maps/dungeons/1-Bit-Ruins-Omniclause/Animated-Tiles/Wall-Torch.png<>uid://bwfndkgwekrob::::res://assets/tilesets_maps/Tileset/tileset.png<>uid://vdf2f2rx12ve::::res://assets/tilesets_maps/Tileset/vegetation.png<>uid://pkiu11f0ykw0::::res://obstacles/spinning_flames.tscn<>uid://ca7dy5lvagvjf::::res://obstacles/flames.tscn<>uid://076orkqiqpsp::::res://assets/tilesets_maps/Space Cave Tileset.png<>uid://csxv5g4mugtgc::::res://obstacles/flame_vert.tscn<>uid://dk6ae4vahcq2k::::res://decorations/moving_tile.tscn<>uid://x0owdwr6wf8::::res://decorations/vert_tile.tscn
-::res://scenes/main/::1721511935
+level_01.gd::GDScript::-1::1721509881::0::1::::<>Node2D<>::
+level_01.tscn::PackedScene::8218368947275210179::1721509881::0::1::::<><>::uid://cp4ftapxns3pv::::res://assets/tilesets_maps/dungeons/Dungeon Tile Set/Dungeon Tile Set.png<>uid://da8ra7ljeknhu::::res://entities/players/player_1.tscn<>uid://b4e6ojdv7x6tk::::res://assets/tilesets_maps/dungeons/2d_metroid_asset_1_2/metroid_asset_1_2/Sprites/Environment/2d_metroidvania_serie_mockup_1_tileset.png<>uid://bm0dc55mq3lx5::::res://assets/tilesets_maps/dungeons/trapmoor_dungeon/TrapmoorTileset_v03.png<>uid://dh7tcnkakt064::::res://assets/tilesets_maps/caves/underground_areas/cavesofgallet_tiles.png<>uid://bpewy6uxlmb0b::::res://assets/tilesets_maps/dungeons/1-Bit-Ruins-Omniclause/Ruins-Tilesheet-Omniclause(outlines).png<>uid://bx2qtkv3wpte6::::res://assets/tilesets_maps/dungeons/1-Bit-Ruins-Omniclause/Animated-Tiles/Waterfall/Waterfall-Bottom.png<>uid://cke0kpsxvgsrk::::res://obstacles/anim_spike.tscn<>uid://b8m77405vir08::::res://obstacles/collapse_floor.tscn<>uid://catnei36uf3jx::::res://assets/tilesets_maps/caves/underground_areas/cavesofgallet_tiles_scaled_2x_pngcrushed.png<>uid://1d35eianwr46::::res://assets/tilesets_maps/dungeons/1-Bit-Ruins-Omniclause/Animated-Tiles/Waterfall/Waterfall-Middle.png<>uid://cw57a7c5h3v6n::::res://assets/tilesets_maps/caves/adve/tiles.png<>uid://cwexr8ma4hivd::::res://assets/tilesets_maps/dungeons/1-Bit-Ruins-Omniclause/Animated-Tiles/Waterfall/Waterfall-Top.png<>uid://dcobi7vj8m8nw::::res://decorations/light.tscn<>uid://0dhdlfmr83ni::::res://assets/tilesets_maps/dungeons/1-Bit-Ruins-Omniclause/Animated-Tiles/Animated-Water-Tiles-Sheet(10-frames).png<>uid://jtgh82rsjxeh::::res://assets/tilesets_maps/dungeons/1-Bit-Ruins-Omniclause/Animated-Tiles/Wall-Torch.png<>uid://pkiu11f0ykw0::::res://obstacles/spinning_flames.tscn<>uid://ca7dy5lvagvjf::::res://obstacles/flames.tscn<>uid://csxv5g4mugtgc::::res://obstacles/flame_vert.tscn<>uid://dk6ae4vahcq2k::::res://decorations/moving_tile.tscn<>uid://x0owdwr6wf8::::res://decorations/vert_tile.tscn
+::res://scenes/main/::1721509888
 main.gd::GDScript::-1::1720994986::0::1::::<>Control<>::
 main.tscn::PackedScene::3876857004100717685::1721509881::0::1::::<><>::res://scenes/main/main.gd<>uid://calmxaeagvmy5::::res://assets/tilesets_maps/outside/sky-backgrounds/Clouds/Clouds 4/1.png<>res://scenes/main/scroll_menu.gdshader<>uid://bmc4650jnfjb4::::res://assets/tilesets_maps/outside/sky-backgrounds/Clouds/Clouds 4/2.png<>res://scenes/main/scroll_menu2.gdshader<>uid://bq21k8phmstli::::res://assets/tilesets_maps/outside/sky-backgrounds/Clouds/Clouds 4/3.png<>res://scenes/main/scroll_menu3.gdshader<>uid://t007yb7qf2px::::res://assets/tilesets_maps/outside/sky-backgrounds/Clouds/Clouds 4/4.png<>uid://c7p35onh65yl::::res://fonts/SRAFreePixelFontPack/PixelHigh.ttf<>uid://6m4t3ilvplpx::::res://fonts/SRAFreePixelFontPack/PixelMiddle.ttf
-scroll_menu2.gdshader::Shader::-1::1721511935::0::1::::<><>::
-scroll_menu3.gdshader::Shader::-1::1721511935::0::1::::<><>::
-scroll_menu.gdshader::Shader::-1::1721511935::0::1::::<><>::
+scroll_menu2.gdshader::Shader::-1::1721509888::0::1::::<><>::
+scroll_menu3.gdshader::Shader::-1::1721509888::0::1::::<><>::
+scroll_menu.gdshader::Shader::-1::1721509888::0::1::::<><>::
 ::res://scenes/options/::1721509881
 options.gd::GDScript::-1::1720994986::0::1::::<>Control<>::
 options.tscn::PackedScene::1214452362894360836::1721509881::0::1::::<><>::res://scenes/options/options.gd<>uid://ctdm4m52m4edw::::res://fonts/DwarfFortressVan.ttf<>uid://dm113sjyfbifj::::res://assets/tilesets_maps/outside/sky-backgrounds/Clouds/Clouds 5/4.png

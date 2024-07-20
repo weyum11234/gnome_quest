@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://baawaoqulvhj4"]
+
+[ext_resource type="Script" path="res://entities/jump_boost/jump_boost.gd" id="1_wdkrj"]
+[ext_resource type="Texture2D" uid="uid://bt12oui5hqewr" path="res://assets/item_sprites/jump_boost.png" id="2_oo5my"]
+
+[node name="JumpBoost" type="Node2D"]
+script = ExtResource("1_wdkrj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_oo5my")

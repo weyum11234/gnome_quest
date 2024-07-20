@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dre0dyd4a5hhm"]
+
+[ext_resource type="Script" path="res://entities/speed_boost/speed_boost.gd" id="1_1jmyi"]
+[ext_resource type="Texture2D" uid="uid://b6hnl7t3kmnev" path="res://assets/item_sprites/speed_boost.png" id="2_re48o"]
+
+[node name="SpeedBoost" type="Node2D"]
+script = ExtResource("1_1jmyi")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_re48o")
