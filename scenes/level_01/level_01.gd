@@ -30,7 +30,7 @@ func spawn_entities():
 		boxes.append(item_box_scene.instantiate())
 		boxes[i].connect("give_item", on_give_item)
 		add_child(boxes[i])
-		boxes[i].global_position = Vector2(100 + 30 * (i + 1), 20)
+		boxes[i].global_position = Vector2(100 + 30 * (i + 1), 200)
 
 # Give player a random item.
 func on_give_item():

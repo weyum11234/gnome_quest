@@ -16,7 +16,7 @@ var coyote_timer = 0.0
 # State variables
 @onready var animation = "idle"
 var facing
-var spawn_position = Vector2(100, 20)
+var spawn_position = Vector2(100, 200)
 
 func _ready():
 	pass
@@ -86,7 +86,3 @@ func _on_hazard_detector_area_entered(area):
 	if area.is_in_group("hazard"):
 		global_position = spawn_position
 		print_debug("player killed")
-
-func _on_hazard_detector_body_entered(body):
-	print("yah yeet")
-	pass # Replace with function body.
