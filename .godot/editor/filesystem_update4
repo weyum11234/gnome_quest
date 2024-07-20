@@ -3,8 +3,5 @@ res://entities/players/player_1.gd
 res://scenes/main/scroll_menu2.gdshader
 res://scenes/main/scroll_menu3.gdshader
 res://scenes/main/scroll_menu.gdshader
-res://obstacles/flame_vert.tscn
-res://decorations/moving_tile.tscn
-res://decorations/moving_tile.gd
 res://decorations/vert_tile.tscn
-res://decorations/vert_tile.gd
+res://entities/players/player_1.tscn

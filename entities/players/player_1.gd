@@ -83,6 +83,9 @@ func _input(event):
 			$Hand.get_children()[0].alt_use(self)
 
 func _on_hazard_detector_area_entered(area):
-	if area.is_in_group("hazard"):
+		global_position = spawn_position
+		print_debug("player killed")
+
+func _on_hazard_detector_body_entered(body):
 		global_position = spawn_position
 		print_debug("player killed")
