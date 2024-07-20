@@ -4,3 +4,4 @@ res://scenes/main/scroll_menu2.gdshader
 res://scenes/main/scroll_menu3.gdshader
 res://scenes/main/scroll_menu.gdshader
 res://decorations/vert_tile.tscn
+res://entities/players/player_1.tscn
