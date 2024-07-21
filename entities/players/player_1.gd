@@ -85,6 +85,7 @@ func _input(event):
 func _on_hazard_detector_area_entered(area):
 	if area.is_in_group("hazard"):
 		global_position = spawn_position
+	print(area)
 
 func _on_hazard_detector_body_entered(body):
 		global_position = spawn_position
