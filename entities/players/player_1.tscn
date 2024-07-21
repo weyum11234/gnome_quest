@@ -152,6 +152,7 @@ frame_progress = 0.157274
 position = Vector2(6, 1)
 
 [node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.4, 1.4)
 drag_vertical_enabled = true
 drag_top_margin = 0.5
 drag_bottom_margin = 0.5

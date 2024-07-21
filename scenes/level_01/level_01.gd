@@ -8,11 +8,20 @@ extends Node2D
 @onready var bullet_scene = preload("res://entities/bullet/bullet.tscn")
 @onready var rng = RandomNumberGenerator.new()
 
-var player : Object
+@onready var player = $Player1
+
 var boxes : Array
+var placeholders : Array
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	player.spawn_position = player.global_position
+	
+	placeholders.append($Placeholder1.global_position)
+	placeholders.append($Placeholder2.global_position)
+	placeholders.append($Placeholder3.global_position)
+	placeholders.append($Placeholder4.global_position)
+	placeholders.append($Placeholder5.global_position)
 	spawn_entities()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -21,22 +30,23 @@ func _process(delta):
 
 func spawn_entities():
 	# Spawn player
-	player = player_scene.instantiate()
-	add_child(player)
-	player.global_position = player.spawn_position
+	#player = player_scene.instantiate()
+	#add_child(player)
+	#player.global_position = player.spawn_position
 	
 	# Spawn item boxes
-	for i in range(3):
+	for i in range(placeholders.size()):
 		boxes.append(item_box_scene.instantiate())
 		boxes[i].connect("give_item", on_give_item)
 		add_child(boxes[i])
-		boxes[i].global_position = Vector2(100 + 30 * (i + 1), 40)
+		boxes[i].global_position = placeholders[i]
+	pass
 
 # Give player a random item.
 func on_give_item():
 	# Only gives item if hands are empty
 	if not player.get_node("Hand").get_child_count():
-		var i = rng.randi_range(3, 3)
+		var i = rng.randi_range(0, 3)
 		match i:
 			0:
 				player.get_node("Hand").add_child(speed_boost_scene.instantiate())

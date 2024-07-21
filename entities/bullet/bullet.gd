@@ -45,3 +45,6 @@ func use(player : Object):
 	player.get_node("Hand").remove_child(self)
 	state_scene.add_child(self)
 	state_scene.get_node("Bullet" + str(id)).global_position = player.get_node("Hand").global_position
+
+func alt_use(player : Object):
+	pass

@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
 # Physics constants
-@export var speed = 80.0
-@export var jump_velocity = -75.0
+@export var speed = 200.0
+@export var jump_velocity = -170.0
 @export var jump_time = 0.25
 @export var coyote_time = 0.05
 @export var gravity_multiplier = 1.0
@@ -16,7 +16,7 @@ var coyote_timer = 0.0
 # State variables
 @onready var animation = "idle"
 var facing
-var spawn_position = Vector2(100, 40)
+var spawn_position
 
 func _ready():
 	pass

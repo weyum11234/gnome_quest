@@ -12,7 +12,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if player and boost_timer < boost_time:
-		player.jump_velocity = jump_velo * 3
+		player.jump_velocity = jump_velo * 1.5
 		boost_timer += delta
 	elif player:
 		player.jump_velocity = jump_velo
