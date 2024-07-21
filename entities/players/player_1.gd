@@ -88,4 +88,3 @@ func _on_hazard_detector_area_entered(area):
 
 func _on_hazard_detector_body_entered(body):
 		global_position = spawn_position
-		print("yo dead")

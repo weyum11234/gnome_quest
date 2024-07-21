@@ -17,7 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://vdf2f2rx12ve" path="res://assets/tilesets_maps/Tileset/vegetation.png" id="10_aio4a"]
 [ext_resource type="PackedScene" uid="uid://pkiu11f0ykw0" path="res://obstacles/spinning_flames.tscn" id="10_f5g34"]
 [ext_resource type="PackedScene" uid="uid://ca7dy5lvagvjf" path="res://obstacles/flames.tscn" id="11_jqbmo"]
-[ext_resource type="Texture2D" path="res://assets/tilesets_maps/Space Cave Tileset.png" id="11_x6nhj"]
+[ext_resource type="Texture2D" uid="uid://076orkqiqpsp" path="res://assets/tilesets_maps/Space Cave Tileset.png" id="11_x6nhj"]
 [ext_resource type="PackedScene" uid="uid://csxv5g4mugtgc" path="res://obstacles/flame_vert.tscn" id="12_l1y46"]
 [ext_resource type="PackedScene" uid="uid://dk6ae4vahcq2k" path="res://decorations/moving_tile.tscn" id="20_323mx"]
 [ext_resource type="PackedScene" uid="uid://x0owdwr6wf8" path="res://decorations/vert_tile.tscn" id="21_s7la5"]
@@ -1182,7 +1182,7 @@ texture = ExtResource("3_eio7d")
 15:1/0/physics_layer_0/angular_velocity = 0.0
 15:1/0/physics_layer_1/linear_velocity = Vector2(0, 0)
 15:1/0/physics_layer_1/angular_velocity = 0.0
-15:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -4, 8, -4, 8, 8, -8, 8)
+15:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 8, 8, -8, 8)
 16:1/0 = 0
 16:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 16:1/0/physics_layer_0/angular_velocity = 0.0
