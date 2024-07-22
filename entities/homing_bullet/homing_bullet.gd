@@ -13,7 +13,7 @@ var grace_period_timer = 0.0
 
 func _ready():
 	id += 1
-	name = "Bullet" + str(id)
+	name = "HomingBullet" + str(id)
 	$AnimationPlayer.play("bullet_spin")
 
 func _physics_process(delta):
@@ -41,7 +41,7 @@ func use(player : Object):
 	# Move scene from Player to Level scenes.
 	player.get_node("Hand").remove_child(self)
 	state_scene.add_child(self)
-	state_scene.get_node("Bullet" + str(id)).global_position = player.get_node("Hand").global_position
+	state_scene.get_node("HomingBullet" + str(id)).global_position = player.get_node("Hand").global_position
 
 func alt_use(player : Object):
 	pass

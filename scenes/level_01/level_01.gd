@@ -47,7 +47,7 @@ func spawn_entities():
 func on_give_item():
 	# Only gives item if hands are empty
 	if not player.get_node("Hand").get_child_count():
-		var i = rng.randi_range(4, 4)
+		var i = rng.randi_range(3, 4)
 		match i:
 			0:
 				player.get_node("Hand").add_child(speed_boost_scene.instantiate())

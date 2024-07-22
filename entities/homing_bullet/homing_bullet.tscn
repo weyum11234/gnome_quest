@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://clt80pk1q3hyd"]
 
 [ext_resource type="Script" path="res://entities/homing_bullet/homing_bullet.gd" id="1_s8sb6"]
-[ext_resource type="Texture2D" uid="uid://cu3hiwvi06ue4" path="res://assets/item_sprites/bullet_sprite.png" id="2_01r2t"]
+[ext_resource type="Texture2D" uid="uid://b6k1srlvcn4mi" path="res://assets/item_sprites/homing_bullet_sprite.png" id="2_chpwi"]
 
 [sub_resource type="Animation" id="Animation_o2o0a"]
 resource_name = "bullet_spin"
@@ -28,13 +28,14 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yc2xs"]
 size = Vector2(18, 13)
 
-[node name="Bullet" type="CharacterBody2D"]
+[node name="HomingBullet" type="CharacterBody2D"]
+scale = Vector2(0.7, 0.7)
 collision_layer = 0
 collision_mask = 3
 script = ExtResource("1_s8sb6")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_01r2t")
+texture = ExtResource("2_chpwi")
 hframes = 3
 vframes = 4
 
