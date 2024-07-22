@@ -1,14 +1,15 @@
 extends Node2D
 
-@onready var player_scene = preload("res://entities/players/player_1.tscn")
+@onready var player_scene = preload("res://entities/players/player.tscn")
 @onready var item_box_scene = preload("res://entities/item_box/item_box.tscn")
 @onready var speed_boost_scene = preload("res://entities/speed_boost/speed_boost.tscn")
 @onready var jump_boost_scene = preload("res://entities/jump_boost/jump_boost.tscn")
 @onready var grav_cntrl_scene = preload("res://entities/gravity_controller/gravity_controller.tscn")
 @onready var bullet_scene = preload("res://entities/bullet/bullet.tscn")
+@onready var homing_bullet_scene = preload("res://entities/homing_bullet/homing_bullet.tscn")
 @onready var rng = RandomNumberGenerator.new()
 
-@onready var player = $Player1
+@onready var player = $Player
 
 var boxes : Array
 var placeholders : Array
@@ -46,7 +47,7 @@ func spawn_entities():
 func on_give_item():
 	# Only gives item if hands are empty
 	if not player.get_node("Hand").get_child_count():
-		var i = rng.randi_range(0, 3)
+		var i = rng.randi_range(4, 4)
 		match i:
 			0:
 				player.get_node("Hand").add_child(speed_boost_scene.instantiate())
@@ -58,5 +59,9 @@ func on_give_item():
 				var bullet = bullet_scene.instantiate()
 				bullet.state_scene = self
 				player.get_node("Hand").add_child(bullet)
+			4:
+				var homing_bullet = homing_bullet_scene.instantiate()
+				homing_bullet.state_scene = self
+				player.get_node("Hand").add_child(homing_bullet)
 		print_debug("gave item")
 	

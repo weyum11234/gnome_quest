@@ -47,13 +47,11 @@ func _physics_process(delta):
 		if $AnimatedSprite2D.flip_h and $Hand.get_child_count():
 			$Hand.position = Vector2(-6, 1)
 			if $Hand.get_children()[0] is CharacterBody2D:
-				$Hand.get_children()[0].get_node("RayCast2D").target_position = Vector2(-8.5, 0)
-				$Hand.get_children()[0].get_node("Sprite2D").flip_h = true
+				$Hand.get_children()[0].scale.x = abs($Hand.get_children()[0].scale.x) * -1
 		elif $Hand.get_child_count():
 			$Hand.position = Vector2(6, 1)
 			if $Hand.get_children()[0] is CharacterBody2D:
-				$Hand.get_children()[0].get_node("RayCast2D").target_position = Vector2(8.5, 0)
-				$Hand.get_children()[0].get_node("Sprite2D").flip_h = false
+				$Hand.get_children()[0].scale.x = abs($Hand.get_children()[0].scale.x)
 	else:
 		velocity.x = move_toward(velocity.x, 0, speed)
 		
