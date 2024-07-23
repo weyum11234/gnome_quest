@@ -7,3 +7,5 @@ res://decorations/vert_tile.tscn
 res://entities/players/player_1.tscn
 res://scenes/main/transition_screen.tscn
 res://decorations/invis_rect.tscn
+res://obstacles/anim_spike.tscn
+res://scenes/main/main.tscn
