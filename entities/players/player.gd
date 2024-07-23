@@ -15,14 +15,22 @@ var coyote_timer = 0.0
 
 # State variables
 @onready var animation = "idle"
-var facing
-var spawn_position
+var spawn_time = 1.0
+var spawn_timer = -1
+var facing : int
+var spawn_position : Vector2
 
 func _ready():
 	pass
 	
 func _process(delta):
-	pass
+	if spawn_timer > -1 and spawn_timer < spawn_time:
+		spawn_timer += delta
+	elif spawn_timer > spawn_time:
+		set_physics_process(true)
+		set_process_input(true)
+		animation = "idle"
+		spawn_timer = -1
 
 func _physics_process(delta):
 	# Set default animation every delta
@@ -42,20 +50,18 @@ func _physics_process(delta):
 		facing = direction
 		animation = "walk"
 		$AnimatedSprite2D.flip_h = velocity.x < 0
-		
-		# Flip hand position.
-		if $AnimatedSprite2D.flip_h and $Hand.get_child_count():
-			$Hand.position = Vector2(-6, 1)
-			if $Hand.get_children()[0] is CharacterBody2D:
-				$Hand.get_children()[0].get_node("RayCast2D").target_position = Vector2(-8.5, 0)
-				$Hand.get_children()[0].get_node("Sprite2D").flip_h = true
-		elif $Hand.get_child_count():
-			$Hand.position = Vector2(6, 1)
-			if $Hand.get_children()[0] is CharacterBody2D:
-				$Hand.get_children()[0].get_node("RayCast2D").target_position = Vector2(8.5, 0)
-				$Hand.get_children()[0].get_node("Sprite2D").flip_h = false
 	else:
 		velocity.x = move_toward(velocity.x, 0, speed)
+		
+	# Flip hand position.
+	if $AnimatedSprite2D.flip_h and $Hand.get_child_count():
+		$Hand.position = Vector2(-6, 1)
+		if $Hand.get_children()[0] is CharacterBody2D:
+			$Hand.get_children()[0].scale.x = abs($Hand.get_children()[0].scale.x) * -1
+	elif $Hand.get_child_count():
+		$Hand.position = Vector2(6, 1)
+		if $Hand.get_children()[0] is CharacterBody2D:
+			$Hand.get_children()[0].scale.x = abs($Hand.get_children()[0].scale.x)
 		
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and (is_on_floor() or coyote_timer < coyote_time):
@@ -84,8 +90,17 @@ func _input(event):
 
 func _on_hazard_detector_area_entered(area):
 	if area.is_in_group("hazard"):
+		spawn_timer = 0
 		global_position = spawn_position
-	print(area)
+		set_physics_process(false)
+		set_process_input(false)
+		$AnimatedSprite2D.play("respawn")
+		$AudioStreamPlayer2D.play()
 
 func _on_hazard_detector_body_entered(body):
-		global_position = spawn_position
+	spawn_timer = 0
+	global_position = spawn_position
+	set_physics_process(false)
+	set_process_input(false)
+	$AnimatedSprite2D.play("respawn")
+	$AudioStreamPlayer2D.play()

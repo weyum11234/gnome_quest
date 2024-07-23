@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cp4ftapxns3pv" path="res://assets/tilesets_maps/dungeons/Dungeon Tile Set/Dungeon Tile Set.png" id="1_2etwt"]
 [ext_resource type="Script" path="res://scenes/level_01/level_01.gd" id="1_c53np"]
-[ext_resource type="PackedScene" uid="uid://da8ra7ljeknhu" path="res://entities/players/player_1.tscn" id="1_vee1p"]
+[ext_resource type="PackedScene" uid="uid://da8ra7ljeknhu" path="res://entities/players/player.tscn" id="1_vee1p"]
 [ext_resource type="Texture2D" uid="uid://bm0dc55mq3lx5" path="res://assets/tilesets_maps/dungeons/trapmoor_dungeon/TrapmoorTileset_v03.png" id="2_x342i"]
 [ext_resource type="Texture2D" uid="uid://bpewy6uxlmb0b" path="res://assets/tilesets_maps/dungeons/1-Bit-Ruins-Omniclause/Ruins-Tilesheet-Omniclause(outlines).png" id="3_eio7d"]
 [ext_resource type="Texture2D" uid="uid://bx2qtkv3wpte6" path="res://assets/tilesets_maps/dungeons/1-Bit-Ruins-Omniclause/Animated-Tiles/Waterfall/Waterfall-Bottom.png" id="4_bnq41"]
@@ -2395,8 +2395,11 @@ movement_distance = 150.0
 movement_speed = 100.0
 direction = false
 
-[node name="Player1" parent="." instance=ExtResource("1_vee1p")]
-position = Vector2(1110, 84)
+[node name="Player" parent="." instance=ExtResource("1_vee1p")]
+position = Vector2(408, 56)
+
+[node name="Dummy" parent="." instance=ExtResource("1_vee1p")]
+position = Vector2(616, 56)
 
 [node name="Placeholder1" type="Node2D" parent="."]
 position = Vector2(72, 40)
@@ -2412,3 +2415,5 @@ position = Vector2(1272, 72)
 
 [node name="Placeholder5" type="Node2D" parent="."]
 position = Vector2(1859, 76)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
