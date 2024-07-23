@@ -1,13 +1,11 @@
-#manas branch
 extends CharacterBody2D
 
-
-@export var speed = 150.0
-@export var jump_velocity = -200.0
+# Physics constants
+@export var speed = 80.0
+@export var jump_velocity = -75.0
 @export var jump_time = 0.25
-@export var coyote_time = 0.075
+@export var coyote_time = 0.05
 @export var gravity_multiplier = 1.0
-
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -15,10 +13,16 @@ var is_jumping = false
 var jump_timer = 0.0
 var coyote_timer = 0.0
 
+# State variables
+@onready var animation = "idle"
+var facing
+var spawn_position = Vector2(100, 40)
 
-# Helper variable for handling animation
-var animation = "idle"
-
+func _ready():
+	pass
+	
+func _process(delta):
+	pass
 
 func _physics_process(delta):
 	# Set default animation every delta
@@ -35,8 +39,21 @@ func _physics_process(delta):
 	var direction = Input.get_axis("left", "right")
 	if direction:
 		velocity.x = direction * speed
+		facing = direction
 		animation = "walk"
 		$AnimatedSprite2D.flip_h = velocity.x < 0
+		
+		# Flip hand position.
+		if $AnimatedSprite2D.flip_h and $Hand.get_child_count():
+			$Hand.position = Vector2(-6, 1)
+			if $Hand.get_children()[0] is CharacterBody2D:
+				$Hand.get_children()[0].get_node("RayCast2D").target_position = Vector2(-8.5, 0)
+				$Hand.get_children()[0].get_node("Sprite2D").flip_h = true
+		elif $Hand.get_child_count():
+			$Hand.position = Vector2(6, 1)
+			if $Hand.get_children()[0] is CharacterBody2D:
+				$Hand.get_children()[0].get_node("RayCast2D").target_position = Vector2(8.5, 0)
+				$Hand.get_children()[0].get_node("Sprite2D").flip_h = false
 	else:
 		velocity.x = move_toward(velocity.x, 0, speed)
 		
@@ -53,14 +70,22 @@ func _physics_process(delta):
 	else:
 		is_jumping = false
 		jump_timer = 0
-	
+
 	$AnimatedSprite2D.play(animation)
 	move_and_slide()
 
-
-func _on_hazard_detector_body_entered(body):
-	queue_free()
-
+# Handle item interactions.
+func _input(event):
+	if event is InputEventMouseButton:
+		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed and $Hand.get_child_count(): # Main use
+			$Hand.get_children()[0].use(self)
+		elif event.button_index == MOUSE_BUTTON_RIGHT and event.pressed and $Hand.get_child_count(): # Alternative use
+			$Hand.get_children()[0].alt_use(self)
 
 func _on_hazard_detector_area_entered(area):
-	queue_free()
+	if area.is_in_group("hazard"):
+		global_position = spawn_position
+
+func _on_hazard_detector_body_entered(body):
+		global_position = spawn_position
+		print("yo dead")

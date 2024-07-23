@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dglve8p53rdpp"]
+
+[ext_resource type="Script" path="res://entities/gravity_controller/gravity_controller.gd" id="1_f4ubg"]
+[ext_resource type="Texture2D" uid="uid://bytcw10xfpkva" path="res://assets/item_sprites/gravity_controller.png" id="1_v6qqt"]
+
+[node name="GravityController" type="Node2D"]
+script = ExtResource("1_f4ubg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_v6qqt")
