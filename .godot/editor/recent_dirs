@@ -1,4 +1,6 @@
 res://decorations
+res://global
+res://scenes/main
 res://assets/tilesets_maps/dungeons/1-Bit-Ruins-Omniclause
 res://assets/tilesets_maps/caves/industrial.v2
 res://assets/tilesets_maps/Effect and Bullet 16x16
@@ -7,7 +9,6 @@ res://assets/tilesets_maps/traps_foozle/Foozle_2DTR0001_Pixel_Trap_Pack/Ceiling 
 res://assets/tilesets_maps/dungeons/trapmoor_dungeon/Sprites
 res://scenes/level_01
 res://fonts
-res://scenes/main
 res://
 res://entities
 res://scenes

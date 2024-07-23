@@ -27,6 +27,9 @@ func on_cont_down() -> void:
 	
 func on_ng_down() -> void:
 	get_tree().change_scene_to_file("res://scenes/level_01/level_01.tscn")
+	TransitionScreen.transition()
+	await TransitionScreen.on_transition_finished
+	
 	
 	
 func on_options_down() -> void:
