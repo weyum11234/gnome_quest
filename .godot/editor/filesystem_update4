@@ -15,3 +15,5 @@ res://entities/knife/knife.tscn
 res://entities/knife/knife.gd
 res://entities/bullet/bullet.gd
 res://entities/item_box/item_box.tscn
+res://entities/gold_knife/gold_knife.tscn
+res://entities/gold_knife/gold_knife.gd
