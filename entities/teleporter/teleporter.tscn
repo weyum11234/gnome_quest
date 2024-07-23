@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://7w648u5ih77e"]
+
+[ext_resource type="Texture2D" uid="uid://47b5e2k8aajs" path="res://assets/item_sprites/teleporter.png" id="1_e5rdf"]
+[ext_resource type="Script" path="res://entities/teleporter/teleporter.gd" id="1_tr7vc"]
+
+[node name="Teleporter" type="Node2D"]
+script = ExtResource("1_tr7vc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_e5rdf")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(0, 0)

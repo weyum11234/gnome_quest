@@ -2,7 +2,7 @@ extends Node2D
 
 @export var boost_time = 5.0
 @onready var boost_timer = 0.0
-@onready var new_grav = 0.1
+@onready var new_grav = 0.3
 var player : Object
 
 # Called when the node enters the scene tree for the first time.

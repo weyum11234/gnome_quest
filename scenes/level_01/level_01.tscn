@@ -2396,7 +2396,10 @@ movement_speed = 100.0
 direction = false
 
 [node name="Player" parent="." instance=ExtResource("1_vee1p")]
-position = Vector2(-72, 56)
+position = Vector2(408, 56)
+
+[node name="Dummy" parent="." instance=ExtResource("1_vee1p")]
+position = Vector2(616, 56)
 
 [node name="Placeholder1" type="Node2D" parent="."]
 position = Vector2(72, 40)
@@ -2412,3 +2415,5 @@ position = Vector2(1272, 72)
 
 [node name="Placeholder5" type="Node2D" parent="."]
 position = Vector2(1859, 76)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
