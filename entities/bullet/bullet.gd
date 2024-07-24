@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-@export var speed = 100.0
+@export var speed = 150.0
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -29,19 +29,24 @@ func _physics_process(delta):
 			grace_period_timer += delta
 		else:
 			$Area2D.add_to_group("hazard")
-		# Handles collision.
-		if $RayCast2D.is_colliding():
-			# Delete bullet when it kills a player.
-			if $RayCast2D.get_collider().name == "Player1":
-				queue_free()
-			# Otherwise, bounce.
-			direction *= -1
-			$RayCast2D.target_position = Vector2($RayCast2D.target_position.x * -1, 0)
-			$Sprite2D.flip_h = ($Sprite2D.flip_h != true)
-		
+			# Handles collision.
+			if $RayCast2D.is_colliding():
+				# Delete bullet when it kills a player.
+				if $RayCast2D.get_collider().name == "Player1":
+					queue_free()
+				# Otherwise, bounce.
+				direction *= -1
+				$RayCast2D.target_position = Vector2($RayCast2D.target_position.x * -1, 0)
+				$Sprite2D.flip_h = ($Sprite2D.flip_h != true)
+			
 func use(player : Object):
 	direction = player.facing
 	# Move scene from Player to Level scenes.
 	player.get_node("Hand").remove_child(self)
 	state_scene.add_child(self)
 	state_scene.get_node("Bullet" + str(id)).global_position = player.get_node("Hand").global_position
+	$AudioStreamPlayer2D.stream = load("res://assets/sounds/shot-gun_D_minor.wav")
+	$AudioStreamPlayer2D.play()
+
+func alt_use(player : Object):
+	pass

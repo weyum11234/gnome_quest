@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbf1wri2xe0vo"]
+
+[ext_resource type="Script" path="res://entities/grappling_hook/grappling_hook.gd" id="1_g8ltu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jm4kx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pgcrf"]
+
+[node name="GrapplingHook" type="Node2D"]
+script = ExtResource("1_g8ltu")
+
+[node name="StartPiece" type="Node2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StartPiece"]
+shape = SubResource("CircleShape2D_jm4kx")
+
+[node name="EndPiece" type="Node2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EndPiece"]
+shape = SubResource("CircleShape2D_pgcrf")

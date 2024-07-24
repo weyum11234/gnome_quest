@@ -1,70 +1,88 @@
-[gd_scene load_steps=22 format=3 uid="uid://da8ra7ljeknhu"]
+[gd_scene load_steps=28 format=3 uid="uid://da8ra7ljeknhu"]
 
-[ext_resource type="Script" path="res://entities/players/player_1.gd" id="1_o0wvp"]
-[ext_resource type="Texture2D" uid="uid://6vaao2p4o2j8" path="res://assets/tilesets_maps/caves/industrial.v2/industrial.v2.png" id="2_oap0c"]
+[ext_resource type="Script" path="res://entities/players/player.gd" id="1_cl06y"]
+[ext_resource type="Texture2D" uid="uid://6vaao2p4o2j8" path="res://assets/tilesets_maps/caves/industrial.v2/industrial.v2.png" id="2_8tjra"]
+[ext_resource type="Texture2D" uid="uid://dkph32kv7qse4" path="res://assets/tilesets_maps/caves/industrial.v2/recolored_player.png" id="3_xfqrp"]
+[ext_resource type="AudioStream" uid="uid://bcrdmebtb3ved" path="res://assets/sounds/knife-stab-sound-fx.wav" id="4_laxvq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nthc3"]
-atlas = ExtResource("2_oap0c")
+atlas = ExtResource("2_8tjra")
 region = Rect2(0, 256, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d1mk8"]
-atlas = ExtResource("2_oap0c")
+atlas = ExtResource("2_8tjra")
 region = Rect2(16, 256, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8nnso"]
-atlas = ExtResource("2_oap0c")
+atlas = ExtResource("2_8tjra")
 region = Rect2(32, 256, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gji8h"]
-atlas = ExtResource("2_oap0c")
+atlas = ExtResource("2_8tjra")
 region = Rect2(48, 256, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e3tv3"]
-atlas = ExtResource("2_oap0c")
+atlas = ExtResource("2_8tjra")
 region = Rect2(64, 256, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nxmp6"]
-atlas = ExtResource("2_oap0c")
+atlas = ExtResource("2_8tjra")
 region = Rect2(80, 256, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x05vm"]
-atlas = ExtResource("2_oap0c")
+atlas = ExtResource("2_8tjra")
 region = Rect2(96, 256, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rdlud"]
-atlas = ExtResource("2_oap0c")
+atlas = ExtResource("2_8tjra")
 region = Rect2(112, 256, 16, 16)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_q4x0f"]
+atlas = ExtResource("3_xfqrp")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ov350"]
+atlas = ExtResource("2_8tjra")
+region = Rect2(16, 256, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wmgxc"]
+atlas = ExtResource("3_xfqrp")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kloke"]
+atlas = ExtResource("2_8tjra")
+region = Rect2(48, 256, 16, 16)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_1j3fc"]
-atlas = ExtResource("2_oap0c")
+atlas = ExtResource("2_8tjra")
 region = Rect2(0, 272, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jf0tf"]
-atlas = ExtResource("2_oap0c")
+atlas = ExtResource("2_8tjra")
 region = Rect2(16, 272, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0nyiy"]
-atlas = ExtResource("2_oap0c")
+atlas = ExtResource("2_8tjra")
 region = Rect2(32, 272, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ddy3c"]
-atlas = ExtResource("2_oap0c")
+atlas = ExtResource("2_8tjra")
 region = Rect2(48, 272, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4tsgx"]
-atlas = ExtResource("2_oap0c")
+atlas = ExtResource("2_8tjra")
 region = Rect2(64, 272, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8auuv"]
-atlas = ExtResource("2_oap0c")
+atlas = ExtResource("2_8tjra")
 region = Rect2(80, 272, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5um8v"]
-atlas = ExtResource("2_oap0c")
+atlas = ExtResource("2_8tjra")
 region = Rect2(96, 272, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n10al"]
-atlas = ExtResource("2_oap0c")
+atlas = ExtResource("2_8tjra")
 region = Rect2(112, 272, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_75tuk"]
@@ -105,6 +123,23 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_q4x0f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ov350")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wmgxc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kloke")
+}],
+"loop": true,
+"name": &"respawn",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_1j3fc")
 }, {
 "duration": 1.0,
@@ -134,29 +169,31 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tpwrs"]
-size = Vector2(14, 16)
+size = Vector2(14, 14)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4sw0k"]
-size = Vector2(14, 16)
+size = Vector2(14, 14)
 
-[node name="Player1" type="CharacterBody2D" groups=["player"]]
+[node name="Player" type="CharacterBody2D" groups=["player"]]
 collision_mask = 3
-script = ExtResource("1_o0wvp")
+script = ExtResource("1_cl06y")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_75tuk")
-animation = &"idle"
-frame_progress = 0.157274
+animation = &"respawn"
+frame_progress = 0.482287
 
 [node name="Hand" type="Node2D" parent="."]
 position = Vector2(6, 1)
 
 [node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.4, 1.4)
 drag_vertical_enabled = true
 drag_top_margin = 0.5
 drag_bottom_margin = 0.5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_tpwrs")
 
 [node name="HazardDetector" type="Area2D" parent="." groups=["player"]]
@@ -164,7 +201,11 @@ collision_layer = 0
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HazardDetector"]
+position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_4sw0k")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_laxvq")
 
 [connection signal="area_entered" from="HazardDetector" to="." method="_on_hazard_detector_area_entered"]
 [connection signal="body_entered" from="HazardDetector" to="." method="_on_hazard_detector_body_entered"]
