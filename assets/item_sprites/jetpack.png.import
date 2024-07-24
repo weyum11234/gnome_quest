@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://u7v2fwakuo6d"
-path="res://.godot/imported/flame_trail.png-0fd69f3959b8eb3de05fd4e9768f604f.ctex"
+uid="uid://dvhdeasw7mfo3"
+path="res://.godot/imported/jetpack.png-1e193eb55e06e16fc82b223c2e8dbead.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/item_sprites/flame_trail.png"
-dest_files=["res://.godot/imported/flame_trail.png-0fd69f3959b8eb3de05fd4e9768f604f.ctex"]
+source_file="res://assets/item_sprites/jetpack.png"
+dest_files=["res://.godot/imported/jetpack.png-1e193eb55e06e16fc82b223c2e8dbead.ctex"]
 
 [params]
 

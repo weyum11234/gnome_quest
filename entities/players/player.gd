@@ -94,7 +94,8 @@ func _on_hazard_detector_area_entered(area):
 		global_position = spawn_position
 		set_physics_process(false)
 		set_process_input(false)
-		$AnimatedSprite2D.play("respawn")
+		animation = "respawn"
+		$AnimatedSprite2D.play(animation)
 		$AudioStreamPlayer2D.play()
 
 func _on_hazard_detector_body_entered(body):
@@ -102,5 +103,6 @@ func _on_hazard_detector_body_entered(body):
 	global_position = spawn_position
 	set_physics_process(false)
 	set_process_input(false)
-	$AnimatedSprite2D.play("respawn")
+	animation = "respawn"
+	$AnimatedSprite2D.play(animation)
 	$AudioStreamPlayer2D.play()

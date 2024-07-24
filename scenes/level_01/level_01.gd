@@ -9,6 +9,8 @@ extends Node2D
 @onready var bullet_scene = preload("res://entities/bullet/bullet.tscn")
 @onready var homing_bullet_scene = preload("res://entities/homing_bullet/homing_bullet.tscn")
 @onready var knife_scene = preload("res://entities/knife/knife.tscn")
+@onready var gold_knife_scene = preload("res://entities/gold_knife/gold_knife.tscn")
+@onready var jetpack_scene = preload("res://entities/jetpack/jetpack.tscn")
 @onready var rng = RandomNumberGenerator.new()
 
 @onready var player = $Player
@@ -54,7 +56,7 @@ func spawn_entities():
 func on_give_item():
 	# Only gives item if hands are empty
 	if not player.get_node("Hand").get_child_count():
-		var i = rng.randi_range(0, 6)
+		var i = rng.randi_range(0, 8)
 		match i:
 			0:
 				player.get_node("Hand").add_child(speed_boost_scene.instantiate())
@@ -65,18 +67,26 @@ func on_give_item():
 			3:
 				player.get_node("Hand").add_child(teleporter_scene.instantiate())
 			4:
+				player.get_node("Hand").add_child(jetpack_scene.instantiate())
+			5:
 				var bullet = bullet_scene.instantiate()
 				bullet.state_scene = self
 				player.get_node("Hand").add_child(bullet)
-			5:
+			6:
 				var homing_bullet = homing_bullet_scene.instantiate()
 				homing_bullet.state_scene = self
 				player.get_node("Hand").add_child(homing_bullet)
-			6:
+			7:
 				var knife = knife_scene.instantiate()
 				knife.state_scene = self
 				player.get_node("Hand").add_child(knife)
 				$AudioStreamPlayer2D.stream = load("res://assets/sounds/knife-reverb-fx.wav")
 				$AudioStreamPlayer2D.play(0.5)
+			8:
+				var gold_knife = gold_knife_scene.instantiate()
+				gold_knife.state_scene = self
+				player.get_node("Hand").add_child(gold_knife)
+				$AudioStreamPlayer2D.stream = load("res://assets/sounds/71011-Sound_design_shimmer_accent_swell_airy_reverb_harmony-BLASTWAVEFX-07832.wav")
+				$AudioStreamPlayer2D.play()
 		print_debug("gave item")
 	

@@ -1,0 +1,59 @@
+[gd_scene load_steps=6 format=3 uid="uid://udduialf4de8"]
+
+[ext_resource type="Script" path="res://entities/jetpack/jetpack.gd" id="1_yucb2"]
+[ext_resource type="Texture2D" uid="uid://dvhdeasw7mfo3" path="res://assets/item_sprites/jetpack.png" id="2_lcper"]
+
+[sub_resource type="Gradient" id="Gradient_tlmpr"]
+colors = PackedColorArray(1, 0.909804, 0.0313726, 1, 1, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uq0bn"]
+bg_color = Color(0, 1, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3ggau"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Jetpack" type="Node2D"]
+script = ExtResource("1_yucb2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_lcper")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2(-4, 8)
+amount = 100
+lifetime = 0.2
+lifetime_randomness = 1.0
+emission_shape = 3
+emission_rect_extents = Vector2(3, 1)
+direction = Vector2(0, 1)
+spread = 10.0
+gravity = Vector2(0, 100)
+initial_velocity_min = 50.0
+initial_velocity_max = 70.0
+color_ramp = SubResource("Gradient_tlmpr")
+
+[node name="CPUParticles2D2" type="CPUParticles2D" parent="."]
+position = Vector2(4, 8)
+amount = 100
+lifetime = 0.2
+lifetime_randomness = 1.0
+emission_shape = 3
+emission_rect_extents = Vector2(3, 1)
+direction = Vector2(0, 1)
+spread = 10.0
+gravity = Vector2(0, 100)
+initial_velocity_min = 50.0
+initial_velocity_max = 70.0
+color_ramp = SubResource("Gradient_tlmpr")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = 3.0
+offset_top = -6.0
+offset_right = 5.0
+offset_bottom = 7.0
+theme_override_styles/background = SubResource("StyleBoxFlat_uq0bn")
+theme_override_styles/fill = SubResource("StyleBoxFlat_3ggau")
+max_value = 5.0
+step = 0.001
+fill_mode = 2
+show_percentage = false

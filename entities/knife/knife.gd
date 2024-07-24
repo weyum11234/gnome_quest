@@ -44,7 +44,6 @@ func use(player : Object):
 	direction = (mouse_position - global_position).normalized()
 	# Ensure RayCast and Sprite point in the positive x-axis.
 	scale.x = abs(scale.x)
-	look_at(mouse_position)
 	# Move scene from Player to Level scenes.
 	player.get_node("Hand").remove_child(self)
 	state_scene.add_child(self)
