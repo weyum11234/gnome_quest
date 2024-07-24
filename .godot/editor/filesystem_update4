@@ -10,3 +10,5 @@ res://entities/teleporter/teleporter.tscn
 res://entities/knife/knife.tscn
 res://entities/item_box/item_box.tscn
 res://entities/gold_knife/gold_knife.tscn
+res://scenes/main/main.tscn
+res://scenes/main/main.gd
