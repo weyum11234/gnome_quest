@@ -58,7 +58,6 @@ target_position = Vector2(8.5, 0)
 collision_mask = 3
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-scale = Vector2(1, 1)
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_layer = 4
