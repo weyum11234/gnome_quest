@@ -1,14 +1,17 @@
+res://entities
+res://scenes/level_01
+res://assets/level02/Pixel Adventure 2/Enemies/Turtle
+res://assets/level02/Pixel Adventure 2/Enemies/AngryPig
+res://assets/level02/Pixel Adventure 2/Enemies/Rino
+res://decorations
+res://obstacles
+res://assets/level02/Pixel Adventure 2/Enemies/Snail
+res://assets/level02/Clouds V2
+res://assets/level02/Pixel Adventure 1/Free/Traps/Trampoline
+res://assets/level02/Pixel Adventure 1/Free/Traps/Saw
+res://scenes/level02
 res://fonts/Fibberish v1.0
 res://fonts
-res://assets/tilesets_maps/caves/industrial.v2
-res://decorations
 res://scenes/main
-res://assets/tilesets_maps/dungeons/1-Bit-Ruins-Omniclause
-res://assets/tilesets_maps/Effect and Bullet 16x16
-res://obstacles
-res://assets/tilesets_maps/traps_foozle/Foozle_2DTR0001_Pixel_Trap_Pack/Ceiling Trap/PNGs
-res://assets/tilesets_maps/dungeons/trapmoor_dungeon/Sprites
-res://scenes/level_01
 res://
-res://entities
 res://scenes

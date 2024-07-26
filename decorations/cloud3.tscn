@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://cebwxp2r6jrit"]
+
+[ext_resource type="Texture2D" uid="uid://b0a80oeq5wd44" path="res://assets/level02/Clouds V2/Clouds V2.png" id="1_r6tc0"]
+[ext_resource type="Script" path="res://obstacles/circular_flame.gd" id="2_6f4qw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jsqbj"]
+atlas = ExtResource("1_r6tc0")
+region = Rect2(0, 0, 71, 50)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0f8du"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jsqbj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3ihgu"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("2_6f4qw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_0f8du")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_3ihgu")

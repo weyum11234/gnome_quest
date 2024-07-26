@@ -1,6 +1,6 @@
 [gd_scene load_steps=19 format=3 uid="uid://cb5bd6jo702j7"]
 
-[ext_resource type="Texture2D" uid="uid://ctxmele88b70v" path="res://assets/tilesets_maps/traps_foozle/Foozle_2DTR0001_Pixel_Trap_Pack/Ceiling Trap/PNGs/Ceiling Trap - Level 2.png" id="1_2tct2"]
+[ext_resource type="Texture2D" uid="uid://ctxmele88b70v" path="res://assets/level01/traps_foozle/Foozle_2DTR0001_Pixel_Trap_Pack/Ceiling Trap/PNGs/Ceiling Trap - Level 2.png" id="1_2tct2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qb0xn"]
 

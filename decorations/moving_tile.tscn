@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dk6ae4vahcq2k"]
 
 [ext_resource type="Script" path="res://decorations/moving_tile.gd" id="1_da11c"]
-[ext_resource type="Texture2D" uid="uid://bpewy6uxlmb0b" path="res://assets/tilesets_maps/dungeons/1-Bit-Ruins-Omniclause/Ruins-Tilesheet-Omniclause(outlines).png" id="2_s122d"]
+[ext_resource type="Texture2D" uid="uid://bpewy6uxlmb0b" path="res://assets/level01/dungeons/1-Bit-Ruins-Omniclause/Ruins-Tilesheet-Omniclause(outlines).png" id="2_s122d"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_p68ii"]
 atlas = ExtResource("2_s122d")

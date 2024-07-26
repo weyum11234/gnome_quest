@@ -1,8 +1,8 @@
 [gd_scene load_steps=28 format=3 uid="uid://da8ra7ljeknhu"]
 
 [ext_resource type="Script" path="res://entities/players/player.gd" id="1_cl06y"]
-[ext_resource type="Texture2D" uid="uid://6vaao2p4o2j8" path="res://assets/tilesets_maps/caves/industrial.v2/industrial.v2.png" id="2_8tjra"]
-[ext_resource type="Texture2D" uid="uid://dkph32kv7qse4" path="res://assets/tilesets_maps/caves/industrial.v2/recolored_player.png" id="3_xfqrp"]
+[ext_resource type="Texture2D" uid="uid://6vaao2p4o2j8" path="res://assets/level01/caves/industrial.v2/industrial.v2.png" id="2_8tjra"]
+[ext_resource type="Texture2D" uid="uid://dkph32kv7qse4" path="res://assets/level01/caves/industrial.v2/recolored_player.png" id="3_xfqrp"]
 [ext_resource type="AudioStream" uid="uid://bcrdmebtb3ved" path="res://assets/sounds/knife-stab-sound-fx.wav" id="4_laxvq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nthc3"]
