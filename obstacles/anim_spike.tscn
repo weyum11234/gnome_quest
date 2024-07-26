@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://cke0kpsxvgsrk"]
 
-[ext_resource type="Script" path="res://scenes/level_01/anim_spike.gd" id="1_yrsxw"]
+[ext_resource type="Script" path="res://obstacles/anim_spike.gd" id="1_hakyi"]
 [ext_resource type="Texture2D" uid="uid://d3wqko68g3jf8" path="res://assets/tilesets_maps/dungeons/2d_metroid_asset_1_2/metroid_asset_1_2/Sprites/Interactables/spikes_spritesheet.png" id="2_k0l14"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e34y3"]
@@ -66,7 +66,7 @@ size = Vector2(20, 10)
 [node name="anim_spike" type="Area2D"]
 collision_layer = 4
 collision_mask = 0
-script = ExtResource("1_yrsxw")
+script = ExtResource("1_hakyi")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_6f502")

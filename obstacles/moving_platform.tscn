@@ -1,0 +1,70 @@
+[gd_scene load_steps=7 format=3 uid="uid://dqhh8vxlpxgsp"]
+
+[ext_resource type="Texture2D" uid="uid://c4y8hmlcaa8jn" path="res://assets/tilesets_maps/dungeons/1-Bit-Ruins-Omniclause/platform.png" id="1_2q5su"]
+[ext_resource type="Script" path="res://obstacles/moving_platform.gd" id="1_hb4ot"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w5d6k"]
+size = Vector2(32, 2)
+
+[sub_resource type="Animation" id="Animation_ju1qj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PathFollow2D:progress_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_1f3jn"]
+resource_name = "move"
+length = 2.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PathFollow2D:progress_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ssgtf"]
+_data = {
+"RESET": SubResource("Animation_ju1qj"),
+"move": SubResource("Animation_1f3jn")
+}
+
+[node name="moving_platform" type="Node2D"]
+script = ExtResource("1_hb4ot")
+
+[node name="Path2D" type="Path2D" parent="."]
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="Path2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Path2D/AnimatableBody2D"]
+texture = ExtResource("1_2q5su")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/AnimatableBody2D"]
+shape = SubResource("RectangleShape2D_w5d6k")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+rotates = false
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
+remote_path = NodePath("../../AnimatableBody2D")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Path2D")
+libraries = {
+"": SubResource("AnimationLibrary_ssgtf")
+}

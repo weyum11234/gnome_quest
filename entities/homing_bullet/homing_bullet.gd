@@ -2,6 +2,8 @@ extends CharacterBody2D
 
 
 @export var speed = 300.0
+@onready var anim_player = $AnimationPlayer
+@onready var audio_player = $AudioStreamPlayer2D
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")

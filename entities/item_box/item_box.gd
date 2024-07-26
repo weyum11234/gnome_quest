@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var respawn_time = 5.0
+@export var respawn_time = 7.0
 var respawn_timer = 0.0
 signal give_item
 
