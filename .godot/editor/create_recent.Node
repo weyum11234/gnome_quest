@@ -1,3 +1,4 @@
+TileMap
 CollisionShape2D
 AnimatedSprite2D
 CharacterBody2D
@@ -7,7 +8,6 @@ Node2D
 PinJoint2D
 Sprite2D
 RigidBody2D
-TileMap
 AudioStreamPlayer
 CPUParticles2D
 GPUParticles2D

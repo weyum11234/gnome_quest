@@ -27,7 +27,7 @@ func _process(delta):
 
 
 func on_ng_down() -> void:
-	get_tree().change_scene_to_file("res://scenes/level02/level_02.tscn")
+	get_tree().change_scene_to_file("res://scenes/level04/level_04.tscn")
 	TransitionScreen.transition()
 	await TransitionScreen.on_transition_finished
 	

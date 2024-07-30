@@ -1,10 +1,7 @@
-res://scenes/main/main.tscn
+res://scenes/level04/level_04.tscn
 res://entities/players/player.gd
 res://scenes/main/scroll_menu.gdshader
 res://scenes/main/scroll_menu2.gdshader
 res://scenes/main/scroll_menu3.gdshader
-res://scenes/level02/level_02.tscn
-res://entities/snail.tscn
-res://entities/rhino.tscn
-res://entities/pig.tscn
-res://entities/turtle.tscn
+res://scenes/main/main.tscn
+res://scenes/main/main.gd
