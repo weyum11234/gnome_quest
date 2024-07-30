@@ -1,0 +1,94 @@
+[gd_scene load_steps=9 format=3 uid="uid://dwp054npeuemr"]
+
+[ext_resource type="Script" path="res://scenes/level_03/moving_circular_platform.gd" id="1_6dt3m"]
+[ext_resource type="Texture2D" uid="uid://dbnb1pnvf3t8s" path="res://assets/tilesets_maps/outside/Freebie_Factory/construction_bar.png" id="1_pufkl"]
+
+[sub_resource type="Curve2D" id="Curve2D_2ub8o"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 168, 0, 0, 0, 0, 0, 168, 144, 0, 0, 0, 0, 0, 144, 0, 0, 0, 0, 0, 0)
+}
+point_count = 5
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r0tuu"]
+size = Vector2(48, 10)
+
+[sub_resource type="Animation" id="Animation_tly3u"]
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Path2D/PathFollow2D:progress_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+
+[sub_resource type="Animation" id="Animation_v8yvn"]
+resource_name = "move"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Path2D/PathFollow2D:progress_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_veny5"]
+resource_name = "move2"
+length = 2.0
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_q7bec"]
+_data = {
+"RESET": SubResource("Animation_tly3u"),
+"move": SubResource("Animation_v8yvn"),
+"move2": SubResource("Animation_veny5")
+}
+
+[node name="MovingCircularPlatform" type="Node2D"]
+script = ExtResource("1_6dt3m")
+
+[node name="Line2D" type="Line2D" parent="."]
+points = PackedVector2Array(0, 0, 168, 0, 168, 144, 0, 144, 0, 0)
+width = 1.0
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_2ub8o")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+progress = 624.0
+rotates = false
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
+remote_path = NodePath("../../AnimatableBody2D")
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="Path2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Path2D/AnimatableBody2D"]
+position = Vector2(-16, 0)
+texture = ExtResource("1_pufkl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Path2D/AnimatableBody2D"]
+texture = ExtResource("1_pufkl")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Path2D/AnimatableBody2D"]
+position = Vector2(16, 0)
+texture = ExtResource("1_pufkl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/AnimatableBody2D"]
+shape = SubResource("RectangleShape2D_r0tuu")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_q7bec")
+}

@@ -21,3 +21,5 @@ func _ready():
 	animation.play("move")
 	animation.speed_scale = speed
 
+func _process(delta):
+	sprite.rotate(PI / 15)

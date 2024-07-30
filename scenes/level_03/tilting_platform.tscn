@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://cooit3doblwci"]
+
+[ext_resource type="Script" path="res://scenes/level_03/tilting_platform.gd" id="1_sseru"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jie2b"]
+size = Vector2(96, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dt4rl"]
+size = Vector2(98, 22)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jfghd"]
+
+[node name="TiltingPlatform" type="StaticBody2D"]
+script = ExtResource("1_sseru")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+shape = SubResource("RectangleShape2D_jie2b")
+
+[node name="Area2D" type="Area2D" parent="RigidBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D/Area2D"]
+shape = SubResource("RectangleShape2D_dt4rl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_jfghd")
+
+[node name="PinJoint2D" type="PinJoint2D" parent="."]
+node_a = NodePath("../RigidBody2D")
+node_b = NodePath("..")
+
+[connection signal="area_entered" from="RigidBody2D/Area2D" to="." method="_on_area_2d_area_entered"]

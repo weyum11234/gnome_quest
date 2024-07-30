@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=3 uid="uid://fdgkwpnufthn"]
+
+[ext_resource type="Texture2D" uid="uid://dbnb1pnvf3t8s" path="res://assets/tilesets_maps/outside/Freebie_Factory/construction_bar.png" id="1_v5yat"]
+[ext_resource type="Script" path="res://scenes/level_03/spinning_platform.gd" id="1_vk03j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5ebvn"]
+size = Vector2(112, 10)
+
+[node name="SpinningPlatform" type="AnimatableBody2D"]
+script = ExtResource("1_vk03j")
+
+[node name="ConstructionBar" type="Sprite2D" parent="."]
+position = Vector2(-48, 0)
+texture = ExtResource("1_v5yat")
+
+[node name="ConstructionBar2" type="Sprite2D" parent="."]
+position = Vector2(-32, 0)
+texture = ExtResource("1_v5yat")
+
+[node name="ConstructionBar3" type="Sprite2D" parent="."]
+position = Vector2(-16, 0)
+texture = ExtResource("1_v5yat")
+
+[node name="ConstructionBar4" type="Sprite2D" parent="."]
+texture = ExtResource("1_v5yat")
+
+[node name="ConstructionBar5" type="Sprite2D" parent="."]
+position = Vector2(16, 0)
+texture = ExtResource("1_v5yat")
+
+[node name="ConstructionBar6" type="Sprite2D" parent="."]
+position = Vector2(32, 0)
+texture = ExtResource("1_v5yat")
+
+[node name="ConstructionBar7" type="Sprite2D" parent="."]
+position = Vector2(48, 0)
+texture = ExtResource("1_v5yat")
+
+[node name="ConstructionBar8" type="Sprite2D" parent="."]
+position = Vector2(48, 0)
+texture = ExtResource("1_v5yat")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_5ebvn")
