@@ -10,3 +10,4 @@ res://decorations/light.tscn
 res://decorations/moving_tile.tscn
 res://entities/knife/proto_knife.tscn
 res://entities/knife/knife.tscn
+res://entities/item_box/item_box.gd

@@ -51,7 +51,6 @@ script = ExtResource("1_5gtv8")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_51hyv")
 hframes = 12
-frame = 6
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -61,6 +60,10 @@ libraries = {
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_iaejt")
 
+[node name="Respawn" type="Timer" parent="."]
+wait_time = 15.0
+
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="timeout" from="Respawn" to="." method="_on_timer_timeout"]

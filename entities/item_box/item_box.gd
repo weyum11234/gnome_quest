@@ -1,33 +1,28 @@
 extends Node2D
 
-@export var respawn_time = 7.0
-var respawn_timer = 0.0
+@onready var collider = $CollisionShape2D
+@onready var animation = $AnimationPlayer
+@onready var respawn = $Respawn
 signal give_item
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	$AnimationPlayer.play("item_box_idle")
+	animation.play("item_box_idle")
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	# Handle respawn
-	if not visible and respawn_timer < respawn_time:
-		respawn_timer += delta
-	elif respawn_timer > respawn_time:
-		visible = true
-		$CollisionShape2D.disabled = false
-		respawn_timer = 0.0
-
-# Handle when player picks up an item box.
+# Player picks up box.
 func _on_body_entered(body):
 	if body.is_in_group("player"):
 		emit_signal("give_item")
-		$AnimationPlayer.play("item_box_explode")
+		animation.play("item_box_explode")
 	
-# Play explosion animation, despawn box
+# Despawn box.
 func _on_animation_player_animation_finished(anim_name):
 	if anim_name == "item_box_explode":
 		visible = false
-		$CollisionShape2D.disabled = true
-		$AnimationPlayer.play("item_box_idle")
+		collider.disabled = true
+		animation.play("item_box_idle")
+		respawn.start()
 		
+# Respawn box.
+func _on_timer_timeout():
+	visible = true
+	collider.disabled = false
