@@ -88,17 +88,14 @@ func _input(event):
 		elif event.button_index == MOUSE_BUTTON_RIGHT and event.pressed and $Hand.get_child_count(): # Alternative use
 			$Hand.get_children()[0].alt_use(self)
 
-func _on_hazard_detector_area_entered(area):
-	if area.is_in_group("hazard"):
-		spawn_timer = 0
-		global_position = spawn_position
-		set_physics_process(false)
-		set_process_input(false)
-		animation = "respawn"
-		$AnimatedSprite2D.play(animation)
-		$AudioStreamPlayer2D.play()
+func _on_hurt_box_body_entered(body):
+	death()
 
-func _on_hazard_detector_body_entered(body):
+
+func _on_hurt_box_area_entered(area):
+	death()
+
+func death():
 	spawn_timer = 0
 	global_position = spawn_position
 	set_physics_process(false)
@@ -106,3 +103,4 @@ func _on_hazard_detector_body_entered(body):
 	animation = "respawn"
 	$AnimatedSprite2D.play(animation)
 	$AudioStreamPlayer2D.play()
+

@@ -175,6 +175,7 @@ size = Vector2(14, 14)
 size = Vector2(14, 14)
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
+collision_layer = 2
 collision_mask = 3
 script = ExtResource("1_cl06y")
 
@@ -195,16 +196,18 @@ drag_bottom_margin = 0.5
 position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_tpwrs")
 
-[node name="HazardDetector" type="Area2D" parent="." groups=["player"]]
+[node name="HurtBox" type="Area2D" parent="." groups=["player"]]
 collision_layer = 0
-collision_mask = 4
+collision_mask = 12
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="HazardDetector"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
 position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_4sw0k")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_laxvq")
 
-[connection signal="area_entered" from="HazardDetector" to="." method="_on_hazard_detector_area_entered"]
-[connection signal="body_entered" from="HazardDetector" to="." method="_on_hazard_detector_body_entered"]
+[connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]
+[connection signal="area_entered" from="HurtBox" to="." method="_on_hazard_detector_area_entered"]
+[connection signal="body_entered" from="HurtBox" to="." method="_on_hazard_detector_body_entered"]
+[connection signal="body_entered" from="HurtBox" to="." method="_on_hurt_box_body_entered"]
