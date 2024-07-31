@@ -1,7 +1,6 @@
-res://scenes/level04/level_04.tscn
+res://scenes/main/main.gd
 res://entities/players/player.gd
 res://scenes/main/scroll_menu.gdshader
 res://scenes/main/scroll_menu2.gdshader
 res://scenes/main/scroll_menu3.gdshader
 res://scenes/main/main.tscn
-res://scenes/main/main.gd
