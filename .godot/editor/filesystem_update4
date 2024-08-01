@@ -4,3 +4,10 @@ res://scenes/main/scroll_menu.gdshader
 res://scenes/main/scroll_menu2.gdshader
 res://scenes/main/scroll_menu3.gdshader
 res://scenes/main/main.tscn
+res://scenes/level_04/level_04.tscn
+res://scenes/level_04/coin.tscn
+res://entities/players/player.tscn
+res://scenes/level_04/coin.gd
+res://scenes/level_04/silver_coin.tscn
+res://scenes/level_04/fan.tscn
+res://scenes/level_04/fan.gd
