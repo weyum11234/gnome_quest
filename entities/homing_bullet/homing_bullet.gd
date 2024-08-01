@@ -17,7 +17,7 @@ var thrower : Object
 func _ready():
 	id += 1
 	name = "HomingBullet" + str(id)
-	$AnimationPlayer.play("bullet_spin")
+	anim_player.play("bullet_spin")
 
 func _physics_process(delta):
 	if target:
@@ -37,8 +37,8 @@ func use(player : Object):
 	state_scene.get_node("HomingBullet" + str(id)).global_position = player.get_node("Hand").global_position
 	hit_box.set_deferred("monitoring", true)
 	hit_box.set_deferred("monitorable", true)
-	$AudioStreamPlayer2D.stream = load("res://assets/sounds/shot-gun_D_minor.wav")
-	$AudioStreamPlayer2D.play()
+	audio_player.stream = load("res://assets/sounds/shot-gun_D_minor.wav")
+	audio_player.play()
 
 func alt_use(player : Object):
 	pass

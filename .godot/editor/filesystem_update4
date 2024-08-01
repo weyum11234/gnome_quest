@@ -13,3 +13,6 @@ res://entities/homing_bullet/homing_bullet.tscn
 res://obstacles/anim_spike.tscn
 res://obstacles/ceiling_trap.tscn
 res://obstacles/collapse_floor.gd
+res://obstacles/checkpoint.tscn
+res://obstacles/checkpoint.gd
+res://entities/homing_bullet/homing_bullet.gd
