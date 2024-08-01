@@ -1,10 +1,8 @@
-[gd_scene load_steps=15 format=3 uid="uid://dcobi7vj8m8nw"]
+[gd_scene load_steps=14 format=3 uid="uid://dcobi7vj8m8nw"]
 
 [ext_resource type="Script" path="res://decorations/light.gd" id="1_auabv"]
 [ext_resource type="Texture2D" uid="uid://d28rgcw8v6h4j" path="res://assets/tilesets_maps/dungeons/trapmoor_dungeon/Sprites/WallLight32x32Spritesheet.png" id="2_yb5ue"]
 [ext_resource type="Texture2D" uid="uid://bitiijo455i0w" path="res://assets/tilesets_maps/dungeons/trapmoor_dungeon/Sprites/lamp.png" id="3_okycl"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xoi0g"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_necm1"]
 atlas = ExtResource("3_okycl")
@@ -82,9 +80,6 @@ animations = [{
 collision_layer = 0
 collision_mask = 0
 script = ExtResource("1_auabv")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_xoi0g")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_10o1d")

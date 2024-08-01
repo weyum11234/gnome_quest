@@ -2382,10 +2382,10 @@ move_end_point = Vector2(0, -128)
 position = Vector2(408, 56)
 
 [node name="Dummy" parent="." instance=ExtResource("1_vee1p")]
-position = Vector2(616, 56)
+position = Vector2(624, 56)
 
 [node name="Placeholder1" type="Node2D" parent="."]
-position = Vector2(64, 40)
+position = Vector2(72, 40)
 
 [node name="Placeholder2" type="Node2D" parent="."]
 position = Vector2(408, 40)

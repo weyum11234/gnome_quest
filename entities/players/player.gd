@@ -17,7 +17,7 @@ var coyote_timer = 0.0
 @onready var animation = "idle"
 var spawn_time = 1.0
 var spawn_timer = -1
-var facing : int
+var facing = 1
 var spawn_position : Vector2
 
 func _ready():
@@ -90,7 +90,6 @@ func _input(event):
 
 func _on_hurt_box_body_entered(body):
 	death()
-
 
 func _on_hurt_box_area_entered(area):
 	death()

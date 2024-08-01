@@ -12,4 +12,3 @@ AnimatableBody2D
 RemoteTransform2D
 PathFollow2D
 Path2D
-Line2D

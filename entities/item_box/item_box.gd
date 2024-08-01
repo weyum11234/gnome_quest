@@ -2,7 +2,7 @@ extends Node2D
 
 @onready var collider = $CollisionShape2D
 @onready var animation = $AnimationPlayer
-@onready var respawn = $Respawn
+@onready var respawn_timer = $RespawnTimer
 signal give_item
 
 func _ready():
@@ -20,9 +20,9 @@ func _on_animation_player_animation_finished(anim_name):
 		visible = false
 		collider.disabled = true
 		animation.play("item_box_idle")
-		respawn.start()
+		respawn_timer.start()
 		
 # Respawn box.
-func _on_timer_timeout():
+func _on_respawn_timer_timeout():
 	visible = true
 	collider.disabled = false
