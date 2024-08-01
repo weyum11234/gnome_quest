@@ -1,14 +1,33 @@
-extends CharacterBody2D
+extends StaticBody2D
 
-# Called when the node enters the scene tree for the first time.
+@onready var collider = $CollisionShape2D
+@onready var animation = $AnimationPlayer
+@onready var on_timer = $OnTimer
+@onready var off_timer = $OffTimer
+@export var on_time = 10.0
+@export var off_time = 5.0
+
 func _ready():
-	$AnimatedSprite2D.frame_changed.connect(_on_AnimatedSprite2D_frame_changed)
-	$AnimatedSprite2D.play()  # Start playing the default animation
-#
-## Called when the AnimatedSprite2D's frame changes
-func _on_AnimatedSprite2D_frame_changed():
-	var animated_sprite = $AnimatedSprite2D
-	if animated_sprite.frame >= 7 and animated_sprite.frame <= 11:
-		$CollisionShape2D.disabled = true
-	else:
-		$CollisionShape2D.disabled = false
+	on_timer.wait_time = on_time
+	off_timer.wait_time = off_time
+	on_timer.start()
+	animation.play("RESET")
+
+
+func _on_on_timer_timeout():
+	animation.play("shake")
+
+
+func _on_off_timer_timeout():
+	collider.disabled = false
+	on_timer.start()
+	animation.play("RESET")
+
+
+func _on_animation_player_animation_finished(anim_name):
+	# Could probably combine the shake and collapse animations into one
+	if anim_name == "shake":
+		animation.play("collapse")
+	if anim_name == "collapse":
+		collider.disabled = true
+		off_timer.start()

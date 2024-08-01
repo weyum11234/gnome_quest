@@ -1,10 +1,10 @@
 extends CharacterBody2D
 
-
-@export var speed = 300.0
 @onready var anim_player = $AnimationPlayer
 @onready var audio_player = $AudioStreamPlayer2D
 @onready var hit_box = $HitBox
+@onready var flight_timer = $FlightTimer
+@export var speed = 300.0
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -13,7 +13,6 @@ var has_exit = false
 var state_scene : Object
 var target : Object
 var thrower : Object
-
 
 func _ready():
 	id += 1
@@ -29,6 +28,7 @@ func use(player : Object):
 	thrower = player
 	# TODO: Set target to closest player.
 	target = state_scene.get_node("Dummy")
+	flight_timer.start()
 	# Ensure sprite point in the positive x-axis.
 	scale.x = abs(scale.x)
 	# Move scene from Player to Level scenes.
@@ -43,7 +43,7 @@ func use(player : Object):
 func alt_use(player : Object):
 	pass
 
-func _on_timer_timeout():
+func _on_flight_timer_timeout():
 	queue_free()
 
 func _on_hit_box_body_entered(body):
