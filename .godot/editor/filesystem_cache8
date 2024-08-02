@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1722459001
+::res://::1722553345
 clouds.gd::GDScript::-1::1721948974::0::1::::<>CharacterBody2D<>::
 icon.svg::CompressedTexture2D::7871145411425364212::1719964453::1720994986::1::::<><>::
 README.md::TextFile::-1::1719964453::0::1::::<><>::
@@ -727,14 +727,14 @@ Rock_shape (16 x 16).png::CompressedTexture2D::3679632794498798947::1594833348::
 Snack_machine_Bench_Trash_bin (16 x 16).png::CompressedTexture2D::7251620035965740584::1594744490::1721860010::1::::<><>::
 Water_frames (16 x 32).png::CompressedTexture2D::2086305622908197026::1594743618::1721860010::1::::<><>::
 ::res://assets/Rocky Roads/::1675131614
-::res://assets/Rocky Roads/Backgrounds/::1675438932
+::res://assets/Rocky Roads/Backgrounds/::1722460005
 clouds.png::CompressedTexture2D::8833824844579726304::1675403786::1722460005::1::::<><>::
 desert_a.png::CompressedTexture2D::8828997064589867872::1675403026::1722460005::1::::<><>::
 desert_b.png::CompressedTexture2D::265710889379872265::1674985370::1722460005::1::::<><>::
 mountains_a.png::CompressedTexture2D::5201307575273089398::1639599442::1722460005::1::::<><>::
 mountains_b.png::CompressedTexture2D::4850662691789339162::1639599442::1722460005::1::::<><>::
 trees.png::CompressedTexture2D::2904946712668120::1639599442::1722460005::1::::<><>::
-::res://assets/Rocky Roads/Deco/::1675398642
+::res://assets/Rocky Roads/Deco/::1722460005
 bush.png::CompressedTexture2D::2292993871542173838::1675136820::1722460005::1::::<><>::
 clouds.png::CompressedTexture2D::2842713883386857561::1627858860::1722460005::1::::<><>::
 lava.png::CompressedTexture2D::4486551942661394905::1625387090::1722460005::1::::<><>::
@@ -747,7 +747,7 @@ tree_c.png::CompressedTexture2D::2550834134468627115::1675403438::1722460005::1:
 tree_trunk.png::CompressedTexture2D::7380191700639935243::1675131550::1722460005::1::::<><>::
 water_a_8frames.png::CompressedTexture2D::4011290991140654960::1627873806::1722460005::1::::<><>::
 water_b_5 frames.png::CompressedTexture2D::6248816117394910437::1675137228::1722460005::1::::<><>::
-::res://assets/Rocky Roads/Enemies/::1675438958
+::res://assets/Rocky Roads/Enemies/::1722460005
 bat.png::CompressedTexture2D::5444184379286235417::1675138546::1722460005::1::::<><>::
 bear_brown.png::CompressedTexture2D::3505398717714220951::1675138224::1722460005::1::::<><>::
 bear_polar.png::CompressedTexture2D::7835556344618908833::1675138282::1722460005::1::::<><>::
@@ -779,7 +779,7 @@ spikes.png::CompressedTexture2D::296457236776516122::1639599442::1722460005::1::
 tornado.png::CompressedTexture2D::2100512640091221501::1675395124::1722460005::1::::<><>::
 tornado_sand.png::CompressedTexture2D::3507895844028362765::1675395252::1722460005::1::::<><>::
 wood_stakes.png::CompressedTexture2D::1417988358623322577::1675140364::1722460005::1::::<><>::
-::res://assets/Rocky Roads/FX/::1675439968
+::res://assets/Rocky Roads/FX/::1722460005
 boing.png::CompressedTexture2D::945017700362993611::1673914052::1722460005::1::::<><>::
 bomb_explosion.png::CompressedTexture2D::2757564839238237315::1639599442::1722460005::1::::<><>::
 bubble.png::CompressedTexture2D::5398907134804095909::1674989028::1722460005::1::::<><>::
@@ -797,7 +797,7 @@ splash.png::CompressedTexture2D::6178713403374350385::1675136056::1722460005::1:
 thought_bubble.png::CompressedTexture2D::3907123049700844957::1674987246::1722460005::1::::<><>::
 walk_dust.png::CompressedTexture2D::3856195332095047012::1675130600::1722460005::1::::<><>::
 wind.png::CompressedTexture2D::4369560484794868922::1674079080::1722460005::1::::<><>::
-::res://assets/Rocky Roads/Objects/::1675439040
+::res://assets/Rocky Roads/Objects/::1722460005
 apple.png::CompressedTexture2D::1256274909326619637::1674860608::1722460005::1::::<><>::
 banana.png::CompressedTexture2D::1927168419575106811::1673836094::1722460005::1::::<><>::
 bounce pad.png::CompressedTexture2D::1671924884588110035::1671321768::1722460005::1::::<><>::
@@ -818,14 +818,14 @@ lock.png::CompressedTexture2D::4489025437377321634::1671320132::1722460005::1:::
 sign.png::CompressedTexture2D::8385403016920036537::1671323580::1722460005::1::::<><>::
 sign_arrow.png::CompressedTexture2D::7156143914097964013::1674859940::1722460005::1::::<><>::
 treasure_chest.png::CompressedTexture2D::1863165916197561349::1675439270::1722460005::1::::<><>::
-::res://assets/Rocky Roads/Tilesets/::1675439036
+::res://assets/Rocky Roads/Tilesets/::1722460005
 tileset_desert.png::CompressedTexture2D::1820037284566362120::1675398510::1722460005::1::::<><>::
 tileset_dirt.png::CompressedTexture2D::6681846899016252694::1675404422::1722460005::1::::<><>::
 tileset_forest.png::CompressedTexture2D::6027057221030867385::1639599442::1722460005::1::::<><>::
 tileset_lava.png::CompressedTexture2D::8601997972602350263::1639599442::1722460005::1::::<><>::
 tileset_snow.png::CompressedTexture2D::6546697838908651157::1675439834::1722460005::1::::<><>::
 tileset_water.png::CompressedTexture2D::6641467955974400685::1675398284::1722460005::1::::<><>::
-::res://assets/Rocky Roads/UI/::1675136702
+::res://assets/Rocky Roads/UI/::1722460005
 arrow.png::CompressedTexture2D::8831984311139609587::1675136716::1722460005::1::::<><>::
 buttons.png::CompressedTexture2D::7738787144736123494::1675136676::1722460005::1::::<><>::
 coin.png::CompressedTexture2D::1399878638276468434::1675136644::1722460005::1::::<><>::
@@ -883,9 +883,9 @@ jump_boost.tscn::PackedScene::2387757218501977923::1721779523::0::1::::<><>::res
 ::res://entities/knife/::1721779891
 knife.gd::GDScript::-1::1721779533::0::1::::<>CharacterBody2D<>::
 knife.tscn::PackedScene::9151657976549705174::1721779891::0::1::::<><>::uid://dwl4g4evh1fff::::res://assets/item_sprites/knife.png<>res://entities/knife/knife.gd<>uid://dxvi2jelqwc7x::::res://assets/sounds/rumor-sound-whoosh-fx-2_C_minor.wav
-::res://entities/players/::1722459211
-player.gd::GDScript::-1::1722459211::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::7228420403995031334::1721951082::0::1::::<><>::res://entities/players/player.gd<>uid://6vaao2p4o2j8::::res://assets/level01/caves/industrial.v2/industrial.v2.png<>uid://dkph32kv7qse4::::res://assets/level01/caves/industrial.v2/recolored_player.png<>uid://bcrdmebtb3ved::::res://assets/sounds/knife-stab-sound-fx.wav
+::res://entities/players/::1722471163
+player.gd::GDScript::-1::1722471162::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::7228420403995031334::1722471163::0::1::::<><>::res://entities/players/player.gd<>uid://6vaao2p4o2j8::::res://assets/level01/caves/industrial.v2/industrial.v2.png<>uid://dkph32kv7qse4::::res://assets/level01/caves/industrial.v2/recolored_player.png<>uid://bcrdmebtb3ved::::res://assets/sounds/knife-stab-sound-fx.wav
 ::res://entities/speed_boost/::1721779533
 speed_boost.gd::GDScript::-1::1721779533::0::1::::<>Node2D<>::
 speed_boost.tscn::PackedScene::8362254452656600550::1721779523::0::1::::<><>::res://entities/speed_boost/speed_boost.gd<>uid://b6hnl7t3kmnev::::res://assets/item_sprites/speed_boost.png
@@ -938,14 +938,19 @@ level_02.tscn::PackedScene::6266200691394815172::1722033312::0::1::::<><>::uid:/
 anim_spike.gd::GDScript::-1::1721953304::0::1::::<>Area2D<>::
 level_01.gd::GDScript::-1::1721779533::0::1::::<>Node2D<>::
 level_01.tscn::PackedScene::8218368947275210179::1721858362::0::1::::<><>::uid://cp4ftapxns3pv::::res://assets/level01/dungeons/Dungeon Tile Set/Dungeon Tile Set.png<>res://scenes/level_01/level_01.gd<>uid://da8ra7ljeknhu::::res://entities/players/player.tscn<>uid://bm0dc55mq3lx5::::res://assets/level01/dungeons/trapmoor_dungeon/TrapmoorTileset_v03.png<>uid://bpewy6uxlmb0b::::res://assets/level01/dungeons/1-Bit-Ruins-Omniclause/Ruins-Tilesheet-Omniclause(outlines).png<>uid://bx2qtkv3wpte6::::res://assets/level01/dungeons/1-Bit-Ruins-Omniclause/Animated-Tiles/Waterfall/Waterfall-Bottom.png<>uid://cke0kpsxvgsrk::::res://obstacles/anim_spike.tscn<>uid://b8m77405vir08::::res://obstacles/collapse_floor.tscn<>uid://1d35eianwr46::::res://assets/level01/dungeons/1-Bit-Ruins-Omniclause/Animated-Tiles/Waterfall/Waterfall-Middle.png<>uid://cwexr8ma4hivd::::res://assets/level01/dungeons/1-Bit-Ruins-Omniclause/Animated-Tiles/Waterfall/Waterfall-Top.png<>uid://dcobi7vj8m8nw::::res://decorations/light.tscn<>uid://0dhdlfmr83ni::::res://assets/level01/dungeons/1-Bit-Ruins-Omniclause/Animated-Tiles/Animated-Water-Tiles-Sheet(10-frames).png<>uid://jtgh82rsjxeh::::res://assets/level01/dungeons/1-Bit-Ruins-Omniclause/Animated-Tiles/Wall-Torch.png<>uid://bwfndkgwekrob::::res://assets/level01/Tileset/tileset.png<>uid://vdf2f2rx12ve::::res://assets/level01/Tileset/vegetation.png<>uid://pkiu11f0ykw0::::res://obstacles/spinning_flames.tscn<>uid://ca7dy5lvagvjf::::res://obstacles/flames.tscn<>uid://076orkqiqpsp::::res://assets/level01/Space Cave Tileset.png<>uid://csxv5g4mugtgc::::res://obstacles/flame_vert.tscn<>uid://dk6ae4vahcq2k::::res://decorations/moving_tile.tscn<>uid://x0owdwr6wf8::::res://decorations/vert_tile.tscn
-::res://scenes/level_04/::1722459511
-level_04.tscn::PackedScene::1252589064999247252::1722459511::0::1::::<><>::uid://da8ra7ljeknhu::::res://entities/players/player.tscn
-::res://scenes/main/::1722459511
-main.gd::GDScript::-1::1722459385::0::1::::<>Control<>::
-main.tscn::PackedScene::3876857004100717685::1722459286::0::1::::<><>::res://scenes/main/main.gd<>uid://calmxaeagvmy5::::res://assets/level01/outside/sky-backgrounds/Clouds/Clouds 4/1.png<>res://scenes/main/scroll_menu.gdshader<>uid://bmc4650jnfjb4::::res://assets/level01/outside/sky-backgrounds/Clouds/Clouds 4/2.png<>res://scenes/main/scroll_menu2.gdshader<>uid://bq21k8phmstli::::res://assets/level01/outside/sky-backgrounds/Clouds/Clouds 4/3.png<>res://scenes/main/scroll_menu3.gdshader<>uid://t007yb7qf2px::::res://assets/level01/outside/sky-backgrounds/Clouds/Clouds 4/4.png<>uid://ckxhp5txtvc6::::res://fonts/antiquity-print.ttf<>uid://cw6hv1tq5uaod::::res://fonts/ThaleahFat.ttf<>uid://l4bgpvu18sxp::::res://sounds/music/4 - Odd Ode _ Lonelibless.wav
-scroll_menu2.gdshader::Shader::-1::1722459511::0::1::::<><>::
-scroll_menu3.gdshader::Shader::-1::1722459511::0::1::::<><>::
-scroll_menu.gdshader::Shader::-1::1722459511::0::1::::<><>::
+::res://scenes/level_04/::1722471241
+coin.gd::GDScript::-1::1722465476::0::1::::<>CharacterBody2D<>::
+coin.tscn::PackedScene::6148073990965278335::1722471163::0::1::::<><>::uid://defaklw8ui5eq::::res://assets/Rocky Roads/Objects/coin_gold.png<>res://scenes/level_04/coin.gd<>uid://cn08lfork2dgt::::res://assets/Rocky Roads/FX/coin_collect.png<>uid://dwwsij6jq30x7::::res://assets/Rocky Roads/FX/shine.png
+fan.gd::GDScript::-1::1722465502::0::1::::<>CharacterBody2D<>::
+fan.tscn::PackedScene::8351966818273951674::1722471163::0::1::::<><>::res://scenes/level_04/fan.gd<>uid://cnwgmvwabyvwh::::res://assets/Rocky Roads/Enemies/propeller.png
+level_04.tscn::PackedScene::1252589064999247252::1722471241::0::1::::<><>::uid://da8ra7ljeknhu::::res://entities/players/player.tscn<>uid://cr4s0tfmabue0::::res://assets/Rocky Roads/Tilesets/tileset_forest.png<>uid://dus4wdhmdg7ax::::res://assets/Rocky Roads/Tilesets/tileset_lava.png<>uid://c0jjflnw6ji66::::res://assets/Rocky Roads/Tilesets/tileset_snow.png<>uid://c1vgah8mpf830::::res://assets/Rocky Roads/Tilesets/tileset_water.png<>uid://06v0o46g6on5::::res://assets/Rocky Roads/Tilesets/tileset_desert.png<>uid://c87qv6k3t1j3r::::res://assets/Rocky Roads/Objects/sign_arrow.png<>uid://ctuf46yx765bn::::res://scenes/level_04/coin.tscn<>uid://dq80w5j1x704m::::res://scenes/level_04/fan.tscn
+silver_coin.tscn::PackedScene::279484937592871263::1722471163::0::1::::<><>::uid://cn08lfork2dgt::::res://assets/Rocky Roads/FX/coin_collect.png<>res://scenes/level_04/coin.gd<>uid://dwvubidq7v4y2::::res://assets/Rocky Roads/Objects/coin_silver.png
+::res://scenes/main/::1722471244
+main.gd::GDScript::-1::1722460211::0::1::::<>Control<>::
+main.tscn::PackedScene::3876857004100717685::1722471163::0::1::::<><>::res://scenes/main/main.gd<>uid://calmxaeagvmy5::::res://assets/level01/outside/sky-backgrounds/Clouds/Clouds 4/1.png<>res://scenes/main/scroll_menu.gdshader<>uid://bmc4650jnfjb4::::res://assets/level01/outside/sky-backgrounds/Clouds/Clouds 4/2.png<>res://scenes/main/scroll_menu2.gdshader<>uid://bq21k8phmstli::::res://assets/level01/outside/sky-backgrounds/Clouds/Clouds 4/3.png<>res://scenes/main/scroll_menu3.gdshader<>uid://t007yb7qf2px::::res://assets/level01/outside/sky-backgrounds/Clouds/Clouds 4/4.png<>uid://ckxhp5txtvc6::::res://fonts/antiquity-print.ttf<>uid://cw6hv1tq5uaod::::res://fonts/ThaleahFat.ttf<>uid://l4bgpvu18sxp::::res://sounds/music/4 - Odd Ode _ Lonelibless.wav
+scroll_menu2.gdshader::Shader::-1::1722471244::0::1::::<><>::
+scroll_menu3.gdshader::Shader::-1::1722471244::0::1::::<><>::
+scroll_menu.gdshader::Shader::-1::1722471244::0::1::::<><>::
 transition_screen.gd::GDScript::-1::1721779768::0::1::::<>CanvasLayer<>::
 transition_screen.tscn::PackedScene::6552752852415803608::1721779768::0::1::::<><>::res://scenes/main/transition_screen.gd
 ::res://scenes/options/::1721858362

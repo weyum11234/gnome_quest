@@ -107,9 +107,9 @@ func _on_hazard_detector_body_entered(body):
 
 
 func _on_coin_detector_area_entered(area):
-	speed = speed + 10
+	speed = speed + 5
 func _on_coin_detector_body_entered(body):
-	speed = speed + 10
+	speed = speed + 5
 func _on_coin_detector_2_area_entered(area):
 	speed = speed - 5
 func _on_coin_detector_2_body_entered(body):

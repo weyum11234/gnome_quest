@@ -1,5 +1,6 @@
 CollisionShape2D
 Area2D
+Marker2D
 AnimatedSprite2D
 CharacterBody2D
 TileMap
@@ -11,4 +12,3 @@ RigidBody2D
 AudioStreamPlayer
 CPUParticles2D
 GPUParticles2D
-AudioStreamPlayer2D
