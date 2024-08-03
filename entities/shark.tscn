@@ -1,0 +1,54 @@
+[gd_scene load_steps=8 format=3 uid="uid://b7f7jvk11nl74"]
+
+[ext_resource type="Texture2D" uid="uid://cs1afhwrn5gul" path="res://assets/Rocky Roads/Enemies/shark.png" id="1_1r720"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5v2n2"]
+atlas = ExtResource("1_1r720")
+region = Rect2(0, 0, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_47lyf"]
+atlas = ExtResource("1_1r720")
+region = Rect2(64, 0, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t1wib"]
+atlas = ExtResource("1_1r720")
+region = Rect2(128, 0, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qfbev"]
+atlas = ExtResource("1_1r720")
+region = Rect2(192, 0, 64, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_76oy4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5v2n2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_47lyf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t1wib")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qfbev")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_anviw"]
+radius = 7.0
+height = 44.0
+
+[node name="shark" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_76oy4")
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+rotation = -1.57079
+shape = SubResource("CapsuleShape2D_anviw")

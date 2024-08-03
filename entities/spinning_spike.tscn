@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://byu1r2ct2kkqv"]
+
+[ext_resource type="Texture2D" uid="uid://dp6kxalxddib4" path="res://assets/Rocky Roads/Enemies/saw.png" id="1_041yx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t77we"]
+atlas = ExtResource("1_041yx")
+region = Rect2(0, 34, 34, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ifxds"]
+atlas = ExtResource("1_041yx")
+region = Rect2(34, 34, 34, 34)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hbssf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t77we")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ifxds")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ptfcf"]
+radius = 14.0
+
+[node name="spinning_spike" type="CharacterBody2D"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_hbssf")
+frame_progress = 0.500533
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ptfcf")

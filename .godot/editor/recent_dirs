@@ -1,5 +1,6 @@
-res://assets/Rocky Roads/Enemies
 res://entities
+res://assets/Rocky Roads/Enemies
+res://obstacles
 res://scenes/level_04
 res://assets/Rocky Roads/FX
 res://assets/Rocky Roads/Objects
@@ -8,7 +9,6 @@ res://assets/level02/Pixel Adventure 2/Enemies/Turtle
 res://assets/level02/Pixel Adventure 2/Enemies/AngryPig
 res://assets/level02/Pixel Adventure 2/Enemies/Rino
 res://decorations
-res://obstacles
 res://assets/level02/Pixel Adventure 2/Enemies/Snail
 res://assets/level02/Clouds V2
 res://assets/level02/Pixel Adventure 1/Free/Traps/Trampoline

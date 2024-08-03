@@ -19,7 +19,7 @@ func _on_AnimatedSprite2D_frame_changed():
 		hide()
 		$CollisionShape2D.disabled = true
 		$Area2D/CollisionShape2D.disabled = true
-		await get_tree().create_timer(.0).timeout
+		await get_tree().create_timer(.5).timeout
 		$CollisionShape2D.disabled = false
 		$Area2D/CollisionShape2D.disabled = false
 		$AnimatedSprite2D.play("default")

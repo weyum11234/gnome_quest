@@ -1,0 +1,61 @@
+[gd_scene load_steps=9 format=3 uid="uid://bhif8rgo0oedj"]
+
+[ext_resource type="Texture2D" uid="uid://bjki4a1qvu0uv" path="res://assets/Rocky Roads/Enemies/slime_blue.png" id="1_4gjps"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_agg3k"]
+atlas = ExtResource("1_4gjps")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ad4vk"]
+atlas = ExtResource("1_4gjps")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3m82t"]
+atlas = ExtResource("1_4gjps")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5qmny"]
+atlas = ExtResource("1_4gjps")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5atgq"]
+atlas = ExtResource("1_4gjps")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4p2l6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_agg3k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ad4vk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3m82t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5qmny")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5atgq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_31f02"]
+radius = 4.03113
+
+[node name="slime" type="CharacterBody2D"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_4p2l6")
+frame_progress = 0.392249
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3.5)
+shape = SubResource("CircleShape2D_31f02")

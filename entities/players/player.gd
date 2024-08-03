@@ -115,7 +115,7 @@ func _on_coin_detector_2_area_entered(area):
 func _on_coin_detector_2_body_entered(body):
 	speed = speed - 5
 func _on_wind_detector_area_entered(area):
-	gravity_multiplier = -1.3
+	gravity_multiplier = -1.8
 func _on_wind_detector_area_exited(area):
 	#await get_tree().create_timer(0.005).timeout
 	gravity_multiplier = 1
