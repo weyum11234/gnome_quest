@@ -23,7 +23,6 @@ var placeholders : Array
 func _ready():
 	player.spawn_position = player.global_position
 	dummy.spawn_position = dummy.global_position
-
 	
 	placeholders.append($Placeholder1.global_position)
 	placeholders.append($Placeholder2.global_position)
@@ -59,6 +58,7 @@ func spawn_entities():
 	pass
 
 # Give player a random item.
+# TODO: We need to pass a Player parameter that tells the function who to give the item to.
 func on_give_item():
 	# Only gives item if hands are empty
 	if not player.get_node("Hand").get_child_count():
