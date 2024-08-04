@@ -1,8 +1,8 @@
-res://entities
 res://assets/Rocky Roads/Enemies
 res://obstacles
-res://scenes/level_04
 res://assets/Rocky Roads/FX
+res://entities
+res://scenes/level_04
 res://assets/Rocky Roads/Objects
 res://scenes/level_01
 res://assets/level02/Pixel Adventure 2/Enemies/Turtle

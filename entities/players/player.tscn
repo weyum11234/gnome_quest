@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://da8ra7ljeknhu"]
+[gd_scene load_steps=29 format=3 uid="uid://da8ra7ljeknhu"]
 
 [ext_resource type="Script" path="res://entities/players/player.gd" id="1_cl06y"]
 [ext_resource type="Texture2D" uid="uid://6vaao2p4o2j8" path="res://assets/level01/caves/industrial.v2/industrial.v2.png" id="2_8tjra"]
@@ -174,12 +174,6 @@ size = Vector2(14, 14)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4sw0k"]
 size = Vector2(14, 14)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_p7yok"]
-size = Vector2(14, 12)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_gjrav"]
-size = Vector2(14, 14)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iyt0b"]
 size = Vector2(14, 14)
 
@@ -216,22 +210,6 @@ shape = SubResource("RectangleShape2D_4sw0k")
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_laxvq")
 
-[node name="CoinDetector" type="Area2D" parent="."]
-collision_layer = 0
-collision_mask = 256
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinDetector"]
-position = Vector2(0, 1)
-shape = SubResource("RectangleShape2D_p7yok")
-
-[node name="CoinDetector2" type="Area2D" parent="."]
-collision_layer = 0
-collision_mask = 128
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinDetector2"]
-position = Vector2(0, 1)
-shape = SubResource("RectangleShape2D_gjrav")
-
 [node name="Wind_Detector" type="Area2D" parent="."]
 collision_layer = 0
 collision_mask = 256
@@ -242,9 +220,5 @@ shape = SubResource("RectangleShape2D_iyt0b")
 
 [connection signal="area_entered" from="HazardDetector" to="." method="_on_hazard_detector_area_entered"]
 [connection signal="body_entered" from="HazardDetector" to="." method="_on_hazard_detector_body_entered"]
-[connection signal="area_entered" from="CoinDetector" to="." method="_on_coin_detector_area_entered"]
-[connection signal="body_entered" from="CoinDetector" to="." method="_on_coin_detector_body_entered"]
-[connection signal="area_entered" from="CoinDetector2" to="." method="_on_coin_detector_2_area_entered"]
-[connection signal="body_entered" from="CoinDetector2" to="." method="_on_coin_detector_2_body_entered"]
 [connection signal="area_entered" from="Wind_Detector" to="." method="_on_wind_detector_area_entered"]
 [connection signal="area_exited" from="Wind_Detector" to="." method="_on_wind_detector_area_exited"]
