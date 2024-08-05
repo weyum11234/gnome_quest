@@ -23,10 +23,12 @@ func _physics_process(delta):
 	if target:
 		look_at(target.global_position)
 		position = position.move_toward(target.global_position, speed * delta)
+		find_target()
 		
 func use(player : Object):
 	thrower = player
 	# TODO: Set target to closest player.
+	# Instead of setting target, call find_target()
 	target = state_scene.get_node("Dummy")
 	flight_timer.start()
 	# Ensure sprite point in the positive x-axis.
@@ -35,12 +37,20 @@ func use(player : Object):
 	player.get_node("Hand").remove_child(self)
 	state_scene.add_child(self)
 	state_scene.get_node("HomingBullet" + str(id)).global_position = player.get_node("Hand").global_position
+	# More initialization
 	hit_box.set_deferred("monitoring", true)
 	hit_box.set_deferred("monitorable", true)
 	audio_player.stream = load("res://assets/sounds/shot-gun_D_minor.wav")
 	audio_player.play()
 
 func alt_use(player : Object):
+	pass
+
+func find_target():
+	# Put all player nodes under a parent node, called players
+	# Traverse through players - ignoring thrower - and calculate distance
+	# Assign target to closest
+	# Launch!
 	pass
 
 func _on_flight_timer_timeout():
