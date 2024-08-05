@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://dvk40aiuuc7k8"]
 
-[ext_resource type="Script" path="res://entities/hostile_entity.gd" id="1_s4rlh"]
+[ext_resource type="Script" path="res://entities/enemy.gd" id="1_qa71q"]
 [ext_resource type="Texture2D" uid="uid://cp8qjj2gij21i" path="res://assets/level02/Pixel Adventure 2/Enemies/Snail/Walk (38x24).png" id="2_troe8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vtlur"]
@@ -82,15 +82,25 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d8yeq"]
-size = Vector2(30, 21)
+size = Vector2(30, 23)
 
-[node name="snail" type="CharacterBody2D"]
-script = ExtResource("1_s4rlh")
+[node name="Snail" type="Node2D"]
+script = ExtResource("1_qa71q")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+scale = Vector2(-1, 1)
+collision_layer = 4
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D"]
 sprite_frames = SubResource("SpriteFrames_5pmeh")
 frame_progress = 0.135735
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(2, -0.5)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(2, 0.5)
 shape = SubResource("RectangleShape2D_d8yeq")
+
+[node name="Start" type="Node2D" parent="."]
+position = Vector2(-32, 0)
+
+[node name="End" type="Node2D" parent="."]
+position = Vector2(32, 0)

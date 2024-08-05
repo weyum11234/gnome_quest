@@ -7,3 +7,11 @@ res://decorations/cloud_a.tscn
 res://decorations/cloud_b.tscn
 res://decorations/cloud_c.tscn
 res://entities/rhino.tscn
+res://entities/enemy.gd
+res://entities/snail.tscn
+res://entities/pig.tscn
+res://entities/turtle.tscn
+res://entities/turtle.gd
+res://obstacles/trampoline.tscn
+res://obstacles/trampoline.gd
+res://decorations/invis_rect.tscn

@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=3 uid="uid://cl3etra2xssiw"]
 
-[ext_resource type="Script" path="res://entities/hostile_entity.gd" id="1_dtref"]
+[ext_resource type="Script" path="res://entities/enemy.gd" id="1_xfmuf"]
 [ext_resource type="Texture2D" uid="uid://hxyaopto5htp" path="res://assets/level02/Pixel Adventure 2/Enemies/AngryPig/Run (36x30).png" id="2_attq3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f4swx"]
@@ -96,13 +96,25 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7a5py"]
+size = Vector2(20, 27)
 
-[node name="pig" type="CharacterBody2D"]
-script = ExtResource("1_dtref")
+[node name="Pig" type="Node2D"]
+script = ExtResource("1_xfmuf")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+scale = Vector2(-1, 1)
+collision_layer = 4
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D"]
 sprite_frames = SubResource("SpriteFrames_3hgo3")
 frame_progress = 0.757479
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_7a5py")
+
+[node name="Start" type="Node2D" parent="."]
+position = Vector2(-48, 0)
+
+[node name="End" type="Node2D" parent="."]
+position = Vector2(48, 0)
