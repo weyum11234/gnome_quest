@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4y8hmlcaa8jn"
-path="res://.godot/imported/platform.png-7e655d63d8f6e09cc42f3b75480f0287.ctex"
+path="res://.godot/imported/platform.png-69355a2747d5e6dd8073392303b1985f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilesets_maps/dungeons/1-Bit-Ruins-Omniclause/platform.png"
-dest_files=["res://.godot/imported/platform.png-7e655d63d8f6e09cc42f3b75480f0287.ctex"]
+source_file="res://assets/level01/dungeons/1-Bit-Ruins-Omniclause/platform.png"
+dest_files=["res://.godot/imported/platform.png-69355a2747d5e6dd8073392303b1985f.ctex"]
 
 [params]
 
