@@ -12,14 +12,3 @@ ReflectionProbe
 AnimatedSprite2D
 StaticBody2D
 Area2D
-StaticBody2D
-CharacterBody2D
-CollisionPolygon2D
-TileMap
-AnimatableBody2D
-PinJoint2D
-RigidBody2D
-Node
-AnimatableBody2D
-RemoteTransform2D
-PathFollow2D
