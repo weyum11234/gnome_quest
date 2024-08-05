@@ -1,0 +1,70 @@
+[gd_scene load_steps=11 format=3 uid="uid://b72l84x2qoqry"]
+
+[ext_resource type="Script" path="res://red_flame.gd" id="1_7iva5"]
+[ext_resource type="Texture2D" uid="uid://cpb5m3ippapc2" path="res://assets/Rocky Roads/Enemies/fire_big.png" id="2_7foyd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rhatb"]
+atlas = ExtResource("2_7foyd")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_msgro"]
+atlas = ExtResource("2_7foyd")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f6egr"]
+atlas = ExtResource("2_7foyd")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_syafo"]
+atlas = ExtResource("2_7foyd")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8idxy"]
+atlas = ExtResource("2_7foyd")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cyk7f"]
+atlas = ExtResource("2_7foyd")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_02c43"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rhatb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_msgro")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f6egr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_syafo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8idxy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cyk7f")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pplrq"]
+size = Vector2(14, 10)
+
+[node name="red_flame" type="CharacterBody2D"]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("1_7iva5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_02c43")
+frame_progress = 0.669998
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 11)
+shape = SubResource("RectangleShape2D_pplrq")

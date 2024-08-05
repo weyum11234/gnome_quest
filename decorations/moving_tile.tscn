@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://dk6ae4vahcq2k"]
+
+[ext_resource type="Script" path="res://decorations/moving_tile.gd" id="1_da11c"]
+[ext_resource type="Texture2D" uid="uid://bpewy6uxlmb0b" path="res://assets/level01/dungeons/1-Bit-Ruins-Omniclause/Ruins-Tilesheet-Omniclause(outlines).png" id="2_s122d"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p68ii"]
+atlas = ExtResource("2_s122d")
+region = Rect2(186, 32, 31, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0nkqh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p68ii")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ptrv4"]
+size = Vector2(32, 3)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_da11c")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_0nkqh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_ptrv4")

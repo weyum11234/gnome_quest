@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://csxv5g4mugtgc"]
 
 [ext_resource type="Script" path="res://obstacles/flame_vert.gd" id="1_or810"]
-[ext_resource type="Texture2D" uid="uid://b4kw2fjhi05pn" path="res://assets/tilesets_maps/Effect and Bullet 16x16/Green Effect and Bullet 16x16.png" id="2_thurn"]
+[ext_resource type="Texture2D" uid="uid://b4kw2fjhi05pn" path="res://assets/level01/Effect and Bullet 16x16/Green Effect and Bullet 16x16.png" id="2_thurn"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_txciq"]
 atlas = ExtResource("2_thurn")

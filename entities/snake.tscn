@@ -1,0 +1,56 @@
+[gd_scene load_steps=8 format=3 uid="uid://dcj7350aeoot6"]
+
+[ext_resource type="Texture2D" uid="uid://b0qoi7xb7r2g5" path="res://assets/Rocky Roads/Enemies/snake.png" id="1_c7hdq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jvrjs"]
+atlas = ExtResource("1_c7hdq")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nf64d"]
+atlas = ExtResource("1_c7hdq")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xqe25"]
+atlas = ExtResource("1_c7hdq")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_um0aw"]
+atlas = ExtResource("1_c7hdq")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w7qen"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jvrjs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nf64d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xqe25")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_um0aw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 9.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ritlw"]
+radius = 4.19617
+height = 22.3205
+
+[node name="snake" type="CharacterBody2D"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_w7qen")
+frame_progress = 0.112685
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 10)
+rotation = 2.09439
+shape = SubResource("CapsuleShape2D_ritlw")

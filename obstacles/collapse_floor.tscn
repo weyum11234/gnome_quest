@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://b8m77405vir08"]
 
-[ext_resource type="Texture2D" uid="uid://cwhsiudefawaa" path="res://assets/tilesets_maps/dungeons/2d_metroid_asset_1_2/metroid_asset_1_2/Sprites/Interactables/temporaryPlatform.png" id="1_blg3r"]
+[ext_resource type="Texture2D" uid="uid://cwhsiudefawaa" path="res://assets/level01/dungeons/2d_metroid_asset_1_2/metroid_asset_1_2/Sprites/Interactables/temporaryPlatform.png" id="1_blg3r"]
 [ext_resource type="Script" path="res://obstacles/collapse_floor.gd" id="1_gws5a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i12yt"]

@@ -1,8 +1,8 @@
-[gd_scene load_steps=28 format=3 uid="uid://da8ra7ljeknhu"]
+[gd_scene load_steps=29 format=3 uid="uid://da8ra7ljeknhu"]
 
 [ext_resource type="Script" path="res://entities/players/player.gd" id="1_cl06y"]
-[ext_resource type="Texture2D" uid="uid://6vaao2p4o2j8" path="res://assets/tilesets_maps/caves/industrial.v2/industrial.v2.png" id="2_8tjra"]
-[ext_resource type="Texture2D" uid="uid://dkph32kv7qse4" path="res://assets/tilesets_maps/caves/industrial.v2/recolored_player.png" id="3_xfqrp"]
+[ext_resource type="Texture2D" uid="uid://6vaao2p4o2j8" path="res://assets/level01/caves/industrial.v2/industrial.v2.png" id="2_8tjra"]
+[ext_resource type="Texture2D" uid="uid://dkph32kv7qse4" path="res://assets/level01/caves/industrial.v2/recolored_player.png" id="3_xfqrp"]
 [ext_resource type="AudioStream" uid="uid://bcrdmebtb3ved" path="res://assets/sounds/knife-stab-sound-fx.wav" id="4_laxvq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nthc3"]
@@ -174,6 +174,9 @@ size = Vector2(14, 14)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4sw0k"]
 size = Vector2(14, 14)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iyt0b"]
+size = Vector2(14, 14)
+
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 collision_layer = 2
 collision_mask = 3
@@ -206,6 +209,14 @@ shape = SubResource("RectangleShape2D_4sw0k")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_laxvq")
+
+[node name="Wind_Detector" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 256
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wind_Detector"]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_iyt0b")
 
 [connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]
 [connection signal="area_entered" from="HurtBox" to="." method="_on_hazard_detector_area_entered"]
