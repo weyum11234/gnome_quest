@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://ek6yuo84vajq" path="res://assets/tilesets_maps/outside/Freebie_Factory/factory tilesEX_AllChiller.png" id="2_rwycr"]
 [ext_resource type="PackedScene" uid="uid://da8ra7ljeknhu" path="res://entities/players/player.tscn" id="3_0ah35"]
 [ext_resource type="PackedScene" uid="uid://dlr7wjgtlcbf4" path="res://scenes/level_03/spinning_spike.tscn" id="4_d8ci7"]
-[ext_resource type="Texture2D" uid="uid://catnei36uf3jx" path="res://assets/tilesets_maps/caves/underground_areas/cavesofgallet_tiles_scaled_2x_pngcrushed.png" id="4_lwneq"]
+[ext_resource type="Texture2D" uid="uid://catnei36uf3jx" path="res://assets/level01/caves/underground_areas/cavesofgallet_tiles_scaled_2x_pngcrushed.png" id="4_lwneq"]
 [ext_resource type="PackedScene" uid="uid://dq8uowtydyufx" path="res://scenes/level_03/moving_spinning_spike.tscn" id="5_r61sw"]
 [ext_resource type="PackedScene" uid="uid://fdgkwpnufthn" path="res://scenes/level_03/spinning_platform.tscn" id="6_fu7on"]
 [ext_resource type="PackedScene" uid="uid://dwp054npeuemr" path="res://scenes/level_03/moving_circular_platform.tscn" id="8_y34ba"]

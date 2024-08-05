@@ -1,6 +1,5 @@
-[gd_scene load_steps=6 format=3 uid="uid://x0owdwr6wf8"]
+[gd_scene load_steps=5 format=3 uid="uid://7sbqkbapk34l"]
 
-[ext_resource type="Script" path="res://decorations/vert_tile.gd" id="1_ru1h8"]
 [ext_resource type="Texture2D" uid="uid://bpewy6uxlmb0b" path="res://assets/level01/dungeons/1-Bit-Ruins-Omniclause/Ruins-Tilesheet-Omniclause(outlines).png" id="2_p3hyw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_p68ii"]
@@ -22,7 +21,6 @@ animations = [{
 size = Vector2(32, 3)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
-script = ExtResource("1_ru1h8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_hplvb")

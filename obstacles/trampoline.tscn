@@ -1,6 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://y1x3bak13j3m"]
+[gd_scene load_steps=6 format=3 uid="uid://dawj7jvbf0ed7"]
 
-[ext_resource type="Script" path="res://trampoline.gd" id="1_nsqx8"]
+[ext_resource type="Script" path="res://obstacles/trampoline.gd" id="1_u2yur"]
 [ext_resource type="Texture2D" uid="uid://bpowq7a0tw50y" path="res://assets/level02/Pixel Adventure 1/Free/Traps/Trampoline/Idle.png" id="2_42wni"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0aa5s"]
@@ -20,8 +20,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t4g5d"]
 
 [node name="trampoline" type="AnimatableBody2D"]
-script = ExtResource("1_nsqx8")
-tramp_jump = -500
+script = ExtResource("1_u2yur")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 5.5)

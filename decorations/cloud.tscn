@@ -1,6 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://cbtuii7rl2ftt"]
+[gd_scene load_steps=6 format=3 uid="uid://mh25gmq8tbuy"]
 
-[ext_resource type="Script" path="res://clouds.gd" id="1_hkecr"]
+[ext_resource type="Script" path="res://decorations/clouds.gd" id="1_xjf4m"]
 [ext_resource type="Texture2D" uid="uid://b0a80oeq5wd44" path="res://assets/level02/Clouds V2/Clouds V2.png" id="2_cv0c1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ms18o"]
@@ -24,7 +24,7 @@ size = Vector2(41, 29)
 [node name="CharacterBody2D" type="CharacterBody2D"]
 collision_layer = 0
 collision_mask = 0
-script = ExtResource("1_hkecr")
+script = ExtResource("1_xjf4m")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_qkgew")

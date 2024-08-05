@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://v0m63iv05p7n"]
+[gd_scene load_steps=6 format=3 uid="uid://cvkb8d8hsvmjd"]
 
 [ext_resource type="Script" path="res://obstacles/circular_flame.gd" id="1_x5ko4"]
 [ext_resource type="Texture2D" uid="uid://b0a80oeq5wd44" path="res://assets/level02/Clouds V2/Clouds V2.png" id="2_mt8s5"]
