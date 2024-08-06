@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://ggwmgioskbdr"]
+
+[ext_resource type="Script" path="res://scenes/global/AudioController.gd" id="1_ekpm0"]
+[ext_resource type="AudioStream" uid="uid://l4bgpvu18sxp" path="res://sounds/music/4 - Odd Ode _ Lonelibless.wav" id="2_tbqib"]
+
+[node name="AudioController" type="Node"]
+script = ExtResource("1_ekpm0")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_tbqib")
