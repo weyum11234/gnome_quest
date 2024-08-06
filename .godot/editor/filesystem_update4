@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 res://scenes/level02/level_02.tscn
+=======
+res://scenes/main/main.tscn
+>>>>>>> 05bfd6eed179eb0ac9883c9730f470c887ba8de6
 res://entities/players/player.gd
 res://scenes/main/scroll_menu2.gdshader
 res://scenes/main/scroll_menu3.gdshader
+<<<<<<< HEAD
 res://scenes/main/scroll_menu.gdshader
 res://decorations/cloud_a.tscn
 res://decorations/cloud_b.tscn
@@ -15,3 +20,20 @@ res://entities/turtle.gd
 res://obstacles/trampoline.tscn
 res://obstacles/trampoline.gd
 res://decorations/invis_rect.tscn
+=======
+res://scenes/level_04/level_04.tscn
+res://entities/players/player.tscn
+res://entities/bear.tscn
+res://entities/red_slime.tscn
+res://entities/slime.tscn
+res://entities/spinning_spike.tscn
+res://entities/shark.tscn
+res://obstacles/canon_ball.tscn
+res://obstacles/canon.tscn
+res://Settings.gd
+res://scenes/options/settings.tscn
+res://scenes/main/main.gd
+res://AudioController.gd
+res://scenes/global/audio_controller.tscn
+res://scenes/global/AudioController.gd
+>>>>>>> 05bfd6eed179eb0ac9883c9730f470c887ba8de6
