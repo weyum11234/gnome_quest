@@ -1,5 +1,5 @@
 extends CharacterBody2D
-
+#mnms
 # Physics constants
 @export var speed = 200.0
 @export var jump_velocity = -170.0
