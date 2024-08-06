@@ -1,3 +1,9 @@
+Node
+Label
+OptionButton
+HSlider
+VBoxContainer
+MarginContainer
 Node2D
 CollisionShape2D
 RigidBody2D
@@ -7,8 +13,3 @@ Marker2D
 ReflectionProbe
 AnimatedSprite2D
 StaticBody2D
-Area2D
-CharacterBody2D
-CollisionPolygon2D
-TileMap
-AnimatableBody2D

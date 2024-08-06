@@ -1,3 +1,5 @@
+res://scenes/global
+res://scenes/options
 res://assets/Rocky Roads/Enemies
 res://obstacles
 res://assets/Rocky Roads/FX
@@ -18,4 +20,3 @@ res://fonts/Fibberish v1.0
 res://fonts
 res://scenes/main
 res://
-res://scenes
