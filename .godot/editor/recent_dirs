@@ -1,14 +1,11 @@
-<<<<<<< HEAD
-res://assets/tilesets_maps/dungeons/1-Bit-Ruins-Omniclause
-res://assets/tilesets_maps/caves/industrial.v2
-res://decorations
-res://assets/tilesets_maps/Effect and Bullet 16x16
-=======
+res://obstacles
 res://scenes/global
+<<<<<<< HEAD
+res://decorations
+=======
 res://scenes/options
 res://assets/Rocky Roads/Enemies
 >>>>>>> 05bfd6eed179eb0ac9883c9730f470c887ba8de6
-res://obstacles
 res://assets/Rocky Roads/FX
 res://entities
 res://scenes/level_04
@@ -22,8 +19,4 @@ res://assets/level02/Pixel Adventure 2/Enemies/Snail
 res://assets/level02/Clouds V2
 res://assets/level02/Pixel Adventure 1/Free/Traps/Trampoline
 res://assets/level02/Pixel Adventure 1/Free/Traps/Saw
-res://scenes/level02
 res://fonts/Fibberish v1.0
-res://fonts
-res://scenes/main
-res://

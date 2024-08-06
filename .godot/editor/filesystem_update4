@@ -1,11 +1,9 @@
-res://scenes/level02/level_02.tscn
+res://scenes/global/transition_screen.tscn
+res://scenes/main/main.tscn
 res://entities/players/player.gd
+res://scenes/main/scroll_menu.gdshader
 res://scenes/main/scroll_menu2.gdshader
 res://scenes/main/scroll_menu3.gdshader
-res://scenes/main/scroll_menu.gdshader
-res://decorations/cloud_a.tscn
-res://entities/turtle.tscn
-res://entities/pig.tscn
-res://obstacles/trampoline.tscn
-res://decorations/invis_rect.tscn
-res://scenes/global/AudioController.gd
+res://scenes/global/audio_controller.tscn
+res://entities/players/player.tscn
+res://obstacles/fan.tscn

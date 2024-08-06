@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://dq80w5j1x704m"]
 
-[ext_resource type="Script" path="res://scenes/level_04/fan.gd" id="1_2c1rp"]
+[ext_resource type="Script" path="res://obstacles/fan.gd" id="1_2c1rp"]
 [ext_resource type="Texture2D" uid="uid://cnwgmvwabyvwh" path="res://assets/Rocky Roads/Enemies/propeller.png" id="1_gntxl"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2cgss"]
