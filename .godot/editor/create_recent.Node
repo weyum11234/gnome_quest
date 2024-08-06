@@ -1,14 +1,4 @@
-<<<<<<< HEAD
 Area2D
-=======
-Node
-Label
-OptionButton
-HSlider
-VBoxContainer
-MarginContainer
-Node2D
->>>>>>> 05bfd6eed179eb0ac9883c9730f470c887ba8de6
 CollisionShape2D
 StaticBody2D
 Node2D
@@ -23,7 +13,3 @@ AnimationPlayer
 Marker2D
 ReflectionProbe
 AnimatedSprite2D
-<<<<<<< HEAD
-=======
-StaticBody2D
->>>>>>> 05bfd6eed179eb0ac9883c9730f470c887ba8de6

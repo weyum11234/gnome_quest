@@ -15,7 +15,15 @@ func _ready():
 	exit.button_down.connect(on_exit_down)
 
 
-
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	var current_scene = get_tree().current_scene
+	if current_scene:
+		if $AudioStreamPlayer.playing == false:
+			$AudioStreamPlayer.play()
+	else:
+		$AudioStreamPlayer.stop()
+	pass
 
 
 func on_ng_down() -> void:
@@ -26,7 +34,7 @@ func on_ng_down() -> void:
 	
 	
 func on_options_down() -> void:
-	get_tree().change_scene_to_file("res://scenes/options/settings.tscn")
+	get_tree().change_scene_to_file("res://scenes/options/options.tscn")
 
 	
 func on_exit_down() -> void:
