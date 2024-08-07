@@ -2379,7 +2379,7 @@ position = Vector2(1744, 1024)
 move_end_point = Vector2(0, -128)
 
 [node name="Player" parent="." instance=ExtResource("1_vee1p")]
-position = Vector2(-64, 48)
+position = Vector2(-64, 56)
 
 [node name="Dummy" parent="." instance=ExtResource("1_vee1p")]
 position = Vector2(624, 56)

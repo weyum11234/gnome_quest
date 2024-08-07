@@ -1,5 +1,8 @@
 extends CharacterBody2D
 
+# Nodes
+@onready var spawn_timer = $SpawnTimer
+
 # Physics constants
 @export var speed = 200.0
 @export var jump_velocity = -170.0
@@ -15,8 +18,8 @@ var coyote_timer = 0.0
 
 # State variables
 @onready var animation = "idle"
-var spawn_time = 1.0
-var spawn_timer = -1
+#var spawn_time = 1.0
+#var spawn_timer = -1
 var facing = 1
 var spawn_position : Vector2
 
@@ -24,13 +27,14 @@ func _ready():
 	pass
 	
 func _process(delta):
-	if spawn_timer > -1 and spawn_timer < spawn_time:
-		spawn_timer += delta
-	elif spawn_timer > spawn_time:
-		set_physics_process(true)
-		set_process_input(true)
-		animation = "idle"
-		spawn_timer = -1
+	#if spawn_timer > -1 and spawn_timer < spawn_time:
+		#spawn_timer += delta
+	#elif spawn_timer > spawn_time:
+		#set_physics_process(true)
+		#set_process_input(true)
+		#animation = "idle"
+		#spawn_timer = -1
+	pass
 
 func _physics_process(delta):
 	# Set default animation every delta
@@ -95,18 +99,15 @@ func _on_hurt_box_area_entered(area):
 	death()
 
 func death():
-	spawn_timer = 0
 	global_position = spawn_position
 	set_physics_process(false)
 	set_process_input(false)
 	animation = "respawn"
+	spawn_timer.start()
 	$AnimatedSprite2D.play(animation)
 	$AudioStreamPlayer2D.play()
 
-
-func _on_wind_detector_area_entered(area):
-	gravity_multiplier = -1.8
-func _on_wind_detector_area_exited(area):
-	#await get_tree().create_timer(0.005).timeout
-	gravity_multiplier = 1
-
+func _on_spawn_timer_timeout():
+	set_physics_process(true)
+	set_process_input(true)
+	animation = "idle"

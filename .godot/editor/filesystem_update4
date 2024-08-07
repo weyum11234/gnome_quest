@@ -1,6 +1,16 @@
 res://scenes/level_04/level_04.tscn
-res://obstacles/fan.tscn
 res://entities/players/player.gd
 res://scenes/main/scroll_menu2.gdshader
 res://scenes/main/scroll_menu3.gdshader
 res://scenes/main/scroll_menu.gdshader
+res://obstacles/fan.tscn
+res://obstacles/coin.tscn
+res://entities/players/player.tscn
+res://obstacles/trampoline.tscn
+res://obstacles/cannon_ball.tscn
+res://obstacles/cannon_ball.gd
+res://scenes/level_01/level_01.tscn
+res://obstacles/cannon.tscn
+res://obstacles/cannon.gd
+res://obstacles/fan.gd
+res://scenes/level_04/level_04.gd
