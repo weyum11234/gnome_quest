@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=3 uid="uid://b57cotk02tjsv"]
 
-[ext_resource type="Script" path="res://entities/ice_spikes.gd" id="1_c3n0n"]
+[ext_resource type="Script" path="res://obstacles/ice_spikes.gd" id="1_c3n0n"]
 [ext_resource type="Texture2D" uid="uid://fe4pd70noe4k" path="res://assets/Rocky Roads/Enemies/ice_spikes.png" id="2_q2qr8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sn88k"]

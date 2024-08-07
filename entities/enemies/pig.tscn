@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=3 uid="uid://cl3etra2xssiw"]
 
-[ext_resource type="Script" path="res://entities/enemy.gd" id="1_xfmuf"]
+[ext_resource type="Script" path="res://entities/enemies/enemy.gd" id="1_xfmuf"]
 [ext_resource type="Texture2D" uid="uid://hxyaopto5htp" path="res://assets/level02/Pixel Adventure 2/Enemies/AngryPig/Run (36x30).png" id="2_attq3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f4swx"]

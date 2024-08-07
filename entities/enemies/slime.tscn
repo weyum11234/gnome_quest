@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://bf5tjpb5kn3an"]
 
 [ext_resource type="Texture2D" uid="uid://bjki4a1qvu0uv" path="res://assets/Rocky Roads/Enemies/slime_blue.png" id="1_4gjps"]
-[ext_resource type="Script" path="res://entities/enemy.gd" id="1_l1h5n"]
+[ext_resource type="Script" path="res://entities/enemies/enemy.gd" id="1_l1h5n"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_agg3k"]
 atlas = ExtResource("1_4gjps")

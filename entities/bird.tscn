@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://bdg1pjrjkbcxd"]
 
 [ext_resource type="Texture2D" uid="uid://c3m2pj3q3nl7e" path="res://assets/Rocky Roads/Enemies/bird.png" id="1_i357a"]
-[ext_resource type="Script" path="res://entities/enemy.gd" id="1_m4wnh"]
+[ext_resource type="Script" path="res://entities/enemies/enemy.gd" id="1_m4wnh"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5gir0"]
 atlas = ExtResource("1_i357a")

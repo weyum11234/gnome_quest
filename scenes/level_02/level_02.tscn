@@ -1,6 +1,7 @@
-[gd_scene load_steps=21 format=3 uid="uid://cvjnn63curuky"]
+[gd_scene load_steps=22 format=3 uid="uid://cvjnn63curuky"]
 
 [ext_resource type="Texture2D" uid="uid://bd0hchvla5wvj" path="res://assets/level02/Seasonal Tilesets/1 - Grassland/Background parts/4 - Cloud_cover_2.png" id="1_eekwx"]
+[ext_resource type="Script" path="res://scenes/level_02/level_02.gd" id="1_q0770"]
 [ext_resource type="Texture2D" uid="uid://dldtkxkequavj" path="res://assets/level02/Pixel Adventure 1/Free/Terrain/Terrain (16x16).png" id="1_ym7dn"]
 [ext_resource type="Texture2D" uid="uid://dxamb2v2jx3n2" path="res://assets/level02/Pixel Adventure 1/Free/Background/Brown.png" id="2_yrdhy"]
 [ext_resource type="PackedScene" uid="uid://bsc2sy8qmxuot" path="res://obstacles/saw.tscn" id="3_bbvow"]
@@ -9,10 +10,10 @@
 [ext_resource type="PackedScene" uid="uid://mh25gmq8tbuy" path="res://decorations/cloud_a.tscn" id="7_uqv4u"]
 [ext_resource type="PackedScene" uid="uid://cvkb8d8hsvmjd" path="res://decorations/cloud_b.tscn" id="8_ul15p"]
 [ext_resource type="PackedScene" uid="uid://cebwxp2r6jrit" path="res://decorations/cloud_c.tscn" id="9_w2wqs"]
-[ext_resource type="PackedScene" uid="uid://5ie41cud00bh" path="res://entities/rhino.tscn" id="10_iyxrj"]
-[ext_resource type="PackedScene" uid="uid://dvk40aiuuc7k8" path="res://entities/snail.tscn" id="11_262kd"]
-[ext_resource type="PackedScene" uid="uid://cl3etra2xssiw" path="res://entities/pig.tscn" id="13_4tjhs"]
-[ext_resource type="PackedScene" uid="uid://cdl1085fb6r2o" path="res://entities/turtle.tscn" id="14_47oto"]
+[ext_resource type="PackedScene" uid="uid://5ie41cud00bh" path="res://entities/enemies/rhino.tscn" id="10_iyxrj"]
+[ext_resource type="PackedScene" uid="uid://dvk40aiuuc7k8" path="res://entities/enemies/snail.tscn" id="11_262kd"]
+[ext_resource type="PackedScene" uid="uid://cl3etra2xssiw" path="res://entities/enemies/pig.tscn" id="13_4tjhs"]
+[ext_resource type="PackedScene" uid="uid://cdl1085fb6r2o" path="res://entities/enemies/turtle.tscn" id="14_47oto"]
 [ext_resource type="PackedScene" uid="uid://da8ra7ljeknhu" path="res://entities/players/player.tscn" id="18_yu20p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dtwm8"]
@@ -2577,6 +2578,7 @@ sources/3 = SubResource("TileSetAtlasSource_wt681")
 size = Vector2(6352, 1)
 
 [node name="level02" type="Node2D"]
+script = ExtResource("1_q0770")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_phtn1")

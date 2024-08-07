@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://h6oop5cq6b7t"]
 
 [ext_resource type="Texture2D" uid="uid://djvup6ins4knx" path="res://assets/Rocky Roads/Enemies/bear_polar.png" id="1_nrdgj"]
-[ext_resource type="Script" path="res://entities/enemy.gd" id="1_qm840"]
+[ext_resource type="Script" path="res://entities/enemies/enemy.gd" id="1_qm840"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_csqbu"]
 atlas = ExtResource("1_nrdgj")

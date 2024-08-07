@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://dvk40aiuuc7k8"]
 
-[ext_resource type="Script" path="res://entities/enemy.gd" id="1_qa71q"]
+[ext_resource type="Script" path="res://entities/enemies/enemy.gd" id="1_qa71q"]
 [ext_resource type="Texture2D" uid="uid://cp8qjj2gij21i" path="res://assets/level02/Pixel Adventure 2/Enemies/Snail/Walk (38x24).png" id="2_troe8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vtlur"]

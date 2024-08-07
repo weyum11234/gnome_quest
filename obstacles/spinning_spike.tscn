@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://byu1r2ct2kkqv"]
 
-[ext_resource type="Script" path="res://entities/rotation.gd" id="1_0mm1j"]
+[ext_resource type="Script" path="res://obstacles/rotation.gd" id="1_0mm1j"]
 [ext_resource type="Texture2D" uid="uid://dp6kxalxddib4" path="res://assets/Rocky Roads/Enemies/saw.png" id="1_041yx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t77we"]
