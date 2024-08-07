@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://fbmvrpvekjm4"]
 
-[ext_resource type="Script" path="res://red_flame.gd" id="1_70qgc"]
+[ext_resource type="Script" path="res://entities/red_flame.gd" id="1_ol1mg"]
 [ext_resource type="Texture2D" uid="uid://cpb5m3ippapc2" path="res://assets/Rocky Roads/Enemies/fire_big.png" id="2_gwpfh"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rhatb"]
@@ -56,14 +56,15 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pplrq"]
 size = Vector2(14, 10)
 
-[node name="red_flame" type="CharacterBody2D"]
+[node name="red_flame" type="StaticBody2D"]
 collision_layer = 4
 collision_mask = 0
-script = ExtResource("1_70qgc")
+script = ExtResource("1_ol1mg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_02c43")
-frame_progress = 0.230999
+frame = 4
+frame_progress = 0.979519
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 11)

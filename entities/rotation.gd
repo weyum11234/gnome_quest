@@ -1,3 +1,4 @@
+# Used with spinning_spike.tscn
 extends CharacterBody2D
 
 @export var orbit_radius: float = 100.0

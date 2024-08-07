@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://bdg1pjrjkbcxd"]
+[gd_scene load_steps=9 format=3 uid="uid://bdg1pjrjkbcxd"]
 
 [ext_resource type="Texture2D" uid="uid://c3m2pj3q3nl7e" path="res://assets/Rocky Roads/Enemies/bird.png" id="1_i357a"]
+[ext_resource type="Script" path="res://entities/enemy.gd" id="1_m4wnh"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5gir0"]
 atlas = ExtResource("1_i357a")
@@ -41,13 +42,20 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_xdx03"]
 radius = 8.0
 
-[node name="bird" type="CharacterBody2D"]
-collision_layer = 4
-collision_mask = 0
+[node name="Bird" type="Node2D"]
+script = ExtResource("1_m4wnh")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+scale = Vector2(-1, 1)
+collision_layer = 4
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D"]
 sprite_frames = SubResource("SpriteFrames_arwy8")
 frame_progress = 0.51495
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource("CircleShape2D_xdx03")
+
+[node name="Start" type="Node2D" parent="."]
+
+[node name="End" type="Node2D" parent="."]

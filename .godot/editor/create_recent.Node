@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 Area2D
 =======
@@ -10,16 +11,23 @@ MarginContainer
 Node2D
 >>>>>>> 05bfd6eed179eb0ac9883c9730f470c887ba8de6
 CollisionShape2D
+=======
+TextureRect
+Control
+Timer
+Area2D
+>>>>>>> Stashed changes
 StaticBody2D
 Node2D
+CollisionShape2D
 CharacterBody2D
-Timer
 AudioStreamPlayer2D
 AnimationPlayer
 Sprite2D
 RigidBody2D
 Sprite2D
 AnimationPlayer
+<<<<<<< Updated upstream
 Marker2D
 ReflectionProbe
 AnimatedSprite2D
@@ -27,3 +35,5 @@ AnimatedSprite2D
 =======
 StaticBody2D
 >>>>>>> 05bfd6eed179eb0ac9883c9730f470c887ba8de6
+=======
+>>>>>>> Stashed changes

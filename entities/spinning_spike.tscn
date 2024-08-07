@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://byu1r2ct2kkqv"]
+[gd_scene load_steps=7 format=3 uid="uid://byu1r2ct2kkqv"]
 
+[ext_resource type="Script" path="res://entities/rotation.gd" id="1_0mm1j"]
 [ext_resource type="Texture2D" uid="uid://dp6kxalxddib4" path="res://assets/Rocky Roads/Enemies/saw.png" id="1_041yx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t77we"]
@@ -30,6 +31,9 @@ radius = 14.0
 [node name="spinning_spike" type="CharacterBody2D"]
 collision_layer = 4
 collision_mask = 0
+script = ExtResource("1_0mm1j")
+orbit_radius = 60.0
+orbit_speed = 5.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_hbssf")

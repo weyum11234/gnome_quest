@@ -1,6 +1,5 @@
-[gd_scene load_steps=17 format=3 uid="uid://xnwg0c5t1h7x"]
+[gd_scene load_steps=16 format=3 uid="uid://xnwg0c5t1h7x"]
 
-[ext_resource type="Script" path="res://cactus.gd" id="1_44uhi"]
 [ext_resource type="Texture2D" uid="uid://b2jl32wmtay8a" path="res://assets/Rocky Roads/Enemies/cactus.png" id="2_odu3d"]
 [ext_resource type="Script" path="res://entities/Spike.gd" id="3_dqcty"]
 [ext_resource type="Texture2D" uid="uid://c65d8a3y3567j" path="res://assets/Rocky Roads/Enemies/cactus_spike.png" id="3_o2l75"]
@@ -87,7 +86,6 @@ size = Vector2(6, 6)
 size = Vector2(6.5, 6)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
-script = ExtResource("1_44uhi")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_rg201")
