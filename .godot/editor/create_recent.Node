@@ -1,29 +1,14 @@
-<<<<<<< HEAD
-Area2D
-=======
-Node
-Label
 OptionButton
+Label
+Button
+HBoxContainer
+Area2D
+Node
 HSlider
 VBoxContainer
 MarginContainer
 Node2D
->>>>>>> 05bfd6eed179eb0ac9883c9730f470c887ba8de6
 CollisionShape2D
 StaticBody2D
 Node2D
 CharacterBody2D
-Timer
-AudioStreamPlayer2D
-AnimationPlayer
-Sprite2D
-RigidBody2D
-Sprite2D
-AnimationPlayer
-Marker2D
-ReflectionProbe
-AnimatedSprite2D
-<<<<<<< HEAD
-=======
-StaticBody2D
->>>>>>> 05bfd6eed179eb0ac9883c9730f470c887ba8de6

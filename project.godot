@@ -17,6 +17,8 @@ config/icon="res://icon.svg"
 
 [autoload]
 
+ConfigFileHandler="*res://scenes/global/ConfigFileHandler.gd"
+SettingsLoad="*res://scenes/global/settings_load.gd"
 AudioController="*res://scenes/global/audio_controller.tscn"
 TransitionScreen="*res://scenes/global/transition_screen.tscn"
 
