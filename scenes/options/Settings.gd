@@ -1,5 +1,63 @@
 extends Control
 
+@onready var resolution_option_button = $VBoxContainer/OptionButton
+@onready var fullscreen_option_button = $VBoxContainer/OptionButton2
+@onready var vsync_option_button = $VBoxContainer/OptionButton4
+@onready var fps_option_button = $VBoxContainer/OptionButton3
+@onready var master_volume_slider = $VBoxContainer/HSlider
+
+func _ready():
+	# Load and apply settings to UI elements
+	apply_settings()
+
+func apply_settings():
+	# Apply video settings
+	var video_settings = ConfigFileHandler.load_video_settings()
+	var resolution = video_settings.get("resolution", "1920x1080").split("x")
+	var width = resolution[0].to_int()
+	var height = resolution[1].to_int()
+
+	# Set resolution option button
+	if width == 1920 and height == 1080:
+		resolution_option_button.select(0)
+	elif width == 1600 and height == 900:
+		resolution_option_button.select(1)
+	elif width == 1280 and height == 720:
+		resolution_option_button.select(2)
+	elif width == 640 and height == 360:
+		resolution_option_button.select(3)
+
+	# Set fullscreen option button
+	if video_settings.get("fullscreen", false):
+		fullscreen_option_button.select(0)
+	else:
+		fullscreen_option_button.select(1)
+
+	# Set Vsync option button
+	match video_settings.get("vsync", "enabled"):
+		"enabled":
+			vsync_option_button.select(0)
+		"disabled":
+			vsync_option_button.select(1)
+		"adaptive":
+			vsync_option_button.select(2)
+
+	# Apply audio settings
+	var audio_settings = ConfigFileHandler.load_audio_settings()
+	master_volume_slider.value = audio_settings.get("master_volume", 0.8)
+
+	# Apply FPS setting
+	match ConfigFileHandler.load_fps_setting():
+		30:
+			fps_option_button.select(0)
+		60:
+			fps_option_button.select(1)
+		144:
+			fps_option_button.select(2)
+		0:
+			fps_option_button.select(3)
+
+
 func _on_option_button_item_selected(index):
 	match index:
 		0:
