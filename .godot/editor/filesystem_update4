@@ -1,14 +1,9 @@
 res://scenes/options/settings.tscn
 res://entities/players/player.gd
-res://scenes/main/scroll_menu.gdshader
 res://scenes/main/scroll_menu2.gdshader
 res://scenes/main/scroll_menu3.gdshader
+res://scenes/main/scroll_menu.gdshader
 res://scenes/main/main.tscn
-res://scenes/global/audio_controller.tscn
-res://scenes/global/transition_screen.tscn
-res://entities/players/player.tscn
-res://obstacles/fan.tscn
+res://scenes/main/main.gd
 res://scenes/options/Settings.gd
-res://scenes/global/AudioController.gd
-res://scenes/global/ConfigFileHandler.gd
-res://scenes/global/settings_load.gd
+res://scenes/select/character_select_2d.tscn

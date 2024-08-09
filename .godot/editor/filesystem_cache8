@@ -1,15 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1723073596
+::res://::1723154264
 icon.svg::CompressedTexture2D::7871145411425364212::1719964453::1720994986::1::::<><>::
 README.md::TextFile::-1::1719964453::0::1::::<><>::
-ConfigFileHandler.gd::GDScript::-1::1723073596::0::1::::<>Node<>::
 ::res://addons/::1720995531
 ::res://addons/Rope2D/::1721002564
 ::res://addons/ropesim/::1721002564
 ::res://addons/ropesim/bin/::1721002564
 ::res://addons/ropesim/bin/libropesim.macos.template_debug.framework/::1721002564
 ::res://addons/ropesim/bin/libropesim.macos.template_release.framework/::1721002564
-::res://assets/::1722983222
+::res://assets/::1723154537
 Water+.png::CompressedTexture2D::5315282435177719673::1722815927::1722815927::1::::<><>::
 ::res://assets/forest-nature-fantasy-tileset-free/::1722815927
 ::res://assets/forest-nature-fantasy-tileset-free/Fantasy Swamp Forest/::1722815927
@@ -27,6 +26,55 @@ BG_2.png::CompressedTexture2D::8051569819239017029::1722815927::1722815927::1:::
 ::res://assets/forest-nature-fantasy-tileset-free/Fantasy Swamp Forest/Free/BG_3/::1722815927
 BG_3.png::CompressedTexture2D::7658688008000915330::1722815927::1722815927::1::::<><>::
 BG_3_alt.png::CompressedTexture2D::3471416643869014729::1722815927::1722815927::1::::<><>::
+::res://assets/free-sky-with-clouds-background-pixel-art-set/::1723154471
+License.txt::TextFile::-1::1492262936::0::1::::<><>::
+Patreon.txt::TextFile::-1::1669073128::0::1::::<><>::
+::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/::1667258868
+::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 1/::1667258868
+1.png::CompressedTexture2D::429576464367352135::1665807620::1723154540::1::::<><>::
+2.png::CompressedTexture2D::483894530449379392::1665807634::1723154540::1::::<><>::
+3.png::CompressedTexture2D::2721461317538208985::1665807652::1723154540::1::::<><>::
+4.png::CompressedTexture2D::5800607480261410388::1665807664::1723154540::1::::<><>::
+::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 2/::1667258868
+1.png::CompressedTexture2D::8695139680550666100::1665807748::1723154540::1::::<><>::
+2.png::CompressedTexture2D::5252961069204424583::1665807760::1723154540::1::::<><>::
+3.png::CompressedTexture2D::7501810533977568589::1665807772::1723154540::1::::<><>::
+4.png::CompressedTexture2D::7958676466413511372::1665808106::1723154540::1::::<><>::
+::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/::1667258868
+1.png::CompressedTexture2D::2091919266910058597::1665808190::1723154540::1::::<><>::
+2.png::CompressedTexture2D::2919871881263671766::1665808222::1723154540::1::::<><>::
+3.png::CompressedTexture2D::7653882091335718936::1665808234::1723154540::1::::<><>::
+4.png::CompressedTexture2D::5557189622690093411::1665808248::1723154540::1::::<><>::
+::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 4/::1667258868
+1.png::CompressedTexture2D::8732225535117624258::1665808314::1723154540::1::::<><>::
+2.png::CompressedTexture2D::8011377864450369819::1665808324::1723154540::1::::<><>::
+3.png::CompressedTexture2D::8499513799186843572::1665808332::1723154540::1::::<><>::
+4.png::CompressedTexture2D::6778413755599143384::1665808342::1723154540::1::::<><>::
+::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 5/::1667258868
+1.png::CompressedTexture2D::6339277612608944034::1665808440::1723154540::1::::<><>::
+2.png::CompressedTexture2D::8446003794606209768::1665808456::1723154540::1::::<><>::
+3.png::CompressedTexture2D::8434166813013964831::1665808464::1723154540::1::::<><>::
+4.png::CompressedTexture2D::6433940941748215757::1665808472::1723154540::1::::<><>::
+5.png::CompressedTexture2D::2334856197298318499::1665808486::1723154540::1::::<><>::
+::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 6/::1667258868
+1.png::CompressedTexture2D::6866892788634291479::1665810442::1723154540::1::::<><>::
+2.png::CompressedTexture2D::8005688160629056417::1665810452::1723154540::1::::<><>::
+3.png::CompressedTexture2D::4699015703809369566::1665810460::1723154540::1::::<><>::
+4.png::CompressedTexture2D::3040435571163532550::1665810472::1723154540::1::::<><>::
+5.png::CompressedTexture2D::3910339322066485416::1665810484::1723154540::1::::<><>::
+6.png::CompressedTexture2D::8503473726562933647::1665810498::1723154540::1::::<><>::
+::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 7/::1667258868
+1.png::CompressedTexture2D::3245684246694646720::1665810744::1723154540::1::::<><>::
+2.png::CompressedTexture2D::5766982603688540053::1665810756::1723154540::1::::<><>::
+3.png::CompressedTexture2D::1883096626893142737::1665810766::1723154540::1::::<><>::
+4.png::CompressedTexture2D::4256795537540766265::1665810776::1723154540::1::::<><>::
+::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 8/::1667258868
+1.png::CompressedTexture2D::2850922374035592600::1665810842::1723154540::1::::<><>::
+2.png::CompressedTexture2D::8829223589034241226::1665810866::1723154540::1::::<><>::
+3.png::CompressedTexture2D::1693139392137158221::1665810878::1723154540::1::::<><>::
+4.png::CompressedTexture2D::8610720472373028934::1665810886::1723154540::1::::<><>::
+5.png::CompressedTexture2D::2932059597219764873::1665810894::1723154540::1::::<><>::
+6.png::CompressedTexture2D::1085719282084519647::1665810904::1723154540::1::::<><>::
 ::res://assets/free-swamp-game-tileset-pixel-art/::1722815927
 Font.txt::TextFile::-1::1722815927::0::1::::<><>::
 License.txt::TextFile::-1::1722815927::0::1::::<><>::
@@ -1142,9 +1190,11 @@ spinning_flames.tscn::PackedScene::1073999289964872861::1722983222::0::1::::<><>
 trampoline.gd::GDScript::-1::1722983222::0::1::::<>AnimatableBody2D<>::
 trampoline.tscn::PackedScene::7205282465212621582::1722984007::0::1::::<><>::res://obstacles/trampoline.gd<>uid://bpowq7a0tw50y::::res://assets/level02/Pixel Adventure 1/Free/Traps/Trampoline/Idle.png
 ::res://scenes/::1722984399
-::res://scenes/global/::1723073247
+::res://scenes/global/::1723076695
 AudioController.gd::GDScript::-1::1723068011::0::1::::<>Node<>::
 audio_controller.tscn::PackedScene::434876859879354411::1723073247::0::1::::<><>::res://scenes/global/AudioController.gd<>uid://l4bgpvu18sxp::::res://sounds/music/4 - Odd Ode _ Lonelibless.wav
+ConfigFileHandler.gd::GDScript::-1::1723075843::0::1::::<>Node<>::
+settings_load.gd::GDScript::-1::1723076695::0::1::::<>Node<>::
 transition_screen.gd::GDScript::-1::1722815927::0::1::::<>CanvasLayer<>::
 transition_screen.tscn::PackedScene::6552752852415803608::1723073247::0::1::::<><>::res://scenes/global/transition_screen.gd
 ::res://scenes/level_01/::1722983222
@@ -1172,15 +1222,15 @@ tilting_platform.tscn::PackedScene::5784907608827924492::1722983222::0::1::::<><
 ::res://scenes/level_04/::1722984516
 level_04.tscn::PackedScene::1252589064999247252::1722983222::0::1::::<><>::uid://tnjeog0nnq2p::::res://assets/forest-nature-fantasy-tileset-free/Fantasy Swamp Forest/Free/BG_1/BG_1.png<>uid://bp8lwwseo5eex::::res://assets/stringstar fields/background_0.png<>uid://da8ra7ljeknhu::::res://entities/players/player.tscn<>uid://cr4s0tfmabue0::::res://assets/Rocky Roads/Tilesets/tileset_forest.png<>uid://0j028vsdy05s::::res://assets/stringstar fields/background_1.png<>uid://bk46brubv8etc::::res://assets/stringstar fields/background_2.png<>uid://dus4wdhmdg7ax::::res://assets/Rocky Roads/Tilesets/tileset_lava.png<>uid://c0jjflnw6ji66::::res://assets/Rocky Roads/Tilesets/tileset_snow.png<>uid://cva8dakaog2kv::::res://assets/Rocky Roads/Deco/water_b_5 frames.png<>uid://c1vgah8mpf830::::res://assets/Rocky Roads/Tilesets/tileset_water.png<>uid://06v0o46g6on5::::res://assets/Rocky Roads/Tilesets/tileset_desert.png<>uid://c87qv6k3t1j3r::::res://assets/Rocky Roads/Objects/sign_arrow.png<>uid://chy06pprcgl58::::res://assets/Water+.png<>uid://dq80w5j1x704m::::res://scenes/level_04/fan.tscn<>res://entities/slime.tscn<>res://entities/hostile_entity.gd<>res://entities/bird.tscn<>res://entities/bear.tscn<>res://entities/ice_spikes.tscn<>res://entities/red_flame.tscn<>res://entities/red_slime.tscn<>res://entities/spinning_spike.tscn<>res://entities/rotation.gd<>res://obstacles/canon.tscn
 red_flame.gd::GDScript::-1::1722983222::0::1::::<>CharacterBody2D<>::
-::res://scenes/main/::1723073248
+::res://scenes/main/::1723077329
 main.gd::GDScript::-1::1722983894::0::1::::<>Control<>::
 main.tscn::PackedScene::3876857004100717685::1723073247::0::1::::<><>::res://scenes/main/main.gd<>uid://calmxaeagvmy5::::res://assets/level01/outside/sky-backgrounds/Clouds/Clouds 4/1.png<>res://scenes/main/scroll_menu.gdshader<>uid://bmc4650jnfjb4::::res://assets/level01/outside/sky-backgrounds/Clouds/Clouds 4/2.png<>res://scenes/main/scroll_menu2.gdshader<>uid://bq21k8phmstli::::res://assets/level01/outside/sky-backgrounds/Clouds/Clouds 4/3.png<>res://scenes/main/scroll_menu3.gdshader<>uid://t007yb7qf2px::::res://assets/level01/outside/sky-backgrounds/Clouds/Clouds 4/4.png<>uid://ckxhp5txtvc6::::res://fonts/antiquity-print.ttf<>uid://cw6hv1tq5uaod::::res://fonts/ThaleahFat.ttf<>uid://l4bgpvu18sxp::::res://sounds/music/4 - Odd Ode _ Lonelibless.wav
-scroll_menu2.gdshader::Shader::-1::1723073248::0::1::::<><>::
-scroll_menu3.gdshader::Shader::-1::1723073248::0::1::::<><>::
-scroll_menu.gdshader::Shader::-1::1723073248::0::1::::<><>::
-::res://scenes/options/::1723073248
-Settings.gd::GDScript::-1::1723073243::0::1::::<>Control<>::
-settings.tscn::PackedScene::6023235113782031069::1723073248::0::1::::<><>::res://scenes/options/Settings.gd<>uid://cw6hv1tq5uaod::::res://fonts/ThaleahFat.ttf
+scroll_menu2.gdshader::Shader::-1::1723077329::0::1::::<><>::
+scroll_menu3.gdshader::Shader::-1::1723077329::0::1::::<><>::
+scroll_menu.gdshader::Shader::-1::1723077329::0::1::::<><>::
+::res://scenes/options/::1723077249
+Settings.gd::GDScript::-1::1723077177::0::1::::<>Control<>::
+settings.tscn::PackedScene::6023235113782031069::1723077249::0::1::::<><>::res://scenes/options/Settings.gd<>uid://cw6hv1tq5uaod::::res://fonts/ThaleahFat.ttf
 ::res://sounds/::1722815927
 ::res://sounds/effects/::1721777666
 ::res://sounds/music/::1722815928

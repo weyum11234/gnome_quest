@@ -79,6 +79,8 @@ func _on_h_slider_value_changed(value):
 
 func _on_exit_pressed():
 	get_tree().change_scene_to_file("res://scenes/main/main.tscn")
+	TransitionScreen.transition()
+	await TransitionScreen.on_transition_finished
 
 func _on_option_button_2_item_selected(index):
 	match index:

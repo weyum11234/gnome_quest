@@ -1,7 +1,24 @@
-[gd_scene load_steps=3 format=3 uid="uid://cr2x2jqk4mb0x"]
+[gd_scene load_steps=13 format=3 uid="uid://cr2x2jqk4mb0x"]
 
 [ext_resource type="Script" path="res://scenes/options/Settings.gd" id="1_n8447"]
 [ext_resource type="FontFile" uid="uid://cw6hv1tq5uaod" path="res://fonts/ThaleahFat.ttf" id="2_ha0qx"]
+[ext_resource type="Texture2D" uid="uid://42luta3y1718" path="res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/1.png" id="2_qdnf1"]
+[ext_resource type="Texture2D" uid="uid://bhun4l7t48wju" path="res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/2.png" id="3_yu4ap"]
+[ext_resource type="Texture2D" uid="uid://dhbuk4xl0w3f5" path="res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/3.png" id="4_7kmba"]
+[ext_resource type="Shader" path="res://scenes/main/scroll_menu2.gdshader" id="5_3d6xm"]
+[ext_resource type="Texture2D" uid="uid://clf7do7nkiljf" path="res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/4.png" id="5_hlkkt"]
+[ext_resource type="Shader" path="res://scenes/main/scroll_menu3.gdshader" id="7_ldbcu"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_omsim"]
+shader = ExtResource("5_3d6xm")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3r0qm"]
+shader = ExtResource("5_3d6xm")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1ckf8"]
+shader = ExtResource("7_ldbcu")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ck4i1"]
 
 [node name="Settings" type="Control"]
 layout_mode = 3
@@ -11,6 +28,38 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_n8447")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_omsim")
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 360.0
+texture = ExtResource("2_qdnf1")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+texture_repeat = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_yu4ap")
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_3r0qm")
+offset_right = 640.0
+offset_bottom = 360.0
+texture = ExtResource("4_7kmba")
+
+[node name="TextureRect4" type="TextureRect" parent="."]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_1ckf8")
+offset_right = 640.0
+offset_bottom = 360.0
+texture = ExtResource("5_hlkkt")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -60,7 +109,7 @@ popup/item_3/id = 3
 [node name="fullscreen" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_ha0qx")
-text = "Fullscreen"
+text = "WINDOW MODE"
 
 [node name="OptionButton2" type="OptionButton" parent="VBoxContainer"]
 layout_mode = 2
@@ -114,13 +163,20 @@ layout_mode = 2
 [node name="Label9" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 
-[node name="exit" type="Button" parent="VBoxContainer"]
+[node name="Exit" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(120, 32)
 layout_mode = 2
-theme_type_variation = &"FlatButton"
 theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.870588, 0.870588, 0.870588, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_ha0qx")
 theme_override_font_sizes/font_size = 25
-text = "EXIT"
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ck4i1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ck4i1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ck4i1")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ck4i1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ck4i1")
+text = "Exit"
 alignment = 0
 
 [connection signal="value_changed" from="VBoxContainer/HSlider" to="." method="_on_h_slider_value_changed"]
@@ -128,4 +184,4 @@ alignment = 0
 [connection signal="item_selected" from="VBoxContainer/OptionButton2" to="." method="_on_option_button_2_item_selected"]
 [connection signal="item_selected" from="VBoxContainer/OptionButton3" to="." method="_on_option_button_3_item_selected"]
 [connection signal="item_selected" from="VBoxContainer/OptionButton4" to="." method="_on_option_button_4_item_selected"]
-[connection signal="pressed" from="VBoxContainer/exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]
