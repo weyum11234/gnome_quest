@@ -5294,27 +5294,27 @@ belt_force = 1
 position = Vector2(1216, 208)
 
 [node name="Conveyor6" parent="." instance=ExtResource("11_sppob")]
-position = Vector2(1376, 179)
+position = Vector2(1376, 178)
 belt_force = 3
 
 [node name="Conveyor7" parent="." instance=ExtResource("11_sppob")]
-position = Vector2(1408, 179)
+position = Vector2(1408, 178)
 belt_force = 3
 
 [node name="Conveyor8" parent="." instance=ExtResource("11_sppob")]
-position = Vector2(1440, 179)
+position = Vector2(1440, 178)
 belt_force = 3
 
 [node name="Conveyor9" parent="." instance=ExtResource("11_sppob")]
-position = Vector2(1488, 179)
+position = Vector2(1488, 178)
 belt_force = 3
 
 [node name="Conveyor10" parent="." instance=ExtResource("11_sppob")]
-position = Vector2(1520, 179)
+position = Vector2(1520, 178)
 belt_force = 3
 
 [node name="Conveyor11" parent="." instance=ExtResource("11_sppob")]
-position = Vector2(1552, 179)
+position = Vector2(1552, 178)
 belt_force = 3
 
 [node name="Flames" type="Node2D" parent="."]

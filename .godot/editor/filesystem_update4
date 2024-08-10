@@ -12,4 +12,3 @@ res://entities/players/player.tscn
 res://obstacles/anim_spike.tscn
 res://scenes/level_03/flamethrower.tscn
 res://scenes/options/settings.tscn
-res://scenes/select/join lobby.tscn
