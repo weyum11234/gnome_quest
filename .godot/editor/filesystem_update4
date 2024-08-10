@@ -1,9 +1,8 @@
-res://scenes/options/settings.tscn
+res://scenes/level_03/level_03.tscn
 res://entities/players/player.gd
 res://scenes/main/scroll_menu2.gdshader
 res://scenes/main/scroll_menu3.gdshader
 res://scenes/main/scroll_menu.gdshader
-res://scenes/level_03/level_03.tscn
 res://scenes/level_03/spinning_platform.tscn
 res://scenes/level_03/moving_circular_platform_r.tscn
 res://scenes/level_03/moving_spinning_spike.tscn
@@ -12,3 +11,5 @@ res://obstacles/conveyor.tscn
 res://entities/players/player.tscn
 res://obstacles/anim_spike.tscn
 res://scenes/level_03/flamethrower.tscn
+res://scenes/options/settings.tscn
+res://scenes/select/join lobby.tscn
