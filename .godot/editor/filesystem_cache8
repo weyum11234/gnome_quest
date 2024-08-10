@@ -1,9 +1,20 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1723214458
+::res://::1723256860
 icon.svg::CompressedTexture2D::7871145411425364212::1719965863::1719965881::1::::<><>::
 README.md::TextFile::-1::1721157449::0::1::::<><>::
-Settings.gd::GDScript::-1::1722994403::0::1::::<>Control<>::
-::res://assets/::1722820941
+::res://addons/::1723256816
+::res://addons/godotsteam/::1723256816
+godotsteam.gdextension::GDExtension::-1::1723256816::0::1::::<><>::
+::res://addons/godotsteam/linux32/::1723256816
+::res://addons/godotsteam/linux64/::1723256816
+::res://addons/godotsteam/osx/::1723256816
+::res://addons/godotsteam/osx/libgodotsteam.macos.template_debug.framework/::1723256816
+::res://addons/godotsteam/osx/libgodotsteam.macos.template_debug.framework/Resources/::1723256816
+::res://addons/godotsteam/osx/libgodotsteam.macos.template_release.framework/::1723256816
+::res://addons/godotsteam/osx/libgodotsteam.macos.template_release.framework/Resources/::1723256816
+::res://addons/godotsteam/win32/::1723256816
+::res://addons/godotsteam/win64/::1723256816
+::res://assets/::1723256816
 Water+.png::CompressedTexture2D::5315282435177719673::1722820941::1722820941::1::::<><>::
 ::res://assets/forest-nature-fantasy-tileset-free/::1722820941
 ::res://assets/forest-nature-fantasy-tileset-free/Fantasy Swamp Forest/::1722820941
@@ -21,6 +32,55 @@ BG_2.png::CompressedTexture2D::8051569819239017029::1722820941::1722820941::1:::
 ::res://assets/forest-nature-fantasy-tileset-free/Fantasy Swamp Forest/Free/BG_3/::1722820941
 BG_3.png::CompressedTexture2D::7658688008000915330::1722820941::1722820941::1::::<><>::
 BG_3_alt.png::CompressedTexture2D::3471416643869014729::1722820941::1722820941::1::::<><>::
+::res://assets/free-sky-with-clouds-background-pixel-art-set/::1723256816
+License.txt::TextFile::-1::1723256816::0::1::::<><>::
+Patreon.txt::TextFile::-1::1723256816::0::1::::<><>::
+::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/::1723256816
+::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 1/::1723256816
+1.png::CompressedTexture2D::429576464367352135::1723256816::1723256816::1::::<><>::
+2.png::CompressedTexture2D::483894530449379392::1723256816::1723256816::1::::<><>::
+3.png::CompressedTexture2D::2721461317538208985::1723256816::1723256816::1::::<><>::
+4.png::CompressedTexture2D::5800607480261410388::1723256816::1723256816::1::::<><>::
+::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 2/::1723256816
+1.png::CompressedTexture2D::8695139680550666100::1723256816::1723256816::1::::<><>::
+2.png::CompressedTexture2D::5252961069204424583::1723256816::1723256816::1::::<><>::
+3.png::CompressedTexture2D::7501810533977568589::1723256816::1723256816::1::::<><>::
+4.png::CompressedTexture2D::7958676466413511372::1723256816::1723256816::1::::<><>::
+::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/::1723256816
+1.png::CompressedTexture2D::2091919266910058597::1723256816::1723256816::1::::<><>::
+2.png::CompressedTexture2D::2919871881263671766::1723256816::1723256816::1::::<><>::
+3.png::CompressedTexture2D::7653882091335718936::1723256816::1723256816::1::::<><>::
+4.png::CompressedTexture2D::5557189622690093411::1723256816::1723256816::1::::<><>::
+::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 4/::1723256816
+1.png::CompressedTexture2D::8732225535117624258::1723256816::1723256816::1::::<><>::
+2.png::CompressedTexture2D::8011377864450369819::1723256816::1723256816::1::::<><>::
+3.png::CompressedTexture2D::8499513799186843572::1723256816::1723256816::1::::<><>::
+4.png::CompressedTexture2D::6778413755599143384::1723256816::1723256816::1::::<><>::
+::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 5/::1723256816
+1.png::CompressedTexture2D::6339277612608944034::1723256816::1723256816::1::::<><>::
+2.png::CompressedTexture2D::8446003794606209768::1723256816::1723256816::1::::<><>::
+3.png::CompressedTexture2D::8434166813013964831::1723256816::1723256816::1::::<><>::
+4.png::CompressedTexture2D::6433940941748215757::1723256816::1723256816::1::::<><>::
+5.png::CompressedTexture2D::2334856197298318499::1723256816::1723256816::1::::<><>::
+::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 6/::1723256816
+1.png::CompressedTexture2D::6866892788634291479::1723256816::1723256816::1::::<><>::
+2.png::CompressedTexture2D::8005688160629056417::1723256816::1723256816::1::::<><>::
+3.png::CompressedTexture2D::4699015703809369566::1723256816::1723256816::1::::<><>::
+4.png::CompressedTexture2D::3040435571163532550::1723256816::1723256816::1::::<><>::
+5.png::CompressedTexture2D::3910339322066485416::1723256816::1723256816::1::::<><>::
+6.png::CompressedTexture2D::8503473726562933647::1723256816::1723256816::1::::<><>::
+::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 7/::1723256816
+1.png::CompressedTexture2D::3245684246694646720::1723256816::1723256816::1::::<><>::
+2.png::CompressedTexture2D::5766982603688540053::1723256816::1723256816::1::::<><>::
+3.png::CompressedTexture2D::1883096626893142737::1723256816::1723256816::1::::<><>::
+4.png::CompressedTexture2D::4256795537540766265::1723256816::1723256816::1::::<><>::
+::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 8/::1723256816
+1.png::CompressedTexture2D::2850922374035592600::1723256816::1723256816::1::::<><>::
+2.png::CompressedTexture2D::8829223589034241226::1723256816::1723256816::1::::<><>::
+3.png::CompressedTexture2D::1693139392137158221::1723256816::1723256816::1::::<><>::
+4.png::CompressedTexture2D::8610720472373028934::1723256816::1723256816::1::::<><>::
+5.png::CompressedTexture2D::2932059597219764873::1723256816::1723256816::1::::<><>::
+6.png::CompressedTexture2D::1085719282084519647::1723256816::1723256816::1::::<><>::
 ::res://assets/free-swamp-game-tileset-pixel-art/::1722820941
 Font.txt::TextFile::-1::1722820941::0::1::::<><>::
 License.txt::TextFile::-1::1722820941::0::1::::<><>::
@@ -1069,9 +1129,9 @@ jump_boost.tscn::PackedScene::2387757218501977923::1721514859::0::1::::<><>::res
 ::res://entities/knife/::1722867650
 knife.gd::GDScript::-1::1722800676::0::1::::<>CharacterBody2D<>::
 knife.tscn::PackedScene::9151657976549705174::1722867650::0::1::::<><>::uid://dwl4g4evh1fff::::res://assets/item_sprites/knife.png<>res://entities/knife/knife.gd
-::res://entities/players/::1723139344
-player.gd::GDScript::-1::1723139344::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::7228420403995031334::1723074144::0::1::::<><>::res://entities/players/player.gd<>uid://6vaao2p4o2j8::::res://assets/level01/caves/industrial.v2/industrial.v2.png<>uid://dkph32kv7qse4::::res://assets/level01/caves/industrial.v2/recolored_player.png<>uid://bcrdmebtb3ved::::res://assets/sounds/knife-stab-sound-fx.wav
+::res://entities/players/::1723256832
+player.gd::GDScript::-1::1723256829::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::7228420403995031334::1723256832::0::1::::<><>::res://entities/players/player.gd<>uid://6vaao2p4o2j8::::res://assets/level01/caves/industrial.v2/industrial.v2.png<>uid://dkph32kv7qse4::::res://assets/level01/caves/industrial.v2/recolored_player.png<>uid://bcrdmebtb3ved::::res://assets/sounds/knife-stab-sound-fx.wav
 ::res://entities/speed_boost/::1721690878
 speed_boost.gd::GDScript::-1::1721593829::0::1::::<>Node2D<>::
 speed_boost.tscn::PackedScene::8362254452656600550::1721690878::0::1::::<><>::res://entities/speed_boost/speed_boost.gd<>uid://b6hnl7t3kmnev::::res://assets/item_sprites/speed_boost.png
@@ -1103,9 +1163,9 @@ Weiholmir_lowercase_sheet.png::CompressedTexture2D::3364742911831377509::1722820
 Weiholmir_numbers_sheet.png::CompressedTexture2D::4590693080569433107::1722820941::1722820941::1::::<><>::
 Weiholmir_specialcharacters_sheet.png::CompressedTexture2D::5057115893390110069::1722820941::1722820941::1::::<><>::
 Weiholmir_uppercase_sheet.png::CompressedTexture2D::6771510922158271885::1722820941::1722820941::1::::<><>::
-::res://obstacles/::1723074145
+::res://obstacles/::1723256832
 anim_spike.gd::GDScript::-1::1722445136::0::1::::<>Area2D<>::
-anim_spike.tscn::PackedScene::5484523914271042292::1722530928::0::1::::<><>::res://obstacles/anim_spike.gd<>uid://d3wqko68g3jf8::::res://assets/tilesets_maps/dungeons/2d_metroid_asset_1_2/metroid_asset_1_2/Sprites/Interactables/spikes_spritesheet.png
+anim_spike.tscn::PackedScene::5484523914271042292::1723256832::0::1::::<><>::res://obstacles/anim_spike.gd<>uid://d3wqko68g3jf8::::res://assets/level01/dungeons/2d_metroid_asset_1_2/metroid_asset_1_2/Sprites/Interactables/spikes_spritesheet.png
 cannon.gd::GDScript::-1::1723059568::0::1::::<>StaticBody2D<>::
 cannon.tscn::PackedScene::5158500284527548878::1723074145::0::1::::<><>::res://obstacles/cannon.gd<>uid://cqd2p1uq12it::::res://assets/Rocky Roads/Enemies/cannon.png
 cannon_ball.gd::GDScript::-1::1723059546::0::1::::<>Node2D<>::
@@ -1118,6 +1178,8 @@ coin.gd::GDScript::-1::1722994403::0::1::::<>CharacterBody2D<>::
 coin.tscn::PackedScene::6148073990965278335::1723074144::0::1::::<><>::uid://defaklw8ui5eq::::res://assets/Rocky Roads/Objects/coin_gold.png<>res://obstacles/coin.gd<>uid://cn08lfork2dgt::::res://assets/Rocky Roads/FX/coin_collect.png<>uid://dwwsij6jq30x7::::res://assets/Rocky Roads/FX/shine.png
 collapse_floor.gd::GDScript::-1::1722800676::0::1::::<>StaticBody2D<>::
 collapse_floor.tscn::PackedScene::4729426709159095879::1722995439::0::1::::<><>::uid://cwhsiudefawaa::::res://assets/level01/dungeons/2d_metroid_asset_1_2/metroid_asset_1_2/Sprites/Interactables/temporaryPlatform.png<>res://obstacles/collapse_floor.gd
+conveyor.gd::GDScript::-1::1723233544::0::1::::<>StaticBody2D<>::
+conveyor.tscn::PackedScene::5535496372157558224::1723256832::0::1::::<><>::res://obstacles/conveyor.gd<>uid://6vaao2p4o2j8::::res://assets/level01/caves/industrial.v2/industrial.v2.png
 fan.gd::GDScript::-1::1723062255::0::1::::<>CharacterBody2D<>::
 fan.tscn::PackedScene::8351966818273951674::1723074144::0::1::::<><>::res://obstacles/fan.gd<>uid://cnwgmvwabyvwh::::res://assets/Rocky Roads/Enemies/propeller.png
 flames.tscn::PackedScene::4839128059195889051::1722995439::0::1::::<><>::res://obstacles/circular_flame.gd<>uid://b4kw2fjhi05pn::::res://assets/level01/Effect and Bullet 16x16/Green Effect and Bullet 16x16.png
@@ -1128,7 +1190,7 @@ ice_spikes.tscn::PackedScene::4558293530628608261::1722995439::0::1::::<><>::res
 moving_platform.gd::GDScript::-1::1722286045::0::1::::<>Node2D<>::
 moving_platform.tscn::PackedScene::8297219282756067411::1722445550::0::1::::<><>::uid://c4y8hmlcaa8jn::::res://assets/tilesets_maps/dungeons/1-Bit-Ruins-Omniclause/platform.png<>res://obstacles/moving_platform.gd
 red_flame.gd::GDScript::-1::1722994425::0::1::::<>StaticBody2D<>::
-red_flame.tscn::PackedScene::353775618558333897::1722995439::0::1::::<><>::res://obstacles/red_flame.gd<>uid://cpb5m3ippapc2::::res://assets/Rocky Roads/Enemies/fire_big.png
+red_flame.tscn::PackedScene::353775618558333897::1723256832::0::1::::<><>::res://obstacles/red_flame.gd<>uid://cpb5m3ippapc2::::res://assets/Rocky Roads/Enemies/fire_big.png
 rotation.gd::GDScript::-1::1722994425::0::1::::<>CharacterBody2D<>::
 saw.tscn::PackedScene::3655621440063665783::1722820941::0::1::::<><>::res://obstacles/flame_vert.gd<>uid://b1hg1ysskfrfi::::res://assets/level02/Pixel Adventure 1/Free/Traps/Saw/Off.png<>uid://b5wjd3jnrpr07::::res://assets/level02/Pixel Adventure 1/Free/Traps/Saw/On (38x38).png
 spinning_flames.gd::GDScript::-1::1721593829::0::1::::<>CharacterBody2D<>::
@@ -1136,10 +1198,12 @@ spinning_flames.tscn::PackedScene::1073999289964872861::1722820941::0::1::::<><>
 spinning_spike.tscn::PackedScene::4113850908515207101::1722997706::0::1::::<><>::res://obstacles/rotation.gd<>uid://dp6kxalxddib4::::res://assets/Rocky Roads/Enemies/saw.png
 trampoline.gd::GDScript::-1::1722884686::0::1::::<>AnimatableBody2D<>::
 trampoline.tscn::PackedScene::7205282465212621582::1723074145::0::1::::<><>::res://obstacles/trampoline.gd<>uid://bpowq7a0tw50y::::res://assets/level02/Pixel Adventure 1/Free/Traps/Trampoline/Idle.png
-::res://scenes/::1722994403
-::res://scenes/global/::1722994403
-AudioController.gd::GDScript::-1::1722994403::0::1::::<>Node<>::
+::res://scenes/::1723256816
+::res://scenes/global/::1723256816
+AudioController.gd::GDScript::-1::1723256816::0::1::::<>Node<>::
 audio_controller.tscn::PackedScene::434876859879354411::1722994403::0::1::::<><>::res://scenes/global/AudioController.gd<>uid://l4bgpvu18sxp::::res://sounds/music/4 - Odd Ode _ Lonelibless.wav
+ConfigFileHandler.gd::GDScript::-1::1723256816::0::1::::<>Node<>::
+settings_load.gd::GDScript::-1::1723256816::0::1::::<>Node<>::
 transition_screen.gd::GDScript::-1::1722994403::0::1::::<>CanvasLayer<>::
 transition_screen.tscn::PackedScene::6552752852415803608::1722994403::0::1::::<><>::res://scenes/global/transition_screen.gd
 ::res://scenes/level_01/::1723074145
@@ -1148,19 +1212,19 @@ level_01.tscn::PackedScene::8218368947275210179::1723074145::0::1::::<><>::uid:/
 ::res://scenes/level_02/::1722995463
 level_02.gd::GDScript::-1::1722995459::0::1::::<>Node2D<>::
 level_02.tscn::PackedScene::6266200691394815172::1722995463::0::1::::<><>::uid://bd0hchvla5wvj::::res://assets/level02/Seasonal Tilesets/1 - Grassland/Background parts/4 - Cloud_cover_2.png<>res://scenes/level_02/level_02.gd<>uid://dldtkxkequavj::::res://assets/level02/Pixel Adventure 1/Free/Terrain/Terrain (16x16).png<>uid://dxamb2v2jx3n2::::res://assets/level02/Pixel Adventure 1/Free/Background/Brown.png<>uid://bsc2sy8qmxuot::::res://obstacles/saw.tscn<>uid://dawj7jvbf0ed7::::res://obstacles/trampoline.tscn<>uid://p1hevtbiw28s::::res://assets/level02/Seasonal Tilesets/1 - Grassland/Background parts/5 - Sky_color.png<>uid://mh25gmq8tbuy::::res://decorations/cloud_a.tscn<>uid://cvkb8d8hsvmjd::::res://decorations/cloud_b.tscn<>uid://cebwxp2r6jrit::::res://decorations/cloud_c.tscn<>uid://5ie41cud00bh::::res://entities/enemies/rhino.tscn<>uid://dvk40aiuuc7k8::::res://entities/enemies/snail.tscn<>uid://cl3etra2xssiw::::res://entities/enemies/pig.tscn<>uid://cdl1085fb6r2o::::res://entities/enemies/turtle.tscn<>uid://da8ra7ljeknhu::::res://entities/players/player.tscn
-::res://scenes/level_03/::1723169019
-flamethrower.gd::GDScript::-1::1722445136::0::1::::<>Area2D<>::
-flamethrower.tscn::PackedScene::3296319065469269333::1722445550::0::1::::<><>::res://scenes/level_03/flamethrower.gd
+::res://scenes/level_03/::1723256832
+flamethrower.gd::GDScript::-1::1723255035::0::1::::<>Area2D<>::
+flamethrower.tscn::PackedScene::3296319065469269333::1723256832::0::1::::<><>::res://scenes/level_03/flamethrower.gd
 level_03.gd::GDScript::-1::1722279123::0::1::::<>Node2D<>::
-level_03.tscn::PackedScene::5808763552321803664::1723169019::0::1::::<><>::uid://cl663el47t3a6::::res://assets/tilesets_maps/outside/Freebie_Factory/factory tilesEX_1967Butane.png<>res://scenes/level_03/level_03.gd<>uid://ek6yuo84vajq::::res://assets/tilesets_maps/outside/Freebie_Factory/factory tilesEX_AllChiller.png<>uid://da8ra7ljeknhu::::res://entities/players/player.tscn<>uid://dlr7wjgtlcbf4::::res://scenes/level_03/spinning_spike.tscn<>uid://catnei36uf3jx::::res://assets/level01/caves/underground_areas/cavesofgallet_tiles_scaled_2x_pngcrushed.png<>uid://dq8uowtydyufx::::res://scenes/level_03/moving_spinning_spike.tscn<>uid://fdgkwpnufthn::::res://scenes/level_03/spinning_platform.tscn
+level_03.tscn::PackedScene::5808763552321803664::1723256832::0::1::::<><>::uid://cl663el47t3a6::::res://assets/tilesets_maps/outside/Freebie_Factory/factory tilesEX_1967Butane.png<>res://scenes/level_03/level_03.gd<>uid://ek6yuo84vajq::::res://assets/tilesets_maps/outside/Freebie_Factory/factory tilesEX_AllChiller.png<>uid://da8ra7ljeknhu::::res://entities/players/player.tscn<>uid://dlr7wjgtlcbf4::::res://scenes/level_03/spinning_spike.tscn<>uid://catnei36uf3jx::::res://assets/level01/caves/underground_areas/cavesofgallet_tiles_scaled_2x_pngcrushed.png<>uid://6vaao2p4o2j8::::res://assets/level01/caves/industrial.v2/industrial.v2.png<>uid://dq8uowtydyufx::::res://scenes/level_03/moving_spinning_spike.tscn<>uid://fdgkwpnufthn::::res://scenes/level_03/spinning_platform.tscn<>uid://dawj7jvbf0ed7::::res://obstacles/trampoline.tscn<>uid://ck4o20430ls4g::::res://obstacles/conveyor.tscn<>uid://dpoy1qi0gffxq::::res://obstacles/checkpoint.tscn<>uid://fbmvrpvekjm4::::res://obstacles/red_flame.tscn<>uid://bm705m1t82hk4::::res://scenes/level_03/flamethrower.tscn
 moving_circular_platform.gd::GDScript::-1::1722295774::0::1::::<>Node2D<>::
 moving_circular_platform.tscn::PackedScene::8735955320010500153::1722360887::0::1::::<><>::res://scenes/level_03/moving_circular_platform.gd<>uid://dbnb1pnvf3t8s::::res://assets/tilesets_maps/outside/Freebie_Factory/construction_bar.png
 moving_circular_platform_r.gd::GDScript::-1::1722303762::0::1::::<>Node2D<>::
-moving_circular_platform_r.tscn::PackedScene::6254505719750884741::1722360887::0::1::::<><>::res://scenes/level_03/moving_circular_platform_r.gd<>uid://dbnb1pnvf3t8s::::res://assets/tilesets_maps/outside/Freebie_Factory/construction_bar.png
-moving_spinning_spike.gd::GDScript::-1::1722193359::0::1::::<>Node2D<>::
-moving_spinning_spike.tscn::PackedScene::8351648542102204609::1722445550::0::1::::<><>::res://scenes/level_03/moving_spinning_spike.gd<>uid://brajwlhnqpyv3::::res://assets/item_sprites/Item Traps/Suriken.png
+moving_circular_platform_r.tscn::PackedScene::6254505719750884741::1723256832::0::1::::<><>::res://scenes/level_03/moving_circular_platform_r.gd<>uid://dbnb1pnvf3t8s::::res://assets/tilesets_maps/outside/Freebie_Factory/construction_bar.png
+moving_spinning_spike.gd::GDScript::-1::1723217926::0::1::::<>Node2D<>::
+moving_spinning_spike.tscn::PackedScene::8351648542102204609::1723256832::0::1::::<><>::res://scenes/level_03/moving_spinning_spike.gd<>uid://brajwlhnqpyv3::::res://assets/item_sprites/Item Traps/Suriken.png
 spinning_platform.gd::GDScript::-1::1723150715::0::1::::<>AnimatableBody2D<>::
-spinning_platform.tscn::PackedScene::357520690651364367::1723150954::0::1::::<><>::uid://dbnb1pnvf3t8s::::res://assets/tilesets_maps/outside/Freebie_Factory/construction_bar.png<>res://scenes/level_03/spinning_platform.gd
+spinning_platform.tscn::PackedScene::357520690651364367::1723256832::0::1::::<><>::uid://dbnb1pnvf3t8s::::res://assets/tilesets_maps/outside/Freebie_Factory/construction_bar.png<>res://scenes/level_03/spinning_platform.gd
 spinning_spike.gd::GDScript::-1::1722186739::0::1::::<>StaticBody2D<>::
 spinning_spike.tscn::PackedScene::7968416467008140651::1722445550::0::1::::<><>::res://scenes/level_03/spinning_spike.gd<>uid://brajwlhnqpyv3::::res://assets/item_sprites/Item Traps/Suriken.png
 tilting_platform.gd::GDScript::-1::1722445136::0::1::::<>StaticBody2D<>::
@@ -1168,14 +1232,17 @@ tilting_platform.tscn::PackedScene::5784907608827924492::1722445550::0::1::::<><
 ::res://scenes/level_04/::1723140034
 level_04.gd::GDScript::-1::1723073985::0::1::::<>Node2D<>::
 level_04.tscn::PackedScene::1252589064999247252::1723140034::0::1::::<><>::res://scenes/level_04/level_04.gd<>uid://tnjeog0nnq2p::::res://assets/forest-nature-fantasy-tileset-free/Fantasy Swamp Forest/Free/BG_1/BG_1.png<>uid://bp8lwwseo5eex::::res://assets/stringstar fields/background_0.png<>uid://da8ra7ljeknhu::::res://entities/players/player.tscn<>uid://cr4s0tfmabue0::::res://assets/Rocky Roads/Tilesets/tileset_forest.png<>uid://0j028vsdy05s::::res://assets/stringstar fields/background_1.png<>uid://bk46brubv8etc::::res://assets/stringstar fields/background_2.png<>uid://dus4wdhmdg7ax::::res://assets/Rocky Roads/Tilesets/tileset_lava.png<>uid://c0jjflnw6ji66::::res://assets/Rocky Roads/Tilesets/tileset_snow.png<>uid://cva8dakaog2kv::::res://assets/Rocky Roads/Deco/water_b_5 frames.png<>uid://c1vgah8mpf830::::res://assets/Rocky Roads/Tilesets/tileset_water.png<>uid://06v0o46g6on5::::res://assets/Rocky Roads/Tilesets/tileset_desert.png<>uid://c87qv6k3t1j3r::::res://assets/Rocky Roads/Objects/sign_arrow.png<>uid://chy06pprcgl58::::res://assets/Water+.png<>uid://dq80w5j1x704m::::res://obstacles/fan.tscn<>uid://bf5tjpb5kn3an::::res://entities/enemies/slime.tscn<>uid://bdg1pjrjkbcxd::::res://entities/bird.tscn<>uid://h6oop5cq6b7t::::res://entities/enemies/bear.tscn<>uid://b57cotk02tjsv::::res://obstacles/ice_spikes.tscn<>uid://fbmvrpvekjm4::::res://obstacles/red_flame.tscn<>uid://blh547ke3hk5b::::res://entities/enemies/red_slime.tscn<>uid://byu1r2ct2kkqv::::res://obstacles/spinning_spike.tscn<>uid://dpoy1qi0gffxq::::res://obstacles/checkpoint.tscn<>uid://cfq20mntf8aru::::res://obstacles/cannon.tscn
-::res://scenes/main/::1723169020
-main.gd::GDScript::-1::1722994403::0::1::::<>Control<>::
+::res://scenes/main/::1723256850
+main.gd::GDScript::-1::1723256816::0::1::::<>Control<>::
 main.tscn::PackedScene::3876857004100717685::1722994403::0::1::::<><>::res://scenes/main/main.gd<>uid://calmxaeagvmy5::::res://assets/level01/outside/sky-backgrounds/Clouds/Clouds 4/1.png<>res://scenes/main/scroll_menu.gdshader<>uid://bmc4650jnfjb4::::res://assets/level01/outside/sky-backgrounds/Clouds/Clouds 4/2.png<>res://scenes/main/scroll_menu2.gdshader<>uid://bq21k8phmstli::::res://assets/level01/outside/sky-backgrounds/Clouds/Clouds 4/3.png<>res://scenes/main/scroll_menu3.gdshader<>uid://t007yb7qf2px::::res://assets/level01/outside/sky-backgrounds/Clouds/Clouds 4/4.png<>uid://ckxhp5txtvc6::::res://fonts/antiquity-print.ttf<>uid://cw6hv1tq5uaod::::res://fonts/ThaleahFat.ttf<>uid://l4bgpvu18sxp::::res://sounds/music/4 - Odd Ode _ Lonelibless.wav
-scroll_menu2.gdshader::Shader::-1::1723169020::0::1::::<><>::
-scroll_menu3.gdshader::Shader::-1::1723169020::0::1::::<><>::
-scroll_menu.gdshader::Shader::-1::1723169020::0::1::::<><>::
-::res://scenes/options/::1722994403
-settings.tscn::PackedScene::6023235113782031069::1722994403::0::1::::<><>::res://Settings.gd
+scroll_menu2.gdshader::Shader::-1::1723256850::0::1::::<><>::
+scroll_menu3.gdshader::Shader::-1::1723256850::0::1::::<><>::
+scroll_menu.gdshader::Shader::-1::1723256850::0::1::::<><>::
+::res://scenes/options/::1723256836
+Settings.gd::GDScript::-1::1723256816::0::1::::<>Control<>::
+settings.tscn::PackedScene::6023235113782031069::1723256836::0::1::::<><>::res://scenes/options/Settings.gd<>uid://cw6hv1tq5uaod::::res://fonts/ThaleahFat.ttf<>uid://42luta3y1718::::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/1.png<>uid://bhun4l7t48wju::::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/2.png<>uid://dhbuk4xl0w3f5::::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/3.png<>res://scenes/main/scroll_menu2.gdshader<>uid://clf7do7nkiljf::::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/4.png<>res://scenes/main/scroll_menu3.gdshader
+::res://scenes/select/::1723256816
+join lobby.tscn::PackedScene::3005668504991508898::1723256816::0::1::::<><>::uid://bmih7e20oqmcm::::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 7/1.png<>res://scenes/main/scroll_menu.gdshader<>uid://coftmjhpdvn8h::::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 7/2.png<>res://scenes/main/scroll_menu2.gdshader<>uid://13gldhyufq8h::::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 7/3.png<>res://scenes/main/scroll_menu3.gdshader<>uid://b1wa2hp51td42::::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 7/4.png<>uid://cw6hv1tq5uaod::::res://fonts/ThaleahFat.ttf
 ::res://sounds/::1722820941
 ::res://sounds/music/::1722820941
 4 - Odd Ode _ Lonelibless.wav::AudioStreamWAV::832016487878202317::1722820941::1722820941::1::::<><>::

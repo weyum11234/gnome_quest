@@ -50,6 +50,7 @@ texture = ExtResource("3_yu4ap")
 [node name="TextureRect3" type="TextureRect" parent="."]
 texture_repeat = 2
 material = SubResource("ShaderMaterial_3r0qm")
+layout_mode = 0
 offset_right = 640.0
 offset_bottom = 360.0
 texture = ExtResource("4_7kmba")
@@ -57,6 +58,7 @@ texture = ExtResource("4_7kmba")
 [node name="TextureRect4" type="TextureRect" parent="."]
 texture_repeat = 2
 material = SubResource("ShaderMaterial_1ckf8")
+layout_mode = 0
 offset_right = 640.0
 offset_bottom = 360.0
 texture = ExtResource("5_hlkkt")
