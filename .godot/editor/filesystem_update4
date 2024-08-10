@@ -1,9 +1,5 @@
-res://scenes/options/settings.tscn
+res://scenes/select/join lobby.tscn
 res://entities/players/player.gd
 res://scenes/main/scroll_menu2.gdshader
 res://scenes/main/scroll_menu3.gdshader
 res://scenes/main/scroll_menu.gdshader
-res://scenes/main/main.tscn
-res://scenes/main/main.gd
-res://scenes/options/Settings.gd
-res://scenes/select/character_select_2d.tscn

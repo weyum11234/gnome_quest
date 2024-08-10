@@ -1,15 +1,14 @@
-Panel
+Button
 HBoxContainer
+Panel
 Label
 VBoxContainer
 MarginContainer
 TextureRect
 OptionButton
-Button
 Area2D
 Node
 HSlider
 Node2D
 CollisionShape2D
 StaticBody2D
-Node2D
