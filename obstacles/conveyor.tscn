@@ -1,0 +1,63 @@
+[gd_scene load_steps=9 format=3 uid="uid://ck4o20430ls4g"]
+
+[ext_resource type="Script" path="res://obstacles/conveyor.gd" id="1_tvhx5"]
+[ext_resource type="Texture2D" uid="uid://6vaao2p4o2j8" path="res://assets/level01/caves/industrial.v2/industrial.v2.png" id="2_htmy1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r6px6"]
+atlas = ExtResource("2_htmy1")
+region = Rect2(0, 128, 64, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pje3o"]
+atlas = ExtResource("2_htmy1")
+region = Rect2(0, 144, 64, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8hl8e"]
+atlas = ExtResource("2_htmy1")
+region = Rect2(0, 160, 64, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5j11b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r6px6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pje3o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8hl8e")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4owtv"]
+size = Vector2(38, 7)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_do508"]
+size = Vector2(38, 6)
+
+[node name="Conveyor" type="StaticBody2D"]
+collision_mask = 2
+script = ExtResource("1_tvhx5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 2)
+scale = Vector2(0.6, 0.6)
+sprite_frames = SubResource("SpriteFrames_5j11b")
+frame_progress = 0.169567
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_4owtv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_do508")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

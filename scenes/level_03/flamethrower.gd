@@ -8,8 +8,8 @@ extends Area2D
 
 func _process(delta):
 	if emitter.emitting:
-		collider.shape.points[0] = collider.shape.points[0].move_toward(Vector2(-6, -110), 35 * delta)
-		collider.shape.points[1] = collider.shape.points[1].move_toward(Vector2(6, -110), 35 * delta)
+		collider.shape.points[0] = collider.shape.points[0].move_toward(Vector2(-6, 64), 35 * delta)
+		collider.shape.points[1] = collider.shape.points[1].move_toward(Vector2(6, 64), 35 * delta)
 
 func _on_flame_on_timer_timeout():
 	# now turning off the flame

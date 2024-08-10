@@ -5,6 +5,7 @@ extends Node2D
 @export var align_with_path = false
 
 @onready var path = $Path2D
+@onready var line = $Line2D
 @onready var path_follow = $Path2D/PathFollow2D
 @onready var body = $Path2D/AnimatableBody2D
 @onready var animation = $AnimationPlayer
@@ -18,6 +19,8 @@ func _ready():
 	path.curve = Curve2D.new()
 	path.curve.add_point(Vector2.ZERO)
 	path.curve.add_point(move_end_point)
+	line.add_point(Vector2.ZERO)
+	line.add_point(move_end_point)
 	animation.play("move")
 	animation.speed_scale = speed
 

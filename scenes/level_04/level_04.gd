@@ -27,7 +27,7 @@ func _ready():
 	placeholders.append($Placeholder3.global_position)
 	placeholders.append($Placeholder4.global_position)
 	placeholders.append($Placeholder5.global_position)
-	#placeholders.append($Placeholder6.global_position)
+	placeholders.append($Placeholder6.global_position)
 	#placeholders.append($Placeholder7.global_position)
 	#placeholders.append($Placeholder8.global_position)
 	#placeholders.append($Placeholder9.global_position)

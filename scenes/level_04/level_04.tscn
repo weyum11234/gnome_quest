@@ -2191,7 +2191,7 @@ position = Vector2(4288, 144)
 orbit_speed = 3.0
 
 [node name="Player" parent="." instance=ExtResource("1_xfcld")]
-position = Vector2(-1056, -69)
+position = Vector2(2960, 0)
 
 [node name="Slime" parent="." instance=ExtResource("11_dci2a")]
 position = Vector2(-672, -120)
@@ -2309,10 +2309,43 @@ position = Vector2(1136, 105)
 [node name="Placeholder5" type="Node2D" parent="."]
 position = Vector2(3072, -24)
 
+[node name="Placeholder6" type="Node2D" parent="."]
+position = Vector2(3264, 73)
+
+[node name="Placeholder7" type="Node2D" parent="."]
+position = Vector2(4840, 8)
+
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 
 [node name="Checkpoint" parent="." instance=ExtResource("24_eu5g6")]
-position = Vector2(2104, -107)
+position = Vector2(2200, -44)
+
+[node name="Checkpoint2" parent="." instance=ExtResource("24_eu5g6")]
+position = Vector2(2200, 165)
+
+[node name="Checkpoint3" parent="." instance=ExtResource("24_eu5g6")]
+position = Vector2(608, 21)
+
+[node name="Checkpoint4" parent="." instance=ExtResource("24_eu5g6")]
+position = Vector2(-32, 5)
+
+[node name="Checkpoint5" parent="." instance=ExtResource("24_eu5g6")]
+position = Vector2(2960, 21)
+
+[node name="Checkpoint6" parent="." instance=ExtResource("24_eu5g6")]
+position = Vector2(2976, 101)
+
+[node name="Checkpoint7" parent="." instance=ExtResource("24_eu5g6")]
+position = Vector2(4704, 5)
+
+[node name="Checkpoint8" parent="." instance=ExtResource("24_eu5g6")]
+position = Vector2(3952, -11)
+
+[node name="Checkpoint9" parent="." instance=ExtResource("24_eu5g6")]
+position = Vector2(3952, 133)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("8_0kloo")]
+position = Vector2(4624, 136)
 
 [editable path="Slime"]
 [editable path="Slime2"]
