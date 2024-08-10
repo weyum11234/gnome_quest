@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 res://scenes/level_04/level_04.tscn
+=======
+res://scenes/select/join lobby.tscn
+>>>>>>> 1b59ce58a15907a37fbb4f35e3ab8d944f1da548
 res://entities/players/player.gd
 res://scenes/main/scroll_menu2.gdshader
 res://scenes/main/scroll_menu3.gdshader
 res://scenes/main/scroll_menu.gdshader
+<<<<<<< HEAD
 res://obstacles/fan.tscn
 res://obstacles/coin.tscn
 res://entities/players/player.tscn
@@ -14,3 +19,5 @@ res://obstacles/cannon.tscn
 res://obstacles/cannon.gd
 res://obstacles/fan.gd
 res://scenes/level_04/level_04.gd
+=======
+>>>>>>> 1b59ce58a15907a37fbb4f35e3ab8d944f1da548

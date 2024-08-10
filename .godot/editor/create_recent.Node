@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 AudioStreamPlayer2D
 AudioStreamPlayer
 Node2D
@@ -5,11 +6,25 @@ Timer
 CPUParticles2D
 Area2D
 Node
+=======
+Button
+HBoxContainer
+Panel
+>>>>>>> 1b59ce58a15907a37fbb4f35e3ab8d944f1da548
 Label
-OptionButton
-HSlider
 VBoxContainer
 MarginContainer
+<<<<<<< HEAD
 CollisionShape2D
 TextureRect
 Control
+=======
+TextureRect
+OptionButton
+Area2D
+Node
+HSlider
+Node2D
+CollisionShape2D
+StaticBody2D
+>>>>>>> 1b59ce58a15907a37fbb4f35e3ab8d944f1da548

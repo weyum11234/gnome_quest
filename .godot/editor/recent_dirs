@@ -1,9 +1,12 @@
-res://obstacles
+res://scenes/select
+res://scenes/main
 res://scenes/global
+res://
+res://scenes/options
+res://obstacles
 <<<<<<< HEAD
 res://decorations
 =======
-res://scenes/options
 res://assets/Rocky Roads/Enemies
 >>>>>>> 05bfd6eed179eb0ac9883c9730f470c887ba8de6
 res://assets/Rocky Roads/FX
@@ -17,6 +20,3 @@ res://assets/level02/Pixel Adventure 2/Enemies/Rino
 res://decorations
 res://assets/level02/Pixel Adventure 2/Enemies/Snail
 res://assets/level02/Clouds V2
-res://assets/level02/Pixel Adventure 1/Free/Traps/Trampoline
-res://assets/level02/Pixel Adventure 1/Free/Traps/Saw
-res://fonts/Fibberish v1.0
