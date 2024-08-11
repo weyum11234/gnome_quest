@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bi276k3vjtlug"]
+[gd_scene load_steps=14 format=3 uid="uid://bi276k3vjtlug"]
 
 [ext_resource type="Texture2D" uid="uid://bmih7e20oqmcm" path="res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 7/1.png" id="1_2tsxm"]
 [ext_resource type="Script" path="res://scenes/select/steam_lobby.gd" id="1_v8v3r"]
@@ -18,6 +18,8 @@ shader = ExtResource("4_e0g1x")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_c3mna"]
 shader = ExtResource("6_q0vjd")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bm5dc"]
 
 [node name="join_lobby" type="Control"]
 layout_mode = 3
@@ -124,15 +126,67 @@ text = "HOST
 [node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
 spawn_path = NodePath("..")
 
-[node name="ScrollContainer" type="ScrollContainer" parent="."]
+[node name="LobbyContainer" type="ScrollContainer" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_right = 0.225
-anchor_bottom = 0.622
-offset_right = 8.0
-offset_bottom = 0.0799866
+anchor_left = 0.25
+anchor_top = 0.267
+anchor_right = 0.75
+anchor_bottom = 1.0
+offset_left = -32.0
+offset_top = -0.12001
+offset_right = 32.0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+[node name="Lobbies" type="VBoxContainer" parent="LobbyContainer"]
 layout_mode = 2
 
+[node name="VBoxContainer3" type="VBoxContainer" parent="."]
+visible = false
+offset_left = 40.0
+offset_top = 328.0
+offset_right = 160.0
+offset_bottom = 360.0
+
+[node name="Back" type="Button" parent="VBoxContainer3"]
+custom_minimum_size = Vector2(120, 32)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.870588, 0.870588, 0.870588, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_el46c")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bm5dc")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_bm5dc")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_bm5dc")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_bm5dc")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bm5dc")
+text = "BACK"
+alignment = 0
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 328.0
+offset_right = 104.0
+offset_bottom = 352.0
+
+[node name="Exit" type="Button" parent="VBoxContainer2"]
+custom_minimum_size = Vector2(120, 32)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.870588, 0.870588, 0.870588, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_el46c")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bm5dc")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_bm5dc")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_bm5dc")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_bm5dc")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bm5dc")
+text = "Exit"
+alignment = 0
+
+[connection signal="pressed" from="VBoxContainer/public" to="." method="_on_public_pressed"]
 [connection signal="pressed" from="VBoxContainer/host" to="." method="_on_host_pressed"]
+[connection signal="pressed" from="VBoxContainer3/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="VBoxContainer2/Exit" to="." method="_on_button_pressed"]

@@ -1,8 +1,11 @@
+Button
+Label
 VBoxContainer
+Node
+Node2D
 ScrollContainer
 MultiplayerSpawner
 MultiplayerSynchronizer
-Node2D
 AnimatedSprite2D
 CollisionShape2D
 Area2D
@@ -10,6 +13,3 @@ Sprite2D
 StaticBody2D
 Line2D
 AudioStreamPlayer2D
-AudioStreamPlayer
-Timer
-CPUParticles2D

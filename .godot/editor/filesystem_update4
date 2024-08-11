@@ -7,3 +7,7 @@ res://scenes/level_04/level_04.tscn
 res://entities/players/player.tscn
 res://scenes/select/join lobby.tscn
 res://scenes/main/main.tscn
+res://scenes/global/AudioController.gd
+res://scenes/select/steam_lobby.gd
+res://scenes/level_04/MultiplayerSpawner.gd
+res://scenes/level_04/level_04.gd
