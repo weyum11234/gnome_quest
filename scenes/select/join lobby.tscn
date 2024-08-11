@@ -141,7 +141,7 @@ offset_right = 32.0
 layout_mode = 2
 
 [node name="VBoxContainer3" type="VBoxContainer" parent="."]
-visible = false
+layout_mode = 0
 offset_left = 40.0
 offset_top = 328.0
 offset_right = 160.0

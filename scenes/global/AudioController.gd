@@ -5,7 +5,6 @@ extends Node
 func _process(delta):
 	var current_scene = get_tree().current_scene
 	if current_scene != null:
-		print(current_scene.name)
 		var play_scenes = ["MainMenu", "Settings", "join_lobby"]
 		if current_scene.name in play_scenes:
 			if not $AudioStreamPlayer.playing:
