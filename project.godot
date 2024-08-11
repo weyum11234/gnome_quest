@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
+SteamLoader="*res://scenes/global/steam_loader.gd"
 ConfigFileHandler="*res://scenes/global/ConfigFileHandler.gd"
 SettingsLoad="*res://scenes/global/settings_load.gd"
 TransitionScreen="*res://scenes/global/transition_screen.tscn"

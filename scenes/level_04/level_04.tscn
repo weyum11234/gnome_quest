@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://r307uqn5hey3"]
+[gd_scene load_steps=34 format=3 uid="uid://r307uqn5hey3"]
 
 [ext_resource type="Script" path="res://scenes/level_04/level_04.gd" id="1_jsey5"]
 [ext_resource type="Texture2D" uid="uid://tnjeog0nnq2p" path="res://assets/forest-nature-fantasy-tileset-free/Fantasy Swamp Forest/Free/BG_1/BG_1.png" id="1_s2xg4"]
@@ -24,6 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://byu1r2ct2kkqv" path="res://obstacles/spinning_spike.tscn" id="18_h0tql"]
 [ext_resource type="PackedScene" uid="uid://dpoy1qi0gffxq" path="res://obstacles/checkpoint.tscn" id="24_eu5g6"]
 [ext_resource type="PackedScene" uid="uid://cfq20mntf8aru" path="res://obstacles/cannon.tscn" id="24_qfiav"]
+[ext_resource type="Script" path="res://scenes/level_04/MultiplayerSpawner.gd" id="25_uhxsl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kckbx"]
 texture = ExtResource("2_7t4cu")
@@ -2085,6 +2086,8 @@ offset_bottom = 242.0
 texture = ExtResource("1_s2xg4")
 flip_h = true
 
+[node name="Player" parent="." instance=ExtResource("1_xfcld")]
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_yn0se")
 format = 2
@@ -2189,9 +2192,6 @@ orbit_speed = 3.0
 [node name="spinning_spike10" parent="TileMap" instance=ExtResource("18_h0tql")]
 position = Vector2(4288, 144)
 orbit_speed = 3.0
-
-[node name="Player" parent="." instance=ExtResource("1_xfcld")]
-position = Vector2(2960, 0)
 
 [node name="Slime" parent="." instance=ExtResource("11_dci2a")]
 position = Vector2(-672, -120)
@@ -2346,6 +2346,11 @@ position = Vector2(3952, 133)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("8_0kloo")]
 position = Vector2(4624, 136)
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
+spawn_path = NodePath("..")
+script = ExtResource("25_uhxsl")
+PlayerScene = ExtResource("1_xfcld")
 
 [editable path="Slime"]
 [editable path="Slime2"]

@@ -1,4 +1,5 @@
 res://scenes/global
+res://entities/players
 res://assets/level01/caves/industrial.v2
 res://obstacles
 <<<<<<< HEAD
@@ -19,4 +20,3 @@ res://decorations
 res://assets/level02/Pixel Adventure 2/Enemies/Snail
 res://assets/level02/Clouds V2
 res://assets/level02/Pixel Adventure 1/Free/Traps/Trampoline
-res://assets/level02/Pixel Adventure 1/Free/Traps/Saw

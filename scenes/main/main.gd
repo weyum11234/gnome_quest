@@ -19,7 +19,7 @@ func _ready():
 
 
 func on_ng_down() -> void:
-	get_tree().change_scene_to_file("res://scenes/level_04/level_04.tscn")
+	get_tree().change_scene_to_file("res://scenes/select/join lobby.tscn")
 	TransitionScreen.transition()
 	await TransitionScreen.on_transition_finished
 	

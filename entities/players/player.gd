@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 # Nodes
 @onready var spawn_timer = $SpawnTimer
+@onready var cam = $Camera2D
 
 # Physics constants
 @export var speed = 200.0
@@ -24,7 +25,7 @@ var facing = 1
 var spawn_position : Vector2
 
 func _ready():
-	pass
+	cam.enabled = is_multiplayer_authority()
 	
 func _process(delta):
 	#if spawn_timer > -1 and spawn_timer < spawn_time:
@@ -39,6 +40,10 @@ func _process(delta):
 func _physics_process(delta):
 	# Set default animation every delta
 	animation = "idle"
+	
+	if !is_multiplayer_authority():
+		return
+	
 	
 	# Add the gravity.
 	if not is_on_floor() and not is_jumping:
