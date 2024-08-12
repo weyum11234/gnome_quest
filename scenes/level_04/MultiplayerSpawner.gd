@@ -16,7 +16,9 @@ func spawnPlayer(data):
 	var p = PlayerScene.instantiate()
 	p.set_multiplayer_authority(data)
 	players[data] = p
+	call_deferred("add_child", p)  # Defer the adding of the player to the scene tree
 	return p
+
 	
 func removePlayer(data):
 	players[data].queue_free()
