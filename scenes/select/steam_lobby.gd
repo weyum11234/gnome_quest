@@ -50,7 +50,7 @@ func _on_lobby_created(connect, id):
 		print(lobby_id)
 		
 func open_lobby_list():
-	Steam.addRequestLobbyListDistanceFilter(Steam.LOBBY_DISTANCE_FILTER_WORLDWIDE)
+	Steam.addRequestLobbyListDistanceFilter(Steam.LOBBY_DISTANCE_FILTER_DEFAULT)
 	Steam.requestLobbyList()
 
 func _on_lobby_match_list(lobbies):
@@ -80,8 +80,10 @@ func _on_back_pressed():
 	$VBoxContainer2/Exit.show()
 	
 func _on_refresh_pressed():
-		if $LobbyContainer/Lobbies.get_child_count() > 0:
-			print("refreshable")
-			for n in $LobbyContainer/Lobbies.get_children():
-				print("refreshed")
-				n.queue_free
+	if $LobbyContainer/Lobbies.get_child_count() > 0:
+		print("refreshable")
+		var children = $LobbyContainer/Lobbies.get_children()  # Get a copy of the children array
+		for n in children:
+			print("refreshed")
+			n.queue_free()
+	open_lobby_list()  # Refresh the lobby list after clearing the old ones
