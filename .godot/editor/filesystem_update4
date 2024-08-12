@@ -5,14 +5,7 @@ res://scenes/main/scroll_menu3.gdshader
 res://scenes/main/scroll_menu.gdshader
 res://scenes/level_04/level_04.tscn
 res://entities/players/player.tscn
-res://scenes/select/join lobby.tscn
-res://scenes/main/main.tscn
-res://scenes/level_01/level_01.tscn
-res://scenes/select/steam_lobby.gd
 res://entities/item_box/item_box.tscn
-res://entities/item_box/item_box.gd
+res://scenes/level_01/level_01.tscn
 res://entities/speed_boost/speed_boost.tscn
-res://entities/speed_boost/speed_boost.gd
-res://scenes/level_04/level_04.gd
-res://scenes/global/steam_loader.gd
-res://scenes/level_04/MultiplayerSpawner.gd
+res://scenes/select/join lobby.tscn

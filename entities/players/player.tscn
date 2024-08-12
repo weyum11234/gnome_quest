@@ -193,6 +193,12 @@ properties/4/replication_mode = 1
 properties/5/path = NodePath(".:gravity_multiplier")
 properties/5/spawn = true
 properties/5/replication_mode = 1
+properties/6/path = NodePath("AnimatedSprite2D:animation")
+properties/6/spawn = true
+properties/6/replication_mode = 2
+properties/7/path = NodePath("AnimatedSprite2D:frame")
+properties/7/spawn = true
+properties/7/replication_mode = 2
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 collision_layer = 2
@@ -232,8 +238,8 @@ stream = ExtResource("4_laxvq")
 [node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
 replication_config = SubResource("SceneReplicationConfig_i88u8")
 
-[connection signal="area_entered" from="HurtBox" to="." method="_on_hazard_detector_area_entered"]
 [connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]
-[connection signal="body_entered" from="HurtBox" to="." method="_on_hazard_detector_body_entered"]
+[connection signal="area_entered" from="HurtBox" to="." method="_on_hazard_detector_area_entered"]
 [connection signal="body_entered" from="HurtBox" to="." method="_on_hurt_box_body_entered"]
+[connection signal="body_entered" from="HurtBox" to="." method="_on_hazard_detector_body_entered"]
 [connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]
