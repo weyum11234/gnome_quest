@@ -16,6 +16,7 @@ func spawnPlayer(data):
 	var p = PlayerScene.instantiate()
 	p.set_multiplayer_authority(data)
 	players[data] = p  
+	call_deferred("add_child", p)
 	return p
 
 	
