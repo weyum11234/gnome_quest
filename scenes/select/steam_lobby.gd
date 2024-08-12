@@ -50,6 +50,7 @@ func _on_lobby_created(connect, id):
 		print(lobby_id)
 		
 func open_lobby_list():
+	Steam.addRequestLobbyListStringFilter("name", "weyum", Steam.LOBBY_COMPARISON_EQUAL_TO_GREATER_THAN)
 	Steam.addRequestLobbyListDistanceFilter(Steam.LOBBY_DISTANCE_FILTER_DEFAULT)
 	Steam.requestLobbyList()
 
@@ -87,3 +88,9 @@ func _on_refresh_pressed():
 			print("refreshed")
 			n.queue_free()
 	open_lobby_list()  # Refresh the lobby list after clearing the old ones
+	
+func _on_lobby_join_requested(lobby_id: int, friend_id: int) -> void:
+	# Get the lobby owner's name
+	var owner_name: String = Steam.getFriendPersonaName(friend_id)
+	print("Joining %s's lobby..." % owner_name)
+	join_lobby(lobby_id)
