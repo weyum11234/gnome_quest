@@ -1,6 +1,7 @@
 extends MultiplayerSpawner
 
 @export var PlayerScene: PackedScene
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	spawn_function = spawnPlayer
@@ -8,18 +9,17 @@ func _ready():
 		spawn(1)
 		multiplayer.peer_connected.connect(spawn)
 		multiplayer.peer_disconnected.connect(removePlayer)
-
 var players = {}
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+# Spawns a player instance and adds it to the scene tree with replication.
 func spawnPlayer(data):
 	var p = PlayerScene.instantiate()
 	p.set_multiplayer_authority(data)
-	players[data] = p  
-	call_deferred("add_child", p)
+	players[data] = p
+	add_child(p, true)  # Ensure the node is added with replication
 	return p
 
-	
+# Removes a player instance from the scene tree.
 func removePlayer(data):
 	players[data].queue_free()
 	players.erase(data)
