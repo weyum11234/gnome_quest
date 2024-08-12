@@ -19,8 +19,6 @@ var coyote_timer = 0.0
 
 # State variables
 @onready var animation = "idle"
-#var spawn_time = 1.0
-#var spawn_timer = -1
 var facing = 1
 var spawn_position : Vector2
 
@@ -28,13 +26,6 @@ func _ready():
 	cam.enabled = is_multiplayer_authority()
 	
 func _process(delta):
-	#if spawn_timer > -1 and spawn_timer < spawn_time:
-		#spawn_timer += delta
-	#elif spawn_timer > spawn_time:
-		#set_physics_process(true)
-		#set_process_input(true)
-		#animation = "idle"
-		#spawn_timer = -1
 	pass
 
 func _physics_process(delta):
