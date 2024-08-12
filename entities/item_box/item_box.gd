@@ -4,12 +4,8 @@ extends Node2D
 @onready var animation = $AnimationPlayer
 @onready var respawn_timer = $RespawnTimer
 @onready var rng = RandomNumberGenerator.new()
-signal give_item
 
-func _ready():
-	animation.play("item_box_idle")
-
-func _on_body_entered(body):
+func give_item(body):
 	if body.is_in_group("player"):
 		if not body.get_node("Hand").get_child_count():
 			var i = rng.randi_range(8, 8)
@@ -45,7 +41,13 @@ func _on_body_entered(body):
 					$AudioStreamPlayer2D.stream = load("res://assets/sounds/71011-Sound_design_shimmer_accent_swell_airy_reverb_harmony-BLASTWAVEFX-07832.wav")
 					$AudioStreamPlayer2D.play()
 		animation.play("item_box_explode")
-	
+
+func _ready():
+	animation.play("item_box_idle")
+
+func _on_body_entered(body):
+	call_deferred("give_item", body)
+
 # Despawn box.
 func _on_animation_player_animation_finished(anim_name):
 	if anim_name == "item_box_explode":
