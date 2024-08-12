@@ -8,5 +8,5 @@ res://entities/players/player.tscn
 res://entities/item_box/item_box.tscn
 res://scenes/level_01/level_01.tscn
 res://entities/speed_boost/speed_boost.tscn
-res://scenes/select/steam_lobby.gd
 res://scenes/select/join lobby.tscn
+res://scenes/level_04/MultiplayerSpawner.gd
