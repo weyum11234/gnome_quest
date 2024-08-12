@@ -79,4 +79,9 @@ func _on_back_pressed():
 	$VBoxContainer/host.show()
 	$VBoxContainer2/Exit.show()
 	
-
+func _on_refresh_pressed():
+		if $LobbyContainer/Lobbies.get_child_count() > 0:
+			print("refreshable")
+			for n in $LobbyContainer/Lobbies.get_children():
+				print("refreshed")
+				n.queue_free

@@ -126,6 +126,30 @@ text = "HOST
 [node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
 spawn_path = NodePath("..")
 
+[node name="VBoxContainer4" type="VBoxContainer" parent="."]
+layout_mode = 2
+offset_left = 32.0
+offset_top = 296.0
+offset_right = 152.0
+offset_bottom = 328.0
+
+[node name="Refresh" type="Button" parent="VBoxContainer4"]
+custom_minimum_size = Vector2(120, 32)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.870588, 0.870588, 0.870588, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_el46c")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bm5dc")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_bm5dc")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_bm5dc")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_bm5dc")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bm5dc")
+text = "Refresh
+"
+alignment = 0
+
 [node name="LobbyContainer" type="ScrollContainer" parent="."]
 layout_mode = 1
 anchors_preset = -1
@@ -188,5 +212,6 @@ alignment = 0
 
 [connection signal="pressed" from="VBoxContainer/public" to="." method="_on_public_pressed"]
 [connection signal="pressed" from="VBoxContainer/host" to="." method="_on_host_pressed"]
+[connection signal="pressed" from="VBoxContainer4/Refresh" to="." method="_on_refresh_pressed"]
 [connection signal="pressed" from="VBoxContainer3/Back" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="VBoxContainer2/Exit" to="." method="_on_button_pressed"]
