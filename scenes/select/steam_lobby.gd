@@ -2,6 +2,7 @@ extends Control
 
 var lobby_id = 0
 var peer = SteamMultiplayerPeer.new()
+var is_private_lobby = false
 
 @onready var ms = $MultiplayerSpawner
 
@@ -20,6 +21,7 @@ func spawn_level(data):
 	return a
 	
 func _on_public_pressed():
+	is_private_lobby = false  # Mark as public lobby
 	$VBoxContainer/Label2.hide()
 	$VBoxContainer/private.hide()
 	$VBoxContainer/public.hide()
@@ -32,6 +34,13 @@ func _on_host_pressed():
 	peer.create_lobby(SteamMultiplayerPeer.LOBBY_TYPE_PUBLIC)
 	multiplayer.multiplayer_peer = peer
 	ms.spawn("res://scenes/level_04/level_04.tscn")
+	$".".hide()
+	
+func _on_private_pressed():
+	is_private_lobby = true  # Mark as private lobby
+	peer.create_lobby(SteamMultiplayerPeer.LOBBY_TYPE_PRIVATE)
+	multiplayer.multiplayer_peer = peer
+	ms.spawn("res://scenes/waiting_room/private_lobby.tscn")
 	$".".hide()
 	
 func join_lobby(id):
@@ -48,6 +57,8 @@ func _on_lobby_created(connect, id):
 		Steam.setLobbyData(lobby_id, "name", str(Steam.getPersonaName()+ "'S Lobby"))
 		Steam.setLobbyJoinable(lobby_id, true)
 		print(lobby_id)
+		if is_private_lobby:
+			Steam.activateGameOverlayInviteDialog(lobby_id)  # Invite players to the private lobby
 		
 func open_lobby_list():
 	Steam.addRequestLobbyListStringFilter("name", "weyum", Steam.LOBBY_COMPARISON_EQUAL_TO_GREATER_THAN)
@@ -88,9 +99,3 @@ func _on_refresh_pressed():
 			print("refreshed")
 			n.queue_free()
 	open_lobby_list()  # Refresh the lobby list after clearing the old ones
-	
-func _on_lobby_join_requested(lobby_id: int, friend_id: int) -> void:
-	# Get the lobby owner's name
-	var owner_name: String = Steam.getFriendPersonaName(friend_id)
-	print("Joining %s's lobby..." % owner_name)
-	join_lobby(lobby_id)
