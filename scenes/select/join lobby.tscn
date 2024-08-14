@@ -96,11 +96,8 @@ text = "JoIN LOBBY
 "
 horizontal_alignment = 1
 
-[node name="Label2" type="Label" parent="VBoxContainer"]
+[node name="Control" type="Control" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("8_el46c")
-theme_override_font_sizes/font_size = 30
-horizontal_alignment = 1
 
 [node name="private" type="Button" parent="VBoxContainer"]
 layout_mode = 2
