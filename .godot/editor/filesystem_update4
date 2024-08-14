@@ -1,13 +1,12 @@
-res://entities/players/player.tscn
+res://scenes/options/settings.tscn
 res://entities/players/player.gd
 res://scenes/main/scroll_menu2.gdshader
 res://scenes/main/scroll_menu3.gdshader
 res://scenes/main/scroll_menu.gdshader
-res://scenes/options/settings.tscn
 res://scenes/level_04/level_04.tscn
+res://entities/players/player.tscn
 res://entities/item_box/item_box.tscn
 res://scenes/level_01/level_01.tscn
 res://entities/speed_boost/speed_boost.tscn
 res://scenes/select/join lobby.tscn
-res://scenes/select/steam_lobby.gd
 res://scenes/waiting_room/private_lobby.tscn
