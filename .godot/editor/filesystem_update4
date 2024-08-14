@@ -32,3 +32,6 @@ res://entities/speed_boost/speed_boost.gd
 res://entities/teleporter/teleporter.gd
 res://entities/teleporter/teleporter.tscn
 res://obstacles/cannon.tscn
+res://scenes/level_04/level_04.tscn
+res://scenes/level_04/MultiplayerSpawner.gd
+res://entities/enemies/bird.tscn
