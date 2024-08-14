@@ -38,6 +38,9 @@ func use(player : Object):
 
 func alt_use(player : Object):
 	pass
+	
+func reset():
+	queue_free()
 
 func _on_flight_timer_timeout():
 	queue_free()

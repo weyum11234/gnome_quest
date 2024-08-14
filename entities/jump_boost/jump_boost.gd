@@ -5,10 +5,6 @@ extends Node2D
 var player : Object
 var jump_velo : int
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if player and boost_timer < boost_time:
@@ -17,7 +13,6 @@ func _process(delta):
 	elif player:
 		player.jump_velocity = jump_velo
 		queue_free()
-		player.get_node("Hand").remove_child(self)
 
 func use(player : Object):
 	if boost_timer == 0:
@@ -26,3 +21,7 @@ func use(player : Object):
 		
 func alt_use(player : Object):
 	pass
+
+func reset():
+	get_parent().get_parent().jump_velocity = jump_velo
+	queue_free()

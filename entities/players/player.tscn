@@ -1,9 +1,30 @@
-[gd_scene load_steps=29 format=3 uid="uid://da8ra7ljeknhu"]
+[gd_scene load_steps=35 format=3 uid="uid://da8ra7ljeknhu"]
 
 [ext_resource type="Script" path="res://entities/players/player.gd" id="1_cl06y"]
 [ext_resource type="Texture2D" uid="uid://6vaao2p4o2j8" path="res://assets/level01/caves/industrial.v2/industrial.v2.png" id="2_8tjra"]
+[ext_resource type="Texture2D" uid="uid://y7krifrh5l7p" path="res://assets/Rocky Roads/FX/hit.png" id="2_uk2tm"]
 [ext_resource type="Texture2D" uid="uid://dkph32kv7qse4" path="res://assets/level01/caves/industrial.v2/recolored_player.png" id="3_xfqrp"]
 [ext_resource type="AudioStream" uid="uid://bcrdmebtb3ved" path="res://assets/sounds/knife-stab-sound-fx.wav" id="4_laxvq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j667p"]
+atlas = ExtResource("2_uk2tm")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ydn0m"]
+atlas = ExtResource("2_uk2tm")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s1j4l"]
+atlas = ExtResource("2_uk2tm")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j2u7f"]
+atlas = ExtResource("2_uk2tm")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t0bls"]
+atlas = ExtResource("2_uk2tm")
+region = Rect2(192, 0, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nthc3"]
 atlas = ExtResource("2_8tjra")
@@ -89,6 +110,26 @@ region = Rect2(112, 272, 16, 16)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_j667p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ydn0m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s1j4l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j2u7f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t0bls")
+}],
+"loop": false,
+"name": &"death",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_nthc3")
 }, {
 "duration": 1.0,
@@ -133,8 +174,32 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_kloke")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q4x0f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ov350")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wmgxc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kloke")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q4x0f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ov350")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wmgxc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kloke")
 }],
-"loop": true,
+"loop": false,
 "name": &"respawn",
 "speed": 5.0
 }, {
@@ -202,7 +267,6 @@ script = ExtResource("1_cl06y")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_75tuk")
 animation = &"respawn"
-frame_progress = 0.482287
 
 [node name="Hand" type="Node2D" parent="."]
 position = Vector2(6, 1)
@@ -227,13 +291,11 @@ shape = SubResource("RectangleShape2D_4sw0k")
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_laxvq")
 
-[node name="SpawnTimer" type="Timer" parent="."]
-
 [node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
 replication_config = SubResource("SceneReplicationConfig_i88u8")
 
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]
 [connection signal="area_entered" from="HurtBox" to="." method="_on_hazard_detector_area_entered"]
 [connection signal="body_entered" from="HurtBox" to="." method="_on_hurt_box_body_entered"]
 [connection signal="body_entered" from="HurtBox" to="." method="_on_hazard_detector_body_entered"]
-[connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]

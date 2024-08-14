@@ -48,7 +48,6 @@ func reset():
 func _on_flight_timer_timeout():
 	reset()
 
-
 func _on_hit_box_body_entered(body):
 	if has_exit:
 		reset()
@@ -58,13 +57,11 @@ func _on_hit_box_body_entered(body):
 		body.death()
 		reset()
 
-
 func _on_hit_box_area_entered(area):
 	if has_exit:
 		reset()
 	if not area.is_in_group("player"): # Edge case: projectile immediately hits the environment.
 		reset()
-
 
 func _on_hit_box_body_exited(body):
 	has_exit = true

@@ -17,7 +17,6 @@ func _process(delta):
 	elif player:
 		player.gravity_multiplier = 1.0
 		queue_free()
-		player.get_node("Hand").remove_child(self)
 
 func use(player : Object):
 	if boost_timer == 0:
@@ -27,3 +26,7 @@ func alt_use(player : Object):
 	if boost_timer == 0:
 		self.player = player
 		new_grav = 0.0
+		
+func reset():
+	get_parent().get_parent().gravity_multiplier = 1.0
+	queue_free()

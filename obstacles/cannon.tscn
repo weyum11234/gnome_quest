@@ -59,7 +59,7 @@ position = Vector2(0, 8)
 shape = SubResource("RectangleShape2D_siqu5")
 
 [node name="Marker2D" type="Marker2D" parent="."]
-position = Vector2(-56, 5)
+position = Vector2(-14, 6)
 scale = Vector2(-1, 1)
 
 [node name="CooldownTimer" type="Timer" parent="."]

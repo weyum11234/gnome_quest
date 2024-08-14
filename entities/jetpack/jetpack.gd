@@ -15,7 +15,6 @@ func _ready():
 	emitter1.emitting = false
 	emitter2.emitting = false
 	$ProgressBar.max_value = flight_time
-	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -40,3 +39,6 @@ func use(player : Object):
 
 func alt_use(player : Object):
 	pass
+	
+func reset():
+	queue_free()

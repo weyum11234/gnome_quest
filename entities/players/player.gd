@@ -1,8 +1,10 @@
 extends CharacterBody2D
 
 # Nodes
-@onready var spawn_timer = $SpawnTimer
+@onready var sprite = $AnimatedSprite2D
+@onready var hand = $Hand
 @onready var cam = $Camera2D
+@onready var audio = $AudioStreamPlayer2D
 
 # Physics constants
 @export var speed = 200.0
@@ -94,16 +96,33 @@ func _on_hurt_box_body_entered(body):
 func _on_hurt_box_area_entered(area):
 	death()
 
+#func death():
+	#global_position = spawn_position
+	#set_physics_process(false)
+	#set_process_input(false)
+	#animation = "respawn"
+	#spawn_timer.start()
+	#$AnimatedSprite2D.play(animation)
+	#$AudioStreamPlayer2D.play()
+
 func death():
-	global_position = spawn_position
 	set_physics_process(false)
 	set_process_input(false)
-	animation = "respawn"
-	spawn_timer.start()
-	$AnimatedSprite2D.play(animation)
-	$AudioStreamPlayer2D.play()
+	# Clear items upon death
+	if hand.get_child_count():
+		hand.get_children()[0].reset()
+		pass
+	animation = "death"
+	sprite.play(animation)
+	audio.play()
+	
 
-func _on_spawn_timer_timeout():
-	set_physics_process(true)
-	set_process_input(true)
-	animation = "idle"
+func _on_animated_sprite_2d_animation_finished():
+	match animation:
+		"death":
+			global_position = spawn_position
+			animation = "respawn"
+			sprite.play(animation)
+		"respawn":
+			set_physics_process(true)
+			set_process_input(true)
