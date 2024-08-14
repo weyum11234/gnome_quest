@@ -14,12 +14,13 @@ func _ready():
 	$LobbyContainer.hide()
 	$VBoxContainer3/Back.hide()
 	open_lobby_list()
-	
+
 
 func spawn_level(data):
 	var a = (load(data) as PackedScene).instantiate()
 	return a
 	
+
 func _on_public_pressed():
 	is_private_lobby = false  # Mark as public lobby
 	$VBoxContainer/Label2.hide()
@@ -30,12 +31,14 @@ func _on_public_pressed():
 	$LobbyContainer.show()
 	$VBoxContainer3/Back.show()
 	
+
 func _on_host_pressed():
 	peer.create_lobby(SteamMultiplayerPeer.LOBBY_TYPE_PUBLIC)
 	multiplayer.multiplayer_peer = peer
 	ms.spawn("res://scenes/level_04/level_04.tscn")
 	$".".hide()
 	
+
 func _on_private_pressed():
 	is_private_lobby = true  # Mark as private lobby
 	peer.create_lobby(SteamMultiplayerPeer.LOBBY_TYPE_PRIVATE)
@@ -43,6 +46,7 @@ func _on_private_pressed():
 	ms.spawn("res://scenes/waiting_room/private_lobby.tscn")
 	$".".hide()
 	
+
 func join_lobby(id):
 	peer.connect_lobby(id)
 	multiplayer.multiplayer_peer = peer
@@ -50,20 +54,25 @@ func join_lobby(id):
 	$".".hide()
 	$LobbyContainer/Lobbies.hide()
 	
-	
+
 func _on_lobby_created(connect, id):
 	if connect:
 		lobby_id = id
-		Steam.setLobbyData(lobby_id, "name", str(Steam.getPersonaName()+ "'S Lobby"))
+		Steam.setLobbyData(lobby_id, "name", str(Steam.getPersonaName() + "'S Lobby"))
 		Steam.setLobbyJoinable(lobby_id, true)
-		print(lobby_id)
+		print("Lobby created successfully:", lobby_id)
 		if is_private_lobby:
+			print("Opening Steam overlay for private lobby invites.")
 			Steam.activateGameOverlayInviteDialog(lobby_id)  # Invite players to the private lobby
-		
+	else:
+		print("Failed to create lobby")
+
+
 func open_lobby_list():
 	Steam.addRequestLobbyListStringFilter("name", "weyum", Steam.LOBBY_COMPARISON_EQUAL_TO_GREATER_THAN)
 	Steam.addRequestLobbyListDistanceFilter(Steam.LOBBY_DISTANCE_FILTER_DEFAULT)
 	Steam.requestLobbyList()
+
 
 func _on_lobby_match_list(lobbies):
 	for lobby in lobbies:
@@ -91,6 +100,7 @@ func _on_back_pressed():
 	$VBoxContainer/host.show()
 	$VBoxContainer2/Exit.show()
 	
+
 func _on_refresh_pressed():
 	if $LobbyContainer/Lobbies.get_child_count() > 0:
 		print("refreshable")
