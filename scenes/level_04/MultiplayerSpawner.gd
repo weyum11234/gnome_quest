@@ -9,7 +9,7 @@ func _ready():
 	spawn_function = spawnPlayer
 	if is_multiplayer_authority():
 		spawn(1)
-		multiplayer.peer_connected.connect(spawnPlayer)
+		multiplayer.peer_connected.connect(spawn)
 		multiplayer.peer_disconnected.connect(removePlayer)
 
 # Spawns a player instance and adds it to the scene tree with replication.
