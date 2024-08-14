@@ -20,6 +20,7 @@ func spawn_level(data):
 	return a
 	
 func _on_public_pressed():
+	$VBoxContainer/Label2.hide()
 	$VBoxContainer/private.hide()
 	$VBoxContainer/public.hide()
 	$VBoxContainer/host.hide()
