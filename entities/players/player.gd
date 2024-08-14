@@ -96,15 +96,6 @@ func _on_hurt_box_body_entered(body):
 func _on_hurt_box_area_entered(area):
 	death()
 
-#func death():
-	#global_position = spawn_position
-	#set_physics_process(false)
-	#set_process_input(false)
-	#animation = "respawn"
-	#spawn_timer.start()
-	#$AnimatedSprite2D.play(animation)
-	#$AudioStreamPlayer2D.play()
-
 func death():
 	set_physics_process(false)
 	set_process_input(false)
