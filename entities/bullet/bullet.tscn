@@ -70,10 +70,10 @@ libraries = {
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 
-[connection signal="area_entered" from="HitBox" to="." method="_on_area_2d_area_entered"]
 [connection signal="area_entered" from="HitBox" to="." method="_on_hit_box_area_entered"]
+[connection signal="area_entered" from="HitBox" to="." method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="HitBox" to="." method="_on_area_2d_area_exited"]
 [connection signal="body_entered" from="HitBox" to="." method="_on_hit_box_body_entered"]
-[connection signal="body_exited" from="HitBox" to="." method="_on_area_2d_body_exited"]
 [connection signal="body_exited" from="HitBox" to="." method="_on_hit_box_body_exited"]
+[connection signal="body_exited" from="HitBox" to="." method="_on_area_2d_body_exited"]
 [connection signal="timeout" from="FlightTimer" to="." method="_on_flight_timer_timeout"]
