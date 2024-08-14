@@ -11,9 +11,14 @@ config_version=5
 [application]
 
 config/name="gnome_quest"
-run/main_scene="res://scenes/main/main.tscn"
+run/main_scene="res://scenes/splash/splash.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/show_image=false
+boot_splash/fullsize=false
+boot_splash/use_filter=false
 config/icon="res://icon.svg"
+boot_splash/minimum_display_time=1000
 
 [autoload]
 
@@ -75,3 +80,4 @@ jump2={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)

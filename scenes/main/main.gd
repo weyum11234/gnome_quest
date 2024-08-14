@@ -8,8 +8,6 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-
-
 	new_game.button_down.connect(on_ng_down)
 	options.button_down.connect(on_options_down)
 	exit.button_down.connect(on_exit_down)

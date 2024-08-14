@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://dqhh8vxlpxgsp"]
 
-[ext_resource type="Texture2D" uid="uid://c4y8hmlcaa8jn" path="res://assets/tilesets_maps/dungeons/1-Bit-Ruins-Omniclause/platform.png" id="1_2q5su"]
+[ext_resource type="Texture2D" uid="uid://c4y8hmlcaa8jn" path="res://assets/level01/dungeons/1-Bit-Ruins-Omniclause/platform.png" id="1_2q5su"]
 [ext_resource type="Script" path="res://obstacles/moving_platform.gd" id="1_hb4ot"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w5d6k"]
