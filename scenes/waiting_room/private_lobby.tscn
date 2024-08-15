@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dfhmq2eo7qehr"]
+[gd_scene load_steps=11 format=3 uid="uid://2sds753i6xdg"]
 
 [ext_resource type="Script" path="res://scenes/waiting_room/private_lobby.gd" id="1_23mr7"]
 [ext_resource type="Texture2D" uid="uid://bp8lwwseo5eex" path="res://assets/stringstar fields/background_0.png" id="1_x0sh1"]
