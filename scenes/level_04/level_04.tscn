@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://chy06pprcgl58" path="res://assets/Water+.png" id="7_lmpo7"]
 [ext_resource type="PackedScene" uid="uid://dq80w5j1x704m" path="res://obstacles/fan.tscn" id="8_0kloo"]
 [ext_resource type="PackedScene" uid="uid://bf5tjpb5kn3an" path="res://entities/enemies/slime.tscn" id="11_dci2a"]
-[ext_resource type="PackedScene" uid="uid://bdg1pjrjkbcxd" path="res://entities/enemies/bird.tscn" id="13_o6n6m"]
+[ext_resource type="PackedScene" uid="uid://bdg1pjrjkbcxd" path="res://entities/bird.tscn" id="13_o6n6m"]
 [ext_resource type="PackedScene" uid="uid://h6oop5cq6b7t" path="res://entities/enemies/bear.tscn" id="14_3qs8g"]
 [ext_resource type="PackedScene" uid="uid://b57cotk02tjsv" path="res://obstacles/ice_spikes.tscn" id="15_rmmhq"]
 [ext_resource type="PackedScene" uid="uid://fbmvrpvekjm4" path="res://obstacles/red_flame.tscn" id="16_6x4fy"]

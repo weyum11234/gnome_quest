@@ -12,3 +12,4 @@ CharacterBody2D
 Node
 AnimatableBody2D
 Sprite2D
+RigidBody2D

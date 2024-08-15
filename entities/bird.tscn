@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bdg1pjrjkbcxd"]
+[gd_scene load_steps=9 format=3 uid="uid://bdg1pjrjkbcxd"]
 
 [ext_resource type="Texture2D" uid="uid://c3m2pj3q3nl7e" path="res://assets/Rocky Roads/Enemies/bird.png" id="1_i357a"]
 [ext_resource type="Script" path="res://entities/enemies/enemy.gd" id="1_m4wnh"]
@@ -42,17 +42,6 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_xdx03"]
 radius = 8.0
 
-[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_cywly"]
-properties/0/path = NodePath(".:position")
-properties/0/spawn = true
-properties/0/replication_mode = 1
-properties/1/path = NodePath("StaticBody2D/AnimatedSprite2D:animation")
-properties/1/spawn = true
-properties/1/replication_mode = 1
-properties/2/path = NodePath("StaticBody2D/CollisionShape2D:position")
-properties/2/spawn = true
-properties/2/replication_mode = 1
-
 [node name="Bird" type="Node2D"]
 script = ExtResource("1_m4wnh")
 
@@ -70,6 +59,3 @@ shape = SubResource("CircleShape2D_xdx03")
 [node name="Start" type="Node2D" parent="."]
 
 [node name="End" type="Node2D" parent="."]
-
-[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
-replication_config = SubResource("SceneReplicationConfig_cywly")
