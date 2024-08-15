@@ -12,3 +12,4 @@ res://entities/speed_boost/speed_boost.tscn
 res://scenes/select/join lobby.tscn
 res://entities/enemies/enemy.gd
 res://entities/bird.tscn
+res://scenes/waiting_room/private_lobby.gd

@@ -2,7 +2,7 @@ extends Node
 
 @onready var ms = $MultiplayerSpawner2
 
-var min_players = 2
+var min_players = 1
 var players_loaded = 0
 var total_players = 0
 var checking_interval = 1.0
