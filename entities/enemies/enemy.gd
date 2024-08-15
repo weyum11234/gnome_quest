@@ -20,3 +20,7 @@ func _process(delta):
 		body.scale.x *= -1
 	# Move.
 	body.position = body.position.move_toward(target.position, speed * delta)
+
+
+func _on_tree_entered():
+	print("manas")

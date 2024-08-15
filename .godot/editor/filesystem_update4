@@ -10,3 +10,5 @@ res://entities/item_box/item_box.tscn
 res://scenes/level_01/level_01.tscn
 res://entities/speed_boost/speed_boost.tscn
 res://scenes/select/join lobby.tscn
+res://entities/enemies/enemy.gd
+res://entities/bird.tscn

@@ -59,3 +59,5 @@ shape = SubResource("CircleShape2D_xdx03")
 [node name="Start" type="Node2D" parent="."]
 
 [node name="End" type="Node2D" parent="."]
+
+[connection signal="tree_entered" from="." to="." method="_on_tree_entered"]
