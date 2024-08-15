@@ -12,9 +12,6 @@ func _ready():
 		multiplayer.peer_connected.connect(spawn)
 		multiplayer.peer_disconnected.connect(removePlayer)
 
-func _process(delta):
-	print(get_children())
-
 # Spawns a player instance and adds it to the scene tree with replication.
 func spawnPlayer(data):
 	var p = PlayerScene.instantiate()
