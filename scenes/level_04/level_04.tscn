@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://r307uqn5hey3"]
+[gd_scene load_steps=33 format=3 uid="uid://r307uqn5hey3"]
 
 [ext_resource type="Script" path="res://scenes/level_04/level_04.gd" id="1_jsey5"]
 [ext_resource type="Texture2D" uid="uid://tnjeog0nnq2p" path="res://assets/forest-nature-fantasy-tileset-free/Fantasy Swamp Forest/Free/BG_1/BG_1.png" id="1_s2xg4"]
@@ -23,7 +23,6 @@
 [ext_resource type="PackedScene" uid="uid://byu1r2ct2kkqv" path="res://obstacles/spinning_spike.tscn" id="18_h0tql"]
 [ext_resource type="PackedScene" uid="uid://dpoy1qi0gffxq" path="res://obstacles/checkpoint.tscn" id="24_eu5g6"]
 [ext_resource type="PackedScene" uid="uid://cfq20mntf8aru" path="res://obstacles/cannon.tscn" id="24_qfiav"]
-[ext_resource type="Script" path="res://scenes/level_04/MultiplayerSpawner.gd" id="25_uhxsl"]
 [ext_resource type="PackedScene" uid="uid://dc23bl42ciakq" path="res://entities/item_box/item_box.tscn" id="26_ixw7h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kckbx"]
@@ -2325,10 +2324,6 @@ position = Vector2(3952, 133)
 position = Vector2(4624, 136)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Node2D"]
-
-[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="Node2D"]
-spawn_path = NodePath(".")
-script = ExtResource("25_uhxsl")
 
 [node name="ItemBox" parent="." instance=ExtResource("26_ixw7h")]
 position = Vector2(-280, -135)
