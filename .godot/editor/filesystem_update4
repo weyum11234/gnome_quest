@@ -11,6 +11,3 @@ res://entities/speed_boost/speed_boost.tscn
 res://scenes/select/join lobby.tscn
 res://scenes/waiting_room/private_lobby.tscn
 res://scenes/waiting_room/private_lobby.gd
-res://scenes/global/cold_storage.gd
-res://scenes/select/steam_lobby.gd
-res://scenes/global/steam_loader.gd

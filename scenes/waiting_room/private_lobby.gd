@@ -13,7 +13,6 @@ func _ready():
 func _check_player_count():
 	print("Checking player count.")
 	get_lobby_members()
-	print("Lobby members count:", lobby_members.size())
 	if lobby_members.size() >= min_players:
 		print("Sufficient players in lobby. Waiting for players to load.")
 		_wait_for_players_to_load()
@@ -44,8 +43,7 @@ func _on_player_loaded(player_id):
 
 func _check_all_players_loaded():
 	print("Checking if all players are loaded.")
-	for member in lobby_members:
-		var player_id = member["steam_id"]
+	for player_id in players_fully_loaded.keys():
 		if not players_fully_loaded[player_id]:
 			print("Player not yet fully loaded:", player_id)
 			return
@@ -60,29 +58,10 @@ func get_lobby_members() -> void:
 	if num_of_members == -1:
 		print("Error: Failed to get number of lobby members.")
 		return
+
 	print("Number of lobby members:", num_of_members)
-	for this_member in range(0, num_of_members):
+	for this_member in range(num_of_members):
 		var member_steam_id: int = Steam.getLobbyMemberByIndex(ColdStorage.lobby_id, this_member)
 		var member_steam_name: String = Steam.getFriendPersonaName(member_steam_id)
 		lobby_members.append({"steam_id": member_steam_id, "steam_name": member_steam_name})
 		print("Member added:", member_steam_id, member_steam_name)
-
-func _poll_for_updates():
-	print("Polling for updates.")
-	for member in lobby_members:
-		var player_id = member["steam_id"]
-		var member_data = ""
-		var success_member = Steam.getLobbyMemberData(ColdStorage.lobby_id, player_id, member_data)
-		if success_member:
-			print("Member data retrieved successfully for player_id:", player_id, "data:", member_data)
-			_handle_member_data(player_id, member_data)
-		else:
-			print("Failed to get member data for player_id:", player_id)
-
-func _handle_member_data(player_id, data):
-	print("Handling member data for player_id:", player_id, "data:", data)
-	if data.get("player_loaded") == "true":
-		_check_all_players_loaded()
-
-func _process(delta):
-	_poll_for_updates()  # Poll for updates periodically
