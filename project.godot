@@ -27,7 +27,6 @@ ConfigFileHandler="*res://scenes/global/ConfigFileHandler.gd"
 SettingsLoad="*res://scenes/global/settings_load.gd"
 TransitionScreen="*res://scenes/global/transition_screen.tscn"
 AudioController="*res://scenes/global/audio_controller.tscn"
-ColdStorage="*res://scenes/global/cold_storage.gd"
 
 [display]
 

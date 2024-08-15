@@ -207,7 +207,6 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_bm5dc")
 text = "Exit"
 alignment = 0
 
-[connection signal="pressed" from="VBoxContainer/private" to="." method="_on_private_pressed"]
 [connection signal="pressed" from="VBoxContainer/public" to="." method="_on_public_pressed"]
 [connection signal="pressed" from="VBoxContainer/host" to="." method="_on_host_pressed"]
 [connection signal="pressed" from="VBoxContainer4/Refresh" to="." method="_on_refresh_pressed"]

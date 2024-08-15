@@ -2,7 +2,6 @@ extends Control
 
 var lobby_id = 0
 var peer = SteamMultiplayerPeer.new()
-var is_private_lobby = false
 
 @onready var ms = $MultiplayerSpawner
 
@@ -14,15 +13,13 @@ func _ready():
 	$LobbyContainer.hide()
 	$VBoxContainer3/Back.hide()
 	open_lobby_list()
-
+	
 
 func spawn_level(data):
 	var a = (load(data) as PackedScene).instantiate()
 	return a
 	
-
 func _on_public_pressed():
-	is_private_lobby = false  # Mark as public lobby
 	$VBoxContainer/Label2.hide()
 	$VBoxContainer/private.hide()
 	$VBoxContainer/public.hide()
@@ -31,22 +28,12 @@ func _on_public_pressed():
 	$LobbyContainer.show()
 	$VBoxContainer3/Back.show()
 	
-
 func _on_host_pressed():
 	peer.create_lobby(SteamMultiplayerPeer.LOBBY_TYPE_PUBLIC)
 	multiplayer.multiplayer_peer = peer
-	ms.spawn("res://scenes/waiting_room/private_lobby.tscn")
+	ms.spawn("res://scenes/level_04/level_04.tscn")
 	$".".hide()
 	
-
-func _on_private_pressed():
-	is_private_lobby = true  # Mark as private lobby
-	peer.create_lobby(SteamMultiplayerPeer.LOBBY_TYPE_PRIVATE)
-	multiplayer.multiplayer_peer = peer
-	ms.spawn("res://scenes/waiting_room/private_lobby.tscn")
-	$".".hide()
-	
-
 func join_lobby(id):
 	peer.connect_lobby(id)
 	multiplayer.multiplayer_peer = peer
@@ -54,26 +41,18 @@ func join_lobby(id):
 	$".".hide()
 	$LobbyContainer/Lobbies.hide()
 	
-
+	
 func _on_lobby_created(connect, id):
 	if connect:
-		ColdStorage.lobby_id = id
-		Steam.setLobbyData(ColdStorage.lobby_id, "name", str(Steam.getPersonaName() + "'S Lobby"))
-		Steam.setLobbyJoinable(ColdStorage.lobby_id, true)
-		print("Lobby created successfully:", ColdStorage.lobby_id)
-		if is_private_lobby:
-			print("Opening Steam overlay for private lobby invites.")
-			Steam.activateGameOverlayInviteDialog(ColdStorage.lobby_id) 
-	else:
-		print("Failed to create lobby")
-
-
-
+		lobby_id = id
+		Steam.setLobbyData(lobby_id, "name", str(Steam.getPersonaName()+ "'S Lobby"))
+		Steam.setLobbyJoinable(lobby_id, true)
+		print(lobby_id)
+		
 func open_lobby_list():
-	Steam.addRequestLobbyListStringFilter("name", "Rice", Steam.LOBBY_COMPARISON_EQUAL_TO_GREATER_THAN)
+	Steam.addRequestLobbyListStringFilter("name", "weyum", Steam.LOBBY_COMPARISON_EQUAL_TO_GREATER_THAN)
 	Steam.addRequestLobbyListDistanceFilter(Steam.LOBBY_DISTANCE_FILTER_DEFAULT)
 	Steam.requestLobbyList()
-
 
 func _on_lobby_match_list(lobbies):
 	for lobby in lobbies:
@@ -101,7 +80,6 @@ func _on_back_pressed():
 	$VBoxContainer/host.show()
 	$VBoxContainer2/Exit.show()
 	
-
 func _on_refresh_pressed():
 	if $LobbyContainer/Lobbies.get_child_count() > 0:
 		print("refreshable")
@@ -110,3 +88,9 @@ func _on_refresh_pressed():
 			print("refreshed")
 			n.queue_free()
 	open_lobby_list()  # Refresh the lobby list after clearing the old ones
+	
+func _on_lobby_join_requested(lobby_id: int, friend_id: int) -> void:
+	# Get the lobby owner's name
+	var owner_name: String = Steam.getFriendPersonaName(friend_id)
+	print("Joining %s's lobby..." % owner_name)
+	join_lobby(lobby_id)
