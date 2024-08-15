@@ -11,3 +11,4 @@ res://entities/speed_boost/speed_boost.tscn
 res://scenes/select/join lobby.tscn
 res://scenes/waiting_room/private_lobby.tscn
 res://scenes/waiting_room/private_lobby.gd
+res://scenes/select/steam_lobby.gd

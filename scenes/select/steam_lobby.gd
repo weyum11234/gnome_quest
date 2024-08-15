@@ -70,7 +70,7 @@ func _on_lobby_created(connect, id):
 
 
 func open_lobby_list():
-	Steam.addRequestLobbyListStringFilter("name", "weyum", Steam.LOBBY_COMPARISON_EQUAL_TO_GREATER_THAN)
+	Steam.addRequestLobbyListStringFilter("name", "Rice", Steam.LOBBY_COMPARISON_EQUAL_TO_GREATER_THAN)
 	Steam.addRequestLobbyListDistanceFilter(Steam.LOBBY_DISTANCE_FILTER_DEFAULT)
 	Steam.requestLobbyList()
 
