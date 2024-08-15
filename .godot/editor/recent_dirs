@@ -1,3 +1,4 @@
+res://entities
 res://assets/Rocky Roads/FX
 res://assets/level01/caves/industrial.v2
 res://scenes/splash
@@ -10,7 +11,6 @@ res://decorations
 res://scenes/options
 res://assets/Rocky Roads/Enemies
 >>>>>>> 05bfd6eed179eb0ac9883c9730f470c887ba8de6
-res://entities
 res://scenes/level_04
 res://assets/Rocky Roads/Objects
 res://scenes/level_01

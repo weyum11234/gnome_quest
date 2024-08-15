@@ -1,0 +1,214 @@
+[gd_scene load_steps=14 format=3 uid="uid://bbc62ofowg5bj"]
+
+[ext_resource type="Texture2D" uid="uid://bmih7e20oqmcm" path="res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 7/1.png" id="1_2tsxm"]
+[ext_resource type="Script" path="res://scenes/select/steam_lobby.gd" id="1_v8v3r"]
+[ext_resource type="Shader" path="res://scenes/main/scroll_menu.gdshader" id="2_5mvp6"]
+[ext_resource type="Texture2D" uid="uid://coftmjhpdvn8h" path="res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 7/2.png" id="3_q6skp"]
+[ext_resource type="Shader" path="res://scenes/main/scroll_menu2.gdshader" id="4_e0g1x"]
+[ext_resource type="Texture2D" uid="uid://13gldhyufq8h" path="res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 7/3.png" id="5_nigj1"]
+[ext_resource type="Shader" path="res://scenes/main/scroll_menu3.gdshader" id="6_q0vjd"]
+[ext_resource type="Texture2D" uid="uid://b1wa2hp51td42" path="res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 7/4.png" id="7_pmdkv"]
+[ext_resource type="FontFile" uid="uid://cw6hv1tq5uaod" path="res://fonts/ThaleahFat.ttf" id="8_el46c"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0l446"]
+shader = ExtResource("2_5mvp6")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hily5"]
+shader = ExtResource("4_e0g1x")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_c3mna"]
+shader = ExtResource("6_q0vjd")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bm5dc"]
+
+[node name="join_lobby" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_v8v3r")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_2tsxm")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_0l446")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_q6skp")
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_hily5")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_nigj1")
+
+[node name="TextureRect4" type="TextureRect" parent="."]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_c3mna")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_pmdkv")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+offset_left = 160.0
+offset_top = 40.0
+offset_right = 480.0
+offset_bottom = 344.0
+theme_override_constants/separation = 23
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("8_el46c")
+theme_override_font_sizes/font_size = 30
+text = "JoIN LOBBY
+"
+horizontal_alignment = 1
+
+[node name="Control" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="private" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("8_el46c")
+theme_override_font_sizes/font_size = 25
+text = "PRIVATE
+"
+
+[node name="public" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("8_el46c")
+theme_override_font_sizes/font_size = 25
+text = "PUBLIC 
+"
+
+[node name="host" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("8_el46c")
+theme_override_font_sizes/font_size = 25
+text = "HOST
+"
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
+spawn_path = NodePath("..")
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="."]
+layout_mode = 2
+offset_left = 32.0
+offset_top = 296.0
+offset_right = 152.0
+offset_bottom = 328.0
+
+[node name="Refresh" type="Button" parent="VBoxContainer4"]
+custom_minimum_size = Vector2(120, 32)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.870588, 0.870588, 0.870588, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_el46c")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bm5dc")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_bm5dc")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_bm5dc")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_bm5dc")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bm5dc")
+text = "Refresh
+"
+alignment = 0
+
+[node name="LobbyContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.25
+anchor_top = 0.267
+anchor_right = 0.75
+anchor_bottom = 1.0
+offset_left = -32.0
+offset_top = -0.12001
+offset_right = 32.0
+
+[node name="Lobbies" type="VBoxContainer" parent="LobbyContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 328.0
+offset_right = 160.0
+offset_bottom = 360.0
+
+[node name="Back" type="Button" parent="VBoxContainer3"]
+custom_minimum_size = Vector2(120, 32)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.870588, 0.870588, 0.870588, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_el46c")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bm5dc")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_bm5dc")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_bm5dc")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_bm5dc")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bm5dc")
+text = "BACK"
+alignment = 0
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 328.0
+offset_right = 160.0
+offset_bottom = 360.0
+
+[node name="Exit" type="Button" parent="VBoxContainer2"]
+custom_minimum_size = Vector2(120, 32)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.870588, 0.870588, 0.870588, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_el46c")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bm5dc")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_bm5dc")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_bm5dc")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_bm5dc")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bm5dc")
+text = "Exit"
+alignment = 0
+
+[connection signal="pressed" from="VBoxContainer/public" to="." method="_on_public_pressed"]
+[connection signal="pressed" from="VBoxContainer/host" to="." method="_on_host_pressed"]
+[connection signal="pressed" from="VBoxContainer4/Refresh" to="." method="_on_refresh_pressed"]
+[connection signal="pressed" from="VBoxContainer3/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="VBoxContainer2/Exit" to="." method="_on_button_pressed"]
