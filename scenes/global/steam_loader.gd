@@ -16,7 +16,7 @@ func _ready():
 	
 	var id = Steam.getSteamID()
 	var name = Steam.getFriendPersonaName(id)
-	print("Username: ", str(name))
+	
 	
 func _process(delta):
 	Steam.run_callbacks()

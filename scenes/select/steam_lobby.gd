@@ -57,15 +57,16 @@ func join_lobby(id):
 
 func _on_lobby_created(connect, id):
 	if connect:
-		lobby_id = id
-		Steam.setLobbyData(lobby_id, "name", str(Steam.getPersonaName() + "'S Lobby"))
-		Steam.setLobbyJoinable(lobby_id, true)
-		print("Lobby created successfully:", lobby_id)
+		ColdStorage.lobby_id = id
+		Steam.setLobbyData(ColdStorage.lobby_id, "name", str(Steam.getPersonaName() + "'S Lobby"))
+		Steam.setLobbyJoinable(ColdStorage.lobby_id, true)
+		print("Lobby created successfully:", ColdStorage.lobby_id)
 		if is_private_lobby:
 			print("Opening Steam overlay for private lobby invites.")
-			Steam.activateGameOverlayInviteDialog(lobby_id)  # Invite players to the private lobby
+			Steam.activateGameOverlayInviteDialog(ColdStorage.lobby_id) 
 	else:
 		print("Failed to create lobby")
+
 
 
 func open_lobby_list():
