@@ -35,7 +35,7 @@ func _on_public_pressed():
 func _on_host_pressed():
 	peer.create_lobby(SteamMultiplayerPeer.LOBBY_TYPE_PUBLIC)
 	multiplayer.multiplayer_peer = peer
-	ms.spawn("res://scenes/level_04/level_04.tscn")
+	ms.spawn("res://scenes/waiting_room/private_lobby.tscn")
 	$".".hide()
 	
 
