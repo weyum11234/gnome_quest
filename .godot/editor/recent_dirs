@@ -1,8 +1,15 @@
+<<<<<<< HEAD
 res://assets/Rocky Roads/FX
 res://assets/level01/caves/industrial.v2
 res://scenes/splash
 res://entities/players
 res://scenes/global
+=======
+res://scenes/global
+res://scenes/waiting_room
+res://entities/players
+res://assets/level01/caves/industrial.v2
+>>>>>>> manas-multiplayer
 res://obstacles
 <<<<<<< HEAD
 res://decorations
