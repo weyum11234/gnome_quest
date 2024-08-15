@@ -1,14 +1,22 @@
 extends Node
 
-@onready var ms = $MultiplayerSpawner
+@onready var ms = $MultiplayerSpawner2
 
 var min_players = 2
 var lobby_members = []
 var players_fully_loaded = {}
+var checking_interval = 1.0  # Interval in seconds for checking player count
+var time_since_last_check = 0.0
 
 func _ready():
 	print("Ready function called.")
 	_check_player_count()
+
+func _process(delta):
+	time_since_last_check += delta
+	if time_since_last_check >= checking_interval:
+		time_since_last_check = 0.0
+		_check_player_count()
 
 func _check_player_count():
 	print("Checking player count.")

@@ -500,6 +500,9 @@ size = Vector2(125, 141)
 [node name="private_lobby" type="Node"]
 script = ExtResource("1_23mr7")
 
+[node name="MultiplayerSpawner2" type="MultiplayerSpawner" parent="."]
+spawn_path = NodePath("..")
+
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
