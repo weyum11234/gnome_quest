@@ -1,3 +1,4 @@
+#manas
 extends Node
 
 @onready var ms = $MultiplayerSpawner2
