@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @onready var flight_timer = $FlightTimer
+@onready var grace_timer = $GraceTimer
 @onready var hit_box = $HitBox
 @export var speed = 400.0
 
