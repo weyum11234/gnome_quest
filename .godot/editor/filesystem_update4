@@ -14,4 +14,9 @@ res://entities/speed_boost/speed_boost.tscn
 res://entities/jump_boost/jump_boost.tscn
 res://obstacles/cannon.tscn
 res://scenes/select/join lobby.tscn
+<<<<<<< HEAD
 res://entities/knife/knife.tscn
+=======
+res://scenes/waiting_room/private_lobby.tscn
+res://scenes/waiting_room/private_lobby.gd
+>>>>>>> 8cd9876d6683135ae5c237e1c3ea9211a31770b3
