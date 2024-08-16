@@ -27,7 +27,7 @@ var spawn_position : Vector2
 @export var player_id = 1:
 	set(id):
 		player_id = id
-		$PlayerInput.set_multiplayer_authority(id)
+		set_multiplayer_authority(id)
 
 func _ready():
 	cam.enabled = is_multiplayer_authority()
