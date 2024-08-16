@@ -24,19 +24,18 @@ var coyote_timer = 0.0
 var facing = 1
 var spawn_position : Vector2
 
+@export var player_id = 1:
+	set(id):
+		player_id = id
+		$PlayerInput.set_multiplayer_authority(id)
+
 func _ready():
 	cam.enabled = is_multiplayer_authority()
 	
-func _process(delta):
-	pass
 
 func _physics_process(delta):
 	# Set default animation every delta
 	animation = "idle"
-	
-	if !is_multiplayer_authority():
-		return
-	
 	
 	# Add the gravity.
 	if not is_on_floor() and not is_jumping:

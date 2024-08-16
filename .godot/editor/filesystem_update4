@@ -1,5 +1,21 @@
-res://scenes/waiting_room/private_lobby.tscn
+res://scenes/startup/startup.tscn
 res://entities/players/player.gd
 res://scenes/main/scroll_menu.gdshader
 res://scenes/main/scroll_menu2.gdshader
 res://scenes/main/scroll_menu3.gdshader
+res://entities/players/player.tscn
+res://entities/bullet/bullet.tscn
+res://entities/gold_knife/gold_knife.tscn
+res://entities/gravity_controller/gravity_controller.tscn
+res://entities/item_box/item_box.tscn
+res://scenes/select/steam_lobby.tscn
+res://scenes/select/join lobby.tscn
+res://scenes/options/what.gd
+res://scenes/options/what.tscn
+res://scenes/startup/startup.gd
+res://scenes/select/steam_lobby.gd
+res://scenes/main/main.tscn
+res://scenes/main/main.gd
+res://entities/players/player_input.gd
+res://scenes/level_04/level_04.tscn
+res://scenes/level_04/level_04.gd
