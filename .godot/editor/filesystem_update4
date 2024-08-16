@@ -10,3 +10,4 @@ res://entities/item_box/item_box.tscn
 res://scenes/level_04/level_04.tscn
 res://scenes/startup/startup.tscn
 res://scenes/startup/startup.gd
+res://scenes/level_04/level_04.gd
