@@ -31,6 +31,7 @@ var spawn_position : Vector2
 
 func _ready():
 	cam.enabled = is_multiplayer_authority()
+	set_process(is_multiplayer_authority())
 	
 
 func _physics_process(delta):
