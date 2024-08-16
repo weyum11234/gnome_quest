@@ -3,7 +3,7 @@ extends Node2D
 @onready var player_scene = preload("res://entities/players/player.tscn")
 
 func _ready():
-	if not multiplayer.is_server():
+	if not is_multiplayer_authority():
 		return
 	
 	multiplayer.peer_connected.connect(add_player)
