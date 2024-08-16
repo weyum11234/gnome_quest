@@ -49,6 +49,7 @@ theme_override_fonts/font = ExtResource("1_rehug")
 text = "Host"
 
 [node name="Refresh" type="Button" parent="UI"]
+layout_mode = 0
 offset_left = 32.0
 offset_top = 288.0
 offset_right = 96.0
@@ -57,6 +58,7 @@ theme_override_fonts/font = ExtResource("1_rehug")
 text = "Refresh"
 
 [node name="Back" type="Button" parent="UI"]
+layout_mode = 0
 offset_left = 32.0
 offset_top = 320.0
 offset_right = 96.0
