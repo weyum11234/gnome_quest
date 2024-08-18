@@ -20,8 +20,7 @@ func _on_public_pressed():
 	$UI/LobbiesList.show()
 
 func _on_host_pressed():
-	print("yeah babt")
-	peer.create_lobby(SteamMultiplayerPeer.LOBBY_TYPE_PUBLIC)
+	print(peer.create_lobby(SteamMultiplayerPeer.LOBBY_TYPE_PUBLIC))
 	multiplayer.multiplayer_peer = peer
 	start_game()
 
