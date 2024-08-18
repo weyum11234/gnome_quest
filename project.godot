@@ -22,12 +22,11 @@ boot_splash/minimum_display_time=2000
 
 [autoload]
 
-SteamLoader="*res://scenes/global/steam_loader.gd"
 ConfigFileHandler="*res://scenes/global/ConfigFileHandler.gd"
 SettingsLoad="*res://scenes/global/settings_load.gd"
 TransitionScreen="*res://scenes/global/transition_screen.tscn"
 AudioController="*res://scenes/global/audio_controller.tscn"
-ColdStorage="*res://scenes/global/cold_storage.gd"
+SteamLoad="*res://scenes/global/steam_load.gd"
 
 [display]
 

@@ -69,6 +69,8 @@ text = "Back"
 [node name="Level" type="Node" parent="."]
 
 [node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
+_spawnable_scenes = PackedStringArray("res://scenes/test_stage/test_stage.tscn")
+spawn_path = NodePath("../Level")
 
 [connection signal="pressed" from="UI/VBoxContainer/Private" to="." method="_on_private_pressed"]
 [connection signal="pressed" from="UI/VBoxContainer/Public" to="." method="_on_public_pressed"]

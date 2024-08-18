@@ -2348,6 +2348,7 @@ bullet_time = 1.7
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 
 [node name="PlayerSpawner" type="MultiplayerSpawner" parent="."]
+_spawnable_scenes = PackedStringArray("res://entities/players/player.tscn")
 spawn_path = NodePath("../Players")
 
 [editable path="Mobs/Bear"]

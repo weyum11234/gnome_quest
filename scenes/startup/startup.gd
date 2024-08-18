@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var first_scene = preload("res://scenes/level_04/level_04.tscn")
+@onready var first_scene = preload("res://scenes/test_stage/test_stage.tscn")
 @onready var peer = SteamMultiplayerPeer.new()
 var lobby_id : int
 
@@ -20,6 +20,7 @@ func _on_public_pressed():
 	$UI/LobbiesList.show()
 
 func _on_host_pressed():
+	print("yeah babt")
 	peer.create_lobby(SteamMultiplayerPeer.LOBBY_TYPE_PUBLIC)
 	multiplayer.multiplayer_peer = peer
 	start_game()
@@ -45,7 +46,7 @@ func _on_lobby_match_list(lobbies : Array):
 		lobby_button.set_text(str(lobby_name, " | Player Count: ", memb_count))
 		lobby_button.set_size(Vector2(100, 5))
 		lobby_button.connect("pressed", Callable(self, "join_lobby").bind(lobby))
-		$UI/LobbiesList/Lobbies.add_child(lobby_button)
+		$UI/LobbiesList/Lobbies.add_child(lobby_button, true)
 
 func _on_lobby_created(connect : int, l_id : int):
 	if connect:
@@ -70,8 +71,8 @@ func join_lobby(l_id : int):
 
 func start_game():
 	$UI.hide()
-	#if is_multiplayer_authority():
-	change_level.call_deferred(first_scene)
+	if is_multiplayer_authority():
+		change_level.call_deferred(first_scene)
 		
 func change_level(scene : PackedScene):
 	var level = $Level
