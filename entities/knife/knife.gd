@@ -34,6 +34,7 @@ func use(player : Object):
 	look_at(mouse_position)
 	flight_timer.start()
 	# Move scene from Player to Level scenes.
+	print(state_scene)
 	player.get_node("Hand").remove_child(self)
 	state_scene.get_node("Items").add_child(self)
 	state_scene.get_node("Items").get_node(str(id)).global_position = player.get_node("Hand").global_position

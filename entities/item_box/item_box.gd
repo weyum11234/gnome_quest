@@ -23,22 +23,22 @@ func give_item(body):
 					body.get_node("Hand").add_child(load("res://entities/jetpack/jetpack.tscn").instantiate())
 				5:
 					var bullet = load("res://entities/bullet/bullet.tscn").instantiate()
-					bullet.state_scene = get_parent()
+					bullet.state_scene = get_parent().get_parent()
 					body.get_node("Hand").add_child(bullet)
 				6:
 					var homing_bullet = load("res://entities/homing_bullet/homing_bullet.tscn").instantiate()
-					homing_bullet.state_scene = get_parent()
+					homing_bullet.state_scene = get_parent().get_parent()
 					body.get_node("Hand").add_child(homing_bullet)
 				7:
 					var knife = load("res://entities/knife/knife.tscn").instantiate()
-					knife.state_scene = get_parent()
+					knife.state_scene = get_parent().get_parent()
 					print(knife.state_scene)
 					body.get_node("Hand").add_child(knife)
 					$AudioStreamPlayer2D.stream = load("res://assets/sounds/knife-reverb-fx.wav")
 					$AudioStreamPlayer2D.play(0.5)
 				8:
 					var gold_knife = load("res://entities/gold_knife/gold_knife.tscn").instantiate()
-					gold_knife.state_scene = get_parent()
+					gold_knife.state_scene = get_parent().get_parent()
 					body.get_node("Hand").add_child(gold_knife)
 					$AudioStreamPlayer2D.stream = load("res://assets/sounds/71011-Sound_design_shimmer_accent_swell_airy_reverb_harmony-BLASTWAVEFX-07832.wav")
 					$AudioStreamPlayer2D.play()
