@@ -9,3 +9,4 @@ res://entities/players/player_input.gd
 res://entities/item_box/item_box.tscn
 res://entities/knife/knife.gd
 res://entities/item_box/item_box.gd
+res://entities/knife/knife.tscn

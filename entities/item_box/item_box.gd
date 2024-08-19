@@ -32,6 +32,7 @@ func give_item(body):
 				7:
 					var knife = load("res://entities/knife/knife.tscn").instantiate()
 					knife.state_scene = get_parent()
+					print(knife.state_scene)
 					body.get_node("Hand").add_child(knife)
 					$AudioStreamPlayer2D.stream = load("res://assets/sounds/knife-reverb-fx.wav")
 					$AudioStreamPlayer2D.play(0.5)

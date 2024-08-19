@@ -4,16 +4,21 @@ extends CharacterBody2D
 @onready var hit_box = $HitBox
 @export var speed = 400.0
 
+var id : int
 var direction = Vector2.ZERO
 var has_exit = false
-static var id = 0
 var state_scene : Object
 var thrower : Object
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	id += 1
-	name = "Knife" + str(id)
+	if not is_multiplayer_authority():
+		set_process(false)
+		set_physics_process(false)
+		
+	var rng = RandomNumberGenerator.new()
+	id = rng.randi()
+	name = str(id)
 
 func _physics_process(delta):
 	if direction:
@@ -30,8 +35,8 @@ func use(player : Object):
 	flight_timer.start()
 	# Move scene from Player to Level scenes.
 	player.get_node("Hand").remove_child(self)
-	state_scene.add_child(self)
-	state_scene.get_node("Knife" + str(id)).global_position = player.get_node("Hand").globdal_position
+	state_scene.get_node("Items").add_child(self)
+	state_scene.get_node("Items").get_node(str(id)).global_position = player.get_node("Hand").global_position
 	hit_box.set_deferred("monitoring", true)
 	hit_box.set_deferred("monitorable", true)
 
