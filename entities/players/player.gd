@@ -26,16 +26,12 @@ var long_jump_timer = 0.0
 var spawn_position : Vector2
 
 func _ready():
-	if not multiplayer.is_server():
+	if not is_multiplayer_authority():
 		set_process(false)
 
 func _physics_process(delta):
-	if multiplayer.is_server():
-		apply_input(delta)
-	else:
-		animate(current_animation, delta)
-
-func apply_input(delta : float):
+	current_animation = "idle"
+	
 	# Gravity.
 	if not is_on_floor() and not player_input.jumping:
 		velocity.y += gravity * gravity_multiplier * delta
@@ -49,6 +45,7 @@ func apply_input(delta : float):
 	
 	if player_input.jumping and player_input.do_long_jump and long_jump_timer < long_jump_time:
 		long_jump_timer += delta
+		current_animation = "jump"
 	else:
 		player_input.jumping = false
 		long_jump_timer = 0.0
@@ -57,10 +54,15 @@ func apply_input(delta : float):
 	var direction = player_input.direction
 	if direction:
 		velocity.x = speed * direction
+		if velocity.x < 0:
+			sprite.flip_h = true
+		else:
+			sprite.flip_h = false
+		current_animation = "walk"
 	else:
 		velocity.x = move_toward(velocity.x, 0, speed)
-		
+	
 	move_and_slide()
+	sprite.play(current_animation)
 
-func animate(anim : String, delta : float):
-	pass
+	
