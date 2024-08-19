@@ -13,8 +13,8 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 @onready var input = $PlayerInput
 
 func _ready():
-	if not is_multiplayer_authority():
-		$Camera2D.make_current()
+	if not multiplayer.is_server():
+		set_process(false)
 	
 func _physics_process(delta):
 	# Add the gravity.

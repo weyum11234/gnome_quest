@@ -2,7 +2,7 @@ extends Node2D
 
 const MOB_SPAWN_COUNT = 1
 
-@onready var player_scene = preload("res://entities/players/test_player.tscn")
+@onready var player_scene = preload("res://entities/players/player.tscn")
 
 func add_player(id : int):
 	var player = player_scene.instantiate()
