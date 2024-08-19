@@ -36,9 +36,11 @@ func _physics_process(delta):
 		animate(current_animation, delta)
 
 func apply_input(delta : float):
+	# Gravity.
 	if not is_on_floor() and not player_input.jumping:
 		velocity.y += gravity * gravity_multiplier * delta
 
+	# Jump.
 	if player_input.do_jump and is_on_floor():
 		velocity.y = jump_velocity
 		player_input.jumping = true
@@ -51,6 +53,13 @@ func apply_input(delta : float):
 		player_input.jumping = false
 		long_jump_timer = 0.0
 
+	# Walk.
+	var direction = player_input.direction
+	if direction:
+		velocity.x = speed * direction
+	else:
+		velocity.x = move_toward(velocity.x, 0, speed)
+		
 	move_and_slide()
 
 func animate(anim : String, delta : float):
