@@ -1,6 +1,7 @@
 extends MultiplayerSynchronizer
 
 @onready var camera = $"../Camera2D"
+@onready var hand = $"../Hand"
 
 @export var do_jump = false
 @export var do_long_jump = false
@@ -37,7 +38,8 @@ func _process(delta):
 
 func _input(event):
 	if event is InputEventMouseButton:
-		print("mouse clicked")
+		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed and hand.get_children():
+			hand.get_child(0).use(get_parent())
 
 @rpc("call_local")
 func jump():

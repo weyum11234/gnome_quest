@@ -4,6 +4,7 @@ extends Node2D
 @onready var animation = $AnimationPlayer
 @onready var respawn_timer = $RespawnTimer
 @onready var rng = RandomNumberGenerator.new()
+var signals_enabled = true
 
 func give_item(body):
 	if body.is_in_group("player"):

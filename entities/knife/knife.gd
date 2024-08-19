@@ -1,7 +1,6 @@
 extends CharacterBody2D
 
 @onready var flight_timer = $FlightTimer
-@onready var grace_timer = $GraceTimer
 @onready var hit_box = $HitBox
 @export var speed = 400.0
 
@@ -32,7 +31,7 @@ func use(player : Object):
 	# Move scene from Player to Level scenes.
 	player.get_node("Hand").remove_child(self)
 	state_scene.add_child(self)
-	state_scene.get_node("Knife" + str(id)).global_position = player.get_node("Hand").global_position
+	state_scene.get_node("Knife" + str(id)).global_position = player.get_node("Hand").globdal_position
 	hit_box.set_deferred("monitoring", true)
 	hit_box.set_deferred("monitorable", true)
 

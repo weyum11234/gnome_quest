@@ -1,12 +1,12 @@
-Sprite2D
+MultiplayerSpawner
 MultiplayerSynchronizer
+Node
+Node2D
+Sprite2D
 CollisionShape2D
 Camera2D
 CharacterBody2D
-MultiplayerSpawner
-Node
 TileMap
-Node2D
 Button
 VBoxContainer
 HBoxContainer

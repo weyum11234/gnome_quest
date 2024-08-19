@@ -5,3 +5,7 @@ res://scenes/main/scroll_menu3.gdshader
 res://scenes/main/scroll_menu.gdshader
 res://scenes/test_stage/test_stage.tscn
 res://scenes/startup/startup.tscn
+res://entities/players/player_input.gd
+res://entities/item_box/item_box.tscn
+res://entities/knife/knife.gd
+res://entities/item_box/item_box.gd
