@@ -41,7 +41,7 @@ func _process(delta):
 
 func _input(event):
 	if event is InputEventMouseButton:
-		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed and hand.get_children():
+		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed and hand.get_child_count() > 0:
 			do_use = true
 
 @rpc("call_local")
