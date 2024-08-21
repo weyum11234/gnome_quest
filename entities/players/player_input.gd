@@ -8,6 +8,8 @@ extends MultiplayerSynchronizer
 @export var jumping = false
 @export var direction = 0
 
+@export var do_use = false
+
 # Timers.
 @export var long_jump_time = 0.25
 var long_jump_timer = 0.0
@@ -25,6 +27,7 @@ func _process(delta):
 	# Resetting default values.
 	do_jump = false
 	do_long_jump = false
+	do_use = false
 	
 	# Handle walking.
 	direction = Input.get_axis("left", "right")
@@ -39,7 +42,7 @@ func _process(delta):
 func _input(event):
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed and hand.get_children():
-			hand.get_child(0).use(get_parent())
+			do_use = true
 
 @rpc("call_local")
 func jump():

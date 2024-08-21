@@ -62,6 +62,10 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, speed)
 	
+	# Item.
+	if player_input.do_use:
+		hand.get_child(0).use(self)
+	
 	move_and_slide()
 	sprite.play(current_animation)
 

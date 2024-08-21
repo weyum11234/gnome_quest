@@ -222,6 +222,9 @@ properties/2/replication_mode = 1
 properties/3/path = NodePath(".:jumping")
 properties/3/spawn = true
 properties/3/replication_mode = 1
+properties/4/path = NodePath(".:do_use")
+properties/4/spawn = true
+properties/4/replication_mode = 1
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 collision_layer = 2
@@ -265,8 +268,12 @@ root_path = NodePath(".")
 replication_config = SubResource("SceneReplicationConfig_ugwgr")
 script = ExtResource("5_y28g8")
 
+[node name="HandSpawner" type="MultiplayerSpawner" parent="."]
+_spawnable_scenes = PackedStringArray("res://entities/speed_boost/speed_boost.tscn", "res://entities/jump_boost/jump_boost.tscn", "res://entities/gravity_controller/gravity_controller.tscn", "res://entities/teleporter/teleporter.tscn", "res://entities/jetpack/jetpack.tscn")
+spawn_path = NodePath("../Hand")
+
 [connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]
 [connection signal="area_entered" from="HurtBox" to="." method="_on_hazard_detector_area_entered"]
-[connection signal="body_entered" from="HurtBox" to="." method="_on_hurt_box_body_entered"]
 [connection signal="body_entered" from="HurtBox" to="." method="_on_hazard_detector_body_entered"]
+[connection signal="body_entered" from="HurtBox" to="." method="_on_hurt_box_body_entered"]
 [connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]

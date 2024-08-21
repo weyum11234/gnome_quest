@@ -392,5 +392,7 @@ spawn_path = NodePath("../Players")
 position = Vector2(128, 32)
 
 [node name="ItemSpawner" type="MultiplayerSpawner" parent="."]
-_spawnable_scenes = PackedStringArray("res://entities/item_box/item_box.tscn", "res://entities/knife/knife.tscn")
+_spawnable_scenes = PackedStringArray("res://entities/item_box/item_box.tscn")
 spawn_path = NodePath("../Items")
+
+[connection signal="spawned" from="ItemSpawner" to="." method="_on_item_spawner_spawned"]
