@@ -19,10 +19,10 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if flight_timer > flight_time or (player and player.animation == "respawn"):
+	if flight_timer > flight_time or (player and player.current_animation == "respawn"):
 		queue_free()
 		
-	if player and Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
+	if player and player.player_input.do_long_use:
 		emitter1.emitting = true
 		emitter2.emitting = true
 		player.velocity.y = 0

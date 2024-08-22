@@ -9,7 +9,7 @@ var signals_enabled = true
 func give_item(body):
 	if body.is_in_group("player"):
 		if not body.get_node("Hand").get_child_count():
-			var i = rng.randi_range(2, 3)
+			var i = rng.randi_range(3, 3)
 			match i:
 				0:
 					print(0)
@@ -20,8 +20,6 @@ func give_item(body):
 				2:
 					body.get_node("Hand").add_child(load("res://entities/gravity_controller/gravity_controller.tscn").instantiate())
 				3:
-					body.get_node("Hand").add_child(load("res://entities/teleporter/teleporter.tscn").instantiate())
-				4:
 					body.get_node("Hand").add_child(load("res://entities/jetpack/jetpack.tscn").instantiate())
 		animation.play("item_box_explode")
 

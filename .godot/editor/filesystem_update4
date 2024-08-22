@@ -12,3 +12,6 @@ res://entities/teleporter/teleporter.tscn
 res://entities/teleporter/teleporter.gd
 res://entities/gravity_controller/gravity_controller.gd
 res://entities/item_box/item_box.gd
+res://entities/jetpack/jetpack.tscn
+res://entities/jetpack/jetpack.gd
+res://entities/players/player_input.gd

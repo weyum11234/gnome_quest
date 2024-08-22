@@ -9,6 +9,7 @@ extends MultiplayerSynchronizer
 @export var direction = 0
 
 @export var do_use = false
+@export var do_long_use = false
 
 # Timers.
 @export var long_jump_time = 0.25
@@ -20,7 +21,6 @@ func _ready():
 		camera.make_current()
 	else:
 		set_process(false)
-		set_process_input(false)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -28,22 +28,23 @@ func _process(delta):
 	do_jump = false
 	do_long_jump = false
 	do_use = false
+	do_long_use = false
 	
 	# Handle walking.
 	direction = Input.get_axis("left", "right")
 	
-	# Handle jumping
+	# Handle jumping.
 	if Input.is_action_just_pressed("jump"):
 		jump.rpc()
 	if Input.is_action_pressed("jump"):
 		long_jump.rpc()
+	
+	# Handle item.
+	if Input.is_action_just_pressed("use"):
+		use.rpc()
+	if Input.is_action_pressed("use"):
+		long_use.rpc()
 		
-
-func _input(event):
-	if event is InputEventMouseButton:
-		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed and hand.get_child_count() > 0:
-			use.rpc()
-
 @rpc("call_local")
 func jump():
 	do_jump = true
@@ -54,5 +55,9 @@ func long_jump():
 
 @rpc("call_local")
 func use():
-	print(multiplayer.get_unique_id())
 	do_use = true
+
+@rpc("call_local")
+func long_use():
+	print("hello")
+	do_long_use = true

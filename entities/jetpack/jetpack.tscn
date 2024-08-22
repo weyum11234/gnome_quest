@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://udduialf4de8"]
+[gd_scene load_steps=7 format=3 uid="uid://udduialf4de8"]
 
 [ext_resource type="Script" path="res://entities/jetpack/jetpack.gd" id="1_yucb2"]
 [ext_resource type="Texture2D" uid="uid://dvhdeasw7mfo3" path="res://assets/item_sprites/jetpack.png" id="2_lcper"]
@@ -11,6 +11,20 @@ bg_color = Color(0, 1, 0, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3ggau"]
 bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_2df4h"]
+properties/0/path = NodePath("ProgressBar:value")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+properties/1/path = NodePath("CPUParticles2D:emitting")
+properties/1/spawn = true
+properties/1/replication_mode = 1
+properties/2/path = NodePath("CPUParticles2D2:emitting")
+properties/2/spawn = true
+properties/2/replication_mode = 1
+properties/3/path = NodePath("Sprite2D:frame")
+properties/3/spawn = true
+properties/3/replication_mode = 1
 
 [node name="Jetpack" type="Node2D"]
 script = ExtResource("1_yucb2")
@@ -57,3 +71,6 @@ max_value = 5.0
 step = 0.001
 fill_mode = 2
 show_percentage = false
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_2df4h")
