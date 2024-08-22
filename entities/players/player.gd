@@ -63,7 +63,7 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, speed)
 	
 	# Item.
-	if player_input.do_use and hand.get_child_count() > 0:
+	if player_input.do_use and hand.get_child_count() > 0 and is_multiplayer_authority():
 		print("multiplayer ", multiplayer.get_unique_id(), " is using item ", hand.get_child(0))
 		hand.get_child(0).use(self)
 		#something is wrong with item box/hand spawning.

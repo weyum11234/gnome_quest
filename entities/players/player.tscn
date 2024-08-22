@@ -273,8 +273,8 @@ _spawnable_scenes = PackedStringArray("res://entities/speed_boost/speed_boost.ts
 spawn_path = NodePath("../Hand")
 spawn_limit = 1
 
-[connection signal="area_entered" from="HurtBox" to="." method="_on_hazard_detector_area_entered"]
 [connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]
+[connection signal="area_entered" from="HurtBox" to="." method="_on_hazard_detector_area_entered"]
 [connection signal="body_entered" from="HurtBox" to="." method="_on_hazard_detector_body_entered"]
 [connection signal="body_entered" from="HurtBox" to="." method="_on_hurt_box_body_entered"]
 [connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]
