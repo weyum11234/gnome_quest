@@ -9,7 +9,7 @@ var signals_enabled = true
 func give_item(body):
 	if body.is_in_group("player"):
 		if not body.get_node("Hand").get_child_count():
-			var i = rng.randi_range(0, 1)
+			var i = rng.randi_range(2, 3)
 			match i:
 				0:
 					print(0)

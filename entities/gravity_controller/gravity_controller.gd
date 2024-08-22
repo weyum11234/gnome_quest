@@ -15,8 +15,7 @@ func _process(delta):
 		player.gravity_multiplier = new_grav
 		boost_timer += delta
 	elif player:
-		player.gravity_multiplier = 1.0
-		queue_free()
+		reset()
 
 func use(player : Object):
 	if boost_timer == 0:

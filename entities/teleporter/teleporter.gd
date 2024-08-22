@@ -8,7 +8,7 @@ func _process(delta):
 	if player:
 		if not ray.is_colliding():
 			player.global_position = get_global_mouse_position()
-			queue_free()
+			reset()
 
 func use(player : Object):
 	self.player = player
