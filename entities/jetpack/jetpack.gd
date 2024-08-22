@@ -12,6 +12,10 @@ var flight_timer = 0.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	if not is_multiplayer_authority():
+		set_process(false)
+		return
+		
 	emitter1.emitting = false
 	emitter2.emitting = false
 	$ProgressBar.max_value = flight_time
