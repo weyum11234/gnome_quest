@@ -1,10 +1,10 @@
 [gd_scene load_steps=3 format=3 uid="uid://e5kn4hj8jfnv"]
 
-[ext_resource type="Script" path="res://scenes/startup/startup.gd" id="1_n7nb5"]
+[ext_resource type="Script" path="res://scenes/startup/local_startup.gd" id="1_8drwg"]
 [ext_resource type="FontFile" uid="uid://cw6hv1tq5uaod" path="res://fonts/ThaleahFat.ttf" id="1_rehug"]
 
 [node name="Startup" type="Node2D"]
-script = ExtResource("1_n7nb5")
+script = ExtResource("1_8drwg")
 
 [node name="UI" type="Control" parent="."]
 layout_mode = 3

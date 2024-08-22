@@ -42,7 +42,7 @@ func _process(delta):
 func _input(event):
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed and hand.get_child_count() > 0:
-			do_use = true
+			use.rpc()
 
 @rpc("call_local")
 func jump():
@@ -51,3 +51,8 @@ func jump():
 @rpc("call_local")
 func long_jump():
 	do_long_jump = true
+
+@rpc("call_local")
+func use():
+	print(multiplayer.get_unique_id())
+	do_use = true
