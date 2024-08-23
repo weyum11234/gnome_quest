@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://bhdah5x7s24id"]
+[gd_scene load_steps=7 format=3 uid="uid://bhdah5x7s24id"]
 
 [ext_resource type="Script" path="res://scenes/test_stage/test_stage.gd" id="1_rpdqf"]
 [ext_resource type="Texture2D" uid="uid://cw57a7c5h3v6n" path="res://assets/level01/caves/adve/tiles.png" id="1_shmg6"]
@@ -372,6 +372,9 @@ texture = ExtResource("1_shmg6")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_407q0")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d8r0n"]
+size = Vector2(1120, 20)
+
 [node name="TestStage" type="Node2D"]
 script = ExtResource("1_rpdqf")
 
@@ -394,5 +397,13 @@ position = Vector2(128, 32)
 [node name="ItemSpawner" type="MultiplayerSpawner" parent="."]
 _spawnable_scenes = PackedStringArray("res://entities/item_box/item_box.tscn")
 spawn_path = NodePath("../Items")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 112)
+shape = SubResource("RectangleShape2D_d8r0n")
 
 [connection signal="spawned" from="ItemSpawner" to="." method="_on_item_spawner_spawned"]

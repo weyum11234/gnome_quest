@@ -1,9 +1,10 @@
+Area2D
+CollisionShape2D
 MultiplayerSynchronizer
 MultiplayerSpawner
 Node
 Node2D
 Sprite2D
-CollisionShape2D
 Camera2D
 CharacterBody2D
 TileMap

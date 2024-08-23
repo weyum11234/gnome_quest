@@ -70,4 +70,38 @@ func _physics_process(delta):
 	move_and_slide()
 	sprite.play(current_animation)
 
+
+func _on_hurt_box_area_entered(area):
+	death()
+
+func _on_hurt_box_body_entered(body):
+	death()
+
+func death():
+	if not is_multiplayer_authority():
+		return
+		
+	set_process(false)
+	set_physics_process(false)
 	
+	if hand.get_child_count() > 0:
+		for item in hand.get_children():
+			item.reset()
+	
+	current_animation = "death"
+	sprite.play(current_animation)
+	audio.play()
+
+
+func _on_animated_sprite_2d_animation_finished():
+	if not is_multiplayer_authority():
+		return
+		
+	match current_animation:
+		"death":
+			global_position = spawn_position
+			current_animation = "respawn"
+			sprite.play(current_animation)
+		"respawn":
+			set_process(true)
+			set_physics_process(true)
