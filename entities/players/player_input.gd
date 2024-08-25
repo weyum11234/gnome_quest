@@ -12,6 +12,7 @@ var facing : int
 
 @export var do_use = false
 @export var do_long_use = false
+var mouse_pos : Vector2
 
 # Timers.
 @export var long_jump_time = 0.25
@@ -46,7 +47,6 @@ func _process(delta):
 	# Handle item.
 	if Input.is_action_just_pressed("use"):
 		use.rpc()
-		print(get_parent().get_global_mouse_position())
 	if Input.is_action_pressed("use"):
 		long_use.rpc()
 		
@@ -61,6 +61,7 @@ func long_jump():
 @rpc("call_local")
 func use():
 	do_use = true
+	mouse_pos = get_parent().get_global_mouse_position()
 
 @rpc("call_local")
 func long_use():
