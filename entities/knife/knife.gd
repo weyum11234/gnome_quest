@@ -19,15 +19,16 @@ func _physics_process(delta):
 		move_and_slide()
 
 func set_values(id : int, player : Object):
-	self.id = id
-	self.player = player
-	name = str(id)
-	
-	direction = (player.player_input.mouse_pos - player.hand.global_position).normalized()
-	look_at(direction)
-	global_position = player.hand.global_position
-	
-	$HitBox.set_deferred("monitoring", true)
+	#self.id = id
+	#self.player = player
+	#name = str(id)
+	#
+	#direction = (player.player_input.mouse_pos - player.hand.global_position).normalized()
+	#look_at(direction)
+	#global_position = player.hand.global_position
+	#
+	#$HitBox.set_deferred("monitoring", true)
+	pass
 	
 func reset():
 	queue_free()

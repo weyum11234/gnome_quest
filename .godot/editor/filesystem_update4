@@ -22,3 +22,4 @@ res://entities/homing_bullet/homing_placeholder.tscn
 res://entities/homing_bullet/homing_placeholder.gd
 res://entities/homing_bullet/homing_bullet.tscn
 res://entities/homing_bullet/homing_bullet.gd
+res://scenes/startup/startup.tscn

@@ -8,7 +8,7 @@ static var rng = RandomNumberGenerator.new()
 func give_item(body):
 	if body.is_in_group("player"):
 		if not body.get_node("Hand").get_child_count():
-			var i = rng.randi_range(6, 6)
+			var i = rng.randi_range(4, 4)
 			match i:
 				0:
 					body.get_node("Hand").add_child(load("res://entities/speed_boost/speed_boost.tscn").instantiate(), true)
