@@ -3,13 +3,16 @@ extends MultiplayerSynchronizer
 @onready var camera = $"../Camera2D"
 @onready var hand = $"../Hand"
 
+@export var direction = 0
+var facing : int
+
 @export var do_jump = false
 @export var do_long_jump = false
 @export var jumping = false
-@export var direction = 0
 
 @export var do_use = false
 @export var do_long_use = false
+var mouse_pos : Vector2
 
 # Timers.
 @export var long_jump_time = 0.25
@@ -32,6 +35,8 @@ func _process(delta):
 	
 	# Handle walking.
 	direction = Input.get_axis("left", "right")
+	if direction:
+		facing = direction
 	
 	# Handle jumping.
 	if Input.is_action_just_pressed("jump"):
@@ -56,8 +61,8 @@ func long_jump():
 @rpc("call_local")
 func use():
 	do_use = true
+	mouse_pos = get_parent().get_global_mouse_position()
 
 @rpc("call_local")
 func long_use():
-	print("hello")
 	do_long_use = true

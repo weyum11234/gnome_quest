@@ -228,6 +228,12 @@ properties/4/replication_mode = 1
 properties/5/path = NodePath(".:do_long_use")
 properties/5/spawn = true
 properties/5/replication_mode = 1
+properties/6/path = NodePath(".:facing")
+properties/6/spawn = true
+properties/6/replication_mode = 1
+properties/7/path = NodePath(".:mouse_pos")
+properties/7/spawn = true
+properties/7/replication_mode = 1
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 collision_layer = 2
@@ -272,7 +278,7 @@ replication_config = SubResource("SceneReplicationConfig_ugwgr")
 script = ExtResource("5_y28g8")
 
 [node name="HandSpawner" type="MultiplayerSpawner" parent="."]
-_spawnable_scenes = PackedStringArray("res://entities/speed_boost/speed_boost.tscn", "res://entities/jump_boost/jump_boost.tscn", "res://entities/gravity_controller/gravity_controller.tscn", "res://entities/teleporter/teleporter.tscn", "res://entities/jetpack/jetpack.tscn")
+_spawnable_scenes = PackedStringArray("res://entities/speed_boost/speed_boost.tscn", "res://entities/jump_boost/jump_boost.tscn", "res://entities/gravity_controller/gravity_controller.tscn", "res://entities/jetpack/jetpack.tscn", "res://entities/knife/knife_placeholder.tscn", "res://entities/bullet/bullet_placeholder.tscn")
 spawn_path = NodePath("../Hand")
 spawn_limit = 1
 

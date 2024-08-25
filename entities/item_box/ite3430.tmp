@@ -1,0 +1,87 @@
+[gd_scene load_steps=8 format=3 uid="uid://dc23bl42ciakq"]
+
+[ext_resource type="Script" path="res://entities/item_box/item_box.gd" id="1_5gtv8"]
+[ext_resource type="Texture2D" uid="uid://cemr3ui6bpu6r" path="res://assets/item_sprites/Item Traps/Box.png" id="1_51hyv"]
+
+[sub_resource type="Animation" id="Animation_pvk2y"]
+resource_name = "item_box_explode"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.03, 0.06, 0.09),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [6, 8, 9, 10]
+}
+
+[sub_resource type="Animation" id="Animation_70501"]
+resource_name = "item_box_idle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ovejm"]
+_data = {
+"item_box_explode": SubResource("Animation_pvk2y"),
+"item_box_idle": SubResource("Animation_70501")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iaejt"]
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_njyt7"]
+properties/0/path = NodePath("AnimationPlayer:current_animation")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+properties/1/path = NodePath("CollisionShape2D:disabled")
+properties/1/spawn = true
+properties/1/replication_mode = 1
+properties/2/path = NodePath(".:visible")
+properties/2/spawn = true
+properties/2/replication_mode = 1
+
+[node name="ItemBox" type="Area2D" groups=["item_box"]]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_5gtv8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_51hyv")
+hframes = 12
+frame = 6
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ovejm")
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_iaejt")
+
+[node name="RespawnTimer" type="Timer" parent="."]
+wait_time = 5.0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+
+[node name="ServerSync" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_njyt7")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="timeout" from="RespawnTimer" to="." method="_on_respawn_timer_timeout"]
+[connection signal="timeout" from="RespawnTimer" to="." method="_on_timer_timeout"]

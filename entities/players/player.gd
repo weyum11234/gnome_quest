@@ -28,6 +28,9 @@ var spawn_position : Vector2
 func _ready():
 	if not is_multiplayer_authority():
 		set_process(false)
+		return
+	
+	spawn_position = global_position
 
 func _physics_process(delta):
 	current_animation = "idle"
@@ -61,11 +64,19 @@ func _physics_process(delta):
 		current_animation = "walk"
 	else:
 		velocity.x = move_toward(velocity.x, 0, speed)
+		
+	# Flip hand.
+	if sprite.flip_h and hand.get_child_count():
+		hand.position.x = -6
+		hand.get_child(0).scale.x = -1
+	elif hand.get_child_count():
+		hand.position.x = 6
+		hand.get_child(0).scale.x = 1
 	
 	# Item.
 	if player_input.do_use and hand.get_child_count() > 0 and is_multiplayer_authority():
+		hand.get_child(0).scale.x = 1
 		hand.get_child(0).use(self)
-		#something is wrong with item box/hand spawning.
 	
 	move_and_slide()
 	sprite.play(current_animation)
