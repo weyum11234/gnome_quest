@@ -1,10 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://baawaoqulvhj4"]
+[gd_scene load_steps=4 format=3 uid="uid://baawaoqulvhj4"]
 
 [ext_resource type="Script" path="res://entities/jump_boost/jump_boost.gd" id="1_wdkrj"]
 [ext_resource type="Texture2D" uid="uid://bt12oui5hqewr" path="res://assets/item_sprites/jump_boost.png" id="2_oo5my"]
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_kufk3"]
+properties/0/path = NodePath("Sprite2D:frame")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+properties/1/path = NodePath(".:boost_timer")
+properties/1/spawn = true
+properties/1/replication_mode = 1
 
 [node name="JumpBoost" type="Node2D"]
 script = ExtResource("1_wdkrj")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_oo5my")
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_kufk3")

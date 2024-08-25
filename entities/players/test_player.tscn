@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://g4mw00ptkcit"]
+
+[ext_resource type="Script" path="res://entities/players/test_player.gd" id="1_iru10"]
+[ext_resource type="Texture2D" uid="uid://dke3u54rbjmtg" path="res://icon.svg" id="2_kvjf5"]
+[ext_resource type="Script" path="res://entities/players/player_input.gd" id="2_y2i44"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c7ola"]
+size = Vector2(16, 16)
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_axuqy"]
+properties/0/path = NodePath(".:player_id")
+properties/0/spawn = true
+properties/0/replication_mode = 0
+properties/1/path = NodePath(".:velocity")
+properties/1/spawn = true
+properties/1/replication_mode = 1
+properties/2/path = NodePath(".:position")
+properties/2/spawn = true
+properties/2/replication_mode = 1
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_s0g4j"]
+properties/0/path = NodePath(".:direction")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+properties/1/path = NodePath(".:jumping")
+properties/1/spawn = true
+properties/1/replication_mode = 1
+
+[node name="TestPlayer" type="CharacterBody2D"]
+script = ExtResource("1_iru10")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("2_kvjf5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_c7ola")
+
+[node name="ServerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_axuqy")
+
+[node name="PlayerInput" type="MultiplayerSynchronizer" parent="."]
+root_path = NodePath(".")
+replication_config = SubResource("SceneReplicationConfig_s0g4j")
+script = ExtResource("2_y2i44")

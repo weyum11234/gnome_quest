@@ -1,10 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://dglve8p53rdpp"]
+[gd_scene load_steps=4 format=3 uid="uid://dglve8p53rdpp"]
 
 [ext_resource type="Script" path="res://entities/gravity_controller/gravity_controller.gd" id="1_f4ubg"]
 [ext_resource type="Texture2D" uid="uid://bytcw10xfpkva" path="res://assets/item_sprites/gravity_controller.png" id="1_v6qqt"]
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_t0ijl"]
+properties/0/path = NodePath("Sprite2D:frame")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+properties/1/path = NodePath(".:boost_timer")
+properties/1/spawn = true
+properties/1/replication_mode = 1
 
 [node name="GravityController" type="Node2D"]
 script = ExtResource("1_f4ubg")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_v6qqt")
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_t0ijl")

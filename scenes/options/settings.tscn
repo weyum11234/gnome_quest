@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://cr2x2jqk4mb0x"]
 
-[ext_resource type="Script" path="res://scenes/options/Settings.gd" id="1_n8447"]
+[ext_resource type="Script" path="res://scenes/options/settings.gd" id="1_n8447"]
 [ext_resource type="FontFile" uid="uid://cw6hv1tq5uaod" path="res://fonts/ThaleahFat.ttf" id="2_ha0qx"]
 [ext_resource type="Texture2D" uid="uid://42luta3y1718" path="res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/1.png" id="2_qdnf1"]
 [ext_resource type="Texture2D" uid="uid://bhun4l7t48wju" path="res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/2.png" id="3_yu4ap"]

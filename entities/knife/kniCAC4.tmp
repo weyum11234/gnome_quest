@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=3 uid="uid://d3nep8dans13w"]
+
+[ext_resource type="Texture2D" uid="uid://dwl4g4evh1fff" path="res://assets/item_sprites/knife.png" id="1_b3fll"]
+[ext_resource type="Script" path="res://entities/knife/knife.gd" id="1_uhpeq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fqjng"]
+size = Vector2(16, 4)
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_p7pfh"]
+properties/0/path = NodePath(".:position")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+properties/1/path = NodePath("Sprite2D:frame")
+properties/1/spawn = true
+properties/1/replication_mode = 1
+properties/2/path = NodePath(".:id")
+properties/2/spawn = true
+properties/2/replication_mode = 0
+
+[node name="Knife" type="CharacterBody2D" groups=["projectile"]]
+collision_layer = 0
+collision_mask = 0
+script = ExtResource("1_uhpeq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 1.5708
+texture = ExtResource("1_b3fll")
+
+[node name="HitBox" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 7
+monitoring = false
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
+shape = SubResource("RectangleShape2D_fqjng")
+
+[node name="FlightTimer" type="Timer" parent="."]
+wait_time = 10000.0
+one_shot = true
+autostart = true
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_p7pfh")
+
+[connection signal="area_entered" from="HitBox" to="." method="_on_hit_box_area_entered"]
+[connection signal="body_entered" from="HitBox" to="." method="_on_hit_box_body_entered"]
+[connection signal="body_exited" from="HitBox" to="." method="_on_hit_box_body_exited"]
+[connection signal="timeout" from="FlightTimer" to="." method="_on_flight_timer_timeout"]

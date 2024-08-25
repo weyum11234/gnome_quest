@@ -1,10 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://dre0dyd4a5hhm"]
+[gd_scene load_steps=4 format=3 uid="uid://dre0dyd4a5hhm"]
 
 [ext_resource type="Script" path="res://entities/speed_boost/speed_boost.gd" id="1_1jmyi"]
 [ext_resource type="Texture2D" uid="uid://b6hnl7t3kmnev" path="res://assets/item_sprites/speed_boost.png" id="2_re48o"]
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_na7wk"]
+properties/0/path = NodePath("Sprite2D:frame")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+properties/1/path = NodePath(".:boost_timer")
+properties/1/spawn = true
+properties/1/replication_mode = 1
 
 [node name="SpeedBoost" type="Node2D"]
 script = ExtResource("1_1jmyi")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_re48o")
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_na7wk")

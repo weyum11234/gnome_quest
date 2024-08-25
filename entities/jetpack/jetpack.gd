@@ -12,6 +12,10 @@ var flight_timer = 0.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	if not is_multiplayer_authority():
+		set_process(false)
+		return
+		
 	emitter1.emitting = false
 	emitter2.emitting = false
 	$ProgressBar.max_value = flight_time
@@ -19,10 +23,10 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if flight_timer > flight_time or (player and player.animation == "respawn"):
+	if flight_timer > flight_time or (player and player.current_animation == "respawn"):
 		queue_free()
 		
-	if player and Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
+	if player and player.player_input.do_long_use:
 		emitter1.emitting = true
 		emitter2.emitting = true
 		player.velocity.y = 0
