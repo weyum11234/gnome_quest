@@ -16,3 +16,5 @@ res://scenes/main/main.gd
 res://scenes/startup/startup.tscn
 res://entities/players/player.tscn
 res://entities/players/test_player.tscn
+res://scenes/test_stage/test_stage.gd
+res://scenes/test_stage/test_stage.tscn
