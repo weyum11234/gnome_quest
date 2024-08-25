@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://cqoanvwtyud2a"]
+[gd_scene load_steps=4 format=3 uid="uid://bokodxfhw3m5c"]
 
 [ext_resource type="Script" path="res://entities/knife/knife_placeholder.gd" id="1_mvvau"]
 [ext_resource type="Texture2D" uid="uid://dwl4g4evh1fff" path="res://assets/item_sprites/knife.png" id="1_ui6sp"]
