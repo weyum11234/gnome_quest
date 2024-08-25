@@ -1,21 +1,21 @@
 [gd_scene load_steps=25 format=3 uid="uid://csypr7w1y7oud"]
 
 [ext_resource type="Script" path="res://scenes/item_list/item_list.gd" id="1_gs60b"]
-[ext_resource type="Texture2D" uid="uid://wmv6xdcikw2q" path="res://assets/item_sprites/Framed_Sprites/Bullet_framed.png" id="1_tkqt6"]
-[ext_resource type="Texture2D" uid="uid://dgctl4l57dsqt" path="res://assets/item_sprites/Framed_Sprites/Homing_Bullet_framed.png" id="2_a372v"]
 [ext_resource type="Shader" path="res://scenes/main/scroll_menu2.gdshader" id="2_c0dc3"]
 [ext_resource type="FontFile" uid="uid://cw6hv1tq5uaod" path="res://fonts/ThaleahFat.ttf" id="2_wg18o"]
-[ext_resource type="Texture2D" uid="uid://cpl8ri5lvf72w" path="res://assets/item_sprites/Framed_Sprites/Speed_Boost_framed.png" id="3_dh48a"]
 [ext_resource type="FontFile" uid="uid://b2gb7rgqcg37r" path="res://fonts/DungeonFont.ttf" id="3_jyw78"]
 [ext_resource type="Texture2D" uid="uid://42luta3y1718" path="res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/1.png" id="3_rakna"]
-[ext_resource type="Texture2D" uid="uid://bh3kalky8pxbx" path="res://assets/item_sprites/Framed_Sprites/Jump_Boost_framed.png" id="4_knn2a"]
 [ext_resource type="Texture2D" uid="uid://dhbuk4xl0w3f5" path="res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/3.png" id="5_17gvr"]
-[ext_resource type="Texture2D" uid="uid://b2sqvqvpsooj2" path="res://assets/item_sprites/Framed_Sprites/Gravity_Controller_framed.png" id="5_f8s31"]
 [ext_resource type="FontFile" uid="uid://cfrr063j63ycp" path="res://fonts/TooMuchInk.ttf" id="5_x4o6j"]
-[ext_resource type="Texture2D" uid="uid://bdg5fg6nbfkf5" path="res://assets/item_sprites/Framed_Sprites/Knife_framed.png" id="6_2n8vw"]
 [ext_resource type="Shader" path="res://scenes/main/scroll_menu3.gdshader" id="6_65urp"]
-[ext_resource type="Texture2D" uid="uid://xopl35d57au8" path="res://assets/item_sprites/Framed_Sprites/Jetpack_framed.png" id="7_21bvr"]
 [ext_resource type="Texture2D" uid="uid://clf7do7nkiljf" path="res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/4.png" id="7_cw1m0"]
+[ext_resource type="Texture2D" uid="uid://cm51jg162su32" path="res://assets/item_sprites/Framed_Sprites/Bullet_framed_blue.png" id="9_7te2o"]
+[ext_resource type="Texture2D" uid="uid://c87s0gjukrs8k" path="res://assets/item_sprites/Framed_Sprites/Homing_Bullet_framed_blue.png" id="11_mixjj"]
+[ext_resource type="Texture2D" uid="uid://bo3notimc5vkn" path="res://assets/item_sprites/Framed_Sprites/Speed_Boost_framed_blue.png" id="12_hg7v0"]
+[ext_resource type="Texture2D" uid="uid://1r25cmcymuvb" path="res://assets/item_sprites/Framed_Sprites/Jump_Boost_framed_blue.png" id="13_r8ts8"]
+[ext_resource type="Texture2D" uid="uid://m76o5yk7665p" path="res://assets/item_sprites/Framed_Sprites/Gravity_Controller_framed_blue.png" id="14_frmxs"]
+[ext_resource type="Texture2D" uid="uid://b27f3e61qn05h" path="res://assets/item_sprites/Framed_Sprites/Knife_framed_blue.png" id="15_bj5gu"]
+[ext_resource type="Texture2D" uid="uid://dfydw0mhnyp4n" path="res://assets/item_sprites/Framed_Sprites/Jetpack_framed_blue.png" id="16_160ws"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_y0qnu"]
 shader = ExtResource("2_c0dc3")
@@ -96,7 +96,7 @@ layout_mode = 2
 custom_minimum_size = Vector2(90, 40)
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.870588, 0.870588, 0.870588, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_wg18o")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_pddfg")
@@ -104,7 +104,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_fycqq")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_44p2c")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_m00vi")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_sepc6")
-text = "Back"
+text = "Exit"
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(440, 2.08165e-12)
@@ -129,7 +129,7 @@ layout_mode = 2
 [node name="Image" type="TextureRect" parent="ScrollContainer/VBoxContainer/Bullet"]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
-texture = ExtResource("1_tkqt6")
+texture = ExtResource("9_7te2o")
 stretch_mode = 4
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/Bullet"]
@@ -172,7 +172,7 @@ layout_mode = 2
 [node name="Image" type="TextureRect" parent="ScrollContainer/VBoxContainer/Homing Bullet"]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
-texture = ExtResource("2_a372v")
+texture = ExtResource("11_mixjj")
 stretch_mode = 4
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/Homing Bullet"]
@@ -214,7 +214,7 @@ layout_mode = 2
 [node name="Image" type="TextureRect" parent="ScrollContainer/VBoxContainer/Speed Boost"]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
-texture = ExtResource("3_dh48a")
+texture = ExtResource("12_hg7v0")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/Speed Boost"]
 custom_minimum_size = Vector2(30, 2.08165e-12)
@@ -255,7 +255,7 @@ layout_mode = 2
 [node name="Image" type="TextureRect" parent="ScrollContainer/VBoxContainer/Jump Boost"]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
-texture = ExtResource("4_knn2a")
+texture = ExtResource("13_r8ts8")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/Jump Boost"]
 custom_minimum_size = Vector2(30, 2.08165e-12)
@@ -296,7 +296,7 @@ layout_mode = 2
 [node name="Image" type="TextureRect" parent="ScrollContainer/VBoxContainer/Gravity Controller"]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
-texture = ExtResource("5_f8s31")
+texture = ExtResource("14_frmxs")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/Gravity Controller"]
 custom_minimum_size = Vector2(30, 2.08165e-12)
@@ -337,7 +337,7 @@ layout_mode = 2
 [node name="Image" type="TextureRect" parent="ScrollContainer/VBoxContainer/Knife"]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
-texture = ExtResource("6_2n8vw")
+texture = ExtResource("15_bj5gu")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/Knife"]
 custom_minimum_size = Vector2(30, 2.08165e-12)
@@ -378,7 +378,7 @@ layout_mode = 2
 [node name="Image" type="TextureRect" parent="ScrollContainer/VBoxContainer/Jetpack"]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
-texture = ExtResource("7_21bvr")
+texture = ExtResource("16_160ws")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/Jetpack"]
 custom_minimum_size = Vector2(30, 2.08165e-12)

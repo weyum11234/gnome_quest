@@ -272,8 +272,8 @@ script = ExtResource("5_y28g8")
 _spawnable_scenes = PackedStringArray("res://entities/speed_boost/speed_boost.tscn", "res://entities/jump_boost/jump_boost.tscn", "res://entities/gravity_controller/gravity_controller.tscn", "res://entities/teleporter/teleporter.tscn", "res://entities/jetpack/jetpack.tscn")
 spawn_path = NodePath("../Hand")
 
-[connection signal="area_entered" from="HurtBox" to="." method="_on_hazard_detector_area_entered"]
 [connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]
-[connection signal="body_entered" from="HurtBox" to="." method="_on_hazard_detector_body_entered"]
+[connection signal="area_entered" from="HurtBox" to="." method="_on_hazard_detector_area_entered"]
 [connection signal="body_entered" from="HurtBox" to="." method="_on_hurt_box_body_entered"]
+[connection signal="body_entered" from="HurtBox" to="." method="_on_hazard_detector_body_entered"]
 [connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]
