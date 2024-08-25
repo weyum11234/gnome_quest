@@ -12,7 +12,7 @@ var facing : int
 
 @export var do_use = false
 @export var do_long_use = false
-var mouse_pos = Vector2.ZERO
+@export var mouse_pos = Vector2.ZERO
 
 # Timers.
 @export var long_jump_time = 0.25
