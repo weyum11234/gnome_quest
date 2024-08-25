@@ -278,7 +278,7 @@ replication_config = SubResource("SceneReplicationConfig_ugwgr")
 script = ExtResource("5_y28g8")
 
 [node name="HandSpawner" type="MultiplayerSpawner" parent="."]
-_spawnable_scenes = PackedStringArray("res://entities/speed_boost/speed_boost.tscn", "res://entities/jump_boost/jump_boost.tscn", "res://entities/gravity_controller/gravity_controller.tscn", "res://entities/jetpack/jetpack.tscn", "res://entities/knife/knife_placeholder.tscn", "res://entities/bullet/bullet_placeholder.tscn")
+_spawnable_scenes = PackedStringArray("res://entities/speed_boost/speed_boost.tscn", "res://entities/jump_boost/jump_boost.tscn", "res://entities/gravity_controller/gravity_controller.tscn", "res://entities/jetpack/jetpack.tscn", "res://entities/knife/knife_placeholder.tscn", "res://entities/bullet/bullet_placeholder.tscn", "res://entities/homing_bullet/homing_placeholder.tscn")
 spawn_path = NodePath("../Hand")
 spawn_limit = 1
 

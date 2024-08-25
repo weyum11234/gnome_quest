@@ -18,3 +18,7 @@ res://entities/bullet/bullet.tscn
 res://entities/bullet/bullet.gd
 res://entities/knife/knife_placeholder.gd
 res://entities/players/player_input.gd
+res://entities/homing_bullet/homing_placeholder.tscn
+res://entities/homing_bullet/homing_placeholder.gd
+res://entities/homing_bullet/homing_bullet.tscn
+res://entities/homing_bullet/homing_bullet.gd

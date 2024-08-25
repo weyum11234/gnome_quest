@@ -34,7 +34,6 @@ func set_values(id : int, player : Object):
 	name = str(id)
 	
 	direction = player.player_input.facing
-	print(direction)
 	look_at(Vector2(direction, 0))
 	global_position = player.hand.global_position
 	

@@ -8,7 +8,7 @@ static var rng = RandomNumberGenerator.new()
 func give_item(body):
 	if body.is_in_group("player"):
 		if not body.get_node("Hand").get_child_count():
-			var i = rng.randi_range(5, 5)
+			var i = rng.randi_range(6, 6)
 			match i:
 				0:
 					body.get_node("Hand").add_child(load("res://entities/speed_boost/speed_boost.tscn").instantiate(), true)
@@ -28,6 +28,11 @@ func give_item(body):
 					fake_bullet.id = rng.randi()
 					fake_bullet.parent = get_parent()
 					body.get_node("Hand").add_child(fake_bullet)
+				6:
+					var fake_homing = load("res://entities/homing_bullet/homing_placeholder.tscn").instantiate()
+					fake_homing.id = rng.randi()
+					fake_homing.parent = get_parent()
+					body.get_node("Hand").add_child(fake_homing)
 		animation.play("item_box_explode")
 
 func _ready():

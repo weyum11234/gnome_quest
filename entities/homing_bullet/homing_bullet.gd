@@ -1,58 +1,49 @@
 extends CharacterBody2D
 
-@onready var anim_player = $AnimationPlayer
-@onready var audio_player = $AudioStreamPlayer2D
-@onready var hit_box = $HitBox
-@onready var flight_timer = $FlightTimer
 @export var speed = 300.0
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 static var id = 0
 var has_exit = false
-var state_scene : Object
+var players : Node
 var target : Object
-var thrower : Object
+var player : Object
 
 func _ready():
-	id += 1
-	name = "HomingBullet" + str(id)
-	anim_player.play("bullet_spin")
+	if not is_multiplayer_authority():
+		set_physics_process(false)
 
 func _physics_process(delta):
 	if target:
 		look_at(target.global_position)
 		position = position.move_toward(target.global_position, speed * delta)
-		find_target()
+		target = find_target()
 		
-func use(player : Object):
-	thrower = player
-	# TODO: Set target to closest player.
-	# Instead of setting target, call find_target()
-	target = state_scene.get_node("Dummy")
-	flight_timer.start()
-	# Ensure sprite point in the positive x-axis.
-	scale.x = abs(scale.x)
-	# Move scene from Player to Level scenes.
-	player.get_node("Hand").remove_child(self)
-	state_scene.add_child(self)
-	state_scene.get_node("HomingBullet" + str(id)).global_position = player.get_node("Hand").global_position
-	# More initialization
-	hit_box.set_deferred("monitoring", true)
-	hit_box.set_deferred("monitorable", true)
-	audio_player.stream = load("res://assets/sounds/shot-gun_D_minor.wav")
-	audio_player.play()
+func set_values(id : int, player : Object, parent : Node):
+	self.id = id
+	self.player = player
+	self.players = parent.get_parent().get_node("Players")
+	name = str(id)
+	
+	target = find_target()
+	global_position = player.hand.global_position
+	
+	$HitBox.set_deferred("monitoring", true)
+	$AnimationPlayer.play("bullet_spin")
 
-func alt_use(player : Object):
-	pass
-
-func find_target():
-	# Put all player nodes under a parent node, called players
-	# Traverse through players - ignoring thrower - and calculate distance
-	# Assign target to closest
-	# Launch!
-	pass
-
+func find_target() -> Object:
+	var shortest_distance = INF
+	var closest_player
+	for c in players.get_children():
+		if c == player:
+			continue
+		var current_distance = position.distance_to(c.position)
+		if current_distance < shortest_distance:
+			closest_player = c
+			shortest_distance = current_distance
+	return closest_player
+			
 func _on_flight_timer_timeout():
 	queue_free()
 
@@ -61,7 +52,7 @@ func _on_hit_box_body_entered(body):
 		queue_free()
 	if not body.is_in_group("player"):  # Edge case: projectile immediately hits the environment.
 		queue_free()
-	if body.is_in_group("player") and body != thrower: # Edge case: thrower stands too close to another player.
+	if body.is_in_group("player") and body != player: # Edge case: thrower stands too close to another player.
 		body.death()
 		queue_free()
 
@@ -73,3 +64,4 @@ func _on_hit_box_area_entered(area):
 
 func _on_hit_box_body_exited(body):
 	has_exit = true
+	$HitBox.set_deferred("monitorable", true)
