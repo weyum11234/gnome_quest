@@ -2190,26 +2190,26 @@ position = Vector2(1552, 576)
 [node name="light7" parent="TileMap" instance=ExtResource("7_iviq1")]
 position = Vector2(1328, 576)
 
-[node name="Checkpoint" parent="." instance=ExtResource("21_icuk5")]
+[node name="Checkpoint" parent="TileMap" instance=ExtResource("21_icuk5")]
 position = Vector2(1101, 85)
 
-[node name="Checkpoint2" parent="." instance=ExtResource("21_icuk5")]
+[node name="Checkpoint2" parent="TileMap" instance=ExtResource("21_icuk5")]
 position = Vector2(2360, 85)
 
-[node name="Checkpoint3" parent="." instance=ExtResource("21_icuk5")]
+[node name="Checkpoint3" parent="TileMap" instance=ExtResource("21_icuk5")]
 position = Vector2(2473, 597)
 
-[node name="Checkpoint4" parent="." instance=ExtResource("21_icuk5")]
+[node name="Checkpoint4" parent="TileMap" instance=ExtResource("21_icuk5")]
 position = Vector2(1740, 613)
 
-[node name="Checkpoint5" parent="." instance=ExtResource("21_icuk5")]
+[node name="Checkpoint5" parent="TileMap" instance=ExtResource("21_icuk5")]
 position = Vector2(808, 1109)
 
-[node name="Checkpoint6" parent="." instance=ExtResource("21_icuk5")]
+[node name="Checkpoint6" parent="TileMap" instance=ExtResource("21_icuk5")]
 position = Vector2(1464, 997)
 
 [node name="SpawnPosition" type="Node2D" parent="."]
-position = Vector2(1488, 1008)
+position = Vector2(-80, -48)
 
 [node name="Players" type="Node" parent="."]
 
@@ -2444,5 +2444,5 @@ _spawnable_scenes = PackedStringArray("res://entities/item_box/item_box.tscn", "
 spawn_path = NodePath("../Items")
 
 [node name="ObstacleSpawner" type="MultiplayerSpawner" parent="."]
-_spawnable_scenes = PackedStringArray("res://obstacles/collapse_floor.tscn", "res://obstacles/spinning_flames.tscn", "res://obstacles/anim_spike.tscn", "res://obstacles/flames.tscn", "res://obstacles/flame_vert.tscn", "res://obstacles/moving_platform.tscn")
+_spawnable_scenes = PackedStringArray("res://obstacles/collapse_floor.tscn", "res://obstacles/spinning_flames.tscn", "res://obstacles/anim_spike.tscn", "res://obstacles/flames.tscn", "res://obstacles/flame_vert.tscn", "res://obstacles/moving_platform.tscn", "res://obstacles/checkpoint.tscn")
 spawn_path = NodePath("../Obstacles")
