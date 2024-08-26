@@ -1,5 +1,6 @@
-res://scenes/global
 res://fonts
+res://assets/item_sprites
+res://scenes/global
 res://entities
 res://assets/Rocky Roads/FX
 res://assets/level01/caves/industrial.v2
@@ -18,5 +19,3 @@ res://scenes/level_01
 res://assets/level02/Pixel Adventure 2/Enemies/Turtle
 res://assets/level02/Pixel Adventure 2/Enemies/AngryPig
 res://assets/level02/Pixel Adventure 2/Enemies/Rino
-res://decorations
-res://assets/level02/Pixel Adventure 2/Enemies/Snail
