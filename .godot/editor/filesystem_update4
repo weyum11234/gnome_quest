@@ -31,3 +31,4 @@ res://obstacles/moving_platform.gd
 res://entities/enemies/bird.tscn
 res://obstacles/checkpoint.tscn
 res://obstacles/checkpoint.gd
+res://entities/item_box/item_box.gd

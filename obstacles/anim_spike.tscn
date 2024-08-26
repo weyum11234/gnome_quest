@@ -61,7 +61,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c52oq"]
-size = Vector2(20, 10)
+size = Vector2(16, 8)
 
 [sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_k1k2v"]
 properties/0/path = NodePath("AnimatedSprite2D:frame")
@@ -81,7 +81,7 @@ sprite_frames = SubResource("SpriteFrames_6f502")
 frame_progress = 0.639552
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 5)
+position = Vector2(0, 4)
 shape = SubResource("RectangleShape2D_c52oq")
 
 [node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
