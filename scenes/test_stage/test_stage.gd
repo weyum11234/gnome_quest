@@ -20,9 +20,12 @@ func del_player(id : int):
 		
 	$Players.get_node(str(id)).queue_free()
 
+func add_item(item : Object):
+	$Items.add_child(item, true)
+	print($Items.get_children())
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	print("level ready")
 	if not is_multiplayer_authority():
 		return
 	
@@ -34,3 +37,4 @@ func _ready():
 		
 	if not OS.has_feature("dedicated_server"):
 		add_player(1)
+	

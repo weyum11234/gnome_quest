@@ -152,7 +152,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_kloke")
 }],
-"loop": true,
+"loop": false,
 "name": &"respawn",
 "speed": 5.0
 }, {
@@ -225,6 +225,15 @@ properties/3/replication_mode = 1
 properties/4/path = NodePath(".:do_use")
 properties/4/spawn = true
 properties/4/replication_mode = 1
+properties/5/path = NodePath(".:do_long_use")
+properties/5/spawn = true
+properties/5/replication_mode = 1
+properties/6/path = NodePath(".:facing")
+properties/6/spawn = true
+properties/6/replication_mode = 1
+properties/7/path = NodePath(".:mouse_pos")
+properties/7/spawn = true
+properties/7/replication_mode = 1
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 collision_layer = 2
@@ -233,7 +242,7 @@ script = ExtResource("1_cl06y")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_75tuk")
-animation = &"idle"
+animation = &"death"
 
 [node name="Hand" type="Node2D" parent="."]
 position = Vector2(6, 1)
@@ -269,11 +278,11 @@ replication_config = SubResource("SceneReplicationConfig_ugwgr")
 script = ExtResource("5_y28g8")
 
 [node name="HandSpawner" type="MultiplayerSpawner" parent="."]
-_spawnable_scenes = PackedStringArray("res://entities/speed_boost/speed_boost.tscn", "res://entities/jump_boost/jump_boost.tscn", "res://entities/gravity_controller/gravity_controller.tscn", "res://entities/teleporter/teleporter.tscn", "res://entities/jetpack/jetpack.tscn")
+_spawnable_scenes = PackedStringArray("res://entities/speed_boost/speed_boost.tscn", "res://entities/jump_boost/jump_boost.tscn", "res://entities/gravity_controller/gravity_controller.tscn", "res://entities/jetpack/jetpack.tscn", "res://entities/knife/knife_placeholder.tscn", "res://entities/bullet/bullet_placeholder.tscn", "res://entities/homing_bullet/homing_placeholder.tscn")
 spawn_path = NodePath("../Hand")
+spawn_limit = 1
 
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]
-[connection signal="area_entered" from="HurtBox" to="." method="_on_hazard_detector_area_entered"]
 [connection signal="body_entered" from="HurtBox" to="." method="_on_hurt_box_body_entered"]
-[connection signal="body_entered" from="HurtBox" to="." method="_on_hazard_detector_body_entered"]
 [connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]

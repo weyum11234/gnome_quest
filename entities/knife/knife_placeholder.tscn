@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bokodxfhw3m5c"]
+
+[ext_resource type="Script" path="res://entities/knife/knife_placeholder.gd" id="1_mvvau"]
+[ext_resource type="Texture2D" uid="uid://dwl4g4evh1fff" path="res://assets/item_sprites/knife.png" id="1_ui6sp"]
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_w5dtj"]
+properties/0/path = NodePath("Sprite2D:frame")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+
+[node name="KnifePlaceholder" type="Node2D"]
+script = ExtResource("1_mvvau")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ui6sp")
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_w5dtj")

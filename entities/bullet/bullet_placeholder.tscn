@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cij0x0jjaqv86"]
+
+[ext_resource type="Texture2D" uid="uid://cu3hiwvi06ue4" path="res://assets/item_sprites/bullet_sprite.png" id="1_0inqb"]
+[ext_resource type="Script" path="res://entities/bullet/bullet_placeholder.gd" id="1_3582k"]
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_08vcr"]
+properties/0/path = NodePath("Sprite2D:frame")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+
+[node name="BulletPlaceholder" type="Node2D"]
+script = ExtResource("1_3582k")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_0inqb")
+hframes = 3
+vframes = 4
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_08vcr")

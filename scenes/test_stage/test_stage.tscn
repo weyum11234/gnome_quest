@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://bhdah5x7s24id"]
+[gd_scene load_steps=7 format=3 uid="uid://bhdah5x7s24id"]
 
 [ext_resource type="Script" path="res://scenes/test_stage/test_stage.gd" id="1_rpdqf"]
 [ext_resource type="Texture2D" uid="uid://cw57a7c5h3v6n" path="res://assets/level01/caves/adve/tiles.png" id="1_shmg6"]
@@ -372,13 +372,16 @@ texture = ExtResource("1_shmg6")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_407q0")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d8r0n"]
+size = Vector2(1120, 20)
+
 [node name="TestStage" type="Node2D"]
 script = ExtResource("1_rpdqf")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_jb6ny")
 format = 2
-layer_0/tile_data = PackedInt32Array(262139, 65536, 4, 262140, 65536, 4, 262141, 65536, 4, 262142, 65536, 4, 262143, 65536, 4, 196608, 65536, 4, 196609, 65536, 4, 196610, 65536, 4, 196611, 65536, 4, 196612, 65536, 4, 196613, 65536, 4, 196614, 65536, 4, 196615, 65536, 4, 196616, 65536, 4, 196617, 65536, 4, 262134, 65536, 4, 262135, 65536, 4, 262136, 65536, 4, 262137, 65536, 4, 262138, 65536, 4, 196618, 65536, 4, 262128, 65536, 4, 262129, 65536, 4, 262130, 65536, 4, 262131, 65536, 4, 262132, 65536, 4, 262133, 65536, 4, 196619, 65536, 4, 196620, 65536, 4, 196621, 65536, 4, 196622, 65536, 4, 196623, 65536, 4)
+layer_0/tile_data = PackedInt32Array(262139, 65536, 4, 262140, 65536, 4, 262141, 65536, 4, 262142, 65536, 4, 262143, 65536, 4, 196608, 65536, 4, 196609, 65536, 4, 196610, 65536, 4, 196611, 65536, 4, 196612, 65536, 4, 196613, 65536, 4, 196614, 65536, 4, 196615, 65536, 4, 196616, 65536, 4, 196617, 65536, 4, 262134, 65536, 4, 262135, 65536, 4, 262136, 65536, 4, 262137, 65536, 4, 262138, 65536, 4, 196618, 65536, 4, 262128, 65536, 4, 262129, 65536, 4, 262130, 65536, 4, 262131, 65536, 4, 262132, 65536, 4, 262133, 65536, 4, 196619, 65536, 4, 196620, 65536, 4, 196621, 65536, 4, 196622, 65536, 4, 196623, 65536, 4, 196599, 65536, 4, 131063, 65536, 4, 65527, 65536, 4)
 
 [node name="Players" type="Node" parent="."]
 
@@ -392,7 +395,15 @@ spawn_path = NodePath("../Players")
 position = Vector2(128, 32)
 
 [node name="ItemSpawner" type="MultiplayerSpawner" parent="."]
-_spawnable_scenes = PackedStringArray("res://entities/item_box/item_box.tscn")
+_spawnable_scenes = PackedStringArray("res://entities/item_box/item_box.tscn", "res://entities/knife/knife.tscn", "res://entities/bullet/bullet.tscn", "res://entities/homing_bullet/homing_bullet.tscn")
 spawn_path = NodePath("../Items")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 112)
+shape = SubResource("RectangleShape2D_d8r0n")
 
 [connection signal="spawned" from="ItemSpawner" to="." method="_on_item_spawner_spawned"]
