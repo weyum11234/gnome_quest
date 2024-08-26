@@ -12,9 +12,12 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	if not is_multiplayer_authority():
+		return
+	
 	if align_with_path:
 		path_follow.rotates = true
-		
+	
 	path.curve = Curve2D.new()
 	path.curve.add_point(Vector2.ZERO)
 	path.curve.add_point(move_end_point)

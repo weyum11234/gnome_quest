@@ -8,3 +8,6 @@ func use(player : Object):
 	real_homing.set_values(id, player, parent)
 	parent.add_child(real_homing)
 	queue_free()
+
+func reset():
+	queue_free()

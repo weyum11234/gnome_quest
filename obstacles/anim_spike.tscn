@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cke0kpsxvgsrk"]
+[gd_scene load_steps=13 format=3 uid="uid://cke0kpsxvgsrk"]
 
 [ext_resource type="Script" path="res://obstacles/anim_spike.gd" id="1_hakyi"]
 [ext_resource type="Texture2D" uid="uid://d3wqko68g3jf8" path="res://assets/level01/dungeons/2d_metroid_asset_1_2/metroid_asset_1_2/Sprites/Interactables/spikes_spritesheet.png" id="2_k0l14"]
@@ -63,6 +63,14 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c52oq"]
 size = Vector2(20, 10)
 
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_k1k2v"]
+properties/0/path = NodePath("AnimatedSprite2D:frame")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+properties/1/path = NodePath("CollisionShape2D:disabled")
+properties/1/spawn = true
+properties/1/replication_mode = 1
+
 [node name="anim_spike" type="Area2D"]
 collision_layer = 4
 collision_mask = 0
@@ -75,3 +83,6 @@ frame_progress = 0.639552
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 5)
 shape = SubResource("RectangleShape2D_c52oq")
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_k1k2v")

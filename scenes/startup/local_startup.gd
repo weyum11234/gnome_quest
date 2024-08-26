@@ -5,7 +5,7 @@ const PORT = 8080
 func start_game():
 	$UI.hide()
 	if multiplayer.is_server():
-		change_level.call_deferred(load("res://scenes/test_stage/test_stage.tscn"))
+		change_level.call_deferred(load("res://scenes/level_01/level_01.tscn"))
 		
 func change_level(scene : PackedScene):
 	var level = $Level

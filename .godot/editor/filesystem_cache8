@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1724692216
+::res://::1724698665
 icon.svg::CompressedTexture2D::7871145411425364212::1723477671::1724692218::1::::<><>::
 README.md::TextFile::-1::1723477669::0::1::::<><>::
 ::res://assets/::1724689477
@@ -1069,14 +1069,14 @@ factory tilesEX_ColorCode.png::CompressedTexture2D::3078607299095665962::1723477
 ::res://assets/video/::1723834964
 better_gbs_godot.ogv::VideoStreamTheora::-1::1723834964::0::1::::<><>::
 New Piskel_scaled_12x_pngcrushed.png::CompressedTexture2D::8582727777635355609::1723834964::1723834964::1::::<><>::
-::res://decorations/::1724692131
+::res://decorations/::1724692422
 clouds.gd::GDScript::-1::1723477671::0::1::::<>Node2D<>::
 cloud_a.tscn::PackedScene::858410035006216812::1723477671::0::1::::<><>::res://decorations/clouds.gd<>uid://b0a80oeq5wd44::::res://assets/level02/Clouds V2/Clouds V2.png
 cloud_b.tscn::PackedScene::6267570718408645709::1723477671::0::1::::<><>::res://decorations/clouds.gd<>uid://b0a80oeq5wd44::::res://assets/level02/Clouds V2/Clouds V2.png
 cloud_c.tscn::PackedScene::5057038797167239935::1723477671::0::1::::<><>::res://decorations/clouds.gd<>uid://b0a80oeq5wd44::::res://assets/level02/Clouds V2/Clouds V2.png
-invis_rect.tscn::PackedScene::6938277869977744665::1724692131::0::1::::<><>::
+invis_rect.tscn::PackedScene::6938277869977744665::1724692422::0::1::::<><>::
 light.gd::GDScript::-1::1723477671::0::1::::<>Area2D<>::
-light.tscn::PackedScene::7328617743897835940::1724692131::0::1::::<><>::res://decorations/light.gd<>uid://d28rgcw8v6h4j::::res://assets/level01/dungeons/trapmoor_dungeon/Sprites/WallLight32x32Spritesheet.png<>uid://bitiijo455i0w::::res://assets/level01/dungeons/trapmoor_dungeon/Sprites/lamp.png
+light.tscn::PackedScene::7328617743897835940::1724692422::0::1::::<><>::res://decorations/light.gd<>uid://d28rgcw8v6h4j::::res://assets/level01/dungeons/trapmoor_dungeon/Sprites/WallLight32x32Spritesheet.png<>uid://bitiijo455i0w::::res://assets/level01/dungeons/trapmoor_dungeon/Sprites/lamp.png
 ::res://entities/::1724689593
 ::res://entities/bullet/::1724689477
 bullet.gd::GDScript::-1::1724687798::0::1::::<>CharacterBody2D<>::
@@ -1105,23 +1105,23 @@ homing_bullet.gd::GDScript::-1::1724687798::0::1::::<>CharacterBody2D<>::
 homing_bullet.tscn::PackedScene::5586190934842717935::1724687798::0::1::::<><>::res://entities/homing_bullet/homing_bullet.gd<>uid://b6k1srlvcn4mi::::res://assets/item_sprites/homing_bullet_sprite.png
 homing_placeholder.gd::GDScript::-1::1724687798::0::1::::<>Node2D<>::
 homing_placeholder.tscn::PackedScene::6909007669169503540::1724687798::0::1::::<><>::res://entities/homing_bullet/homing_placeholder.gd<>uid://b6k1srlvcn4mi::::res://assets/item_sprites/homing_bullet_sprite.png
-::res://entities/item_box/::1724692129
+::res://entities/item_box/::1724692421
 item_box.gd::GDScript::-1::1724687798::0::1::::<>Node2D<>::
-item_box.tscn::PackedScene::7357080423092271332::1724692129::0::1::::<><>::res://entities/item_box/item_box.gd<>uid://cemr3ui6bpu6r::::res://assets/item_sprites/Item Traps/Box.png
+item_box.tscn::PackedScene::7357080423092271332::1724692421::0::1::::<><>::res://entities/item_box/item_box.gd<>uid://cemr3ui6bpu6r::::res://assets/item_sprites/Item Traps/Box.png
 ::res://entities/jetpack/::1724687798
 jetpack.gd::GDScript::-1::1724687798::0::1::::<>Node2D<>::
 jetpack.tscn::PackedScene::1410188293573640269::1724687798::0::1::::<><>::res://entities/jetpack/jetpack.gd<>uid://dvhdeasw7mfo3::::res://assets/item_sprites/jetpack.png
 ::res://entities/jump_boost/::1724624209
 jump_boost.gd::GDScript::-1::1724624209::0::1::::<>Node2D<>::
 jump_boost.tscn::PackedScene::2387757218501977923::1724624209::0::1::::<><>::res://entities/jump_boost/jump_boost.gd<>uid://bt12oui5hqewr::::res://assets/item_sprites/jump_boost.png
-::res://entities/knife/::1724692129
-knife.gd::GDScript::-1::1724689494::0::1::::<>CharacterBody2D<>::
-knife.tscn::PackedScene::9151657976549705174::1724692129::0::1::::<><>::uid://dwl4g4evh1fff::::res://assets/item_sprites/knife.png<>res://entities/knife/knife.gd
+::res://entities/knife/::1724692421
+knife.gd::GDScript::-1::1724692222::0::1::::<>CharacterBody2D<>::
+knife.tscn::PackedScene::9151657976549705174::1724692421::0::1::::<><>::uid://dwl4g4evh1fff::::res://assets/item_sprites/knife.png<>res://entities/knife/knife.gd
 knife_placeholder.gd::GDScript::-1::1724687798::0::1::::<>Node2D<>::
-knife_placeholder.tscn::PackedScene::3390564883556235534::1724692129::0::1::::<><>::res://entities/knife/knife_placeholder.gd<>uid://dwl4g4evh1fff::::res://assets/item_sprites/knife.png
-::res://entities/players/::1724692129
-player.gd::GDScript::-1::1724689494::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::7228420403995031334::1724692129::0::1::::<><>::res://entities/players/player.gd<>uid://6vaao2p4o2j8::::res://assets/level01/caves/industrial.v2/industrial.v2.png<>uid://dkph32kv7qse4::::res://assets/level01/caves/industrial.v2/recolored_player.png<>uid://bcrdmebtb3ved::::res://assets/sounds/knife-stab-sound-fx.wav<>res://entities/players/player_input.gd
+knife_placeholder.tscn::PackedScene::3390564883556235534::1724692421::0::1::::<><>::res://entities/knife/knife_placeholder.gd<>uid://dwl4g4evh1fff::::res://assets/item_sprites/knife.png
+::res://entities/players/::1724692421
+player.gd::GDScript::-1::1724692222::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::7228420403995031334::1724692421::0::1::::<><>::res://entities/players/player.gd<>uid://6vaao2p4o2j8::::res://assets/level01/caves/industrial.v2/industrial.v2.png<>uid://dkph32kv7qse4::::res://assets/level01/caves/industrial.v2/recolored_player.png<>uid://bcrdmebtb3ved::::res://assets/sounds/knife-stab-sound-fx.wav<>res://entities/players/player_input.gd
 player_input.gd::GDScript::-1::1724687798::0::1::::<>MultiplayerSynchronizer<>::
 test_player.gd::GDScript::-1::1724624209::0::1::::<>CharacterBody2D<>::
 test_player.tscn::PackedScene::481769260486214475::1724684471::0::1::::<><>::res://entities/players/test_player.gd<>uid://dke3u54rbjmtg::::res://icon.svg<>res://entities/players/player_input.gd
@@ -1230,12 +1230,12 @@ tilting_platform.tscn::PackedScene::5784907608827924492::1723477671::0::1::::<><
 ::res://scenes/level_04/::1724624209
 level_04.gd::GDScript::-1::1724624209::0::1::::<>Node2D<>::
 level_04.tscn::PackedScene::1252589064999247252::1724624209::0::1::::<><>::res://scenes/level_04/level_04.gd<>uid://tnjeog0nnq2p::::res://assets/forest-nature-fantasy-tileset-free/Fantasy Swamp Forest/Free/BG_1/BG_1.png<>uid://bp8lwwseo5eex::::res://assets/stringstar fields/background_0.png<>uid://cr4s0tfmabue0::::res://assets/Rocky Roads/Tilesets/tileset_forest.png<>uid://0j028vsdy05s::::res://assets/stringstar fields/background_1.png<>uid://bk46brubv8etc::::res://assets/stringstar fields/background_2.png<>uid://dus4wdhmdg7ax::::res://assets/Rocky Roads/Tilesets/tileset_lava.png<>uid://c0jjflnw6ji66::::res://assets/Rocky Roads/Tilesets/tileset_snow.png<>uid://cva8dakaog2kv::::res://assets/Rocky Roads/Deco/water_b_5 frames.png<>uid://c1vgah8mpf830::::res://assets/Rocky Roads/Tilesets/tileset_water.png<>uid://06v0o46g6on5::::res://assets/Rocky Roads/Tilesets/tileset_desert.png<>uid://c87qv6k3t1j3r::::res://assets/Rocky Roads/Objects/sign_arrow.png<>uid://chy06pprcgl58::::res://assets/Water+.png<>uid://dq80w5j1x704m::::res://obstacles/fan.tscn<>uid://bf5tjpb5kn3an::::res://entities/enemies/slime.tscn<>uid://bdg1pjrjkbcxd::::res://entities/bird.tscn<>uid://h6oop5cq6b7t::::res://entities/enemies/bear.tscn<>uid://b57cotk02tjsv::::res://obstacles/ice_spikes.tscn<>uid://fbmvrpvekjm4::::res://obstacles/red_flame.tscn<>uid://blh547ke3hk5b::::res://entities/enemies/red_slime.tscn<>uid://byu1r2ct2kkqv::::res://obstacles/spinning_spike.tscn<>uid://dpoy1qi0gffxq::::res://obstacles/checkpoint.tscn<>uid://cfq20mntf8aru::::res://obstacles/cannon.tscn<>uid://dc23bl42ciakq::::res://entities/item_box/item_box.tscn
-::res://scenes/main/::1724692173
-main.gd::GDScript::-1::1724691769::0::1::::<>Control<>::
-main.tscn::PackedScene::3876857004100717685::1724692131::0::1::::<><>::res://scenes/main/main.gd<>uid://calmxaeagvmy5::::res://assets/level01/outside/sky-backgrounds/Clouds/Clouds 4/1.png<>res://scenes/main/scroll_menu.gdshader<>uid://bmc4650jnfjb4::::res://assets/level01/outside/sky-backgrounds/Clouds/Clouds 4/2.png<>res://scenes/main/scroll_menu2.gdshader<>uid://bq21k8phmstli::::res://assets/level01/outside/sky-backgrounds/Clouds/Clouds 4/3.png<>res://scenes/main/scroll_menu3.gdshader<>uid://t007yb7qf2px::::res://assets/level01/outside/sky-backgrounds/Clouds/Clouds 4/4.png<>uid://ckxhp5txtvc6::::res://fonts/antiquity-print.ttf<>uid://cw6hv1tq5uaod::::res://fonts/ThaleahFat.ttf<>uid://l4bgpvu18sxp::::res://sounds/music/4 - Odd Ode _ Lonelibless.wav
-scroll_menu2.gdshader::Shader::-1::1724692173::0::1::::<><>::
-scroll_menu3.gdshader::Shader::-1::1724692173::0::1::::<><>::
-scroll_menu.gdshader::Shader::-1::1724692173::0::1::::<><>::
+::res://scenes/main/::1724694758
+main.gd::GDScript::-1::1724692314::0::1::::<>Control<>::
+main.tscn::PackedScene::3876857004100717685::1724692422::0::1::::<><>::res://scenes/main/main.gd<>uid://calmxaeagvmy5::::res://assets/level01/outside/sky-backgrounds/Clouds/Clouds 4/1.png<>res://scenes/main/scroll_menu.gdshader<>uid://bmc4650jnfjb4::::res://assets/level01/outside/sky-backgrounds/Clouds/Clouds 4/2.png<>res://scenes/main/scroll_menu2.gdshader<>uid://bq21k8phmstli::::res://assets/level01/outside/sky-backgrounds/Clouds/Clouds 4/3.png<>res://scenes/main/scroll_menu3.gdshader<>uid://t007yb7qf2px::::res://assets/level01/outside/sky-backgrounds/Clouds/Clouds 4/4.png<>uid://ckxhp5txtvc6::::res://fonts/antiquity-print.ttf<>uid://cw6hv1tq5uaod::::res://fonts/ThaleahFat.ttf<>uid://l4bgpvu18sxp::::res://sounds/music/4 - Odd Ode _ Lonelibless.wav
+scroll_menu2.gdshader::Shader::-1::1724694758::0::1::::<><>::
+scroll_menu3.gdshader::Shader::-1::1724694758::0::1::::<><>::
+scroll_menu.gdshader::Shader::-1::1724694758::0::1::::<><>::
 ::res://scenes/options/::1724684471
 settings.gd::GDScript::-1::1723477671::0::1::::<>Control<>::
 settings.tscn::PackedScene::6023235113782031069::1724684471::0::1::::<><>::res://scenes/options/settings.gd<>uid://cw6hv1tq5uaod::::res://fonts/ThaleahFat.ttf<>uid://42luta3y1718::::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/1.png<>uid://bhun4l7t48wju::::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/2.png<>uid://dhbuk4xl0w3f5::::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/3.png<>res://scenes/main/scroll_menu2.gdshader<>uid://clf7do7nkiljf::::res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/4.png<>res://scenes/main/scroll_menu3.gdshader
@@ -1243,13 +1243,13 @@ settings.tscn::PackedScene::6023235113782031069::1724684471::0::1::::<><>::res:/
 black.gdshader::Shader::-1::1723834964::0::1::::<><>::
 splash.gd::GDScript::-1::1723834964::0::1::::<>Node2D<>::
 splash.tscn::PackedScene::6123603829660352076::1723834964::0::1::::<><>::res://scenes/splash/splash.gd<>uid://cw6hv1tq5uaod::::res://fonts/ThaleahFat.ttf<>uid://dujsjjcejkd4t::::res://assets/video/New Piskel_scaled_12x_pngcrushed.png<>uid://c5fuqtfb7j80p::::res://assets/sounds/punch-a-rock-161647.mp3
-::res://scenes/startup/::1724692169
-local_startup.gd::GDScript::-1::1724691719::0::1::::<>Node2D<>::
-startup.gd::GDScript::-1::1724692071::0::1::::<>Node2D<>::
-startup.tscn::PackedScene::343318626866514075::1724692169::0::1::::<><>::res://scenes/startup/startup.gd<>uid://cw6hv1tq5uaod::::res://fonts/ThaleahFat.ttf
-::res://scenes/test_stage/::1724692129
+::res://scenes/startup/::1724692464
+local_startup.gd::GDScript::-1::1724692314::0::1::::<>Node2D<>::
+startup.gd::GDScript::-1::1724692388::0::1::::<>Node2D<>::
+startup.tscn::PackedScene::343318626866514075::1724692464::0::1::::<><>::res://scenes/startup/startup.gd<>uid://cw6hv1tq5uaod::::res://fonts/ThaleahFat.ttf
+::res://scenes/test_stage/::1724692421
 test_stage.gd::GDScript::-1::1724687798::0::1::::<>Node2D<>::
-test_stage.tscn::PackedScene::2883949835688929855::1724692129::0::1::::<><>::res://scenes/test_stage/test_stage.gd<>uid://cw57a7c5h3v6n::::res://assets/level01/caves/adve/tiles.png<>uid://dc23bl42ciakq::::res://entities/item_box/item_box.tscn
+test_stage.tscn::PackedScene::2883949835688929855::1724692421::0::1::::<><>::res://scenes/test_stage/test_stage.gd<>uid://cw57a7c5h3v6n::::res://assets/level01/caves/adve/tiles.png<>uid://dc23bl42ciakq::::res://entities/item_box/item_box.tscn
 ::res://sounds/::1723477671
 ::res://sounds/music/::1723477672
 4 - Odd Ode _ Lonelibless.wav::AudioStreamWAV::832016487878202317::1723477672::1723477672::1::::<><>::

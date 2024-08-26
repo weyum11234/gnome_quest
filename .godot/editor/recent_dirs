@@ -1,3 +1,4 @@
+res://entities/players
 res://assets/item_sprites/Framed_Sprites
 res://fonts
 res://assets/item_sprites
@@ -6,7 +7,6 @@ res://entities
 res://assets/Rocky Roads/FX
 res://assets/level01/caves/industrial.v2
 res://scenes/splash
-res://entities/players
 res://obstacles
 <<<<<<< HEAD
 res://decorations

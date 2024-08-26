@@ -1,10 +1,10 @@
 [gd_scene load_steps=3 format=3 uid="uid://e5kn4hj8jfnv"]
 
-[ext_resource type="Script" path="res://scenes/startup/startup.gd" id="1_5ll01"]
+[ext_resource type="Script" path="res://scenes/startup/local_startup.gd" id="1_45ud4"]
 [ext_resource type="FontFile" uid="uid://cw6hv1tq5uaod" path="res://fonts/ThaleahFat.ttf" id="1_rehug"]
 
 [node name="Startup" type="Node2D"]
-script = ExtResource("1_5ll01")
+script = ExtResource("1_45ud4")
 
 [node name="UI" type="Control" parent="."]
 layout_mode = 3
@@ -70,7 +70,7 @@ text = "Back"
 [node name="Level" type="Node" parent="."]
 
 [node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
-_spawnable_scenes = PackedStringArray("res://scenes/test_stage/test_stage.tscn")
+_spawnable_scenes = PackedStringArray("res://scenes/test_stage/test_stage.tscn", "res://scenes/level_01/level_01.tscn")
 spawn_path = NodePath("../Level")
 
 [connection signal="pressed" from="UI/VBoxContainer/Private" to="." method="_on_private_pressed"]
