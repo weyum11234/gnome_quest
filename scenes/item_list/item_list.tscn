@@ -1,0 +1,411 @@
+[gd_scene load_steps=25 format=3 uid="uid://csypr7w1y7oud"]
+
+[ext_resource type="Script" path="res://scenes/item_list/item_list.gd" id="1_gs60b"]
+[ext_resource type="Shader" path="res://scenes/main/scroll_menu2.gdshader" id="2_c0dc3"]
+[ext_resource type="FontFile" uid="uid://cw6hv1tq5uaod" path="res://fonts/ThaleahFat.ttf" id="2_wg18o"]
+[ext_resource type="FontFile" uid="uid://b2gb7rgqcg37r" path="res://fonts/DungeonFont.ttf" id="3_jyw78"]
+[ext_resource type="Texture2D" uid="uid://42luta3y1718" path="res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/1.png" id="3_rakna"]
+[ext_resource type="Texture2D" uid="uid://dhbuk4xl0w3f5" path="res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/3.png" id="5_17gvr"]
+[ext_resource type="FontFile" uid="uid://cfrr063j63ycp" path="res://fonts/TooMuchInk.ttf" id="5_x4o6j"]
+[ext_resource type="Shader" path="res://scenes/main/scroll_menu3.gdshader" id="6_65urp"]
+[ext_resource type="Texture2D" uid="uid://clf7do7nkiljf" path="res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/4.png" id="7_cw1m0"]
+[ext_resource type="Texture2D" uid="uid://cm51jg162su32" path="res://assets/item_sprites/Framed_Sprites/Bullet_framed_blue.png" id="9_7te2o"]
+[ext_resource type="Texture2D" uid="uid://c87s0gjukrs8k" path="res://assets/item_sprites/Framed_Sprites/Homing_Bullet_framed_blue.png" id="11_mixjj"]
+[ext_resource type="Texture2D" uid="uid://bo3notimc5vkn" path="res://assets/item_sprites/Framed_Sprites/Speed_Boost_framed_blue.png" id="12_hg7v0"]
+[ext_resource type="Texture2D" uid="uid://1r25cmcymuvb" path="res://assets/item_sprites/Framed_Sprites/Jump_Boost_framed_blue.png" id="13_r8ts8"]
+[ext_resource type="Texture2D" uid="uid://m76o5yk7665p" path="res://assets/item_sprites/Framed_Sprites/Gravity_Controller_framed_blue.png" id="14_frmxs"]
+[ext_resource type="Texture2D" uid="uid://b27f3e61qn05h" path="res://assets/item_sprites/Framed_Sprites/Knife_framed_blue.png" id="15_bj5gu"]
+[ext_resource type="Texture2D" uid="uid://dfydw0mhnyp4n" path="res://assets/item_sprites/Framed_Sprites/Jetpack_framed_blue.png" id="16_160ws"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_y0qnu"]
+shader = ExtResource("2_c0dc3")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3ylq4"]
+shader = ExtResource("2_c0dc3")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_274mf"]
+shader = ExtResource("6_65urp")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pddfg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fycqq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_44p2c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m00vi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sepc6"]
+
+[node name="ItemList" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gs60b")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_y0qnu")
+offset_right = 640.0
+offset_bottom = 360.0
+texture = ExtResource("3_rakna")
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_3ylq4")
+offset_right = 640.0
+offset_bottom = 360.0
+texture = ExtResource("5_17gvr")
+
+[node name="TextureRect4" type="TextureRect" parent="."]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_274mf")
+offset_right = 640.0
+offset_bottom = 360.0
+texture = ExtResource("7_cw1m0")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 2
+offset_right = 642.0
+offset_bottom = 360.0
+horizontal_scroll_mode = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+custom_minimum_size = Vector2(630, 360)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(2.08165e-12, 60)
+layout_mode = 2
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(10, 2.08165e-12)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(2.08165e-12, 2.08165e-12)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(2.08165e-12, 5)
+layout_mode = 2
+
+[node name="Button" type="Button" parent="ScrollContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(90, 40)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.870588, 0.870588, 0.870588, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_wg18o")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pddfg")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_fycqq")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_44p2c")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_m00vi")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sepc6")
+text = "Exit"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(440, 2.08165e-12)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(2.08165e-12, 5)
+layout_mode = 2
+
+[node name="Title" type="Label" parent="ScrollContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(2.08165e-12, 2.08165e-12)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_jyw78")
+theme_override_font_sizes/font_size = 40
+text = "Items"
+horizontal_alignment = 1
+
+[node name="Bullet" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(2.08165e-12, 2.08165e-12)
+layout_mode = 2
+
+[node name="Image" type="TextureRect" parent="ScrollContainer/VBoxContainer/Bullet"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("9_7te2o")
+stretch_mode = 4
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/Bullet"]
+custom_minimum_size = Vector2(30, 2.08165e-12)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/Bullet"]
+custom_minimum_size = Vector2(450, 2.08165e-12)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/VBoxContainer/Bullet/VBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/Bullet/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(480, 2.08165e-12)
+layout_mode = 2
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Bullet/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_x4o6j")
+theme_override_font_sizes/font_size = 17
+text = "Bullet"
+horizontal_alignment = 1
+
+[node name="Description" type="Label" parent="ScrollContainer/VBoxContainer/Bullet/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_x4o6j")
+theme_override_font_sizes/font_size = 10
+text = "A well-balanced projectile that ricochets off walls and is affected by gravity, making it the
+ standard choice for taking down opponents. Use with precision to maximize its impact."
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(2.08165e-12, 20)
+layout_mode = 2
+
+[node name="Homing Bullet" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(2.08165e-12, 2.08165e-12)
+layout_mode = 2
+
+[node name="Image" type="TextureRect" parent="ScrollContainer/VBoxContainer/Homing Bullet"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("11_mixjj")
+stretch_mode = 4
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/Homing Bullet"]
+custom_minimum_size = Vector2(30, 2.08165e-12)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/Homing Bullet"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/VBoxContainer/Homing Bullet/VBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/Homing Bullet/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(480, 2.08165e-12)
+layout_mode = 2
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Homing Bullet/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_x4o6j")
+theme_override_font_sizes/font_size = 17
+text = "Homing Bullet"
+horizontal_alignment = 1
+
+[node name="Description" type="Label" parent="ScrollContainer/VBoxContainer/Homing Bullet/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_x4o6j")
+theme_override_font_sizes/font_size = 10
+text = "A smart projectile that locks onto the nearest target, ensuring a hit with minimal effort. Passing through walls, 
+this weapon is the perfect tool for taking down elusive opponents. Timing is key to maximizing its potential."
+
+[node name="VBoxContainer6" type="VBoxContainer" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(2.08165e-12, 20)
+layout_mode = 2
+
+[node name="Speed Boost" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(2.08165e-12, 2.08165e-12)
+layout_mode = 2
+
+[node name="Image" type="TextureRect" parent="ScrollContainer/VBoxContainer/Speed Boost"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_hg7v0")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/Speed Boost"]
+custom_minimum_size = Vector2(30, 2.08165e-12)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/Speed Boost"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/VBoxContainer/Speed Boost/VBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/Speed Boost/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(480, 2.08165e-12)
+layout_mode = 2
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Speed Boost/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_x4o6j")
+theme_override_font_sizes/font_size = 17
+text = "Speed Boost"
+horizontal_alignment = 1
+
+[node name="Description" type="Label" parent="ScrollContainer/VBoxContainer/Speed Boost/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_x4o6j")
+theme_override_font_sizes/font_size = 10
+text = "An energy drink that grants a temporary increase in your overall speed. Activate it to maintain a competitive 
+edge over time, perfect for pulling ahead in long stretches or keeping up with fast-paced opponents."
+
+[node name="VBoxContainer5" type="VBoxContainer" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(2.08165e-12, 20)
+layout_mode = 2
+
+[node name="Jump Boost" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(2.08165e-12, 2.08165e-12)
+layout_mode = 2
+
+[node name="Image" type="TextureRect" parent="ScrollContainer/VBoxContainer/Jump Boost"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("13_r8ts8")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/Jump Boost"]
+custom_minimum_size = Vector2(30, 2.08165e-12)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/Jump Boost"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/VBoxContainer/Jump Boost/VBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/Jump Boost/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(480, 2.08165e-12)
+layout_mode = 2
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Jump Boost/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_x4o6j")
+theme_override_font_sizes/font_size = 17
+text = "Jump Boost"
+horizontal_alignment = 1
+
+[node name="Description" type="Label" parent="ScrollContainer/VBoxContainer/Jump Boost/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_x4o6j")
+theme_override_font_sizes/font_size = 10
+text = "An energy drink that grants a temporary buff that heightens your jumping ability, allowing you to reach 
+greater heights with ease. Ideal for navigating vertical challenges or gaining a vantage point over your rivals."
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(2.08165e-12, 20)
+layout_mode = 2
+
+[node name="Gravity Controller" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(2.08165e-12, 2.08165e-12)
+layout_mode = 2
+
+[node name="Image" type="TextureRect" parent="ScrollContainer/VBoxContainer/Gravity Controller"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("14_frmxs")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/Gravity Controller"]
+custom_minimum_size = Vector2(30, 2.08165e-12)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/Gravity Controller"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/VBoxContainer/Gravity Controller/VBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/Gravity Controller/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(480, 2.08165e-12)
+layout_mode = 2
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Gravity Controller/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_x4o6j")
+theme_override_font_sizes/font_size = 17
+text = "Gravity Controller"
+horizontal_alignment = 1
+
+[node name="Description" type="Label" parent="ScrollContainer/VBoxContainer/Gravity Controller/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_x4o6j")
+theme_override_font_sizes/font_size = 10
+text = "A device that alters the user's gravitational pull, giving you the ability to float or sink at will. 
+Use it to navigate challenging terrain or outwit opponents by taking unconventional routes."
+
+[node name="VBoxContainer7" type="VBoxContainer" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(2.08165e-12, 20)
+layout_mode = 2
+
+[node name="Knife" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(2.08165e-12, 2.08165e-12)
+layout_mode = 2
+
+[node name="Image" type="TextureRect" parent="ScrollContainer/VBoxContainer/Knife"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("15_bj5gu")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/Knife"]
+custom_minimum_size = Vector2(30, 2.08165e-12)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/Knife"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/VBoxContainer/Knife/VBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/Knife/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(480, 2.08165e-12)
+layout_mode = 2
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Knife/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_x4o6j")
+theme_override_font_sizes/font_size = 17
+text = "Knife"
+horizontal_alignment = 1
+
+[node name="Description" type="Label" parent="ScrollContainer/VBoxContainer/Knife/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_x4o6j")
+theme_override_font_sizes/font_size = 10
+text = "A straight-shooting projectile that flies directly toward your target and is unaffected by gravity. 
+Its precise trajectory makes it a reliable tool for taking down opponents with accuracy."
+
+[node name="VBoxContainer8" type="VBoxContainer" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(2.08165e-12, 20)
+layout_mode = 2
+
+[node name="Jetpack" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(2.08165e-12, 2.08165e-12)
+layout_mode = 2
+
+[node name="Image" type="TextureRect" parent="ScrollContainer/VBoxContainer/Jetpack"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("16_160ws")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/Jetpack"]
+custom_minimum_size = Vector2(30, 2.08165e-12)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/Jetpack"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/VBoxContainer/Jetpack/VBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/Jetpack/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(480, 2.08165e-12)
+layout_mode = 2
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Jetpack/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_x4o6j")
+theme_override_font_sizes/font_size = 17
+text = "Jetpack"
+horizontal_alignment = 1
+
+[node name="Description" type="Label" parent="ScrollContainer/VBoxContainer/Jetpack/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_x4o6j")
+theme_override_font_sizes/font_size = 10
+text = "A powerful propulsion system that enables you to soar above the battlefield. Use it to quickly cover 
+ground or escape dangerous situations, but be mindful of your fuel levels to avoid a sudden drop."
+
+[connection signal="pressed" from="ScrollContainer/VBoxContainer/HBoxContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
