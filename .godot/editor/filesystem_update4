@@ -1,12 +1,15 @@
 res://entities/players/player.tscn
 res://entities/knife/knife.gd
 res://entities/players/player.gd
+res://scenes/main/scroll_menu.gdshader
 res://scenes/main/scroll_menu2.gdshader
 res://scenes/main/scroll_menu3.gdshader
-res://scenes/main/scroll_menu.gdshader
 res://entities/item_box/item_box.tscn
 res://scenes/test_stage/test_stage.tscn
 res://entities/knife/knife.tscn
 res://entities/knife/knife_placeholder.tscn
 res://scenes/startup/startup.tscn
+res://decorations/invis_rect.tscn
 res://decorations/light.tscn
+res://scenes/main/main.tscn
+res://scenes/startup/startup.gd

@@ -15,9 +15,6 @@ func _ready():
 	exit.button_down.connect(on_exit_down)
 
 
-
-
-
 func on_ng_down() -> void:
 	get_tree().change_scene_to_file("res://scenes/startup/startup.tscn")
 	TransitionScreen.transition()
