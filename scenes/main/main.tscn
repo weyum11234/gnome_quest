@@ -101,7 +101,7 @@ grow_vertical = 2
 theme_override_constants/margin_left = 0
 theme_override_constants/margin_top = 12
 theme_override_constants/margin_right = 500
-theme_override_constants/margin_bottom = 12
+theme_override_constants/margin_bottom = 70
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
 layout_mode = 2
@@ -126,6 +126,22 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_nfj70")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_nfj70")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_nfj70")
 text = "PLAY"
+alignment = 0
+
+[node name="ItemList" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(120, 32)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.868985, 0.868985, 0.868985, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_28dfa")
+theme_override_font_sizes/font_size = 38
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nfj70")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_nfj70")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_nfj70")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nfj70")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_nfj70")
+text = "Items"
 alignment = 0
 
 [node name="Options" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]

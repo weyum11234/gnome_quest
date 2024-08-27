@@ -14,10 +14,6 @@ func change_level(scene : PackedScene):
 		c.queue_free()
 	level.add_child(scene.instantiate())
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
 func _on_host_pressed():
 	print("hosting")
 	# Creating server.

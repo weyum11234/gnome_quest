@@ -12,18 +12,19 @@ func _ready():
 
 func _on_private_pressed():
 	print("private")
+	# TODO: add private functionality
 
 func _on_public_pressed():
 	$UI/VBoxContainer/Private.hide()
 	$UI/VBoxContainer/Public.hide()
 	$UI/VBoxContainer/Host.hide()
 	$UI/LobbiesList.show()
+	$UI/Refresh.show()
 
 func _on_host_pressed():
-	print(peer.create_lobby(SteamMultiplayerPeer.LOBBY_TYPE_PUBLIC))
+	peer.create_lobby(SteamMultiplayerPeer.LOBBY_TYPE_PUBLIC)
 	multiplayer.multiplayer_peer = peer
 	start_game()
-
 
 func _on_refresh_pressed():
 	if $UI/LobbiesList/Lobbies.get_child_count():
@@ -34,8 +35,16 @@ func _on_refresh_pressed():
 		get_lobby_list()
 
 func _on_back_pressed():
-	# @TODO: Implement back
-	pass # Replace with function body.
+	if $UI/LobbiesList.is_visible_in_tree():
+		$UI/VBoxContainer/Private.show()
+		$UI/VBoxContainer/Public.show()
+		$UI/VBoxContainer/Host.show()
+		$UI/LobbiesList.hide()
+		$UI/Refresh.hide()
+	else:
+		get_tree().change_scene_to_file("res://scenes/main/main.tscn")
+		TransitionScreen.transition()
+		await TransitionScreen.on_transition_finished
 	
 func _on_lobby_match_list(lobbies : Array):
 	for lobby in lobbies:
