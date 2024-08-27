@@ -17,6 +17,9 @@ func del_player(id : int):
 		return
 		
 	$Players.get_node(str(id)).queue_free()
+	
+func server_disconnect_warning():
+	print("server has disconnected")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -25,6 +28,7 @@ func _ready():
 	
 	multiplayer.peer_connected.connect(add_player)
 	multiplayer.peer_disconnected.connect(del_player)
+	multiplayer.server_disconnected.connect(server_disconnect_warning)
 	
 	for id in multiplayer.get_peers():
 		add_player(id)

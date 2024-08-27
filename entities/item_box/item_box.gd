@@ -8,7 +8,7 @@ static var rng = RandomNumberGenerator.new()
 func give_item(body):
 	if body.is_in_group("player"):
 		if not body.get_node("Hand").get_child_count():
-			var i = rng.randi_range(0, 6)
+			var i = rng.randi_range(1, 1)
 			match i:
 				0:
 					body.get_node("Hand").add_child(load("res://entities/speed_boost/speed_boost.tscn").instantiate(), true)
@@ -18,17 +18,17 @@ func give_item(body):
 					body.get_node("Hand").add_child(load("res://entities/gravity_controller/gravity_controller.tscn").instantiate())
 				3:
 					body.get_node("Hand").add_child(load("res://entities/jetpack/jetpack.tscn").instantiate())
+				#4:
+					#var fake_knife = load("res://entities/knife/knife_placeholder.tscn").instantiate()
+					#fake_knife.id = rng.randi()
+					#fake_knife.parent = get_parent()
+					#body.get_node("Hand").add_child(fake_knife)
 				4:
-					var fake_knife = load("res://entities/knife/knife_placeholder.tscn").instantiate()
-					fake_knife.id = rng.randi()
-					fake_knife.parent = get_parent()
-					body.get_node("Hand").add_child(fake_knife)
-				5:
 					var fake_bullet = load("res://entities/bullet/bullet_placeholder.tscn").instantiate()
 					fake_bullet.id = rng.randi()
 					fake_bullet.parent = get_parent()
 					body.get_node("Hand").add_child(fake_bullet)
-				6:
+				5:
 					var fake_homing = load("res://entities/homing_bullet/homing_placeholder.tscn").instantiate()
 					fake_homing.id = rng.randi()
 					fake_homing.parent = get_parent()

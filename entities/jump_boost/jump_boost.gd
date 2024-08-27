@@ -23,5 +23,6 @@ func use(player : Object):
 		jump_velo = player.jump_velocity
 
 func reset():
-	get_parent().get_parent().jump_velocity = jump_velo
+	if jump_velo != 0:
+		get_parent().get_parent().jump_velocity = jump_velo
 	queue_free()

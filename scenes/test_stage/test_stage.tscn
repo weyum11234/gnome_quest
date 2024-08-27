@@ -386,7 +386,7 @@ layer_0/tile_data = PackedInt32Array(262139, 65536, 4, 262140, 65536, 4, 262141,
 [node name="Players" type="Node" parent="."]
 
 [node name="PlayerSpawner" type="MultiplayerSpawner" parent="."]
-_spawnable_scenes = PackedStringArray("res://entities/players/player.tscn")
+_spawnable_scenes = PackedStringArray("res://entities/players/test_player.tscn", "res://entities/players/player.tscn")
 spawn_path = NodePath("../Players")
 
 [node name="Items" type="Node" parent="."]

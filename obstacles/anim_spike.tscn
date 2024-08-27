@@ -61,7 +61,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c52oq"]
-size = Vector2(16, 8)
+size = Vector2(20, 10)
 
 [sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_k1k2v"]
 properties/0/path = NodePath("AnimatedSprite2D:frame")

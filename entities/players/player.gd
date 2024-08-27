@@ -26,10 +26,6 @@ var long_jump_timer = 0.0
 var spawn_position : Vector2
 
 func _ready():
-	if not is_multiplayer_authority():
-		set_process(false)
-		return
-	
 	spawn_position = global_position
 
 func _physics_process(delta):
@@ -41,6 +37,7 @@ func _physics_process(delta):
 
 	# Jump.
 	if player_input.do_jump and is_on_floor():
+		print("jump ", jump_velocity)
 		velocity.y = jump_velocity
 		player_input.jumping = true
 	elif player_input.do_long_jump and player_input.jumping:
@@ -56,6 +53,7 @@ func _physics_process(delta):
 	# Walk.
 	var direction = player_input.direction
 	if direction:
+		print("moving ", speed, " ", direction)
 		velocity.x = speed * direction
 		if velocity.x < 0:
 			sprite.flip_h = true
@@ -91,8 +89,7 @@ func _on_hurt_box_body_entered(body):
 func death():
 	if not is_multiplayer_authority():
 		return
-		
-	set_process(false)
+
 	set_physics_process(false)
 	
 	if hand.get_child_count() > 0:
@@ -114,5 +111,4 @@ func _on_animated_sprite_2d_animation_finished():
 			current_animation = "respawn"
 			sprite.play(current_animation)
 		"respawn":
-			set_process(true)
 			set_physics_process(true)

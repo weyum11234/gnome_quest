@@ -23,5 +23,6 @@ func use(player : Object):
 		walk_speed = player.speed
 		
 func reset():
-	get_parent().get_parent().speed = walk_speed
+	if walk_speed != 0:
+		get_parent().get_parent().speed = walk_speed
 	queue_free()
