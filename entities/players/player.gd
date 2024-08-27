@@ -37,7 +37,6 @@ func _physics_process(delta):
 
 	# Jump.
 	if player_input.do_jump and is_on_floor():
-		print("jump ", jump_velocity)
 		velocity.y = jump_velocity
 		player_input.jumping = true
 	elif player_input.do_long_jump and player_input.jumping:
@@ -53,7 +52,6 @@ func _physics_process(delta):
 	# Walk.
 	var direction = player_input.direction
 	if direction:
-		print("moving ", speed, " ", direction)
 		velocity.x = speed * direction
 		if velocity.x < 0:
 			sprite.flip_h = true
@@ -87,9 +85,6 @@ func _on_hurt_box_body_entered(body):
 	death()
 
 func death():
-	if not is_multiplayer_authority():
-		return
-
 	set_physics_process(false)
 	
 	if hand.get_child_count() > 0:
@@ -102,9 +97,6 @@ func death():
 
 
 func _on_animated_sprite_2d_animation_finished():
-	if not is_multiplayer_authority():
-		return
-		
 	match current_animation:
 		"death":
 			global_position = spawn_position
