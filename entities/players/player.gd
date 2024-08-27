@@ -15,7 +15,6 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 @export var push_speed = 100
 var force = Vector2.ZERO
 var pushed_velo = 0
-var player_above = false
 
 # Timers
 @export var long_jump_time = 0.25
@@ -88,18 +87,18 @@ func _physics_process(delta):
 	
 	player_collision()
 	move_and_slide()
-	
 	sprite.play(current_animation)
 	
 
 
 
 func player_collision():
+	
 	for i in get_slide_collision_count():
 		var collision = get_slide_collision(i)
 		var normal = collision.get_normal()
+		var other_player = collision.get_collider()
 		if collision.get_collider() is CharacterBody2D and collision.get_collider().is_in_group("players") and force != 0 and normal.y == 0:
-			var other_player = collision.get_collider()
 			
 			# Calculate push direction and force
 			var push_direction = force
@@ -111,11 +110,11 @@ func player_collision():
 			# Apply push force to the other player
 			other_player.pushed_velo = push_force
 		else:
-			pushed_velo = 0	
+			pushed_velo = 0
 			
-		if collision.get_collider() is CharacterBody2D and collision.get_collider().is_in_group("players") and force != 0 and normal.y > 0:	
-			player_above = true
-			print("above")
+
+			
+				
 
 
 
