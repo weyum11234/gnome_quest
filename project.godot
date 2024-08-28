@@ -27,6 +27,7 @@ SettingsLoad="*res://scenes/global/settings_load.gd"
 TransitionScreen="*res://scenes/global/transition_screen.tscn"
 AudioController="*res://scenes/global/audio_controller.tscn"
 SteamLoad="*res://scenes/global/steam_load.gd"
+SceneManager="*res://scenes/scene_manager.gd"
 
 [display]
 
