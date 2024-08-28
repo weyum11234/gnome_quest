@@ -12,6 +12,12 @@ extends CharacterBody2D
 @export var jump_velocity = -170.0
 @export var gravity_multiplier = 1.0
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+@export var push_speed = 100
+var force = Vector2.ZERO
+var pushed_velo = 0
+@export var slide_speed = 30
+var is_player_above = false
+var player_above
 
 # Timers
 @export var long_jump_time = 0.25
@@ -31,6 +37,7 @@ func _ready():
 		return
 	
 	spawn_position = global_position
+	add_to_group("players")
 
 func _physics_process(delta):
 	current_animation = "idle"
@@ -40,9 +47,11 @@ func _physics_process(delta):
 		velocity.y += gravity * gravity_multiplier * delta
 
 	# Jump.
-	if player_input.do_jump and is_on_floor():
+	if player_input.do_jump and is_on_floor() and is_player_above == false:
 		velocity.y = jump_velocity
 		player_input.jumping = true
+	elif player_input.do_jump and is_on_floor() and is_player_above == true:
+		player_above.player_input.do_jump = true
 	elif player_input.do_long_jump and player_input.jumping:
 		velocity.y = jump_velocity
 	
@@ -57,13 +66,15 @@ func _physics_process(delta):
 	var direction = player_input.direction
 	if direction:
 		velocity.x = speed * direction
+		force = direction * 1
 		if velocity.x < 0:
 			sprite.flip_h = true
 		else:
 			sprite.flip_h = false
 		current_animation = "walk"
 	else:
-		velocity.x = move_toward(velocity.x, 0, speed)
+		velocity.x = move_toward(velocity.x, 0, speed) + pushed_velo
+		force = 0
 		
 	# Flip hand.
 	if sprite.flip_h and hand.get_child_count():
@@ -78,8 +89,46 @@ func _physics_process(delta):
 		hand.get_child(0).scale.x = 1
 		hand.get_child(0).use(self)
 	
+	is_player_above = false
+	player_collision()
 	move_and_slide()
 	sprite.play(current_animation)
+	
+
+
+
+func player_collision():
+	
+	for i in get_slide_collision_count():
+		var collision = get_slide_collision(i)
+		var normal = collision.get_normal()
+		var other_player = collision.get_collider()
+		if collision.get_collider() is CharacterBody2D and collision.get_collider().is_in_group("players") and force != 0 and normal.y == 0:
+			
+			# Calculate push direction and force
+			var push_direction = force
+			var push_force = push_direction * push_speed
+			
+			# Slightly reduce this player's velocity
+			pushed_velo = push_force
+			
+			# Apply push force to the other player
+			other_player.pushed_velo = push_force
+		else:
+			pushed_velo = 0
+			
+		if collision.get_collider() is CharacterBody2D and collision.get_collider().is_in_group("players") and normal.y < 0:
+			other_player.is_player_above = true
+			other_player.player_above = self
+			if other_player.global_position.x < self.global_position.x:
+				velocity.x += slide_speed  # Slide to the right
+			else:
+				velocity.x -= slide_speed  # Slide to the left
+	
+
+			
+				
+
 
 
 func _on_hurt_box_area_entered(area):
