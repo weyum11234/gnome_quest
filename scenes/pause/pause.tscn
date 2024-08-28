@@ -1,0 +1,118 @@
+[gd_scene load_steps=19 format=3 uid="uid://bkx1fisadbp00"]
+
+[ext_resource type="Script" path="res://scenes/pause/pause.gd" id="1_tev7b"]
+[ext_resource type="FontFile" uid="uid://cw6hv1tq5uaod" path="res://fonts/ThaleahFat.ttf" id="2_nd22k"]
+[ext_resource type="PackedScene" uid="uid://dc55gjoubvdwk" path="res://scenes/options/pause_settings.tscn" id="3_7r73w"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0qmx5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bu3fk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o3tok"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h5bfo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tn4b8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8dw7q"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wegia"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_frayn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ebvwi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_87mck"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_udit4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7waiu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ijd2x"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qhymk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lr4qu"]
+
+[node name="Pause" type="Control"]
+process_mode = 3
+custom_minimum_size = Vector2(640, 360)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_tev7b")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+offset_right = 640.0
+offset_bottom = 360.0
+color = Color(0.37981, 0.379811, 0.37981, 0.356863)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
+custom_minimum_size = Vector2(640, 360)
+offset_right = 40.0
+offset_bottom = 40.0
+alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer/HBoxContainer"]
+custom_minimum_size = Vector2(140, 2.08165e-12)
+layout_mode = 2
+alignment = 1
+
+[node name="Resume" type="Button" parent="CanvasLayer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.870588, 0.870588, 0.870588, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_nd22k")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_0qmx5")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_bu3fk")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o3tok")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_h5bfo")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_tn4b8")
+text = "Resume"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(2.08165e-12, 20)
+layout_mode = 2
+
+[node name="Options" type="Button" parent="CanvasLayer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.870588, 0.870588, 0.870588, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_nd22k")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8dw7q")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wegia")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_frayn")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ebvwi")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_87mck")
+text = "Options"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(2.08165e-12, 20)
+layout_mode = 2
+
+[node name="Quit" type="Button" parent="CanvasLayer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.870588, 0.870588, 0.870588, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_nd22k")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_udit4")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_7waiu")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ijd2x")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_qhymk")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_lr4qu")
+text = "Leave Game"
+
+[node name="Settings" parent="." instance=ExtResource("3_7r73w")]
+layout_mode = 1
+
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/VBoxContainer2/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/VBoxContainer2/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/VBoxContainer2/Quit" to="." method="_on_quit_pressed"]

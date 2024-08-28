@@ -1,10 +1,10 @@
 extends Control
 
-@onready var resolution_option_button = $VBoxContainer/OptionButton
-@onready var fullscreen_option_button = $VBoxContainer/OptionButton2
-@onready var vsync_option_button = $VBoxContainer/OptionButton4
-@onready var fps_option_button = $VBoxContainer/OptionButton3
-@onready var master_volume_slider = $VBoxContainer/HSlider
+@onready var resolution_option_button = $CanvasLayer/VBoxContainer/OptionButton
+@onready var fullscreen_option_button = $CanvasLayer/VBoxContainer/OptionButton2
+@onready var vsync_option_button = $CanvasLayer/VBoxContainer/OptionButton4
+@onready var fps_option_button = $CanvasLayer/VBoxContainer/OptionButton3
+@onready var master_volume_slider = $CanvasLayer/VBoxContainer/HSlider
 
 func _ready():
 	# Load and apply settings to UI elements
@@ -78,7 +78,7 @@ func _on_h_slider_value_changed(value):
 	ConfigFileHandler.save_audio_settings("master_volume", value)
 
 func _on_exit_pressed():
-	SceneManager.go_back()
+	get_parent().hide_settings()
 
 func _on_option_button_2_item_selected(index):
 	match index:

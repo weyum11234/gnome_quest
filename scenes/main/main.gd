@@ -28,9 +28,7 @@ func on_il_down() -> void:
 	
 	
 func on_options_down() -> void:
-	get_tree().change_scene_to_file("res://scenes/options/settings.tscn")
-	TransitionScreen.transition()
-	await TransitionScreen.on_transition_finished
+	SceneManager.go_to_scene("res://scenes/options/settings.tscn")
 
 	
 func on_exit_down() -> void:
