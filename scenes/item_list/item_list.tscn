@@ -48,6 +48,7 @@ script = ExtResource("1_gs60b")
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_repeat = 2
 material = SubResource("ShaderMaterial_y0qnu")
+layout_mode = 0
 offset_right = 640.0
 offset_bottom = 360.0
 texture = ExtResource("3_rakna")
@@ -55,6 +56,7 @@ texture = ExtResource("3_rakna")
 [node name="TextureRect3" type="TextureRect" parent="."]
 texture_repeat = 2
 material = SubResource("ShaderMaterial_3ylq4")
+layout_mode = 0
 offset_right = 640.0
 offset_bottom = 360.0
 texture = ExtResource("5_17gvr")
@@ -62,6 +64,7 @@ texture = ExtResource("5_17gvr")
 [node name="TextureRect4" type="TextureRect" parent="."]
 texture_repeat = 2
 material = SubResource("ShaderMaterial_274mf")
+layout_mode = 0
 offset_right = 640.0
 offset_bottom = 360.0
 texture = ExtResource("7_cw1m0")
