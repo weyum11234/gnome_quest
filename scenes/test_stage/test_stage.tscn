@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://bhdah5x7s24id"]
+[gd_scene load_steps=8 format=3 uid="uid://bhdah5x7s24id"]
 
 [ext_resource type="Script" path="res://scenes/test_stage/test_stage.gd" id="1_rpdqf"]
 [ext_resource type="Texture2D" uid="uid://cw57a7c5h3v6n" path="res://assets/level01/caves/adve/tiles.png" id="1_shmg6"]
 [ext_resource type="PackedScene" uid="uid://dc23bl42ciakq" path="res://entities/item_box/item_box.tscn" id="3_tkuv1"]
+[ext_resource type="PackedScene" uid="uid://bkx1fisadbp00" path="res://scenes/pause/pause.tscn" id="4_4xele"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_407q0"]
 texture = ExtResource("1_shmg6")
@@ -405,5 +406,7 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(0, 112)
 shape = SubResource("RectangleShape2D_d8r0n")
+
+[node name="Pause" parent="." instance=ExtResource("4_4xele")]
 
 [connection signal="spawned" from="ItemSpawner" to="." method="_on_item_spawner_spawned"]
