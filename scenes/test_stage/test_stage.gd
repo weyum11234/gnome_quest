@@ -1,7 +1,5 @@
 extends Node2D
 
-const MOB_SPAWN_COUNT = 1
-
 @onready var player_scene = preload("res://entities/players/player.tscn")
 
 func add_player(id : int):
@@ -19,10 +17,6 @@ func del_player(id : int):
 		return
 		
 	$Players.get_node(str(id)).queue_free()
-
-func add_item(item : Object):
-	$Items.add_child(item, true)
-	print($Items.get_children())
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

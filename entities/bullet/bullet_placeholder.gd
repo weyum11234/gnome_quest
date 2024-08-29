@@ -8,3 +8,6 @@ func use(player : Object):
 	real_bullet.set_values(id, player)
 	parent.add_child(real_bullet)
 	queue_free()
+
+func reset():
+	queue_free()

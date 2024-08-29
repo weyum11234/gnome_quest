@@ -23,10 +23,10 @@ func _ready():
 	if is_multiplayer_authority():
 		camera.make_current()
 	else:
-		set_process(false)
+		set_physics_process(false)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _physics_process(delta):
 	# Resetting default values.
 	do_jump = false
 	do_long_jump = false

@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dqhh8vxlpxgsp"]
+[gd_scene load_steps=8 format=3 uid="uid://dqhh8vxlpxgsp"]
 
 [ext_resource type="Texture2D" uid="uid://c4y8hmlcaa8jn" path="res://assets/level01/dungeons/1-Bit-Ruins-Omniclause/platform.png" id="1_2q5su"]
 [ext_resource type="Script" path="res://obstacles/moving_platform.gd" id="1_hb4ot"]
@@ -44,6 +44,14 @@ _data = {
 "move": SubResource("Animation_1f3jn")
 }
 
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_25lc0"]
+properties/0/path = NodePath("Path2D/PathFollow2D:progress_ratio")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+properties/1/path = NodePath("Path2D/AnimatableBody2D:position")
+properties/1/spawn = true
+properties/1/replication_mode = 1
+
 [node name="moving_platform" type="Node2D"]
 script = ExtResource("1_hb4ot")
 
@@ -68,3 +76,6 @@ root_node = NodePath("../Path2D")
 libraries = {
 "": SubResource("AnimationLibrary_ssgtf")
 }
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_25lc0")

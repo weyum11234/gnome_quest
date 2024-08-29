@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var first_scene = preload("res://scenes/test_stage/test_stage.tscn")
+@onready var first_scene = preload("res://scenes/level_01/level_01.tscn")
 @onready var peer = SteamMultiplayerPeer.new()
 var lobby_id : int
 

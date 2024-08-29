@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://ca7dy5lvagvjf"]
+[gd_scene load_steps=10 format=3 uid="uid://ca7dy5lvagvjf"]
 
 [ext_resource type="Script" path="res://obstacles/circular_flame.gd" id="1_24dns"]
 [ext_resource type="Texture2D" uid="uid://b4kw2fjhi05pn" path="res://assets/level01/Effect and Bullet 16x16/Green Effect and Bullet 16x16.png" id="2_l5yn0"]
@@ -42,6 +42,14 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_6imjy"]
 radius = 7.0
 
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_nb6bf"]
+properties/0/path = NodePath(".:position")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+properties/1/path = NodePath("AnimatedSprite2D:frame")
+properties/1/spawn = true
+properties/1/replication_mode = 1
+
 [node name="flame" type="CharacterBody2D"]
 script = ExtResource("1_24dns")
 
@@ -51,3 +59,6 @@ frame_progress = 0.448767
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_6imjy")
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_nb6bf")

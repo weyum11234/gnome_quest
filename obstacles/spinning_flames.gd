@@ -12,6 +12,7 @@ func _ready():
 	$AnimatedSprite2D6.play()
 	$AnimatedSprite2D7.play()
 	$AnimatedSprite2D8.play()
+	
 func _process(delta):
 	# Rotate the CharacterBody2D node continuously
 	rotation += rotation_speed * delta
