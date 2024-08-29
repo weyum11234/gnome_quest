@@ -28,6 +28,11 @@ TransitionScreen="*res://scenes/global/transition_screen.tscn"
 AudioController="*res://scenes/global/audio_controller.tscn"
 SteamLoad="*res://scenes/global/steam_load.gd"
 SceneManager="*res://scenes/scene_manager.gd"
+NetworkTime="*res://addons/netfox/network-time.gd"
+NetworkTimeSynchronizer="*res://addons/netfox/network-time-synchronizer.gd"
+NetworkRollback="*res://addons/netfox/rollback/network-rollback.gd"
+NetworkEvents="*res://addons/netfox/network-events.gd"
+NetworkPerformance="*res://addons/netfox/network-performance.gd"
 
 [display]
 
@@ -36,6 +41,10 @@ window/size/viewport_height=360
 window/size/window_width_override=1920
 window/size/window_height_override=1080
 window/stretch/mode="canvas_items"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/netfox.internals/plugin.cfg", "res://addons/netfox/plugin.cfg")
 
 [input]
 

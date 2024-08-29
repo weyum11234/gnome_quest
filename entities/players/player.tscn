@@ -1,10 +1,10 @@
-[gd_scene load_steps=31 format=3 uid="uid://da8ra7ljeknhu"]
+[gd_scene load_steps=30 format=3 uid="uid://da8ra7ljeknhu"]
 
-[ext_resource type="Script" path="res://entities/players/player.gd" id="1_cl06y"]
+[ext_resource type="Script" path="res://entities/players/netfox_player.gd" id="1_mkvmq"]
 [ext_resource type="Texture2D" uid="uid://6vaao2p4o2j8" path="res://assets/level01/caves/industrial.v2/industrial.v2.png" id="2_8tjra"]
 [ext_resource type="Texture2D" uid="uid://dkph32kv7qse4" path="res://assets/level01/caves/industrial.v2/recolored_player.png" id="3_xfqrp"]
-[ext_resource type="AudioStream" uid="uid://bcrdmebtb3ved" path="res://assets/sounds/knife-stab-sound-fx.wav" id="4_laxvq"]
-[ext_resource type="Script" path="res://entities/players/player_input.gd" id="5_y28g8"]
+[ext_resource type="Script" path="res://entities/players/netfox_player_input.gd" id="5_tmspn"]
+[ext_resource type="Script" path="res://addons/netfox/rollback/rollback-synchronizer.gd" id="6_yur60"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q4x0f"]
 atlas = ExtResource("3_xfqrp")
@@ -193,53 +193,21 @@ size = Vector2(14, 14)
 size = Vector2(14, 14)
 
 [sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_ncyyq"]
-properties/0/path = NodePath(".:position")
+properties/0/path = NodePath(".:player_id")
 properties/0/spawn = true
-properties/0/replication_mode = 1
-properties/1/path = NodePath(".:player_id")
-properties/1/spawn = true
-properties/1/replication_mode = 0
-properties/2/path = NodePath(".:velocity")
-properties/2/spawn = true
-properties/2/replication_mode = 1
-properties/3/path = NodePath("AnimatedSprite2D:animation")
-properties/3/spawn = true
-properties/3/replication_mode = 1
-properties/4/path = NodePath("AnimatedSprite2D:flip_h")
-properties/4/spawn = true
-properties/4/replication_mode = 1
-
-[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_ugwgr"]
-properties/0/path = NodePath(".:direction")
-properties/0/spawn = true
-properties/0/replication_mode = 1
-properties/1/path = NodePath(".:do_jump")
+properties/0/replication_mode = 0
+properties/1/path = NodePath("AnimatedSprite2D:animation")
 properties/1/spawn = true
 properties/1/replication_mode = 1
-properties/2/path = NodePath(".:do_long_jump")
+properties/2/path = NodePath("AnimatedSprite2D:flip_h")
 properties/2/spawn = true
 properties/2/replication_mode = 1
-properties/3/path = NodePath(".:jumping")
-properties/3/spawn = true
-properties/3/replication_mode = 1
-properties/4/path = NodePath(".:do_use")
-properties/4/spawn = true
-properties/4/replication_mode = 1
-properties/5/path = NodePath(".:do_long_use")
-properties/5/spawn = true
-properties/5/replication_mode = 1
-properties/6/path = NodePath(".:facing")
-properties/6/spawn = true
-properties/6/replication_mode = 1
-properties/7/path = NodePath(".:mouse_pos")
-properties/7/spawn = true
-properties/7/replication_mode = 1
 
-[node name="Player" type="CharacterBody2D" groups=["player"]]
+[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("player_input") groups=["player"]]
 collision_layer = 2
 collision_mask = 3
-script = ExtResource("1_cl06y")
-slide_speed = 60
+script = ExtResource("1_mkvmq")
+player_input = NodePath("Input")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_75tuk")
@@ -265,18 +233,19 @@ collision_mask = 12
 position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_4sw0k")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("4_laxvq")
-
 [node name="SpawnTimer" type="Timer" parent="."]
+
+[node name="Input" type="Node" parent="."]
+script = ExtResource("5_tmspn")
+
+[node name="RollbackSynchronizer" type="Node" parent="." node_paths=PackedStringArray("root")]
+script = ExtResource("6_yur60")
+root = NodePath("..")
+state_properties = Array[String]([":position", ":velocity"])
+input_properties = Array[String](["Input:direction", "Input:do_jump", "Input:do_long_jump", "Input:do_use", "Input:do_long_use"])
 
 [node name="ServerSync" type="MultiplayerSynchronizer" parent="."]
 replication_config = SubResource("SceneReplicationConfig_ncyyq")
-
-[node name="PlayerInput" type="MultiplayerSynchronizer" parent="."]
-root_path = NodePath(".")
-replication_config = SubResource("SceneReplicationConfig_ugwgr")
-script = ExtResource("5_y28g8")
 
 [node name="HandSpawner" type="MultiplayerSpawner" parent="."]
 _spawnable_scenes = PackedStringArray("res://entities/speed_boost/speed_boost.tscn", "res://entities/jump_boost/jump_boost.tscn", "res://entities/gravity_controller/gravity_controller.tscn", "res://entities/jetpack/jetpack.tscn", "res://entities/knife/knife_placeholder.tscn", "res://entities/bullet/bullet_placeholder.tscn", "res://entities/homing_bullet/homing_placeholder.tscn")
