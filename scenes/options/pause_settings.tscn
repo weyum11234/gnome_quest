@@ -1,0 +1,187 @@
+[gd_scene load_steps=13 format=3 uid="uid://ulmj5y3qnjn0"]
+
+[ext_resource type="Script" path="res://scenes/options/pause_settings.gd" id="1_6dyk8"]
+[ext_resource type="Shader" path="res://scenes/main/scroll_menu2.gdshader" id="2_27ia1"]
+[ext_resource type="Texture2D" uid="uid://42luta3y1718" path="res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/1.png" id="3_8bjlv"]
+[ext_resource type="Texture2D" uid="uid://bhun4l7t48wju" path="res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/2.png" id="4_pjj7v"]
+[ext_resource type="Texture2D" uid="uid://dhbuk4xl0w3f5" path="res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/3.png" id="5_o2wqx"]
+[ext_resource type="Shader" path="res://scenes/main/scroll_menu3.gdshader" id="6_dime5"]
+[ext_resource type="Texture2D" uid="uid://clf7do7nkiljf" path="res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/4.png" id="7_7rtfs"]
+[ext_resource type="FontFile" uid="uid://cw6hv1tq5uaod" path="res://fonts/ThaleahFat.ttf" id="8_sk30w"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_omsim"]
+shader = ExtResource("2_27ia1")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3r0qm"]
+shader = ExtResource("2_27ia1")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1ckf8"]
+shader = ExtResource("6_dime5")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ck4i1"]
+
+[node name="Settings" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6dyk8")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_omsim")
+offset_right = 640.0
+offset_bottom = 360.0
+texture = ExtResource("3_8bjlv")
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer"]
+texture_repeat = 2
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_pjj7v")
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer"]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_3r0qm")
+offset_right = 640.0
+offset_bottom = 360.0
+texture = ExtResource("5_o2wqx")
+
+[node name="TextureRect4" type="TextureRect" parent="CanvasLayer"]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_1ckf8")
+offset_right = 640.0
+offset_bottom = 360.0
+texture = ExtResource("7_7rtfs")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+offset_left = 32.0
+offset_top = 15.0
+offset_right = 352.0
+offset_bottom = 360.0
+
+[node name="Volume" type="Label" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("8_sk30w")
+text = "Volume"
+
+[node name="HSlider" type="HSlider" parent="CanvasLayer/VBoxContainer" groups=["plays_music"]]
+layout_mode = 2
+min_value = -35.0
+max_value = 15.0
+value = 10.0
+
+[node name="resolution" type="Label" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("8_sk30w")
+text = "Resolution
+"
+
+[node name="OptionButton" type="OptionButton" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("8_sk30w")
+theme_override_font_sizes/font_size = 25
+item_count = 4
+popup/item_0/text = "1920x1080"
+popup/item_0/id = 0
+popup/item_1/text = "1600x900"
+popup/item_1/id = 1
+popup/item_2/text = "1280x720"
+popup/item_2/id = 2
+popup/item_3/text = "640x360"
+popup/item_3/id = 3
+
+[node name="fullscreen" type="Label" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("8_sk30w")
+text = "WINDOW MODE"
+
+[node name="OptionButton2" type="OptionButton" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("8_sk30w")
+item_count = 2
+popup/item_0/text = "Fullscreen"
+popup/item_0/id = 0
+popup/item_1/text = "Windowed"
+popup/item_1/id = 1
+
+[node name="frame_cap" type="Label" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("8_sk30w")
+text = "FPS"
+
+[node name="OptionButton3" type="OptionButton" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("8_sk30w")
+item_count = 4
+popup/item_0/text = "30"
+popup/item_0/id = 0
+popup/item_1/text = "60"
+popup/item_1/id = 1
+popup/item_2/text = "144"
+popup/item_2/id = 3
+popup/item_3/text = "Unlimited"
+popup/item_3/id = 4
+
+[node name="vsync" type="Label" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("8_sk30w")
+text = "VSYNC"
+
+[node name="OptionButton4" type="OptionButton" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("8_sk30w")
+item_count = 3
+popup/item_0/text = "ON"
+popup/item_0/id = 0
+popup/item_1/text = "OFF"
+popup/item_1/id = 1
+popup/item_2/text = "ADAPTIVE"
+popup/item_2/id = 2
+
+[node name="Label7" type="Label" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label8" type="Label" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label9" type="Label" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Exit" type="Button" parent="CanvasLayer/VBoxContainer"]
+custom_minimum_size = Vector2(120, 32)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.870588, 0.870588, 0.870588, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_sk30w")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ck4i1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ck4i1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ck4i1")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ck4i1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ck4i1")
+text = "Exit"
+alignment = 0
+
+[connection signal="value_changed" from="CanvasLayer/VBoxContainer/HSlider" to="." method="_on_h_slider_value_changed"]
+[connection signal="item_selected" from="CanvasLayer/VBoxContainer/OptionButton" to="." method="_on_option_button_item_selected"]
+[connection signal="item_selected" from="CanvasLayer/VBoxContainer/OptionButton2" to="." method="_on_option_button_2_item_selected"]
+[connection signal="item_selected" from="CanvasLayer/VBoxContainer/OptionButton3" to="." method="_on_option_button_3_item_selected"]
+[connection signal="item_selected" from="CanvasLayer/VBoxContainer/OptionButton4" to="." method="_on_option_button_4_item_selected"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/Exit" to="." method="_on_exit_pressed"]

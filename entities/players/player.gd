@@ -28,6 +28,9 @@ var spawn_position : Vector2
 func _ready():
 	spawn_position = global_position
 
+func _process(delta):
+	sprite.play(current_animation)
+
 func _physics_process(delta):
 	current_animation = "idle"
 	
@@ -75,7 +78,6 @@ func _physics_process(delta):
 		hand.get_child(0).use(self)
 	
 	move_and_slide()
-	sprite.play(current_animation)
 
 
 func _on_hurt_box_area_entered(area):
