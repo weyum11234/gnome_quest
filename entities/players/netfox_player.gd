@@ -23,6 +23,7 @@ var long_jump_timer = 0.0
 		player_input.set_multiplayer_authority(id)
 @onready var current_animation = "idle"
 @onready var dead = false
+@onready var respawn = false
 var spawn_position : Vector2
 
 
@@ -35,8 +36,19 @@ func _process(delta):
 
 func _rollback_tick(delta, tick, is_fresh):
 	if dead:
-		return
-	
+		dead = false
+		if hand.get_child_count() > 0:
+			for item in hand.get_children():
+				item.reset()
+				
+		position = spawn_position
+		velocity = Vector2.ZERO
+		$TickInterpolator.teleport()
+		await get_tree().create_timer(0.5).timeout
+	else:
+		_apply_movement(delta)
+
+func _apply_movement(delta):
 	_force_update_is_on_floor()
 	current_animation = "idle"
 
@@ -86,7 +98,7 @@ func _rollback_tick(delta, tick, is_fresh):
 	velocity *= NetworkTime.physics_factor
 	move_and_slide()
 	velocity /= NetworkTime.physics_factor
-
+	
 func _force_update_is_on_floor():
 	var old_velocity = velocity
 	velocity = Vector2.ZERO
@@ -94,28 +106,33 @@ func _force_update_is_on_floor():
 	velocity = old_velocity
 
 func _on_hurt_box_area_entered(area):
-	death()
+	#death()
+	dead = true
 
 func _on_hurt_box_body_entered(body):
-	death()
+	#death()
+	dead = true
 
-func death():
+#func death():
 	#dead = true
-	
-	if hand.get_child_count() > 0:
-		for item in hand.get_children():
+	#$HurtBox.set_deferred("monitoring", false)
+	#
+	#if hand.get_child_count() > 0:
+		#for item in hand.get_children():
 			#item.reset()
-			pass
-	
-	current_animation = "death"
-	sprite.play(current_animation)
-
-func _on_animated_sprite_2d_animation_finished():
-	match current_animation:
-		"death":
-			global_position = spawn_position
-			current_animation = "respawn"
-			sprite.play(current_animation)
-		"respawn":
+	#
+	#current_animation = "death"
+	#sprite.play(current_animation)
+#
+#func _on_animated_sprite_2d_animation_finished():
+	#match current_animation:
+		#"death":
+			#position = spawn_position
+			#velocity = Vector2.ZERO
+			#$TickInterpolator.teleport()
+			#await get_tree().create_timer(0.5).timeout
+			#current_animation = "respawn"
+			#sprite.play(current_animation)
+		#"respawn":
 			#dead = false
-			pass
+			#$HurtBox.set_deferred("monitoring", true)
