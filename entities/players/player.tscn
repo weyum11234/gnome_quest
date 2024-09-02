@@ -245,10 +245,8 @@ root = NodePath("..")
 state_properties = Array[String]([":velocity", ":position"])
 input_properties = Array[String](["Input:direction", "Input:do_jump", "Input:do_long_jump", "Input:do_use", "Input:do_long_use"])
 
-[node name="TickInterpolator" type="Node" parent="." node_paths=PackedStringArray("root")]
+[node name="TickInterpolator" type="Node" parent="."]
 script = ExtResource("6_n8jyg")
-root = NodePath("..")
-properties = Array[String]([":position"])
 
 [node name="ServerSync" type="MultiplayerSynchronizer" parent="."]
 replication_config = SubResource("SceneReplicationConfig_ncyyq")
