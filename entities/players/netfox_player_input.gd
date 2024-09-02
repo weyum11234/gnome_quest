@@ -36,6 +36,7 @@ func _gather():
 	direction = Input.get_axis("left", "right")
 	if direction:
 		facing = direction
+		
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

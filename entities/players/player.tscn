@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://6vaao2p4o2j8" path="res://assets/level01/caves/industrial.v2/industrial.v2.png" id="2_8tjra"]
 [ext_resource type="Texture2D" uid="uid://dkph32kv7qse4" path="res://assets/level01/caves/industrial.v2/recolored_player.png" id="3_xfqrp"]
 [ext_resource type="Script" path="res://entities/players/netfox_player_input.gd" id="5_tmspn"]
-[ext_resource type="Script" path="res://addons/netfox/tick-interpolator.gd" id="6_n8jyg"]
+[ext_resource type="Script" path="res://addons/netfox/tick-interpolator.gd" id="6_22olr"]
 [ext_resource type="Script" path="res://addons/netfox/rollback/rollback-synchronizer.gd" id="6_yur60"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q4x0f"]
@@ -242,11 +242,11 @@ script = ExtResource("5_tmspn")
 [node name="RollbackSynchronizer" type="Node" parent="." node_paths=PackedStringArray("root")]
 script = ExtResource("6_yur60")
 root = NodePath("..")
-state_properties = Array[String]([":velocity", ":position"])
+state_properties = Array[String]([":position", ":velocity"])
 input_properties = Array[String](["Input:direction", "Input:do_jump", "Input:do_long_jump", "Input:do_use", "Input:do_long_use"])
 
 [node name="TickInterpolator" type="Node" parent="." node_paths=PackedStringArray("root")]
-script = ExtResource("6_n8jyg")
+script = ExtResource("6_22olr")
 root = NodePath("..")
 properties = Array[String]([":position"])
 
