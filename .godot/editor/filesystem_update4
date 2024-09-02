@@ -6,3 +6,4 @@ res://scenes/main/scroll_menu3.gdshader
 res://scenes/main/scroll_menu.gdshader
 res://entities/players/netfox_player_input.gd
 res://entities/players/netfox_player.gd
+res://scenes/startup/startup.tscn
