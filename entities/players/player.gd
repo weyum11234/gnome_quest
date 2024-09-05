@@ -111,12 +111,6 @@ func player_collision():
 			other_player.pushed_velo = push_force
 		else:
 			pushed_velo = 0
-			
-
-			
-				
-
-
 
 func _on_hurt_box_area_entered(area):
 	death()
