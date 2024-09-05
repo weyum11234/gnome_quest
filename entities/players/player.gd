@@ -31,17 +31,17 @@ var spawn_position : Vector2
 func _ready():
 	if not is_multiplayer_authority():
 		set_process(false)
-		return
-	
-	spawn_position = global_position
-	add_to_group("players")
+	else:
+		spawn_position = global_position
+		add_to_group("players")
 
-func _physics_process(delta):
+func _physics_process(delta):	
 	current_animation = "idle"
 	
 	# Gravity.
 	if not is_on_floor() and not player_input.jumping:
 		velocity.y += gravity * gravity_multiplier * delta
+
 
 	# Jump.
 	if player_input.do_jump and is_on_floor():
@@ -84,16 +84,11 @@ func _physics_process(delta):
 		hand.get_child(0).scale.x = 1
 		hand.get_child(0).use(self)
 	
-	
 	player_collision()
 	move_and_slide()
 	sprite.play(current_animation)
-	
-
-
 
 func player_collision():
-	
 	for i in get_slide_collision_count():
 		var collision = get_slide_collision(i)
 		var normal = collision.get_normal()
@@ -119,10 +114,6 @@ func _on_hurt_box_body_entered(body):
 	death()
 
 func death():
-	if not is_multiplayer_authority():
-		return
-		
-	set_process(false)
 	set_physics_process(false)
 	
 	if hand.get_child_count() > 0:
@@ -135,14 +126,10 @@ func death():
 
 
 func _on_animated_sprite_2d_animation_finished():
-	if not is_multiplayer_authority():
-		return
-		
 	match current_animation:
 		"death":
 			global_position = spawn_position
 			current_animation = "respawn"
 			sprite.play(current_animation)
 		"respawn":
-			set_process(true)
 			set_physics_process(true)

@@ -8,3 +8,11 @@ res://scenes/startup/startup.tscn
 res://scenes/level_01/level_01.tscn
 res://scenes/test_stage/test_stage.tscn
 res://scenes/item_list/item_list.tscn
+res://entities/bullet/bullet.tscn
+res://entities/bullet/bullet.gd
+res://entities/homing_bullet/homing_bullet.tscn
+res://entities/homing_bullet/homing_bullet.gd
+res://entities/item_box/item_box.tscn
+res://entities/item_box/item_box.gd
+res://scenes/options/settings.tscn
+res://entities/players/player_input.gd

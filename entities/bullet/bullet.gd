@@ -20,13 +20,14 @@ func _physics_process(delta):
 			velocity.y += gravity * delta
 		# Handle movement.
 		velocity.x = direction * speed
-		move_and_slide()
 		
 		# Bounce
 		if $RayCast2D.is_colliding():
 			direction *= -1
 			$RayCast2D.target_position = Vector2($RayCast2D.target_position.x * -1, 0)
 			$Sprite2D.flip_h = ($Sprite2D.flip_h != true)
+			
+		move_and_slide()
 			
 func set_values(id : int, player : Object):
 	self.id = id
