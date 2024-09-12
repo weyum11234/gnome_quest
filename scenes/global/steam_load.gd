@@ -13,9 +13,9 @@ func _ready():
 		return
 	print("Steam is running!")
 	
-	var id = Steam.getSteamID()
-	var name = Steam.getFriendPersonaName(id)
-	print(id, name)
+	var steam_id = Steam.getSteamID()
+	var steam_name = Steam.getFriendPersonaName(steam_id)
+	print(steam_id, steam_name)
 	
-func _process(delta):
+func _process(_delta):
 	Steam.run_callbacks()

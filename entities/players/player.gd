@@ -35,7 +35,7 @@ func _ready():
 		spawn_position = global_position
 		add_to_group("players")
 
-func _process(delta):
+func _process(_delta):
 	sprite.play(current_animation)	
 
 func _physics_process(delta):
@@ -108,11 +108,11 @@ func player_collision():
 		else:
 			pushed_velo = 0
 
-func _on_hurt_box_area_entered(area):
+func _on_hurt_box_area_entered(_area):
 	if is_multiplayer_authority():
 		death()
 
-func _on_hurt_box_body_entered(body):
+func _on_hurt_box_body_entered(_body):
 	if is_multiplayer_authority():
 		death()
 

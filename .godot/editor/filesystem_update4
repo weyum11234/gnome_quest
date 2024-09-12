@@ -12,3 +12,9 @@ res://entities/homing_bullet/homing_bullet.tscn
 res://entities/item_box/item_box.tscn
 res://scenes/options/settings.tscn
 res://entities/players/player_input.gd
+res://entities/item_box/item_box.gd
+res://entities/knife/knife.tscn
+res://entities/knife/knife_placeholder.tscn
+res://entities/knife/knife_placeholder.gd
+res://scenes/global/steam_load.gd
+res://scenes/global/AudioController.gd

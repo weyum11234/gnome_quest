@@ -2209,7 +2209,7 @@ position = Vector2(808, 1109)
 position = Vector2(1464, 997)
 
 [node name="SpawnPosition" type="Node2D" parent="."]
-position = Vector2(960, 1024)
+position = Vector2(960, 944)
 
 [node name="Players" type="Node" parent="."]
 

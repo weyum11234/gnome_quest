@@ -12,7 +12,7 @@ func _ready():
 	if not is_multiplayer_authority():
 		set_physics_process(false)
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if direction:
 		velocity.x = speed * direction.x
 		velocity.y = speed * direction.y
@@ -50,7 +50,7 @@ func _on_hit_box_area_entered(area):
 	if not area.is_in_group("player"): # Edge case: projectile immediately hits the environment.
 		queue_free()
 
-func _on_hit_box_body_exited(body):
+func _on_hit_box_body_exited(_body):
 	has_exit = true
 	$HitBox.set_deferred("monitorable", true)
 

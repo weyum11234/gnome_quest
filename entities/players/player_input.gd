@@ -26,7 +26,7 @@ func _ready():
 		set_physics_process(false)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _physics_process(delta):
+func _physics_process(_delta):
 	# Resetting default values.
 	do_jump = false
 	do_long_jump = false

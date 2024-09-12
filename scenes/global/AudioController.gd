@@ -2,7 +2,7 @@ extends Node
 
 # Called when the node enters the scene tree for the first time.
 
-func _process(delta):
+func _process(_delta):
 	var current_scene = get_tree().current_scene
 	if current_scene != null:
 		var play_scenes = ["MainMenu", "Settings", "join_lobby"]
