@@ -46,6 +46,7 @@ func _physics_process(_delta):
 	
 	# Handle item.
 	if Input.is_action_just_pressed("use"):
+		print("yee haw mf")
 		use.rpc()
 		mouse_pos = get_parent().get_global_mouse_position()
 	if Input.is_action_pressed("use"):
