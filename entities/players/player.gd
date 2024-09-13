@@ -83,6 +83,7 @@ func _physics_process(delta):
 	
 	# Item.
 	if player_input.do_use and hand.get_child_count() > 0 and is_multiplayer_authority():
+		print("haw yee")
 		hand.get_child(0).scale.x = 1
 		hand.get_child(0).use(self)
 	
