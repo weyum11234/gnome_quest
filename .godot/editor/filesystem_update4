@@ -9,3 +9,4 @@ res://entities/knife/knife.tscn
 res://entities/knife/knife_placeholder.tscn
 res://scenes/level_01/level_01.tscn
 res://scenes/startup/startup.tscn
+res://entities/knife/knife_placeholder.gd
