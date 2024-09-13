@@ -5161,7 +5161,7 @@ position = Vector2(-240, -320)
 move_end_point = Vector2(128, -80)
 
 [node name="Player" parent="." instance=ExtResource("3_0ah35")]
-position = Vector2(-31, 35)
+position = Vector2(1325, 160)
 
 [node name="SpinningPlatform" parent="." instance=ExtResource("6_fu7on")]
 position = Vector2(-144, 208)

@@ -2273,36 +2273,58 @@ position = Vector2(2126, 104)
 
 [node name="collapse_floor8" parent="Obstacles" instance=ExtResource("4_qs8yg")]
 position = Vector2(2523, 120)
+on_time = 6.0
+off_time = 3.0
 
 [node name="collapse_floor9" parent="Obstacles" instance=ExtResource("4_qs8yg")]
 position = Vector2(2540, 120)
+on_time = 6.0
+off_time = 3.0
 
 [node name="collapse_floor10" parent="Obstacles" instance=ExtResource("4_qs8yg")]
 position = Vector2(2557, 120)
+on_time = 6.0
+off_time = 3.0
 
 [node name="collapse_floor11" parent="Obstacles" instance=ExtResource("4_qs8yg")]
 position = Vector2(2574, 120)
+on_time = 6.0
+off_time = 3.0
 
 [node name="collapse_floor12" parent="Obstacles" instance=ExtResource("4_qs8yg")]
 position = Vector2(2591, 120)
+on_time = 6.0
+off_time = 3.0
 
 [node name="collapse_floor13" parent="Obstacles" instance=ExtResource("4_qs8yg")]
 position = Vector2(2608, 120)
+on_time = 6.0
+off_time = 3.0
 
 [node name="collapse_floor14" parent="Obstacles" instance=ExtResource("4_qs8yg")]
 position = Vector2(2625, 120)
+on_time = 6.0
+off_time = 3.0
 
 [node name="collapse_floor15" parent="Obstacles" instance=ExtResource("4_qs8yg")]
 position = Vector2(2642, 120)
+on_time = 6.0
+off_time = 3.0
 
 [node name="collapse_floor16" parent="Obstacles" instance=ExtResource("4_qs8yg")]
 position = Vector2(2659, 120)
+on_time = 6.0
+off_time = 3.0
 
 [node name="collapse_floor17" parent="Obstacles" instance=ExtResource("4_qs8yg")]
 position = Vector2(2676, 120)
+on_time = 6.0
+off_time = 3.0
 
 [node name="collapse_floor18" parent="Obstacles" instance=ExtResource("4_qs8yg")]
 position = Vector2(2693, 120)
+on_time = 6.0
+off_time = 3.0
 
 [node name="spinning_flames" parent="Obstacles" instance=ExtResource("10_f5g34")]
 position = Vector2(2280, 520)
