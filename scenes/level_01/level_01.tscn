@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://dpdbloh77ho5x"]
+[gd_scene load_steps=35 format=3 uid="uid://dpdbloh77ho5x"]
 
 [ext_resource type="Texture2D" uid="uid://cp4ftapxns3pv" path="res://assets/level01/dungeons/Dungeon Tile Set/Dungeon Tile Set.png" id="1_2etwt"]
 [ext_resource type="Script" path="res://scenes/level_01/level_01.gd" id="1_c53np"]
@@ -21,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://dpoy1qi0gffxq" path="res://obstacles/checkpoint.tscn" id="21_icuk5"]
 [ext_resource type="PackedScene" uid="uid://dqhh8vxlpxgsp" path="res://obstacles/moving_platform.tscn" id="21_qov6l"]
 [ext_resource type="PackedScene" uid="uid://dc23bl42ciakq" path="res://entities/item_box/item_box.tscn" id="21_w2qff"]
+[ext_resource type="PackedScene" uid="uid://bkx1fisadbp00" path="res://scenes/pause/pause.tscn" id="22_dywy8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6go1p"]
 texture = ExtResource("1_2etwt")
@@ -2468,3 +2469,5 @@ spawn_path = NodePath("../Items")
 [node name="ObstacleSpawner" type="MultiplayerSpawner" parent="."]
 _spawnable_scenes = PackedStringArray("res://obstacles/collapse_floor.tscn", "res://obstacles/spinning_flames.tscn", "res://obstacles/anim_spike.tscn", "res://obstacles/flames.tscn", "res://obstacles/flame_vert.tscn", "res://obstacles/moving_platform.tscn", "res://obstacles/checkpoint.tscn")
 spawn_path = NodePath("../Obstacles")
+
+[node name="Pause" parent="." instance=ExtResource("22_dywy8")]
