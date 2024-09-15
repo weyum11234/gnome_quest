@@ -23,15 +23,25 @@ func _ready():
 	if is_multiplayer_authority():
 		camera.make_current()
 	else:
+		set_process(false)
 		set_physics_process(false)
+		
+
+func _process(delta):
+	# Handle item.
+	if Input.is_action_just_pressed("use"):
+		use.rpc()
+	if Input.is_action_pressed("use"):
+		long_use.rpc()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _physics_process(_delta):
+func _physics_process(delta):
 	# Resetting default values.
 	do_jump = false
 	do_long_jump = false
 	do_use = false
 	do_long_use = false
+	mouse_pos = get_parent().get_global_mouse_position()
 	
 	# Handle walking.
 	direction = Input.get_axis("left", "right")
@@ -43,14 +53,6 @@ func _physics_process(_delta):
 		jump.rpc()
 	if Input.is_action_pressed("jump"):
 		long_jump.rpc()
-	
-	# Handle item.
-	if Input.is_action_just_pressed("use"):
-		print("yee haw mf")
-		use.rpc()
-		mouse_pos = get_parent().get_global_mouse_position()
-	if Input.is_action_pressed("use"):
-		long_use.rpc()
 		
 @rpc("call_local")
 func jump():
