@@ -16,7 +16,8 @@ func del_player(id : int):
 	if not $Players.has_node(str(id)):
 		return
 	
-	$Players.get_node(str(id)).queue_free()
+	print("bruv someone left :skull emoji: ", id)
+	#$Players.get_node(str(id)).queue_free()
 	
 func server_disconnect_warning():
 	print("server has disconnected")

@@ -45,6 +45,11 @@ func hide_settings():
 	in_settings = false
 
 func _on_quit_pressed():
+	# Multiplayer stuff.
+	# Don't really understand why this works?
+	multiplayer.multiplayer_peer.disconnect_peer(1)
+	
+	# UI and tree stuff.
 	toggle_pause()
 	get_tree().change_scene_to_file("res://scenes/main/main.tscn")
 	TransitionScreen.transition()
