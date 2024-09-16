@@ -35,4 +35,5 @@ func _ready():
 		
 	if not OS.has_feature("dedicated_server"):
 		add_player(1)
+
 	

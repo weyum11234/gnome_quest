@@ -1,3 +1,5 @@
+TextureRect
+Control
 CollisionShape2D
 Area2D
 CanvasLayer
@@ -6,7 +8,6 @@ HBoxContainer
 Button
 VBoxContainer
 ColorRect
-Control
 MultiplayerSynchronizer
 Sprite2D
 MultiplayerSpawner

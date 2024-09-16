@@ -20,8 +20,12 @@ func _process(delta):
 func toggle_pause():
 	SceneManager.is_paused = !SceneManager.is_paused
 	is_paused = !is_paused
-	get_tree().paused = !get_tree().paused
-	pause_screen.visible = is_paused  # Show or hide the pause screen
+	
+	# Uncomment if you wanna freeze the game when paused. I think it's better left unfrozen.
+	#get_tree().paused = !get_tree().paused
+	
+	# Show or hide the pause screen.
+	pause_screen.visible = is_paused 
 	if pause_screen.visible:
 		mouse_filter = MOUSE_FILTER_STOP
 	else:
@@ -29,7 +33,6 @@ func toggle_pause():
 
 func _on_resume_pressed():
 	toggle_pause()
-
 
 func _on_options_pressed():
 	$CanvasLayer.hide()
