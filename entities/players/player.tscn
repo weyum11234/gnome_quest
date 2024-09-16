@@ -214,6 +214,9 @@ properties/5/replication_mode = 1
 properties/6/path = NodePath(".:current_animation")
 properties/6/spawn = true
 properties/6/replication_mode = 1
+properties/7/path = NodePath("Camera2D:position")
+properties/7/spawn = true
+properties/7/replication_mode = 1
 
 [sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_ugwgr"]
 properties/0/path = NodePath(".:direction")
