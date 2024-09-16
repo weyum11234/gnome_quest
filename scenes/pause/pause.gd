@@ -47,6 +47,7 @@ func hide_settings():
 func _on_quit_pressed():
 	# Multiplayer stuff.
 	# Don't really understand why this works?
+	print(multiplayer.get_peers())
 	for peer in multiplayer.get_peers():
 		multiplayer.multiplayer_peer.disconnect_peer(peer)
 	
