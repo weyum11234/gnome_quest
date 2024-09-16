@@ -9,3 +9,6 @@ res://entities/players/player.tscn
 res://scenes/pause/pause.tscn
 res://scenes/startup/startup.tscn
 res://scenes/pause/pause.gd
+res://entities/item_box/item_box.tscn
+res://entities/item_box/item_box.gd
+res://scenes/item_list/item_list.tscn
